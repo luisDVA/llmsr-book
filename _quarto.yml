@@ -1,11 +1,14 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "Large Language Model tools for R"
   reader-mode: true
   author: "Luis D. Verde Arregoitia"
   date: "February 13 2025"
+  repo-url: https://github.com/luisDVA/llmsr-book
+  google-analytics: G-HER1TDPFHR
   chapters:
     - index.qmd
     - before-start.qmd
