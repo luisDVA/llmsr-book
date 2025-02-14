@@ -1,0 +1,9 @@
+color:
+  background: "#eceff4"
+  
+typography:
+  fonts:
+    - family: Barlow
+      source: google
+  base: Barlow
+  headings: Barlow

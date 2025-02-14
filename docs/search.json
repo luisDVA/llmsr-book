@@ -24,7 +24,7 @@
     "href": "r-pkgs.html",
     "title": "2  R Packages",
     "section": "",
-    "text": "2.1 tidyllm\ntidyllm by Eduard Brüll provides pipe-friendly access to multiple LLM APIs in a smooth and readable way. We can pass images, documents, videos, and plots from the plot pane to the package functions, and the package has very thorough documentation. Similar in some ways to ellmer, but looks very useful for both batch processing and interactive work.",
+    "text": "2.1 tidyllm\nThis section includes R packages that interface with LLM APIs or provide helpers, chats, or relevant addins.\nIn no particular order:\ntidyllm by Eduard Brüll provides pipe-friendly access to multiple LLM APIs in a smooth and readable way. We can pass images, documents, videos, and plots from the plot pane to the package functions, and the package has very thorough documentation. Similar in some ways to ellmer, but looks very useful for both batch processing and interactive work.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
     ]
@@ -164,7 +164,7 @@
     "href": "other-ext.html",
     "title": "3  Other tools and extensions",
     "section": "",
-    "text": "3.1 GiHub Copilot\nGitHub Copilot is a widely-used and well-documented coding assistant for code completions and the possibility of turning natural language prompts into code suggestions. Works on GitHub.com and inside most IDEs.\nSubscription-based, although as of a a few weeks-ago there is a free tier available. I have not tried it yet.\nThis recent talk by Yanina Bellini for RLadies Rome provides a good overview, and Yani’s slides also mention important considerations about the AI skill threat.",
+    "text": "3.1 GiHub Copilot\nThese include vscode/Positron extensions that are not shipped as R packages.\nGitHub Copilot is a widely-used and well-documented coding assistant for code completions and the possibility of turning natural language prompts into code suggestions. Works on GitHub.com and inside most IDEs.\nSubscription-based, although as of a a few weeks-ago there is a free tier available. I have not tried it yet.\nThis recent talk by Yanina Bellini for RLadies Rome provides a good overview, and Yani’s slides also mention important considerations about the AI skill threat.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Other tools and extensions</span>"
     ]
