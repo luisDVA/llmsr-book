@@ -1,0 +1,19 @@
+# Further reading {#sec-courses}
+
+Here are some courses and guides for actually using the LLM tools listed here
+
+------------------------------------------------------------------------
+
+David Keyes at R for the Rest of Us recently launched "[Using AI with R](https://rfortherestofus.com/courses/ai)": a free, self-paced short course for using LLM-based assistants with R. Covers many of the tools and packages mentioned on this site.
+
+</br>
+
+Albert Rapp also has an in progress Quarto book "[AI with R](https://air.albert-rapp.de/)", built from his existing blog posts for addressing different tasks using AI tool and not having to work in browser-based chat boxes. This resource includes some very well-written documentation for using mall and ellmer.
+
+</br>
+
+Leonardo Collado Torres gave a short course that covered many of the packages and tools used here, and the recording is available on [YouTube](https://youtu.be/qWuoVQG5BZw?si=YM7Y2s3xfcEd2Sc6). The course materials also include useful step-by-step instructions for setting up and using copilot.
+
+</br>
+
+Rami Krispin recently shared a brief review of [lang](r-pkgs.qmd#lang) in a brief [newsletter](https://www.linkedin.com/pulse/lang-project-effective-visualization-llm-course-more-rami-krispin-mn3oc/).

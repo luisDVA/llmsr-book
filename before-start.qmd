@@ -1,0 +1,19 @@
+# Read first {#sec-before-start}
+
+Here are some interesting and worthwhile reads to explore before getting hands-on with any of the tools listed on this site.
+
+---
+
+In my opinion, anyone using LLM-based assistants for coding should read this perspective published in Methods in Ecology and Evolution: [Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution](https://doi.org/10.1111/2041-210X.14325), led by Natalie Cooper, and part of a special issue on the use of LLMs in ecology and evolution. These papers summarize the pros and cons of genAI/LLMs in the context of research and teaching, and their conclusions go beyond research and biological sciences.
+
+Another useful resource is this course [The Bullshit Machines](https://thebullshitmachines.com/index.html
+) put together Carl T. Bergstrom and Jevin D. West. A very thoughtful and well-structured set of materials that dig through the smoke and highlight the fact that **just because a machine can write like us it does not mean it can think like us**.
+
+
+As an instructor, I am not alone in noticing that lately, a variable proportion of learners are using ChatGPT and similar tools to assist them in and after various R-related workshops. The Carpentries foundation have this interesting [two-part series](https://carpentries.org/blog/2025/01/teaching-llms-report/) on teaching LLM-based coding assistants in Carpentries workshops. The results here mention patterns of usage, advantages and disadvantages of actually teaching how to use these assistants, and throughout 2025 there will be ongoing discussion about ethics, security, and how to best teach in light of these new tools.
+
+</br>
+
+With that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.
+
+

@@ -1,0 +1,30 @@
+# Other tools and extensions {#sec-other-ext}
+
+These include vscode/Positron extensions that are not shipped as R packages.
+
+## [GiHub Copilot](https://github.com/features/copilot)
+
+GitHub Copilot is a widely-used and well-documented coding assistant for code completions and the possibility of turning natural language prompts into code suggestions. Works on GitHub.com and inside most IDEs. 
+
+Subscription-based, although as of a a few weeks-ago there is a free tier available. I have not tried it yet.
+
+This recent [talk](https://github.com/yabellini/copilotWithR) by Yanina Bellini for RLadies Rome provides a good overview, and 
+Yani's slides also mention important considerations about the AI skill threat. 
+
+## [continue](https://www.continue.dev/)
+
+A vscode extension that works nicely in Positron. Supports multiple models for chat and code completion. Easy to provide local files and folders for context and nice integration with the source editor.
+
+Tried it out after Julia Silge mentioned it in the [Super Data Science](https://www.superdatascience.com/podcast/817) podcast. Works nicely, and I used it in Positron with Anthropic's Claude 3.5 Sonnet model to write and edit the repetitive css, html, and javascript code that powers the hexsession package. Also helped me with some of the nested for loops that play a big role in forgts. 
+
+
+## [codeium](https://codeium.com/)
+
+Another cool VScode extension that works well in Positron. Provides autocomplete and chat. Free for individuals. The base model uses Llama 3.1 70B, but paid tiers can choose other models. I've tried this out in Positron with good results for code refactoring, at least when playing around with small scripts.
+
+--- 
+
+Special mention here for [Shiny Assistant](https://shiny.posit.co/blog/posts/shiny-assistant/), a stand-alone AI tool from the Shiny team that can answer questions about Shiny and aldo build apps. Shiny assistant works with both R and python, and the tool takes advantage of Shinylive to optionally forego the need for a server running R or python.
+
+
+

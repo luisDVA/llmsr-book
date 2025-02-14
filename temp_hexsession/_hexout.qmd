@@ -1,0 +1,139 @@
+---
+execute:
+  echo: false
+params:
+  temp_file_path: "package_data.rds"
+  js_file_path: "hexsession.js"
+  dark_mode: false
+resources:
+  - images
+embed-resources: true
+---
+
+```{r}
+#| echo: false
+
+
+
+library(htmltools)
+
+# Include the JavaScript file
+htmltools::tagList(
+  htmltools::tags$script(src = params$js_file_path)
+)
+```
+
+```{=html}
+<div class="main">
+  <div class="container" id="imageContainer">
+    <!-- Images will be dynamically added here -->
+  </div>
+  <div class="attribution">
+    created with <a href="https://github.com/luisdva/hexsession" target="_blank">hexsession</a>
+  </div>
+</div>
+
+<style>
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.main {
+  position: relative;
+  display: flex;
+  --s: 100px;  /* size */
+  --m: 2px;    /* margin */
+  --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+}
+
+.container {
+  font-size: 0; /*disable white space between inline block element */
+  max-width: 100%; /* Ensure container doesn't overflow */
+}
+
+.container div {
+  width: var(--s);
+  margin: var(--m);
+  height: calc(var(--s)*1.1547); 
+  display: inline-block;
+  font-size: initial;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  background: var(--tile-bg);
+  margin-bottom: calc(var(--m) - var(--s)*0.2885); 
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.container::before {
+  content: "";
+  width: calc(var(--s)/2 + var(--m));
+  float: left;
+  height: 120%;
+  shape-outside: repeating-linear-gradient(     
+                   #0000 0 calc(var(--f) - 3px),      
+                   #000  0 var(--f));
+}
+
+.container div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Subtle hover effect */
+.container div:hover {
+  z-index: 1;
+  transform: scale(1.05);  /* Reduced scale */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Subtle shadow */
+}
+
+.container div:hover img {
+  filter: brightness(1.1);  /* Slightly brighten the image */
+}
+
+.attribution {
+  position: absolute;
+  bottom: -44px;
+  right: 40px;
+  font-size: 0.8em;
+  color: var(--text-color);
+  background-color: var(--attribution-bg);
+  padding: 2px 5px;
+  border-radius: 3px;
+  z-index: 10;
+  pointer-events: none;  /* Allows clicking through to underlying elements */
+}
+
+.attribution a {
+  color: var(--link-color);
+  text-decoration: none;
+  pointer-events: auto;  /* Re-enables clicking on the link */
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .main {
+    --s: 96px;  /* Slightly reduce size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    --s: 80px;  /* Smaller for mobile devices, but still visible */
+  }
+}
+</style>
+
+```

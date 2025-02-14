@@ -1,0 +1,48 @@
+# Welcome {#sec-index .unnumbered}
+
+![Screencaps from The Simpsons (Fox)](images/llmscvr.jpg)
+
+Hello! This is an ongoing roundup of useful developments in the LLM/genAI space, with a specific focus on R.
+
+
+For teaching purposes and to help me keep track of what's happening, I've put together this draft listing of relevant LLM+R resources. This was initially a post on my blog from late 2024, but this book format should be easier to navigate. I will update the content periodically when new tools come out and/or when people bring them to my attention.
+
+
+The logos below link to each tool's official site.
+
+```{r}
+#| warning: false
+#| echo: false
+
+
+logos <- fs::dir_ls(here::here("images/hex/"))
+
+
+
+urlss <- c(
+"https://codeium.com/",
+"https://mlverse.github.io/chattr/",
+"https://www.continue.dev/",
+"https://github.com/features/copilot",
+"http://elmer.tidyverse.org/",
+"https://jhk0530.github.io/gemini.R/",
+"https://github.com/frankiethull/kuzco",
+"https://github.com/simonpcouch/gander/",
+"https://mlverse.github.io/mall/",
+"https://mlverse.github.io/lang/",
+"https://hauselin.github.io/ollama-r/",
+"https://simonpcouch.github.io/pal/",
+"https://jbgruber.github.io/rollama/",
+"https://edubruell.github.io/tidyllm/")
+
+names(logos) <- urlss
+
+# shuffle logos vector
+samplelogos <- sample(logos)
+
+
+hexsession::make_tile(local_images = samplelogos, local_urls = names(samplelogos),dark_mode = F)
+
+```
+
+Feel free to send feedback or to edit this content via pull requests.

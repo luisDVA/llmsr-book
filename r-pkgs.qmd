@@ -1,0 +1,123 @@
+# R Packages {#sec-r-pkgs}
+
+This section includes R packages that interface with LLM APIs or provide helpers, chats, or relevant addins. 
+
+In no particular order:
+
+## [tidyllm](https://edubruell.github.io/tidyllm/)
+<img src="images/hex/tidyllm.png" align="right" height="108" alt="" />
+
+tidyllm by Eduard Brüll provides pipe-friendly access to multiple LLM APIs in a smooth and readable way. We can pass images, documents, videos, and plots from the plot pane to the package functions, and the package has very thorough documentation. Similar in some ways to ellmer, but looks very useful for both batch processing and interactive work.
+
+## [ollamar](https://hauselin.github.io/ollama-r/)  
+<img src="images/hex/ollogo.png" align="right" height="108" alt="" />
+
+Developed by Hause Lin and Tawab Safi, ollamar Integrates R with Ollama, for running language models locally. 
+
+With ollamar we can pull different models, interact with objects that store chat histories, and handle the outputs as data frames, lists, or vectors. 
+
+Works nicely with httr2, which is a big advantage.
+
+## [rollama](https://jbgruber.github.io/rollama/)
+<img src="images/hex/rollamalogo.png" align="right" height="108" alt="" />
+
+
+rollama by Johannes Gruber and Maximilian Weber wraps the Ollama API. Once we pull a model, we can work locally with various LLMs and perform tasks like annotation and text embedding. 
+
+The R functions used to interact with Ollama include a nice argument for specifying the format of the response (e.g., do we want plain text, lists, data frames, httr2, etc.). The package has useful vignettes for different usecases. 
+
+
+## [ensure](https://simonpcouch.github.io/ensure/)
+
+
+ensure by Simon Couch helps write code for unit tests using the testthat package. Works through an Rstudio addin, and the documentation mentions that the model has been made aware of testthat syntax and the tidy style guide for code. Will be trying it out for my more recent packages that still have poor test coverage. 
+
+
+
+## [gemini.R](https://jhk0530.github.io/gemini.R/)
+<img src="images/hex/gemini.png" align="right" height="108" alt="" />
+
+gemini.R by Jinhwan Kim connects R with Google's gemini model via the gemini API. With a valid API key, the `gemini()` function takes text prompts and the `gemini_image()` function can work with images and text prompts.
+
+The package algo provides an RStudio addin for creating Roxygen documentation. 
+
+I recently used the Gemini Flash 2 model to pull information from a scanned PDF with decent success.
+
+## [mall](https://mlverse.github.io/mall/)
+<img src="images/hex/malllogo.png" align="right" height="108" alt="" />
+
+mall is part of the mlverse ecosystem of open source Data 
+Science and Machine Learning libraries. Rather than a chat-based approach, mall applies LLMs rowwise in the columns of a data frame. Built-in prompts include translating, summarizing, extraction, and sentiment analysis of text strings.
+
+mall uses Ollama and is implemented for both R and Python. I will likely be using it to analyze the comments I collected about loaded packages, which I talked about in my posit::conf(2024) talk.
+
+
+## [lang](https://mlverse.github.io/lang/)
+<img src="images/hex/mlverse.png" align="right" height="108" alt="" />
+
+lang is also part of the mlverse. This package uses LLMs to translate R documentation and display it in the help pane of Rstudio or Positron. Having participated in various translation initiatives, I am very wary of machine-translated function documentation and how it may affect new learners.
+
+The best part of this package (in my opinion) is the infrastructure for package developers to help translate documentation that after editing can be shipped as part of package with multilingual help files. 
+
+
+## [chattr](https://mlverse.github.io/chattr/)
+<img src="images/hex/chattrlogo.png" align="right" height="108" alt="" />
+
+chattr is also part of the mlverse. This package interfaces LLMs with R directly inside RStudio. Interaction with the models ideally happens through a Shiny app that runs inside the Viewer pane in RStudio.
+
+## [ellmer](http://ellmer.tidyverse.org/)
+<img src="images/hex/ellmerlogo.png" align="right" height="108" alt="" />
+
+> note that ellmer was previously called elmer, and was renamed in December 2024 to avoid case-insensitive clash with ELMER on bioconductor.
+
+ellmer is a new tidyverse-adjacent package by Hadley Wickham and Joe Cheng for interacting in R with various models, either programmatically or interactively. elmer creates R6 chat objects that remember context, and we can interact with models with a console or browser-based chat box, or programmatically within R functions.
+
+Seems promising, quite flexible, and all the activity in the GitHub repo suggests a very active development process, a solid dev team, and lots of community input.
+
+
+## [pal](https://simonpcouch.github.io/pal/)
+<img src="images/hex/pallogo.png" align="right" height="108" alt="" />
+
+pal by Simon Couch provides easy to use assistants that can edit, document, or explain code. The package provides an addin that works in both RStudio and Positron. Very cute package logo, and pal seems like a good option for writing boilerplate code and automating some of the more tedious, repetitive tasks. Works with multiple underlying models. Haven't tried it yet. 
+
+* Here's a [tutorial](https://bastianolea.rbind.io/blog/pal_asistentes_llm/) in Spanish for using pal with custom assistants that can have different roles.
+
+
+## [kuzco](https://github.com/frankiethull/kuzco)
+<img src="images/hex/kuzco.png" align="right" height="108" alt="" />
+
+kuzco by Frank Hull & Johannes Breuer leverages ollamar and ellmer to provide a computer vision assistant right inside R, using LLMs as an alternative to torch for tasks including image classification, recognition, sentiment, and text extraction. The output provided comes in very nice and usable tibbles.
+
+Cool hex logo and the example in the readme features a very cute puppy :3
+
+
+## [gander](https://github.com/simonpcouch/gander/)
+<img src="images/hex/logo.png" align="right" height="108" alt="" />
+
+Simon Couch is on a roll, and released the cool gander package in early 2025. 
+
+gander leverages ellmer to go beyond a chat box and actually incorporate a context-aware assisant into our IDE of choice. Works well in both RStudio and Positron, and can actually look for context in files and inside R environment (variable names, objects, function definitions, etc.)
+
+This short screen recording comes from the package readme and shows the tool in action:
+
+<figure>
+    <a href="https://github.com/user-attachments/assets/4aead453-c2f2-446b-8e81-9154fd3baab0"><img src="https://github.com/user-attachments/assets/4aead453-c2f2-446b-8e81-9154fd3baab0" width= "600" ></a>
+</figure>
+
+This feels similar to using the continue extension in Positron but more oriented to R, and I'll likely be using this going forward.
+
+
+## [llmR](https://github.com/bakaburg1/llmR)
+
+llmr by Angelo D'Ambrosio provides a unified API to interact with various LLMs and providers through functions with consistent grammar and syntax. Provides easy switching between models, plus logging. Seems similar to elmer. Will try it soon. 
+
+* A similar package called [LLMR](https://cran.r-project.org/package=LLMR) recently appeared on CRAN but I could not find much materials about it.
+
+
+
+## [ragnar](https://github.com/t-kalinowski/ragnar)
+
+
+As the name implies, ragnar by Tomasz Kalinowski helps implement Retrieval-Augmented Generation (RAG) workflows in R with transparency and efficiency. Uses duckdb by default for efficient work with big data and currently supports ollama (more models likely to come soon). RAG is a way to link generative models with external resources rich in technical details to ultimately enhance the accuracy and reliability of models with real, citable facts.
+
+I liked the example in the readme, showing how the **R for Data Science** book was ingested and queried using the package. 
