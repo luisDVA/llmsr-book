@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Large Language Model tools for R",
     "section": "",
-    "text": "Welcome\n\n\n\nScreencaps from The Simpsons (Fox)\n\n\nHello! This is an ongoing roundup of useful developments in the LLM/genAI space, with a specific focus on R.\nFor teaching purposes and to help me keep track of what’s happening, I’ve put together this draft listing of relevant LLM+R resources. This was initially a post on my blog from late 2024, but this book format should be easier to navigate. I will update the content periodically when new tools come out and/or when people bring them to my attention.\nThe logos below link to each tool’s official site.\n\n\n\n    \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \n    \n  \n  \n    created with hexsession\n  \n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\nFeel free to send feedback or to edit this content via pull requests.",
+    "text": "Welcome\n👋 Hello! This is an ongoing roundup of useful developments in the LLM/genAI space, with a specific focus on R.\nFor teaching purposes and to help me keep track of what’s happening, I’ve put together this draft listing of relevant LLM+R resources. This was initially a post on my blog from late 2024, but this book format should be easier to navigate. I will update the content periodically when new tools come out and/or when people bring them to my attention.\nThe logos below link to each tool’s official site.\ncreated with hexsession\nFeel free to send feedback or to edit this content via pull requests.",
     "crumbs": [
       "Welcome"
     ]
@@ -14,7 +14,7 @@
     "href": "before-start.html",
     "title": "1  Read first",
     "section": "",
-    "text": "Here are some interesting and worthwhile reads to explore before getting hands-on with any of the tools listed on this site.\n\nIn my opinion, anyone using LLM-based assistants for coding should read this perspective published in Methods in Ecology and Evolution: Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution, led by Natalie Cooper, and part of a special issue on the use of LLMs in ecology and evolution. These papers summarize the pros and cons of genAI/LLMs in the context of research and teaching, and their conclusions go beyond research and biological sciences.\nAnother useful resource is this course The Bullshit Machines put together Carl T. Bergstrom and Jevin D. West. A very thoughtful and well-structured set of materials that dig through the smoke and highlight the fact that just because a machine can write like us it does not mean it can think like us.\nAs an instructor, I am not alone in noticing that lately, a variable proportion of learners are using ChatGPT and similar tools to assist them in and after various R-related workshops. The Carpentries foundation have this interesting two-part series on teaching LLM-based coding assistants in Carpentries workshops. The results here mention patterns of usage, advantages and disadvantages of actually teaching how to use these assistants, and throughout 2025 there will be ongoing discussion about ethics, security, and how to best teach in light of these new tools.\n\nWith that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.",
+    "text": "Here are some interesting and worthwhile reads to explore before getting hands-on with any of the tools listed on this site.\n\nIn my opinion, anyone using LLM-based assistants for coding should read this perspective published in Methods in Ecology and Evolution: Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution, led by Natalie Cooper, and part of a special issue on the use of LLMs in ecology and evolution. These papers summarize the pros and cons of genAI/LLMs in the context of research and teaching, and their conclusions go beyond research and biological sciences.\nAnother useful resource is this course: The Bullshit Machines put together Carl T. Bergstrom and Jevin D. West. A very thoughtful and well-structured set of materials that cuts through the smoke and highlights the fact that just because a machine can write like us it does not mean it can think like us.\nAs an instructor, I am not alone in noticing that lately, a variable proportion of learners are using ChatGPT and similar tools to assist them in and after various R-related workshops. The Carpentries foundation have this interesting two-part series on teaching LLM-based coding assistants in Carpentries workshops. The results here mention patterns of usage, advantages and disadvantages of actually teaching how to use these assistants, and throughout 2025 there will be ongoing discussion about ethics, security, and how to best teach in light of these new tools.\n\nWith that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Read first</span>"
     ]
@@ -24,7 +24,7 @@
     "href": "r-pkgs.html",
     "title": "2  R Packages",
     "section": "",
-    "text": "2.1 tidyllm\nThis section includes R packages that interface with LLM APIs or provide helpers, chats, or relevant addins.\nIn no particular order:\ntidyllm by Eduard Brüll provides pipe-friendly access to multiple LLM APIs in a smooth and readable way. We can pass images, documents, videos, and plots from the plot pane to the package functions, and the package has very thorough documentation. Similar in some ways to ellmer, but looks very useful for both batch processing and interactive work.",
+    "text": "2.1 General interfaces\nThis section includes R packages that interface with LLM APIs or provide helpers, chats, or relevant addins.\nIn no particular order, but now grouped into loose groups:",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
     ]
@@ -194,9 +194,89 @@
     "href": "courses.html",
     "title": "4  Further reading",
     "section": "",
-    "text": "Here are some courses and guides for actually using the LLM tools listed here\n\nDavid Keyes at R for the Rest of Us recently launched “Using AI with R”: a free, self-paced short course for using LLM-based assistants with R. Covers many of the tools and packages mentioned on this site.\n\nAlbert Rapp also has an in progress Quarto book “AI with R”, built from his existing blog posts for addressing different tasks using AI tool and not having to work in browser-based chat boxes. This resource includes some very well-written documentation for using mall and ellmer.\n\nLeonardo Collado Torres gave a short course that covered many of the packages and tools used here, and the recording is available on YouTube. The course materials also include useful step-by-step instructions for setting up and using copilot.\n\nRami Krispin recently shared a brief review of lang in a brief newsletter.",
+    "text": "Here are some courses and guides for actually using the LLM tools listed here\n\nDavid Keyes at R for the Rest of Us recently launched “Using AI with R”: a free, self-paced short course for using LLM-based assistants with R. Covers many of the tools and packages mentioned on this site.\n\nAlbert Rapp also has an in progress Quarto book “AI with R”, built from his existing blog posts for addressing different tasks using AI tool and not having to work in browser-based chat boxes. This resource includes some very well-written documentation for using mall and ellmer.\n\nLeonardo Collado Torres gave a short course that covered many of the packages and tools used here, and the recording is available on YouTube. The course materials also include useful step-by-step instructions for setting up and using copilot.\n\nRami Krispin recently shared a brief review of lang in a brief newsletter.\n\nMy fellow UQ alum Chris Brown, now at UTAS, shared this recent entry about summarizing key details from a methods section to assist in literature reviews. The example uses tidychatmodels and I particularly like Chris’ advice: “I’d also recommend you manually check results so that you still learn something yourself”.\n\nThis post by Nic Crane demonstrates how we can use ellmer and Shiny to build an app that creates posts for different social media platforms.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
+    ]
+  },
+  {
+    "objectID": "r-pkgs.html#ollama-based-tools-wrappers-and-helpers",
+    "href": "r-pkgs.html#ollama-based-tools-wrappers-and-helpers",
+    "title": "2  R Packages",
+    "section": "2.2 Ollama-based tools, wrappers and helpers",
+    "text": "2.2 Ollama-based tools, wrappers and helpers\n\n2.2.1 ollamar\n\nDeveloped by Hause Lin and Tawab Safi, ollamar Integrates R with Ollama, for running language models locally.\nWith ollamar we can pull different models, interact with objects that store chat histories, and handle the outputs as data frames, lists, or vectors.\nWorks nicely with httr2, which is a big advantage.\n\n\n2.2.2 rollama\n\nrollama by Johannes Gruber and Maximilian Weber wraps the Ollama API. Once we pull a model, we can work locally with various LLMs and perform tasks like annotation and text embedding.\nThe R functions used to interact with Ollama include a nice argument for specifying the format of the response (e.g., do we want plain text, lists, data frames, httr2, etc.). The package has useful vignettes for different usecases.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
+    ]
+  },
+  {
+    "objectID": "r-pkgs.html#mlverse",
+    "href": "r-pkgs.html#mlverse",
+    "title": "2  R Packages",
+    "section": "2.4 mlverse",
+    "text": "2.4 mlverse\n\n2.4.1 mall\n\nmall is part of the mlverse ecosystem of open source Data Science and Machine Learning libraries. Rather than a chat-based approach, mall applies LLMs rowwise in the columns of a data frame. Built-in prompts include translating, summarizing, extraction, and sentiment analysis of text strings.\nmall uses Ollama and is implemented for both R and Python. I will likely be using it to analyze the comments I collected about loaded packages, which I talked about in my posit::conf(2024) talk.\n\n\n2.4.2 lang\n\nlang is also part of the mlverse. This package uses LLMs to translate R documentation and display it in the help pane of Rstudio or Positron. Having participated in various translation initiatives, I am very wary of machine-translated function documentation and how it may affect new learners.\nThe best part of this package (in my opinion) is the infrastructure for package developers to help translate documentation that after editing can be shipped as part of package with multilingual help files.\n\n\n2.4.3 chattr\n\nchattr is also part of the mlverse. This package interfaces LLMs with R directly inside RStudio. Interaction with the models ideally happens through a Shiny app that runs inside the Viewer pane in RStudio.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
+    ]
+  },
+  {
+    "objectID": "r-pkgs.html#ellmer-and-friends",
+    "href": "r-pkgs.html#ellmer-and-friends",
+    "title": "2  R Packages",
+    "section": "2.5 ellmer and friends",
+    "text": "2.5 ellmer and friends\n\n2.5.1 ellmer\n\n\nnote that ellmer was previously called elmer, and was renamed in December 2024 to avoid case-insensitive clash with ELMER on bioconductor.\n\nellmer is a new tidyverse-adjacent package by Hadley Wickham and Joe Cheng for interacting in R with various models, either programmatically or interactively. elmer creates R6 chat objects that remember context, and we can interact with models with a console or browser-based chat box, or programmatically within R functions.\nSeems promising, quite flexible, and all the activity in the GitHub repo suggests a very active development process, a solid dev team, and lots of community input.\n\n\n2.5.2 hellmer\nTo batch process ellmer chats and their outputs, Dylan Pieper created hellmer. The package is loaded with useful features, has progress bars and helpful messages, and plays nicely with ellmer.\nI ran this example with gemini (after setting up the API key) and it worked great:\n\nlibrary(hellmer)\nchat &lt;- chat_batch(chat_gemini, system_prompt = \"Reply concisely in Spanish\")\n\nprompts &lt;- list(\n  \"What is factorial 10?\",\n  \"Name three Metallica Song\",\n  \"Count to 3.\",\n  \"Say hello.\",\n  \"What is the Capital of Ghana?\"\n)\n\nresult &lt;- chat$batch(prompts)\nresult$texts()\n\nThe list of results:\n\nresult$texts()\n[[1]]\n[1] \"3,628,800\\n\"\n[[2]]\n[1] \"*   Enter Sandman\\n*   Master of Puppets\\n*   Nothing Else Matters\\n\"\n[[3]]\n[1] \"Uno, dos, tres.\\n\"\n[[4]]\n[1] \"Hola.\\n\"\n[[5]]\n[1] \"Acra.\\n\"\n\n\n\n2.5.3 chores\n\n\nchores was prevously called pal but was renamed recently. See this issue for the discussion and reasoning behind the name change.\n\nchores by Simon Couch provides easy to use assistants that can edit, document, or explain code. The package provides an addin that works in both RStudio and Positron. Very cute package logo, and pal seems like a good option for writing boilerplate code and automating some of the more tedious, repetitive tasks. Works with multiple underlying models. Haven’t tried it yet.\n\nHere’s a tutorial in Spanish for using chores with custom assistants that can have different roles.\n\n\n\n2.5.4 gander\n\nSimon Couch is on a roll, and released the cool gander package in early 2025.\ngander leverages ellmer to go beyond a chat box and actually incorporate a context-aware assisant into our IDE of choice. Works well in both RStudio and Positron, and can actually look for context in files and inside R environment (variable names, objects, function definitions, etc.)\nThis short screen recording comes from the package readme and shows the tool in action:\n\n\n\nThis feels similar to using the continue extension in Positron but more oriented to R, and I’ll likely be using this going forward.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
+    ]
+  },
+  {
+    "objectID": "r-pkgs.html#rag-tools",
+    "href": "r-pkgs.html#rag-tools",
+    "title": "2  R Packages",
+    "section": "2.6 RAG tools",
+    "text": "2.6 RAG tools\n\n2.6.1 ragnar\nAs the name implies, ragnar by Tomasz Kalinowski helps implement Retrieval-Augmented Generation (RAG) workflows in R with transparency and efficiency. Uses duckdb by default for efficient work with big data and currently supports ollama (more models likely to come soon). RAG is a way to link generative models with external resources rich in technical details to ultimately enhance the accuracy and reliability of models with real, citable facts.\nI liked the example in the readme, showing how the R for Data Science book was ingested and queried using the package.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Large Language Model tools for R",
+    "section": "About me",
+    "text": "About me\nI am a mammal macroecologist and biodiversity data scientist. Check out my personal page for other content and more details.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "r-pkgs.html#general-interfaces",
+    "href": "r-pkgs.html#general-interfaces",
+    "title": "2  R Packages",
+    "section": "",
+    "text": "2.1.1 llmR\nllmr by Angelo D’Ambrosio provides a unified API to interact with various LLMs and providers through functions with consistent grammar and syntax. Provides easy switching between models, plus logging. Seems similar to elmer. Will try it soon.\n\nA similar package called LLMR recently appeared on CRAN but I could not find much materials about it.\n\n\n\n2.1.2 tidychatmodels\n\nA pipe-friendly interface to many chatbot vendors. Developed by Albert Rapp, tidychatmodels follows the modular nature of tidymodels and uses httr2 to communicate with different models. Good documentation, examples, and a clear video walkthrough on YouTube.\n\n\n2.1.3 tidyllm\n\ntidyllm by Eduard Brüll provides pipe-friendly access to multiple LLM APIs in a smooth and readable way. We can pass images, documents, videos, and plots from the plot pane to the package functions, and the package has very thorough documentation. Similar in some ways to ellmer, but looks very useful for both batch processing and interactive work.\n\n\n2.1.4 gemini.R\n\ngemini.R by Jinhwan Kim connects R with Google’s gemini model via the gemini API. With a valid API key, the gemini() function takes text prompts and the gemini_image() function can work with images and text prompts.\nThe package algo provides an RStudio addin for creating Roxygen documentation.\nI recently used the Gemini Flash 2 model to pull information from a scanned PDF with decent success.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
+    ]
+  },
+  {
+    "objectID": "r-pkgs.html#unit-testing-helpers",
+    "href": "r-pkgs.html#unit-testing-helpers",
+    "title": "2  R Packages",
+    "section": "2.3 Unit testing helpers",
+    "text": "2.3 Unit testing helpers\n\n2.3.1 ensure\nensure by Simon Couch helps write code for unit tests using the testthat package. Works through an Rstudio addin, and the documentation mentions that the model has been made aware of testthat syntax and the tidy style guide for code. Will be trying it out for my more recent packages that still have poor test coverage.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
+    ]
+  },
+  {
+    "objectID": "r-pkgs.html#computer-vision",
+    "href": "r-pkgs.html#computer-vision",
+    "title": "2  R Packages",
+    "section": "2.7 Computer Vision",
+    "text": "2.7 Computer Vision\n\n2.7.1 kuzco\n\nkuzco by Frank Hull & Johannes Breuer leverages ollamar and ellmer to provide a computer vision assistant right inside R, using LLMs as an alternative to torch for tasks including image classification, recognition, sentiment, and text extraction. The output provided comes in very nice and usable tibbles.\nCool hex logo and the example in the readme features a very cute puppy :3",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
     ]
   }
 ]

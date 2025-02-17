@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -163,20 +197,43 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#tidyllm" id="toc-tidyllm" class="nav-link active" data-scroll-target="#tidyllm"><span class="header-section-number">2.1</span> tidyllm</a></li>
-  <li><a href="#ollamar" id="toc-ollamar" class="nav-link" data-scroll-target="#ollamar"><span class="header-section-number">2.2</span> ollamar</a></li>
-  <li><a href="#rollama" id="toc-rollama" class="nav-link" data-scroll-target="#rollama"><span class="header-section-number">2.3</span> rollama</a></li>
-  <li><a href="#ensure" id="toc-ensure" class="nav-link" data-scroll-target="#ensure"><span class="header-section-number">2.4</span> ensure</a></li>
-  <li><a href="#gemini.r" id="toc-gemini.r" class="nav-link" data-scroll-target="#gemini.r"><span class="header-section-number">2.5</span> gemini.R</a></li>
-  <li><a href="#mall" id="toc-mall" class="nav-link" data-scroll-target="#mall"><span class="header-section-number">2.6</span> mall</a></li>
-  <li><a href="#lang" id="toc-lang" class="nav-link" data-scroll-target="#lang"><span class="header-section-number">2.7</span> lang</a></li>
-  <li><a href="#chattr" id="toc-chattr" class="nav-link" data-scroll-target="#chattr"><span class="header-section-number">2.8</span> chattr</a></li>
-  <li><a href="#ellmer" id="toc-ellmer" class="nav-link" data-scroll-target="#ellmer"><span class="header-section-number">2.9</span> ellmer</a></li>
-  <li><a href="#pal" id="toc-pal" class="nav-link" data-scroll-target="#pal"><span class="header-section-number">2.10</span> pal</a></li>
-  <li><a href="#kuzco" id="toc-kuzco" class="nav-link" data-scroll-target="#kuzco"><span class="header-section-number">2.11</span> kuzco</a></li>
-  <li><a href="#gander" id="toc-gander" class="nav-link" data-scroll-target="#gander"><span class="header-section-number">2.12</span> gander</a></li>
-  <li><a href="#llmr" id="toc-llmr" class="nav-link" data-scroll-target="#llmr"><span class="header-section-number">2.13</span> llmR</a></li>
-  <li><a href="#ragnar" id="toc-ragnar" class="nav-link" data-scroll-target="#ragnar"><span class="header-section-number">2.14</span> ragnar</a></li>
+  <li><a href="#general-interfaces" id="toc-general-interfaces" class="nav-link active" data-scroll-target="#general-interfaces"><span class="header-section-number">2.1</span> General interfaces</a>
+  <ul class="collapse">
+  <li><a href="#llmr" id="toc-llmr" class="nav-link" data-scroll-target="#llmr"><span class="header-section-number">2.1.1</span> llmR</a></li>
+  <li><a href="#tidychatmodels" id="toc-tidychatmodels" class="nav-link" data-scroll-target="#tidychatmodels"><span class="header-section-number">2.1.2</span> tidychatmodels</a></li>
+  <li><a href="#tidyllm" id="toc-tidyllm" class="nav-link" data-scroll-target="#tidyllm"><span class="header-section-number">2.1.3</span> tidyllm</a></li>
+  <li><a href="#gemini.r" id="toc-gemini.r" class="nav-link" data-scroll-target="#gemini.r"><span class="header-section-number">2.1.4</span> gemini.R</a></li>
+  </ul></li>
+  <li><a href="#ollama-based-tools-wrappers-and-helpers" id="toc-ollama-based-tools-wrappers-and-helpers" class="nav-link" data-scroll-target="#ollama-based-tools-wrappers-and-helpers"><span class="header-section-number">2.2</span> Ollama-based tools, wrappers and helpers</a>
+  <ul class="collapse">
+  <li><a href="#ollamar" id="toc-ollamar" class="nav-link" data-scroll-target="#ollamar"><span class="header-section-number">2.2.1</span> ollamar</a></li>
+  <li><a href="#rollama" id="toc-rollama" class="nav-link" data-scroll-target="#rollama"><span class="header-section-number">2.2.2</span> rollama</a></li>
+  </ul></li>
+  <li><a href="#unit-testing-helpers" id="toc-unit-testing-helpers" class="nav-link" data-scroll-target="#unit-testing-helpers"><span class="header-section-number">2.3</span> Unit testing helpers</a>
+  <ul class="collapse">
+  <li><a href="#ensure" id="toc-ensure" class="nav-link" data-scroll-target="#ensure"><span class="header-section-number">2.3.1</span> ensure</a></li>
+  </ul></li>
+  <li><a href="#mlverse" id="toc-mlverse" class="nav-link" data-scroll-target="#mlverse"><span class="header-section-number">2.4</span> mlverse</a>
+  <ul class="collapse">
+  <li><a href="#mall" id="toc-mall" class="nav-link" data-scroll-target="#mall"><span class="header-section-number">2.4.1</span> mall</a></li>
+  <li><a href="#lang" id="toc-lang" class="nav-link" data-scroll-target="#lang"><span class="header-section-number">2.4.2</span> lang</a></li>
+  <li><a href="#chattr" id="toc-chattr" class="nav-link" data-scroll-target="#chattr"><span class="header-section-number">2.4.3</span> chattr</a></li>
+  </ul></li>
+  <li><a href="#ellmer-and-friends" id="toc-ellmer-and-friends" class="nav-link" data-scroll-target="#ellmer-and-friends"><span class="header-section-number">2.5</span> ellmer and friends</a>
+  <ul class="collapse">
+  <li><a href="#ellmer" id="toc-ellmer" class="nav-link" data-scroll-target="#ellmer"><span class="header-section-number">2.5.1</span> ellmer</a></li>
+  <li><a href="#hellmer" id="toc-hellmer" class="nav-link" data-scroll-target="#hellmer"><span class="header-section-number">2.5.2</span> hellmer</a></li>
+  <li><a href="#chores" id="toc-chores" class="nav-link" data-scroll-target="#chores"><span class="header-section-number">2.5.3</span> chores</a></li>
+  <li><a href="#gander" id="toc-gander" class="nav-link" data-scroll-target="#gander"><span class="header-section-number">2.5.4</span> gander</a></li>
+  </ul></li>
+  <li><a href="#rag-tools" id="toc-rag-tools" class="nav-link" data-scroll-target="#rag-tools"><span class="header-section-number">2.6</span> RAG tools</a>
+  <ul class="collapse">
+  <li><a href="#ragnar" id="toc-ragnar" class="nav-link" data-scroll-target="#ragnar"><span class="header-section-number">2.6.1</span> ragnar</a></li>
+  </ul></li>
+  <li><a href="#computer-vision" id="toc-computer-vision" class="nav-link" data-scroll-target="#computer-vision"><span class="header-section-number">2.7</span> Computer Vision</a>
+  <ul class="collapse">
+  <li><a href="#kuzco" id="toc-kuzco" class="nav-link" data-scroll-target="#kuzco"><span class="header-section-number">2.7.1</span> kuzco</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -203,79 +260,136 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 
 
 <p>This section includes R packages that interface with LLM APIs or provide helpers, chats, or relevant addins.</p>
-<p>In no particular order:</p>
-<section id="tidyllm" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="tidyllm"><span class="header-section-number">2.1</span> <a href="https://edubruell.github.io/tidyllm/">tidyllm</a></h2>
-<p><img src="images/hex/tidyllm.png" align="right" height="108" alt=""></p>
+<p>In no particular order, but now grouped into loose groups:</p>
+<section id="general-interfaces" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="general-interfaces"><span class="header-section-number">2.1</span> General interfaces</h2>
+<section id="llmr" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="llmr"><span class="header-section-number">2.1.1</span> <a href="https://github.com/bakaburg1/llmR">llmR</a></h3>
+<p>llmr by Angelo D’Ambrosio provides a unified API to interact with various LLMs and providers through functions with consistent grammar and syntax. Provides easy switching between models, plus logging. Seems similar to elmer. Will try it soon.</p>
+<ul>
+<li>A similar package called <a href="https://cran.r-project.org/package=LLMR">LLMR</a> recently appeared on CRAN but I could not find much materials about it.</li>
+</ul>
+</section>
+<section id="tidychatmodels" class="level3" data-number="2.1.2">
+<h3 data-number="2.1.2" class="anchored" data-anchor-id="tidychatmodels"><span class="header-section-number">2.1.2</span> <a href="https://tidychatmodels.albert-rapp.de/">tidychatmodels</a></h3>
+<p><img src="images/hex/tidychatmodels.png" align="right" height="108"></p>
+<p>A pipe-friendly interface to many chatbot vendors. Developed by Albert Rapp, tidychatmodels follows the modular nature of tidymodels and uses httr2 to communicate with different models. Good documentation, examples, and a clear video walkthrough on YouTube.</p>
+</section>
+<section id="tidyllm" class="level3" data-number="2.1.3">
+<h3 data-number="2.1.3" class="anchored" data-anchor-id="tidyllm"><span class="header-section-number">2.1.3</span> <a href="https://edubruell.github.io/tidyllm/">tidyllm</a></h3>
+<p><img src="images/hex/tidyllm.png" align="right" height="108"></p>
 <p>tidyllm by Eduard Brüll provides pipe-friendly access to multiple LLM APIs in a smooth and readable way. We can pass images, documents, videos, and plots from the plot pane to the package functions, and the package has very thorough documentation. Similar in some ways to ellmer, but looks very useful for both batch processing and interactive work.</p>
 </section>
-<section id="ollamar" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="ollamar"><span class="header-section-number">2.2</span> <a href="https://hauselin.github.io/ollama-r/">ollamar</a></h2>
-<p><img src="images/hex/ollogo.png" align="right" height="108" alt=""></p>
-<p>Developed by Hause Lin and Tawab Safi, ollamar Integrates R with Ollama, for running language models locally.</p>
-<p>With ollamar we can pull different models, interact with objects that store chat histories, and handle the outputs as data frames, lists, or vectors.</p>
-<p>Works nicely with httr2, which is a big advantage.</p>
-</section>
-<section id="rollama" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="rollama"><span class="header-section-number">2.3</span> <a href="https://jbgruber.github.io/rollama/">rollama</a></h2>
-<p><img src="images/hex/rollamalogo.png" align="right" height="108" alt=""></p>
-<p>rollama by Johannes Gruber and Maximilian Weber wraps the Ollama API. Once we pull a model, we can work locally with various LLMs and perform tasks like annotation and text embedding.</p>
-<p>The R functions used to interact with Ollama include a nice argument for specifying the format of the response (e.g., do we want plain text, lists, data frames, httr2, etc.). The package has useful vignettes for different usecases.</p>
-</section>
-<section id="ensure" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="ensure"><span class="header-section-number">2.4</span> <a href="https://simonpcouch.github.io/ensure/">ensure</a></h2>
-<p>ensure by Simon Couch helps write code for unit tests using the testthat package. Works through an Rstudio addin, and the documentation mentions that the model has been made aware of testthat syntax and the tidy style guide for code. Will be trying it out for my more recent packages that still have poor test coverage.</p>
-</section>
-<section id="gemini.r" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="gemini.r"><span class="header-section-number">2.5</span> <a href="https://jhk0530.github.io/gemini.R/">gemini.R</a></h2>
-<p><img src="images/hex/gemini.png" align="right" height="108" alt=""></p>
+<section id="gemini.r" class="level3" data-number="2.1.4">
+<h3 data-number="2.1.4" class="anchored" data-anchor-id="gemini.r"><span class="header-section-number">2.1.4</span> <a href="https://jhk0530.github.io/gemini.R/">gemini.R</a></h3>
+<p><img src="images/hex/gemini.png" align="right" height="108"></p>
 <p>gemini.R by Jinhwan Kim connects R with Google’s gemini model via the gemini API. With a valid API key, the <code>gemini()</code> function takes text prompts and the <code>gemini_image()</code> function can work with images and text prompts.</p>
 <p>The package algo provides an RStudio addin for creating Roxygen documentation.</p>
 <p>I recently used the Gemini Flash 2 model to pull information from a scanned PDF with decent success.</p>
 </section>
-<section id="mall" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="mall"><span class="header-section-number">2.6</span> <a href="https://mlverse.github.io/mall/">mall</a></h2>
-<p><img src="images/hex/malllogo.png" align="right" height="108" alt=""></p>
+</section>
+<section id="ollama-based-tools-wrappers-and-helpers" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="ollama-based-tools-wrappers-and-helpers"><span class="header-section-number">2.2</span> Ollama-based tools, wrappers and helpers</h2>
+<section id="ollamar" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="ollamar"><span class="header-section-number">2.2.1</span> <a href="https://hauselin.github.io/ollama-r/">ollamar</a></h3>
+<p><img src="images/hex/ollogo.png" align="right" height="108"></p>
+<p>Developed by Hause Lin and Tawab Safi, ollamar Integrates R with Ollama, for running language models locally.</p>
+<p>With ollamar we can pull different models, interact with objects that store chat histories, and handle the outputs as data frames, lists, or vectors.</p>
+<p>Works nicely with httr2, which is a big advantage.</p>
+</section>
+<section id="rollama" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="rollama"><span class="header-section-number">2.2.2</span> <a href="https://jbgruber.github.io/rollama/">rollama</a></h3>
+<p><img src="images/hex/rollamalogo.png" align="right" height="108"></p>
+<p>rollama by Johannes Gruber and Maximilian Weber wraps the Ollama API. Once we pull a model, we can work locally with various LLMs and perform tasks like annotation and text embedding.</p>
+<p>The R functions used to interact with Ollama include a nice argument for specifying the format of the response (e.g., do we want plain text, lists, data frames, httr2, etc.). The package has useful vignettes for different usecases.</p>
+</section>
+</section>
+<section id="unit-testing-helpers" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="unit-testing-helpers"><span class="header-section-number">2.3</span> Unit testing helpers</h2>
+<section id="ensure" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="ensure"><span class="header-section-number">2.3.1</span> <a href="https://simonpcouch.github.io/ensure/">ensure</a></h3>
+<p>ensure by Simon Couch helps write code for unit tests using the testthat package. Works through an Rstudio addin, and the documentation mentions that the model has been made aware of testthat syntax and the tidy style guide for code. Will be trying it out for my more recent packages that still have poor test coverage.</p>
+</section>
+</section>
+<section id="mlverse" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="mlverse"><span class="header-section-number">2.4</span> mlverse</h2>
+<section id="mall" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="mall"><span class="header-section-number">2.4.1</span> <a href="https://mlverse.github.io/mall/">mall</a></h3>
+<p><img src="images/hex/malllogo.png" align="right" height="108"></p>
 <p>mall is part of the mlverse ecosystem of open source Data Science and Machine Learning libraries. Rather than a chat-based approach, mall applies LLMs rowwise in the columns of a data frame. Built-in prompts include translating, summarizing, extraction, and sentiment analysis of text strings.</p>
 <p>mall uses Ollama and is implemented for both R and Python. I will likely be using it to analyze the comments I collected about loaded packages, which I talked about in my posit::conf(2024) talk.</p>
 </section>
-<section id="lang" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="lang"><span class="header-section-number">2.7</span> <a href="https://mlverse.github.io/lang/">lang</a></h2>
-<p><img src="images/hex/mlverse.png" align="right" height="108" alt=""></p>
+<section id="lang" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="lang"><span class="header-section-number">2.4.2</span> <a href="https://mlverse.github.io/lang/">lang</a></h3>
+<p><img src="images/hex/mlverse.png" align="right" height="108"></p>
 <p>lang is also part of the mlverse. This package uses LLMs to translate R documentation and display it in the help pane of Rstudio or Positron. Having participated in various translation initiatives, I am very wary of machine-translated function documentation and how it may affect new learners.</p>
 <p>The best part of this package (in my opinion) is the infrastructure for package developers to help translate documentation that after editing can be shipped as part of package with multilingual help files.</p>
 </section>
-<section id="chattr" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="chattr"><span class="header-section-number">2.8</span> <a href="https://mlverse.github.io/chattr/">chattr</a></h2>
-<p><img src="images/hex/chattrlogo.png" align="right" height="108" alt=""></p>
+<section id="chattr" class="level3" data-number="2.4.3">
+<h3 data-number="2.4.3" class="anchored" data-anchor-id="chattr"><span class="header-section-number">2.4.3</span> <a href="https://mlverse.github.io/chattr/">chattr</a></h3>
+<p><img src="images/hex/chattrlogo.png" align="right" height="108"></p>
 <p>chattr is also part of the mlverse. This package interfaces LLMs with R directly inside RStudio. Interaction with the models ideally happens through a Shiny app that runs inside the Viewer pane in RStudio.</p>
 </section>
-<section id="ellmer" class="level2" data-number="2.9">
-<h2 data-number="2.9" class="anchored" data-anchor-id="ellmer"><span class="header-section-number">2.9</span> <a href="http://ellmer.tidyverse.org/">ellmer</a></h2>
-<p><img src="images/hex/ellmerlogo.png" align="right" height="108" alt=""></p>
+</section>
+<section id="ellmer-and-friends" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="ellmer-and-friends"><span class="header-section-number">2.5</span> ellmer and friends</h2>
+<section id="ellmer" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="ellmer"><span class="header-section-number">2.5.1</span> <a href="http://ellmer.tidyverse.org/">ellmer</a></h3>
+<p><img src="images/hex/ellmerlogo.png" align="right" height="108"></p>
 <blockquote class="blockquote">
 <p>note that ellmer was previously called elmer, and was renamed in December 2024 to avoid case-insensitive clash with ELMER on bioconductor.</p>
 </blockquote>
 <p>ellmer is a new tidyverse-adjacent package by Hadley Wickham and Joe Cheng for interacting in R with various models, either programmatically or interactively. elmer creates R6 chat objects that remember context, and we can interact with models with a console or browser-based chat box, or programmatically within R functions.</p>
 <p>Seems promising, quite flexible, and all the activity in the GitHub repo suggests a very active development process, a solid dev team, and lots of community input.</p>
 </section>
-<section id="pal" class="level2" data-number="2.10">
-<h2 data-number="2.10" class="anchored" data-anchor-id="pal"><span class="header-section-number">2.10</span> <a href="https://simonpcouch.github.io/pal/">pal</a></h2>
-<p><img src="images/hex/pallogo.png" align="right" height="108" alt=""></p>
-<p>pal by Simon Couch provides easy to use assistants that can edit, document, or explain code. The package provides an addin that works in both RStudio and Positron. Very cute package logo, and pal seems like a good option for writing boilerplate code and automating some of the more tedious, repetitive tasks. Works with multiple underlying models. Haven’t tried it yet.</p>
+<section id="hellmer" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="hellmer"><span class="header-section-number">2.5.2</span> <a href="https://dylanpieper.github.io/hellmer/">hellmer</a></h3>
+<p>To batch process ellmer chats and their outputs, Dylan Pieper created hellmer. The package is loaded with useful features, has progress bars and helpful messages, and plays nicely with ellmer.</p>
+<p>I ran this example with gemini (after setting up the API key) and it worked great:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(hellmer)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>chat <span class="ot">&lt;-</span> <span class="fu">chat_batch</span>(chat_gemini, <span class="at">system_prompt =</span> <span class="st">"Reply concisely in Spanish"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>prompts <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"What is factorial 10?"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Name three Metallica Song"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Count to 3."</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Say hello."</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"What is the Capital of Ghana?"</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> chat<span class="sc">$</span><span class="fu">batch</span>(prompts)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>result<span class="sc">$</span><span class="fu">texts</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The list of results:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>result<span class="sc">$</span><span class="fu">texts</span>()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">1</span>]]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"3,628,800</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">2</span>]]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"*   Enter Sandman</span><span class="sc">\n</span><span class="st">*   Master of Puppets</span><span class="sc">\n</span><span class="st">*   Nothing Else Matters</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">3</span>]]</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"Uno, dos, tres.</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">4</span>]]</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"Hola.</span><span class="sc">\n</span><span class="st">"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">5</span>]]</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"Acra.</span><span class="sc">\n</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="chores" class="level3" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="chores"><span class="header-section-number">2.5.3</span> <a href="https://simonpcouch.github.io/chores/">chores</a></h3>
+<p><img src="images/hex/choreslogo.png" align="right" height="108"></p>
+<blockquote class="blockquote">
+<p>chores was prevously called pal but was renamed recently. See this <a href="https://github.com/simonpcouch/chores/issues/83">issue</a> for the discussion and reasoning behind the name change.</p>
+</blockquote>
+<p>chores by Simon Couch provides easy to use assistants that can edit, document, or explain code. The package provides an addin that works in both RStudio and Positron. Very cute package logo, and pal seems like a good option for writing boilerplate code and automating some of the more tedious, repetitive tasks. Works with multiple underlying models. Haven’t tried it yet.</p>
 <ul>
-<li>Here’s a <a href="https://bastianolea.rbind.io/blog/pal_asistentes_llm/">tutorial</a> in Spanish for using pal with custom assistants that can have different roles.</li>
+<li>Here’s a <a href="https://bastianolea.rbind.io/blog/pal_asistentes_llm/">tutorial</a> in Spanish for using chores with custom assistants that can have different roles.</li>
 </ul>
 </section>
-<section id="kuzco" class="level2" data-number="2.11">
-<h2 data-number="2.11" class="anchored" data-anchor-id="kuzco"><span class="header-section-number">2.11</span> <a href="https://github.com/frankiethull/kuzco">kuzco</a></h2>
-<p><img src="images/hex/kuzco.png" align="right" height="108" alt=""></p>
-<p>kuzco by Frank Hull &amp; Johannes Breuer leverages ollamar and ellmer to provide a computer vision assistant right inside R, using LLMs as an alternative to torch for tasks including image classification, recognition, sentiment, and text extraction. The output provided comes in very nice and usable tibbles.</p>
-<p>Cool hex logo and the example in the readme features a very cute puppy :3</p>
-</section>
-<section id="gander" class="level2" data-number="2.12">
-<h2 data-number="2.12" class="anchored" data-anchor-id="gander"><span class="header-section-number">2.12</span> <a href="https://github.com/simonpcouch/gander/">gander</a></h2>
-<p><img src="images/hex/logo.png" align="right" height="108" alt=""></p>
+<section id="gander" class="level3" data-number="2.5.4">
+<h3 data-number="2.5.4" class="anchored" data-anchor-id="gander"><span class="header-section-number">2.5.4</span> <a href="https://github.com/simonpcouch/gander/">gander</a></h3>
+<p><img src="images/hex/logo.png" align="right" height="108"></p>
 <p>Simon Couch is on a roll, and released the cool gander package in early 2025.</p>
 <p>gander leverages ellmer to go beyond a chat box and actually incorporate a context-aware assisant into our IDE of choice. Works well in both RStudio and Positron, and can actually look for context in files and inside R environment (variable names, objects, function definitions, etc.)</p>
 <p>This short screen recording comes from the package readme and shows the tool in action:</p>
@@ -284,19 +398,25 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </figure>
 <p>This feels similar to using the continue extension in Positron but more oriented to R, and I’ll likely be using this going forward.</p>
 </section>
-<section id="llmr" class="level2" data-number="2.13">
-<h2 data-number="2.13" class="anchored" data-anchor-id="llmr"><span class="header-section-number">2.13</span> <a href="https://github.com/bakaburg1/llmR">llmR</a></h2>
-<p>llmr by Angelo D’Ambrosio provides a unified API to interact with various LLMs and providers through functions with consistent grammar and syntax. Provides easy switching between models, plus logging. Seems similar to elmer. Will try it soon.</p>
-<ul>
-<li>A similar package called <a href="https://cran.r-project.org/package=LLMR">LLMR</a> recently appeared on CRAN but I could not find much materials about it.</li>
-</ul>
 </section>
-<section id="ragnar" class="level2" data-number="2.14">
-<h2 data-number="2.14" class="anchored" data-anchor-id="ragnar"><span class="header-section-number">2.14</span> <a href="https://github.com/t-kalinowski/ragnar">ragnar</a></h2>
+<section id="rag-tools" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="rag-tools"><span class="header-section-number">2.6</span> RAG tools</h2>
+<section id="ragnar" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="ragnar"><span class="header-section-number">2.6.1</span> <a href="https://github.com/t-kalinowski/ragnar">ragnar</a></h3>
 <p>As the name implies, ragnar by Tomasz Kalinowski helps implement Retrieval-Augmented Generation (RAG) workflows in R with transparency and efficiency. Uses duckdb by default for efficient work with big data and currently supports ollama (more models likely to come soon). RAG is a way to link generative models with external resources rich in technical details to ultimately enhance the accuracy and reliability of models with real, citable facts.</p>
 <p>I liked the example in the readme, showing how the <strong>R for Data Science</strong> book was ingested and queried using the package.</p>
+</section>
+</section>
+<section id="computer-vision" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="computer-vision"><span class="header-section-number">2.7</span> Computer Vision</h2>
+<section id="kuzco" class="level3" data-number="2.7.1">
+<h3 data-number="2.7.1" class="anchored" data-anchor-id="kuzco"><span class="header-section-number">2.7.1</span> <a href="https://github.com/frankiethull/kuzco">kuzco</a></h3>
+<p><img src="images/hex/kuzco.png" align="right" height="108"></p>
+<p>kuzco by Frank Hull &amp; Johannes Breuer leverages ollamar and ellmer to provide a computer vision assistant right inside R, using LLMs as an alternative to torch for tasks including image classification, recognition, sentiment, and text extraction. The output provided comes in very nice and usable tibbles.</p>
+<p>Cool hex logo and the example in the readme features a very cute puppy :3</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

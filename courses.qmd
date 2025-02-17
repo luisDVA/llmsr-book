@@ -17,3 +17,12 @@ Leonardo Collado Torres gave a short course that covered many of the packages an
 </br>
 
 Rami Krispin recently shared a brief review of [lang](r-pkgs.qmd#lang) in a brief [newsletter](https://www.linkedin.com/pulse/lang-project-effective-visualization-llm-course-more-rami-krispin-mn3oc/).
+
+</br>
+
+My fellow UQ alum Chris Brown, now at UTAS, shared this recent entry about [summarizing key details from a methods section](https://www.seascapemodels.org/rstats/2025/02/12/LLMs-for-literature-reviews.html) to assist in literature reviews. The example uses [tidychatmodels](r-pkgs.qmd#tidychatmodels) and I particularly like Chris' advice: **"I’d also recommend you manually check results so that you still learn something yourself"**.
+
+
+</br>
+
+This post by Nic Crane demonstrates how we can use [ellmer](r-pkgs.qmd#ellmer) and Shiny to build an app that [creates posts for different social media platforms](https://niccrane.com/posts/socalmediagen2/).
