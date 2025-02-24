@@ -14,6 +14,12 @@ As an instructor, I am not alone in noticing that lately, a variable proportion 
 
 </br>
 
+This [PNAS paper](https://www.pnas.org/doi/10.1073/pnas.2416228122) by Bai et al. (available at [UChicago Knowledge](https://knowledge.uchicago.edu/record/14602)) is also very relevant. With two measures that come from psychological research and are meant to measure implicit bias, the authors found that LMMs still have pervasive stereotype
+biases mirroring those in society. As a simple example of the results: models generally picked woman-coded names (Julia) to discuss weddings and male-coded names (Ben) to discuss management.
+
+
+---
+
 With that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.
 
 
