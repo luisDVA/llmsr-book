@@ -1,8 +1,14 @@
 # Further reading {#sec-courses}
 
-Here are some courses and guides for actually using the LLM tools listed here
+Here are some courses and guides for actually using the LLM tools listed here. Newest entries at the top, and going forward I will record the date in which I added them.
 
 ------------------------------------------------------------------------
+
+This [long-form post](https://drmowinckels.io/blog/2025/ollama/) by Athanasia Mo Mowinckel goes through the setup process and various adventures for using various relevant tools including [ellmer](r-pkgs.qmd#ellmer) [chores](r-pkgs.qmd#chores), [gander](r-pkgs.qmd#gander) and [ensure](r-pkgs.qmd#ensure) with local ollama models for package development. The text shows that the tooling is not quite there yet, but on its way.   
+(**added 03032025**)
+
+
+</br>
 
 David Keyes at R for the Rest of Us recently launched "[Using AI with R](https://rfortherestofus.com/courses/ai)": a free, self-paced short course for using LLM-based assistants with R. Covers many of the tools and packages mentioned on this site.
 
@@ -14,9 +20,6 @@ Albert Rapp also has an in progress Quarto book "[AI with R](https://air.albert-
 
 Leonardo Collado Torres gave a short course that covered many of the packages and tools used here, and the recording is available on [YouTube](https://youtu.be/qWuoVQG5BZw?si=YM7Y2s3xfcEd2Sc6). The course materials also include useful step-by-step instructions for setting up and using copilot.
 
-</br>
-
-Rami Krispin recently shared a brief review of [lang](r-pkgs.qmd#lang) in a brief [newsletter](https://www.linkedin.com/pulse/lang-project-effective-visualization-llm-course-more-rami-krispin-mn3oc/).
 
 </br>
 
