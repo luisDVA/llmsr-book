@@ -4,8 +4,11 @@ Here are some courses and guides for actually using the LLM tools listed here. N
 
 ------------------------------------------------------------------------
 
+Here's a long-form [video ](https://youtu.be/-YiRWFXNDmk?si=TbSp_HZmwjOHF9aL) of Simon Couch as a guest on the R For the Rest of Us poodcast. The interview goes through a lot of relevant AI in R topics, an includes lots of detail on using [chores](r-pkgs.qmd#chores) and [gander](r-pkgs.qmd#gander).   (**added 10/03/2025**)
+</br>
+
 This [long-form post](https://drmowinckels.io/blog/2025/ollama/) by Athanasia Mo Mowinckel goes through the setup process and various adventures for using various relevant tools including [ellmer](r-pkgs.qmd#ellmer) [chores](r-pkgs.qmd#chores), [gander](r-pkgs.qmd#gander) and [ensure](r-pkgs.qmd#ensure) with local ollama models for package development. The text shows that the tooling is not quite there yet, but on its way.   
-(**added 03032025**)
+(**added 03/03/2025**)
 
 
 </br>
