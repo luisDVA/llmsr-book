@@ -4,7 +4,12 @@ Here are some courses and guides for actually using the LLM tools listed here. N
 
 ------------------------------------------------------------------------
 
-Here's a long-form [video ](https://youtu.be/-YiRWFXNDmk?si=TbSp_HZmwjOHF9aL) of Simon Couch as a guest on the R For the Rest of Us poodcast. The interview goes through a lot of relevant AI in R topics, an includes lots of detail on using [chores](r-pkgs.qmd#chores) and [gander](r-pkgs.qmd#gander).   (**added 10/03/2025**)
+This is beyond my skillset and experience level, but Javier Orraca-Deatcu recently (07/03/2025) posted "[Vector DB + RAG Maker](https://www.javierorracadeatcu.com/posts/2025-03-07-vector-db-and-rags/)". The post  introduces a "limited vector database and RAG system developed with Python, made for R users, designed to generate bleeding-edge responses from challenging LLM prompts using your local R technical documentation".  Looks fun and promising.   
+(**added 18/03/2025**)
+
+
+
+Here's a long-form [video ](https://youtu.be/-YiRWFXNDmk?si=TbSp_HZmwjOHF9aL) of Simon Couch as a guest on the R For the Rest of Us podcast. The interview goes through a lot of relevant AI in R topics, an includes lots of detail on using [chores](r-pkgs.qmd#chores) and [gander](r-pkgs.qmd#gander).   (**added 10/03/2025**)
 </br>
 
 This [long-form post](https://drmowinckels.io/blog/2025/ollama/) by Athanasia Mo Mowinckel goes through the setup process and various adventures for using various relevant tools including [ellmer](r-pkgs.qmd#ellmer) [chores](r-pkgs.qmd#chores), [gander](r-pkgs.qmd#gander) and [ensure](r-pkgs.qmd#ensure) with local ollama models for package development. The text shows that the tooling is not quite there yet, but on its way.   
@@ -28,6 +33,9 @@ Leonardo Collado Torres gave a short course that covered many of the packages an
 
 My fellow UQ alum Chris Brown, now at UTAS, shared this recent entry about [summarizing key details from a methods section](https://www.seascapemodels.org/rstats/2025/02/12/LLMs-for-literature-reviews.html) to assist in literature reviews. The example uses [tidychatmodels](r-pkgs.qmd#tidychatmodels) and I particularly like Chris' advice: **"I’d also recommend you manually check results so that you still learn something yourself"**.
 
+::: {.callout-note}
+This post now has a follow-up entry (published 15/03/2025, added here 18/03/2025) which uses [ellmer](r-pkgs.qmd#ellmer) for the same task of literature review. Very detailed step-by-step instruction and a thoughtful discussion at the end. 
+:::
 
 </br>
 

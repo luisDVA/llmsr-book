@@ -165,6 +165,7 @@ This short screen recording comes from the package readme and shows the tool in 
 
 This feels similar to using the continue extension in Positron but more oriented to R, and I'll likely be using this going forward.
 
+gander now has an [official introduction](https://posit.co/blog/introducing-gander/) on the Posit Blog  (published 17/03/2025).
 
 ## RAG tools
 

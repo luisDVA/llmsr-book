@@ -18,6 +18,8 @@ This [PNAS paper](https://www.pnas.org/doi/10.1073/pnas.2416228122) by Bai et al
 biases mirroring those in society. As a simple example of the results: models generally picked woman-coded names (Julia) to discuss weddings and male-coded names (Ben) to discuss management.
 
 
+Because this guide in general is focused on writing code using LLMs, this post by Simon Willison titled "[Here’s how I use LLMs to help me write code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)" (published 11/30/2025;  added here 18/03/2025) really distills the process of getting LLMs to write decent code without frustration. Important topics in the post include context and training cut-off dates.
+
 ---
 
 With that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.
