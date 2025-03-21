@@ -150,6 +150,13 @@ chores by Simon Couch provides easy to use assistants that can edit, document, o
 
 -   Here's a [tutorial](https://bastianolea.rbind.io/blog/pal_asistentes_llm/) in Spanish for using chores with custom assistants that can have different roles.
 
+### [ggpal2](https://github.com/frankiethull/ggpal2)
+<img src="images/hex/ggpal2.png" align="right" height="108"/>
+
+ggpal2 is an extension package for `chores` developed by Frank Hull. ggpal2 provides an LLM-powered assistant prompt-engineered specifically for working with `ggplot2`. Like chores and gander, we highlight code or text and through an addin and customizable shortcut: we can swap base R code with ggplot2, create a plot from a comment, or get suggestions for accesibility and readability for existing ggplot2 code.
+
+A nice example of extending chores and leveraging ellmer through a set of well written prompts. 
+
 
 ### [gander](https://github.com/simonpcouch/gander/)
 
@@ -179,9 +186,18 @@ I liked the example in the readme, showing how the **R for Data Science** book w
 ## Computer Vision
 
 ### [kuzco](https://github.com/frankiethull/kuzco)
-
 <img src="images/hex/kuzco.png" align="right" height="108"/>
 
 kuzco by Frank Hull & Johannes Breuer leverages ollamar and ellmer to provide a computer vision assistant right inside R, using LLMs as an alternative to torch for tasks including image classification, recognition, sentiment, and text extraction. The output provided comes in very nice and usable tibbles.
 
 Cool hex logo and the example in the readme features a very cute puppy :3
+
+## Transformer model applications
+
+
+### [pangoling](https://docs.ropensci.org/pangoling/index.html)
+<img src="images/hex/pangoling.png" align="right" height="108"/>
+
+pangoling by Bruno Nicenboim, Chris Emmerly, and Giovanni Cassani is an R package for estimating the predictability of words in a given context using transformer models (e.g. GPT-2 or BERT). These word probabilities are often used as predictors in psycholinguistic studies.
+
+Very nice to see a robust rOpenSci package for this topic. The package is mostly a wrapper of the python package transformers to process data.

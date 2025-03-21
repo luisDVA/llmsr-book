@@ -224,7 +224,8 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
   <li><a href="#ellmer" id="toc-ellmer" class="nav-link" data-scroll-target="#ellmer"><span class="header-section-number">2.5.1</span> ellmer</a></li>
   <li><a href="#hellmer" id="toc-hellmer" class="nav-link" data-scroll-target="#hellmer"><span class="header-section-number">2.5.2</span> hellmer</a></li>
   <li><a href="#chores" id="toc-chores" class="nav-link" data-scroll-target="#chores"><span class="header-section-number">2.5.3</span> chores</a></li>
-  <li><a href="#gander" id="toc-gander" class="nav-link" data-scroll-target="#gander"><span class="header-section-number">2.5.4</span> gander</a></li>
+  <li><a href="#ggpal2" id="toc-ggpal2" class="nav-link" data-scroll-target="#ggpal2"><span class="header-section-number">2.5.4</span> ggpal2</a></li>
+  <li><a href="#gander" id="toc-gander" class="nav-link" data-scroll-target="#gander"><span class="header-section-number">2.5.5</span> gander</a></li>
   </ul></li>
   <li><a href="#rag-tools" id="toc-rag-tools" class="nav-link" data-scroll-target="#rag-tools"><span class="header-section-number">2.6</span> RAG tools</a>
   <ul class="collapse">
@@ -233,6 +234,10 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
   <li><a href="#computer-vision" id="toc-computer-vision" class="nav-link" data-scroll-target="#computer-vision"><span class="header-section-number">2.7</span> Computer Vision</a>
   <ul class="collapse">
   <li><a href="#kuzco" id="toc-kuzco" class="nav-link" data-scroll-target="#kuzco"><span class="header-section-number">2.7.1</span> kuzco</a></li>
+  </ul></li>
+  <li><a href="#transformer-model-applications" id="toc-transformer-model-applications" class="nav-link" data-scroll-target="#transformer-model-applications"><span class="header-section-number">2.8</span> Transformer model applications</a>
+  <ul class="collapse">
+  <li><a href="#pangoling" id="toc-pangoling" class="nav-link" data-scroll-target="#pangoling"><span class="header-section-number">2.8.1</span> pangoling</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -387,8 +392,14 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <li>Here’s a <a href="https://bastianolea.rbind.io/blog/pal_asistentes_llm/">tutorial</a> in Spanish for using chores with custom assistants that can have different roles.</li>
 </ul>
 </section>
-<section id="gander" class="level3" data-number="2.5.4">
-<h3 data-number="2.5.4" class="anchored" data-anchor-id="gander"><span class="header-section-number">2.5.4</span> <a href="https://github.com/simonpcouch/gander/">gander</a></h3>
+<section id="ggpal2" class="level3" data-number="2.5.4">
+<h3 data-number="2.5.4" class="anchored" data-anchor-id="ggpal2"><span class="header-section-number">2.5.4</span> <a href="https://github.com/frankiethull/ggpal2">ggpal2</a></h3>
+<p><img src="images/hex/ggpal2.png" align="right" height="108"></p>
+<p>ggpal2 is an extension package for <code>chores</code> developed by Frank Hull. ggpal2 provides an LLM-powered assistant prompt-engineered specifically for working with <code>ggplot2</code>. Like chores and gander, we highlight code or text and through an addin and customizable shortcut: we can swap base R code with ggplot2, create a plot from a comment, or get suggestions for accesibility and readability for existing ggplot2 code.</p>
+<p>A nice example of extending chores and leveraging ellmer through a set of well written prompts.</p>
+</section>
+<section id="gander" class="level3" data-number="2.5.5">
+<h3 data-number="2.5.5" class="anchored" data-anchor-id="gander"><span class="header-section-number">2.5.5</span> <a href="https://github.com/simonpcouch/gander/">gander</a></h3>
 <p><img src="images/hex/logo.png" align="right" height="108"></p>
 <p>Simon Couch is on a roll, and released the cool gander package in early 2025.</p>
 <p>gander leverages ellmer to go beyond a chat box and actually incorporate a context-aware assisant into our IDE of choice. Works well in both RStudio and Positron, and can actually look for context in files and inside R environment (variable names, objects, function definitions, etc.)</p>
@@ -415,6 +426,15 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p><img src="images/hex/kuzco.png" align="right" height="108"></p>
 <p>kuzco by Frank Hull &amp; Johannes Breuer leverages ollamar and ellmer to provide a computer vision assistant right inside R, using LLMs as an alternative to torch for tasks including image classification, recognition, sentiment, and text extraction. The output provided comes in very nice and usable tibbles.</p>
 <p>Cool hex logo and the example in the readme features a very cute puppy :3</p>
+</section>
+</section>
+<section id="transformer-model-applications" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="transformer-model-applications"><span class="header-section-number">2.8</span> Transformer model applications</h2>
+<section id="pangoling" class="level3" data-number="2.8.1">
+<h3 data-number="2.8.1" class="anchored" data-anchor-id="pangoling"><span class="header-section-number">2.8.1</span> <a href="https://docs.ropensci.org/pangoling/index.html">pangoling</a></h3>
+<p><img src="images/hex/pangoling.png" align="right" height="108"></p>
+<p>pangoling by Bruno Nicenboim, Chris Emmerly, and Giovanni Cassani is an R package for estimating the predictability of words in a given context using transformer models (e.g.&nbsp;GPT-2 or BERT). These word probabilities are often used as predictors in psycholinguistic studies.</p>
+<p>Very nice to see a robust rOpenSci package for this topic. The package is mostly a wrapper of the python package transformers to process data.</p>
 
 
 </section>
