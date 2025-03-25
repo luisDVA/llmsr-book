@@ -28,6 +28,7 @@ urlss <- c(
 "http://elmer.tidyverse.org/",
 "https://jhk0530.github.io/gemini.R/",
 "https://github.com/frankiethull/ggpal2",
+"https://gabrielkaiserqfin.github.io/groqR",
 "https://dylanpieper.github.io/hellmer/",
 "https://github.com/frankiethull/kuzco",
 "https://github.com/simonpcouch/gander/",
@@ -35,6 +36,7 @@ urlss <- c(
 "https://mlverse.github.io/lang/",
 "https://hauselin.github.io/ollama-r/",
 "https://docs.ropensci.org/pangoling/",
+"https://github.com/GabrielKaiserQFin/PerplexR/",
 "https://jbgruber.github.io/rollama/",
 "https://tidychatmodels.albert-rapp.de/",
 "https://edubruell.github.io/tidyllm/")

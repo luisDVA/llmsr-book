@@ -6,6 +6,15 @@ In no particular order, but now grouped into loose groups:
 
 ## General interfaces
 
+## [groqR](https://gabrielkaiserqfin.github.io/groqR)
+<img src="images/hex/groqrlogo.png" align="right" height="108"/>
+
+groqR by Gabriel Kaiser is an R interface for models provided by [GroqCloud](https://groq.com/). A free tier is available and the package has a Shiny app setting up the relevant parameters and API key. I liked that here are lots of new and interesting models to choose from, and the LLM responses are **really fast** .
+
+groqR was brought to my attention by it's own developer and I asked for a brief blurb for this guide. In Gabriel's own words: 
+
+> "groqR is your AI-powered R coding companion, 10x faster than conventional LLMs, with most models available free of charge. It executes functions on copied text: simply call the `rewriter()` function after copying text to retrieve results directly in your R Console and clipboard. By combining Groq's speed with shortcut-based access to `groqR` functions, users achieve the fastest, most efficient coding environment in the R ecosystem. Powered by the current leading model [Qwen QwQ 32B](https://groq.com/a-guide-to-reasoning-with-qwen-qwq-32b/), GroqR ensures cutting-edge performance"
+
 ### [llmR](https://github.com/bakaburg1/llmR)
 
 llmr by Angelo D'Ambrosio provides a unified API to interact with various LLMs and providers through functions with consistent grammar and syntax. Provides easy switching between models, plus logging. Seems similar to elmer. Will try it soon.
@@ -26,7 +35,6 @@ A pipe-friendly interface to many chatbot vendors. Developed by Albert Rapp, tid
 tidyllm by Eduard Brüll provides pipe-friendly access to multiple LLM APIs in a smooth and readable way. We can pass images, documents, videos, and plots from the plot pane to the package functions, and the package has very thorough documentation. Similar in some ways to ellmer, but looks very useful for both batch processing and interactive work.
 
 ### [gemini.R](https://jhk0530.github.io/gemini.R/)
-
 <img src="images/hex/gemini.png" align="right" height="108"/>
 
 gemini.R by Jinhwan Kim connects R with Google's gemini model via the gemini API. With a valid API key, the `gemini()` function takes text prompts and the `gemini_image()` function can work with images and text prompts.
@@ -35,6 +43,14 @@ The package algo provides an RStudio addin for creating Roxygen documentation.
 
 I recently used the Gemini Flash 2 model to pull information from a scanned PDF with decent success.
 
+### [PerplexR](https://github.com/GabrielKaiserQFin/PerplexR/)
+<img src="images/hex/perplexrlogo.png" align="right" height="108"/>
+
+PerplexR by [Gabriel Kaiser](https://gabrielkaiserqfin.github.io/) provides an interface like the one in groqR but for the _sonar_  models from [Perplexity](https://www.perplexity.ai/). A paid plan is required for generating the necessary API so I haven't tried it out yet. The package works with a handy RStudio addin and like groqR includes helpful functions for rewriting code or creating unit tests.
+
+I also asked Gabriel for a brief summary of the package:
+
+> "The objective of `perplexR` is to offer R users an intuitive interface for leveraging the capabilities of the Perplexity API [Pro subscription](https://docs.perplexity.ai/guides/getting-started). Utilizing the supplied functions, users can enhance their programming productivity by incorporating Large Language Models. Furthermore, `perplexR` includes RStudio add-ins, enabling seamless interactive integration of Perplexity prompts."
 
 ## Ollama-based tools, wrappers and helpers
 
@@ -62,6 +78,8 @@ The R functions used to interact with Ollama include a nice argument for specify
 ### [ensure](https://simonpcouch.github.io/ensure/)
 
 ensure by Simon Couch helps write code for unit tests using the testthat package. Works through an Rstudio addin, and the documentation mentions that the model has been made aware of testthat syntax and the tidy style guide for code. Will be trying it out for my more recent packages that still have poor test coverage.
+
+> groqR and PerplexR (see above) both have specific functions for creating unit tests
 
 ## mlverse
 
