@@ -4,6 +4,11 @@ Here are some courses and guides for actually using the LLM tools listed here. N
 
 ------------------------------------------------------------------------
 
+Not a tutorial or course and not necessarily R-related, but I came across this public [list](https://github.com/stars/gadenbuie/lists/ai) of AI-related GitHub repositories compiled by Garrick Aden Buie. If you are familiar with Garrick's work, then you know that at least some of this cool AI stuff will make it onto R packages or extensions in the near future. Worth checking out. 
+(**added 24/03/2025**)
+
+
+
 This is beyond my skillset and experience level, but Javier Orraca-Deatcu recently (07/03/2025) posted "[Vector DB + RAG Maker](https://www.javierorracadeatcu.com/posts/2025-03-07-vector-db-and-rags/)". The post  introduces a "limited vector database and RAG system developed with Python, made for R users, designed to generate bleeding-edge responses from challenging LLM prompts using your local R technical documentation".  Looks fun and promising.   
 (**added 18/03/2025**)
 
