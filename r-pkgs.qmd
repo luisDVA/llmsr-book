@@ -6,6 +6,14 @@ In no particular order, but now grouped into loose groups:
 
 ## General interfaces
 
+## [chatgpt](https://github.com/jcrodriguez1989/chatgpt)
+
+The chatgtp package lets us interface with models from OpenAI to get assistance while coding. The package was developed by [Juan Cruz Rodriguez](https://jcrodriguez.rbind.io/) so I know it's robust and well-engineered, having worked with Juan in the past on features for annotater. This package has been around for a while and actually predates most existing LLM tools for R, so more evidence for Juan's foresight and clever ideas.
+
+
+After setting up an API key, we can work with pre-promted RStudio addins to do useful things like optimize, comment, explain, select, or test code (just to name a few). Works on selections or entire files and the default model is gpt-4o-mini.
+
+
 ## [groqR](https://gabrielkaiserqfin.github.io/groqR)
 <img src="images/hex/groqrlogo.png" align="right" height="108"/>
 
