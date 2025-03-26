@@ -1,6 +1,6 @@
 # Other tools and extensions {#sec-other-ext}
 
-These include vscode/Positron extensions that are not shipped as R packages.
+These include vscode/Positron extensions that are not shipped as R packages, as well as relevant web-based resources.
 
 ## [GiHub Copilot](https://github.com/features/copilot)
 
@@ -22,9 +22,15 @@ Tried it out after Julia Silge mentioned it in the [Super Data Science](https://
 
 Another cool VScode extension that works well in Positron. Provides autocomplete and chat. Free for individuals. The base model uses Llama 3.1 70B, but paid tiers can choose other models. I've tried this out in Positron with good results for code refactoring, at least when playing around with small scripts.
 
+
+## [R and RStudio Tutor](https://chatgpt.com/g/g-iedyANQtM-r-and-r-studio-tutor)
+
+This is a custom GTP by Jose A. Fernandez Calvo, built on Open AI's framework for custom tutors that have predefined roles and custom knowledge bases. Answers R-related questions and has a system role for being supportive when explaining solutions.
+
+
 --- 
 
 Special mention here for [Shiny Assistant](https://shiny.posit.co/blog/posts/shiny-assistant/), a stand-alone AI tool from the Shiny team that can answer questions about Shiny and aldo build apps. Shiny assistant works with both R and python, and the tool takes advantage of Shinylive to optionally forego the need for a server running R or python.
 
 
-
+Another special mention for [RTutor](https://rtutor.ai/), an early days (~2022) implementation of using ChatGPT to generate R code using natural language. Can be used on the web or locally after installing the RTutor R package.  

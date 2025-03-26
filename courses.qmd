@@ -4,6 +4,11 @@ Here are some courses and guides for actually using the LLM tools listed here. N
 
 ------------------------------------------------------------------------
 
+Sharon Machlis at InfoWorld just published a post titled: [GenAI tools for R: New tools to make R programming easier](https://www.infoworld.com/article/3848270/genai-tools-for-r-new-tools-to-make-r-programming-easier.html). The content overlaps with this guide but there are lots of well-explained examples. Worth checking out.  
+(**added 26/03/2025**)
+
+
+
 Not a tutorial or course and not necessarily R-related, but I came across this public [list](https://github.com/stars/gadenbuie/lists/ai) of AI-related GitHub repositories compiled by Garrick Aden Buie. If you are familiar with Garrick's work, then you know that at least some of this cool AI stuff will make it onto R packages or extensions in the near future. Worth checking out. 
 (**added 24/03/2025**)
 

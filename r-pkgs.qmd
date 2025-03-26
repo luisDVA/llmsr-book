@@ -218,6 +218,11 @@ As the name implies, ragnar by Tomasz Kalinowski helps implement Retrieval-Augme
 
 I liked the example in the readme, showing how the **R for Data Science** book was ingested and queried using the package.
 
+### [pkgprompt](https://github.com/simonpcouch/pkgprompt)
+
+I'm listing pkgprompt by Simon Couch under the RAG heading here because the package is meant to convert R package documentation into plain text that can be ingested by an LLM, as a prompt or as part of a RAG workflow. Can convert all the documentation for a package or just particular topics with a `topics` argument.
+
+
 
 ## Computer Vision
 
