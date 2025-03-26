@@ -28,6 +28,7 @@ urlss <- c(
 "http://elmer.tidyverse.org/",
 "https://jhk0530.github.io/gemini.R/",
 "https://github.com/frankiethull/ggpal2",
+"https://michelnivard.github.io/gptstudio/",
 "https://gabrielkaiserqfin.github.io/groqR",
 "https://dylanpieper.github.io/hellmer/",
 "https://github.com/frankiethull/kuzco",

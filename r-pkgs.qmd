@@ -6,7 +6,7 @@ In no particular order, but now grouped into loose groups:
 
 ## General interfaces
 
-## [chatgpt](https://github.com/jcrodriguez1989/chatgpt)
+### [chatgpt](https://github.com/jcrodriguez1989/chatgpt)
 
 The chatgtp package lets us interface with models from OpenAI to get assistance while coding. The package was developed by [Juan Cruz Rodriguez](https://jcrodriguez.rbind.io/) so I know it's robust and well-engineered, having worked with Juan in the past on features for annotater. This package has been around for a while and actually predates most existing LLM tools for R, so more evidence for Juan's foresight and clever ideas.
 
@@ -14,7 +14,7 @@ The chatgtp package lets us interface with models from OpenAI to get assistance 
 After setting up an API key, we can work with pre-promted RStudio addins to do useful things like optimize, comment, explain, select, or test code (just to name a few). Works on selections or entire files and the default model is gpt-4o-mini.
 
 
-## [groqR](https://gabrielkaiserqfin.github.io/groqR)
+### [groqR](https://gabrielkaiserqfin.github.io/groqR)
 <img src="images/hex/groqrlogo.png" align="right" height="108"/>
 
 groqR by Gabriel Kaiser is an R interface for models provided by [GroqCloud](https://groq.com/). A free tier is available and the package has a Shiny app setting up the relevant parameters and API key. I liked that here are lots of new and interesting models to choose from, and the LLM responses are **really fast** .
@@ -22,6 +22,16 @@ groqR by Gabriel Kaiser is an R interface for models provided by [GroqCloud](htt
 groqR was brought to my attention by it's own developer and I asked for a brief blurb for this guide. In Gabriel's own words: 
 
 > "groqR is your AI-powered R coding companion, 10x faster than conventional LLMs, with most models available free of charge. It executes functions on copied text: simply call the `rewriter()` function after copying text to retrieve results directly in your R Console and clipboard. By combining Groq's speed with shortcut-based access to `groqR` functions, users achieve the fastest, most efficient coding environment in the R ecosystem. Powered by the current leading model [Qwen QwQ 32B](https://groq.com/a-guide-to-reasoning-with-qwen-qwq-32b/), GroqR ensures cutting-edge performance"
+
+### [gptstudio](https://michelnivard.github.io/gptstudio/)
+<img src="images/hex/gptstudio.png" align="right" height="108"/>
+
+gptstudio by Michel Nivard, James Wade, and Samuel Calderon is another good option for accessing LLMs locally or from various providers (OpenAI, HuggingFace, Google, Anthropic, Perplexity, Azure, and Cohere) right inside RStudio. 
+
+gptstudio works mainly though a Shiny App that runs in the viewer pane and provides a chat window and options to edit code in the editor. I had some trouble getting the app to run on Linux, but the developers seem to be aware of [this](https://github.com/MichelNivard/gptstudio/issues/179). 
+
+
+I liked the clear and visible warnings and disclaimers in the README about privacy, security, and sharing sensitive data with model providers.
 
 ### [llmR](https://github.com/bakaburg1/llmR)
 
