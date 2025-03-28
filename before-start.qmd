@@ -4,6 +4,13 @@ Here are some interesting and worthwhile reads to explore before getting hands-o
 
 ---
 
+In a blog post about _[vibe coding](https://simonwillison.net/2025/Mar/19/vibe-coding/)_, Simon Willison mentioned that:
+
+> "I believe everyone deserves the ability to automate tedious tasks in their lives with computers."
+
+I agree with this statement, but we should consider learning outcomes, ethics, biases, and context before getting into LLM tools.
+
+
 In my opinion, anyone using LLM-based assistants for coding should read this perspective published in Methods in Ecology and Evolution: [Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution](https://doi.org/10.1111/2041-210X.14325), led by Natalie Cooper, and part of a special issue on the use of LLMs in ecology and evolution. These papers summarize the pros and cons of genAI/LLMs in the context of research and teaching, and their conclusions go beyond research and biological sciences.
 
 Another useful resource is this course: [The Bullshit Machines](https://thebullshitmachines.com/index.html
@@ -18,7 +25,7 @@ This [PNAS paper](https://www.pnas.org/doi/10.1073/pnas.2416228122) by Bai et al
 biases mirroring those in society. As a simple example of the results: models generally picked woman-coded names (Julia) to discuss weddings and male-coded names (Ben) to discuss management.
 
 
-Because this guide in general is focused on writing code using LLMs, this post by Simon Willison titled "[Here’s how I use LLMs to help me write code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)" (published 11/30/2025;  added here 18/03/2025) really distills the process of getting LLMs to write decent code without frustration. Important topics in the post include context and training cut-off dates.
+Because this guide in general is focused on writing code using LLMs, this post by Simon Willison titled "[Here’s how I use LLMs to help me write code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)" (published 11/30/2025;  added here 18/03/2025) really distills the process of getting LLMs to write decent code without frustration. Important topics in the post include context and training cut-off dates. 
 
 ---
 

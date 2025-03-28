@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; Other tools and extensions – Large Language Model tools for R</title>
+<title>5&nbsp; 🐍 What about Python? – Large Language Model tools for R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./courses.html" rel="next">
-<link href="./r-pkgs.html" rel="prev">
+<link href="./courses.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -90,7 +89,7 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./other-ext.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Other tools and extensions</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./python.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">🐍 What about Python?</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -143,7 +142,7 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./other-ext.html" class="sidebar-item-text sidebar-link active">
+  <a href="./other-ext.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Other tools and extensions</span></span></a>
   </div>
 </li>
@@ -155,7 +154,7 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./python.html" class="sidebar-item-text sidebar-link">
+  <a href="./python.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">🐍 What about Python?</span></span></a>
   </div>
 </li>
@@ -169,10 +168,11 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#gihub-copilot" id="toc-gihub-copilot" class="nav-link active" data-scroll-target="#gihub-copilot"><span class="header-section-number">3.1</span> GiHub Copilot</a></li>
-  <li><a href="#continue" id="toc-continue" class="nav-link" data-scroll-target="#continue"><span class="header-section-number">3.2</span> continue</a></li>
-  <li><a href="#codeium" id="toc-codeium" class="nav-link" data-scroll-target="#codeium"><span class="header-section-number">3.3</span> codeium</a></li>
-  <li><a href="#r-and-rstudio-tutor" id="toc-r-and-rstudio-tutor" class="nav-link" data-scroll-target="#r-and-rstudio-tutor"><span class="header-section-number">3.4</span> R and RStudio Tutor</a></li>
+  <li><a href="#llm" id="toc-llm" class="nav-link active" data-scroll-target="#llm"><span class="header-section-number">5.1</span> LLM</a></li>
+  <li><a href="#must-know-python-libraries-for-llms-in-2025" id="toc-must-know-python-libraries-for-llms-in-2025" class="nav-link" data-scroll-target="#must-know-python-libraries-for-llms-in-2025"><span class="header-section-number">5.2</span> 10 Must-Know Python Libraries for LLMs in 2025</a></li>
+  <li><a href="#r-and-python-equivalents" id="toc-r-and-python-equivalents" class="nav-link" data-scroll-target="#r-and-python-equivalents"><span class="header-section-number">5.3</span> R and Python equivalents</a></li>
+  <li><a href="#awesome-llm-apps-repo" id="toc-awesome-llm-apps-repo" class="nav-link" data-scroll-target="#awesome-llm-apps-repo"><span class="header-section-number">5.4</span> Awesome LLM apps repo</a></li>
+  <li><a href="#interesting-courses" id="toc-interesting-courses" class="nav-link" data-scroll-target="#interesting-courses"><span class="header-section-number">5.5</span> Interesting courses</a></li>
   </ul>
 </nav>
     </div>
@@ -181,7 +181,7 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-other-ext" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Other tools and extensions</span></span></h1>
+<h1 class="title"><span id="sec-python" class="quarto-section-identifier"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">🐍 What about Python?</span></span></h1>
 </div>
 
 
@@ -198,28 +198,34 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </header>
 
 
-<p>These include vscode/Positron extensions that are not shipped as R packages, as well as relevant web-based resources.</p>
-<section id="gihub-copilot" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="gihub-copilot"><span class="header-section-number">3.1</span> <a href="https://github.com/features/copilot">GiHub Copilot</a></h2>
-<p>GitHub Copilot is a widely-used and well-documented coding assistant for code completions and the possibility of turning natural language prompts into code suggestions. Works on GitHub.com and inside most IDEs.</p>
-<p>Subscription-based, although as of a a few weeks-ago there is a free tier available. I have not tried it yet.</p>
-<p>This recent <a href="https://github.com/yabellini/copilotWithR">talk</a> by Yanina Bellini for RLadies Rome provides a good overview, and Yani’s slides also mention important considerations about the AI skill threat.</p>
-</section>
-<section id="continue" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="continue"><span class="header-section-number">3.2</span> <a href="https://www.continue.dev/">continue</a></h2>
-<p>A vscode extension that works nicely in Positron. Supports multiple models for chat and code completion. Easy to provide local files and folders for context and nice integration with the source editor.</p>
-<p>Tried it out after Julia Silge mentioned it in the <a href="https://www.superdatascience.com/podcast/817">Super Data Science</a> podcast. Works nicely, and I used it in Positron with Anthropic’s Claude 3.5 Sonnet model to write and edit the repetitive css, html, and javascript code that powers the hexsession package. Also helped me with some of the nested for loops that play a big role in forgts.</p>
-</section>
-<section id="codeium" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="codeium"><span class="header-section-number">3.3</span> <a href="https://codeium.com/">codeium</a></h2>
-<p>Another cool VScode extension that works well in Positron. Provides autocomplete and chat. Free for individuals. The base model uses Llama 3.1 70B, but paid tiers can choose other models. I’ve tried this out in Positron with good results for code refactoring, at least when playing around with small scripts.</p>
-</section>
-<section id="r-and-rstudio-tutor" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="r-and-rstudio-tutor"><span class="header-section-number">3.4</span> <a href="https://chatgpt.com/g/g-iedyANQtM-r-and-r-studio-tutor">R and RStudio Tutor</a></h2>
-<p>This is a custom GTP by Jose A. Fernandez Calvo, built on Open AI’s framework for custom tutors that have predefined roles and custom knowledge bases. Answers R-related questions and has a system role for being supportive when explaining solutions.</p>
+<p>I am an R user and programmer, and when I gave a talk about <a href="https://nerdear.la/es/speakers/luis-d-verde-arregoitia/">Positron and multilingual Data Science</a> I even confessed publicly that I don’t use and can barely understand Python. However, I have received feedback on this guide asking for at least some brief comments and possible resources for LLM tooling in Python.</p>
+<p>There is no point debating one language vs.&nbsp;another in general, but I’ll mention this entry in the <em>DAC.digital</em> blog titled <a href="https://dac.digital/which-is-better-for-ai-python-or-r/">Which is better for AI – Python or R?</a> The post is from 2022 but it mentions the main pros and cons for each language, framed in the context of AI.</p>
 <hr>
-<p>Special mention here for <a href="https://shiny.posit.co/blog/posts/shiny-assistant/">Shiny Assistant</a>, a stand-alone AI tool from the Shiny team that can answer questions about Shiny and aldo build apps. Shiny assistant works with both R and python, and the tool takes advantage of Shinylive to optionally forego the need for a server running R or python.</p>
-<p>Another special mention for <a href="https://rtutor.ai/">RTutor</a>, an early days (~2022) implementation of using ChatGPT to generate R code using natural language. Can be used on the web or locally after installing the RTutor R package.</p>
+<p>Being a widely used language for machine learning and production, naturally there are a lot of Python LLM interfaces and other relevant libraries. As far as I can tell, given the popularity and general-purpose nature of the language, there are many more teams working on AI tools for Python and lots of enterprise time and money put into development.</p>
+<p>I looked for recent guides and posts that aggregate relevant AI tools and resources for Python and this is what I can suggest (unlike the tools for R I have not tested any of these myself):</p>
+<section id="llm" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="llm"><span class="header-section-number">5.1</span> <a href="https://llm.datasette.io/en/stable/">LLM</a></h2>
+<p>LLM is a Python library and command line utility by Simon Willison (plus many other contributors). LLM is a tool for interacting with Large Language Models from various provides via remote APIs and also local models running on our machines. The library is very well documented and Simon Willison is prolific and quite knowledgeable about LLMs in general.</p>
+</section>
+<section id="must-know-python-libraries-for-llms-in-2025" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="must-know-python-libraries-for-llms-in-2025"><span class="header-section-number">5.2</span> <a href="https://machinelearningmastery.com/10-must-know-python-libraries-for-llms-in-2025/">10 Must-Know Python Libraries for LLMs in 2025</a></h2>
+<p>This post by Jayita Gulati on the <em>Machine Learning Mastery</em> site (published 25/03/2025) lists 10 libraries and frameworks for NLP, coding assistance, topic modeling, and word embedding. These ten include: <a href="https://huggingface.co/docs/transformers/en/index">Transformers</a> by Hugging Face, <a href="https://www.langchain.com/">LangChain</a>, <a href="https://spacy.io/">SpaCy</a>, <a href="https://textblob.readthedocs.io/en/dev/">TextBlob</a>, <a href="https://github.com/piskvorky/gensim">Gensim</a>, and others.</p>
+</section>
+<section id="r-and-python-equivalents" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="r-and-python-equivalents"><span class="header-section-number">5.3</span> R and Python equivalents</h2>
+<p>Of more relevance to this guide and for the multilingual users out there, it’s worth mentioning that the teams at posit (and some posit-adjacent developers) are embracing the multilingual spirit since the rebrand from RStudio. For some tools there has been parallel development in both languages.</p>
+<ul>
+<li><p>The Python equivalent of <a href="./r-pkgs.html#ellmer">ellmer</a> -&gt; <a href="https://posit-dev.github.io/chatlas/">chatlass</a></p></li>
+<li><p><a href="./r-pkgs.html#mall">mall</a> is also multilanguage, and in Python it extends Polars and interacts with Ollama using the official <a href="https://github.com/ollama/ollama-python">Ollama Python library</a>.</p></li>
+</ul>
+</section>
+<section id="awesome-llm-apps-repo" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="awesome-llm-apps-repo"><span class="header-section-number">5.4</span> <a href="https://github.com/Shubhamsaboo/awesome-llm-apps">Awesome LLM apps repo</a></h2>
+<p>This GitHub repo is a collection of LLM apps built with RAG and various AI models, all written in Python, curated by Shubham Saboo. This large set of cool examples (e.g., LLM app to chat with a repo, to chat with gmail, Local RAG agents, etc.) can all be installed and run locally.</p>
+</section>
+<section id="interesting-courses" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="interesting-courses"><span class="header-section-number">5.5</span> Interesting courses</h2>
+<p>This free, online course from Harvard available on the edX platform: <a href="https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python">Introduction to Artificial Intelligence with Python</a> has an interesting study plan for building a solid theoretical background while learning practical applications of AI tools in Python.</p>
 
 
 </section>
@@ -644,14 +650,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./r-pkgs.html" class="pagination-link" aria-label="R Packages">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">R Packages</span></span>
+      <a href="./courses.html" class="pagination-link" aria-label="Further reading">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Further reading</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./courses.html" class="pagination-link" aria-label="Further reading">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Further reading</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

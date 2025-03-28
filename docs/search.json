@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Large Language Model tools for R",
     "section": "",
-    "text": "Welcome\n👋 Hello! This is an ongoing roundup of useful developments in the LLM/genAI space, with a specific focus on R.\nFor teaching purposes and to help me keep track of what’s happening, I’ve put together this draft listing of relevant LLM+R resources. This was initially a post on my blog from late 2024, but this book format should be easier to navigate. I will update the content periodically when new tools come out and/or when people bring them to my attention.\nThe logos below link to each tool’s official site.\ncreated with hexsession\nFeel free to send feedback or to edit this content via pull requests.",
+    "text": "Welcome\n👋 Hello! This is an ongoing roundup of useful developments in the LLM/genAI space, with a specific focus on R.\nFor teaching purposes and to help me keep track of what’s happening, I’ve put together this draft listing of relevant LLM+R resources. This was initially a post on my blog from late 2024, but this book format should be easier to navigate. I will update the content periodically when new tools come out and/or when people bring them to my attention.\nThe field is very fast moving so providers, software names, APIs, and overall funcitons are subject to change. I’ll do my best to keep this guide updated and mention key changes and news.\nThe logos below link to each tool’s official site.\ncreated with hexsession\nFeel free to send feedback or to edit this content via pull requests.",
     "crumbs": [
       "Welcome"
     ]
@@ -14,7 +14,7 @@
     "href": "before-start.html",
     "title": "1  Read first",
     "section": "",
-    "text": "Here are some interesting and worthwhile reads to explore before getting hands-on with any of the tools listed on this site.\n\nIn my opinion, anyone using LLM-based assistants for coding should read this perspective published in Methods in Ecology and Evolution: Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution, led by Natalie Cooper, and part of a special issue on the use of LLMs in ecology and evolution. These papers summarize the pros and cons of genAI/LLMs in the context of research and teaching, and their conclusions go beyond research and biological sciences.\nAnother useful resource is this course: The Bullshit Machines put together Carl T. Bergstrom and Jevin D. West. A very thoughtful and well-structured set of materials that cuts through the smoke and highlights the fact that just because a machine can write like us it does not mean it can think like us.\nAs an instructor, I am not alone in noticing that lately, a variable proportion of learners are using ChatGPT and similar tools to assist them in and after various R-related workshops. The Carpentries foundation have this interesting two-part series on teaching LLM-based coding assistants in Carpentries workshops. The results here mention patterns of usage, advantages and disadvantages of actually teaching how to use these assistants, and throughout 2025 there will be ongoing discussion about ethics, security, and how to best teach in light of these new tools.\n\nThis PNAS paper by Bai et al. (available at UChicago Knowledge) is also very relevant. With two measures that come from psychological research and are meant to measure implicit bias, the authors found that LMMs still have pervasive stereotype biases mirroring those in society. As a simple example of the results: models generally picked woman-coded names (Julia) to discuss weddings and male-coded names (Ben) to discuss management.\nBecause this guide in general is focused on writing code using LLMs, this post by Simon Willison titled “Here’s how I use LLMs to help me write code” (published 11/30/2025; added here 18/03/2025) really distills the process of getting LLMs to write decent code without frustration. Important topics in the post include context and training cut-off dates.\n\nWith that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.",
+    "text": "Here are some interesting and worthwhile reads to explore before getting hands-on with any of the tools listed on this site.\n\nIn a blog post about vibe coding, Simon Willison mentioned that:\n\n“I believe everyone deserves the ability to automate tedious tasks in their lives with computers.”\n\nI agree with this statement, but we should consider learning outcomes, ethics, biases, and context before getting into LLM tools.\nIn my opinion, anyone using LLM-based assistants for coding should read this perspective published in Methods in Ecology and Evolution: Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution, led by Natalie Cooper, and part of a special issue on the use of LLMs in ecology and evolution. These papers summarize the pros and cons of genAI/LLMs in the context of research and teaching, and their conclusions go beyond research and biological sciences.\nAnother useful resource is this course: The Bullshit Machines put together Carl T. Bergstrom and Jevin D. West. A very thoughtful and well-structured set of materials that cuts through the smoke and highlights the fact that just because a machine can write like us it does not mean it can think like us.\nAs an instructor, I am not alone in noticing that lately, a variable proportion of learners are using ChatGPT and similar tools to assist them in and after various R-related workshops. The Carpentries foundation have this interesting two-part series on teaching LLM-based coding assistants in Carpentries workshops. The results here mention patterns of usage, advantages and disadvantages of actually teaching how to use these assistants, and throughout 2025 there will be ongoing discussion about ethics, security, and how to best teach in light of these new tools.\n\nThis PNAS paper by Bai et al. (available at UChicago Knowledge) is also very relevant. With two measures that come from psychological research and are meant to measure implicit bias, the authors found that LMMs still have pervasive stereotype biases mirroring those in society. As a simple example of the results: models generally picked woman-coded names (Julia) to discuss weddings and male-coded names (Ben) to discuss management.\nBecause this guide in general is focused on writing code using LLMs, this post by Simon Willison titled “Here’s how I use LLMs to help me write code” (published 11/30/2025; added here 18/03/2025) really distills the process of getting LLMs to write decent code without frustration. Important topics in the post include context and training cut-off dates.\n\nWith that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Read first</span>"
     ]
@@ -317,6 +317,56 @@
     "text": "3.4 R and RStudio Tutor\nThis is a custom GTP by Jose A. Fernandez Calvo, built on Open AI’s framework for custom tutors that have predefined roles and custom knowledge bases. Answers R-related questions and has a system role for being supportive when explaining solutions.\n\nSpecial mention here for Shiny Assistant, a stand-alone AI tool from the Shiny team that can answer questions about Shiny and aldo build apps. Shiny assistant works with both R and python, and the tool takes advantage of Shinylive to optionally forego the need for a server running R or python.\nAnother special mention for RTutor, an early days (~2022) implementation of using ChatGPT to generate R code using natural language. Can be used on the web or locally after installing the RTutor R package.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Other tools and extensions</span>"
+    ]
+  },
+  {
+    "objectID": "python.html",
+    "href": "python.html",
+    "title": "5  🐍 What about Python?",
+    "section": "",
+    "text": "5.1 LLM\nI am an R user and programmer, and when I gave a talk about Positron and multilingual Data Science I even confessed publicly that I don’t use and can barely understand Python. However, I have received feedback on this guide asking for at least some brief comments and possible resources for LLM tooling in Python.\nThere is no point debating one language vs. another in general, but I’ll mention this entry in the DAC.digital blog titled Which is better for AI – Python or R? The post is from 2022 but it mentions the main pros and cons for each language, framed in the context of AI.\nBeing a widely used language for machine learning and production, naturally there are a lot of Python LLM interfaces and other relevant libraries. As far as I can tell, given the popularity and general-purpose nature of the language, there are many more teams working on AI tools for Python and lots of enterprise time and money put into development.\nI looked for recent guides and posts that aggregate relevant AI tools and resources for Python and this is what I can suggest (unlike the tools for R I have not tested any of these myself):\nLLM is a Python library and command line utility by Simon Willison (plus many other contributors). LLM is a tool for interacting with Large Language Models from various provides via remote APIs and also local models running on our machines. The library is very well documented and Simon Willison is prolific and quite knowledgeable about LLMs in general.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>🐍 What about Python?</span>"
+    ]
+  },
+  {
+    "objectID": "python.html#must-know-python-libraries-for-llms-in-2025",
+    "href": "python.html#must-know-python-libraries-for-llms-in-2025",
+    "title": "5  🐍 What about Python?",
+    "section": "5.2 10 Must-Know Python Libraries for LLMs in 2025",
+    "text": "5.2 10 Must-Know Python Libraries for LLMs in 2025\nThis post by Jayita Gulati on the Machine Learning Mastery site (published 25/03/2025) lists 10 libraries and frameworks for NLP, coding assistance, topic modeling, and word embedding. These ten include: Transformers by Hugging Face, LangChain, SpaCy, TextBlob, Gensim, and others.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>🐍 What about Python?</span>"
+    ]
+  },
+  {
+    "objectID": "python.html#r-and-python-equivalents",
+    "href": "python.html#r-and-python-equivalents",
+    "title": "5  🐍 What about Python?",
+    "section": "5.3 R and Python equivalents",
+    "text": "5.3 R and Python equivalents\nOf more relevance to this guide and for the multilingual users out there, it’s worth mentioning that the teams at posit (and some posit-adjacent developers) are embracing the multilingual spirit since the rebrand from RStudio. For some tools there has been parallel development in both languages.\n\nThe Python equivalent of ellmer -&gt; chatlass\nmall is also multilanguage, and in Python it extends Polars and interacts with Ollama using the official Ollama Python library.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>🐍 What about Python?</span>"
+    ]
+  },
+  {
+    "objectID": "python.html#awesome-llm-apps-repo",
+    "href": "python.html#awesome-llm-apps-repo",
+    "title": "5  🐍 What about Python?",
+    "section": "5.4 Awesome LLM apps repo",
+    "text": "5.4 Awesome LLM apps repo\nThis GitHub repo is a collection of LLM apps built with RAG and various AI models, all written in Python, curated by Shubham Saboo. This large set of cool examples (e.g., LLM app to chat with a repo, to chat with gmail, Local RAG agents, etc.) can all be installed and run locally.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>🐍 What about Python?</span>"
+    ]
+  },
+  {
+    "objectID": "python.html#interesting-courses",
+    "href": "python.html#interesting-courses",
+    "title": "5  🐍 What about Python?",
+    "section": "5.5 Interesting courses",
+    "text": "5.5 Interesting courses\nThis free, online course from Harvard available on the edX platform: Introduction to Artificial Intelligence with Python has an interesting study plan for building a solid theoretical background while learning practical applications of AI tools in Python.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>🐍 What about Python?</span>"
     ]
   }
 ]

@@ -15,3 +15,4 @@ book:
     - r-pkgs.qmd
     - other-ext.qmd
     - courses.qmd
+    - python.qmd

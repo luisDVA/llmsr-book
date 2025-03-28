@@ -1,0 +1,37 @@
+# 🐍 What about Python? {#sec-python}
+
+I am an R user and programmer, and when I gave a talk about [Positron and multilingual Data Science](https://nerdear.la/es/speakers/luis-d-verde-arregoitia/) I even confessed publicly that I don't use and can barely understand Python. However, I have received feedback on this guide asking for at least some brief comments and possible resources for LLM tooling in Python.
+
+There is no point debating one language vs. another in general, but I'll mention this entry in the _DAC.digital_ blog titled [Which is better for AI – Python or R? ](https://dac.digital/which-is-better-for-ai-python-or-r/) The post is from 2022 but it mentions the main pros and cons for each language, framed in the context of AI.
+
+---
+
+Being a widely used language for machine learning and production, naturally there are a lot of Python LLM interfaces and other relevant libraries. As far as I can tell, given the popularity and general-purpose nature of the language, there are many more teams working on AI tools for Python and lots of enterprise time and money put into development.   
+
+I looked for recent guides and posts that aggregate relevant AI tools and resources for Python and this is what I can suggest
+(unlike the tools for R I have not tested any of these myself):
+
+## [LLM](https://llm.datasette.io/en/stable/)
+
+LLM is a Python library and command line utility by Simon Willison (plus many other contributors). LLM is a tool for interacting with Large Language Models from various provides via remote APIs and also local models running on our machines. The library is very well documented and Simon Willison is prolific and quite knowledgeable about LLMs in general. 
+
+## [10 Must-Know Python Libraries for LLMs in 2025](https://machinelearningmastery.com/10-must-know-python-libraries-for-llms-in-2025/)
+This post by Jayita Gulati on the _Machine Learning Mastery_ site (published 25/03/2025) lists 10 libraries and frameworks for NLP, coding assistance, topic modeling, and word embedding. These ten include: [Transformers](https://huggingface.co/docs/transformers/en/index) by Hugging Face, [LangChain](https://www.langchain.com/), [SpaCy](https://spacy.io/), [TextBlob](https://textblob.readthedocs.io/en/dev/), [Gensim](https://github.com/piskvorky/gensim), and others. 
+
+## R and Python equivalents
+
+Of more relevance to this guide and for the multilingual users out there, it's worth mentioning that the teams at posit (and some posit-adjacent developers) are embracing the multilingual spirit since the rebrand from RStudio. For some tools there has been parallel development in both languages.
+
+* The Python equivalent of [ellmer](r-pkgs.qmd#ellmer) -> [chatlass](https://posit-dev.github.io/chatlas/)
+
+* [mall](r-pkgs.qmd#mall) is also multilanguage, and in Python it extends Polars and interacts with Ollama using the official [Ollama Python library](https://github.com/ollama/ollama-python). 
+
+## [Awesome LLM apps repo](https://github.com/Shubhamsaboo/awesome-llm-apps)
+
+This GitHub repo is a collection of LLM apps built with RAG and various AI models, all written in Python, curated by Shubham Saboo. This large set of cool examples (e.g., LLM app to chat with a repo, to chat with gmail, Local RAG agents, etc.) can all be installed and run locally.   
+
+## Interesting courses
+
+This free, online course from Harvard available on the edX platform: 
+[Introduction to Artificial Intelligence with Python](https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python) has an interesting study plan for building a solid theoretical background while learning practical applications of AI tools in Python.  
+
