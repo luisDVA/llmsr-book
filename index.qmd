@@ -41,6 +41,7 @@ urlss <- c(
 "https://hauselin.github.io/ollama-r/",
 "https://docs.ropensci.org/pangoling/",
 "https://github.com/GabrielKaiserQFin/PerplexR/",
+"https://tidyverse.github.io/ragnar/",
 "https://jbgruber.github.io/rollama/",
 "https://tidychatmodels.albert-rapp.de/",
 "https://edubruell.github.io/tidyllm/")
