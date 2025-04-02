@@ -1,0 +1,35 @@
+# 🐍 Opciones para Python {#sec-python}
+
+Soy un programador y usuario de R, y cuando di una presentación sobre [Positron y Ciencia de datos multilenguaje](https://nerdear.la/es/speakers/luis-d-verde-arregoitia/) 
+admití públicamente que no sé casi nada sobre Python. Sin embargo, recibí retroalimentación sobre este guía solicitando que al menos mencione algunos recursos para herramientas de LLM en Python.
+
+No hace falta abir un debate general sobre los dos lenguajes, pero es relevante incluir este artículo del blog _DAC.digital_ titulado [¿Cuál es mejor para AI? Python o R?](https://dac.digital/which-is-better-for-ai-python-or-r/). El artículo es de 2022, pero menciona los pros y contras de cada lenguaje, enfocado en el contexto de la inteligencia artificial.
+
+Como un lenguaje ampliamente utilizado para el aprendizaje automático y la producción, naturalmente hay una gran cantidad de interfaces LLM y otras herramientas relevantes para Python. A mi parecer hay mucho más equipos trabajando en herramientas de AI para Python y muchos recursos empresariales invertidos en su desarrollo.
+
+Encontré estas guías y artículos recientes que agrupan herramientas de AI y recursos para Python, y esta es lo que puedo sugerir:
+
+## [LLM](https://llm.datasette.io/en/stable/)
+
+Este es un conjunto de herramientas de LLM y una herramienta de línea de comandos en Python desarrollada por Simon Willison (y muchos otros contribuyentes). LLM es una herramienta muy bien documentada y Simon Willison es muy conocido por su conocimiento general sobre LLMs.
+
+
+[10 Must-Know Python Libraries for LLMs in 2025](https://machinelearningmastery.com/10-must-know-python-libraries-for-llms-in-2025/)
+
+Este artículo de Machine Learning Mastery (publicado el 25 de marzo de 2025) incluye 10 liberías y frameworks para NLP, asistencia con código, modelado de texto, y embedding de palabras. Estos incluyen: Transformers por Hugging Face, LangChain, SpaCy, TextBlob, Gensim, y otros.
+
+## Herramientas equivalentes de R y Python
+
+Es relevante mencionar que los equipos de Posit (y algunos desarrolladores asociados) están adoptando el espítiru multilingüe desde que cambió de nombre RStudio. Algunas herramientas importantes se han desarrollado paralelamente en ambos lenguajes.
+
+El equivalente en Python de ellmer -> [chatlass](https://posit-dev.github.io/chatlas/)  
+  
+[mall](r-pkgs.es.qmd#mall) también es multilenguaje, y en Python es una extensión para Polars que interactúa con Ollama utilizando el paquete oficial de [Ollama](https://github.com/ollama/ollama-python) para Python.
+
+## [Awesome LLM apps repo](https://github.com/Shubhamsaboo/awesome-llm-apps)
+
+Este repositorio de GitHub es una colección de aplicaciones de LLM construidas con RAG y modelos de inteligencia artificial, todas escritas en Python, compiladas por Shubham Saboo. Esta gran colección de ejemplos (por ejemplo, aplicaciones de LLM para chatear con un repositorio, chatear con Gmail, agentes de RAG locales, etc.) puede ser instalada y ejecutada localmente.
+
+## Cursos gratuitos
+
+Este curso gratuito de Harvard disponible en edX: [Introduction to Artificial Intelligence with Python](https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python) tiene un plan de estudio interesante para primero construir una buena base teórica mientras se aprende sobre aplicaciones prácticas de herramientas de AI en Python.

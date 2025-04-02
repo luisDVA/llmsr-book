@@ -4,6 +4,9 @@ Here are some courses and guides for actually using the LLM tools listed here. N
 
 ------------------------------------------------------------------------
 
+This short [tutorial](https://posit.co/blog/mall-ai-powered-text-analysis/) in the officail Posit blog by Camila Lívio demonstrates how to use [mall](r-pkgs.qmd#mall) for text analysis and summarization for context extracted from long and complicated PDF files. 
+(**agregado 02/04/2025**)
+
 Sharon Machlis at InfoWorld just published a post titled: [GenAI tools for R: New tools to make R programming easier](https://www.infoworld.com/article/3848270/genai-tools-for-r-new-tools-to-make-r-programming-easier.html). The content overlaps with this guide but there are lots of well-explained examples. Worth checking out.  
 (**added 26/03/2025**)
 

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<link rel="alternate" hreflang="en" href="/python.html" />
+<link rel="alternate" hreflang="es" href="/es/python.es.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
-
+<meta name="generator" content="quarto-1.6.40">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>1&nbsp; Read first – Large Language Model tools for R</title>
+<meta name="description" content="IA en R">
+<title>5  🐍 Opciones para Python – Herramientas para usar modelos de lenguaje de gran escala (LLM) en R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,26 +22,12 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
-
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./r-pkgs.html" rel="next">
-<link href="./index.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
+<link href="./courses.es.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-c3c9c128612583f4c861e09fe0decaf1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -55,50 +42,47 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
-}</script>
+}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HER1TDPFHR"></script><script type="text/javascript">
 
-
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
+</script>
 </head>
-
 <body class="nav-sidebar floating">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./before-start.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Read first</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./python.es.html"><span class="chapter-number">5</span>  <span class="chapter-title">🐍 Opciones para Python</span></a></li></ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Large Language Model tools for R</a> 
+      <a href="./">Herramientas para usar modelos de lenguaje de gran escala (LLM) en R</a> 
         <div class="sidebar-tools-main">
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+    <a href="https://github.com/luisDVA/llmsr-book" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -108,55 +92,71 @@ ul.task-list li input[type="checkbox"] {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Buscar"></div>
         </div>
         </div>
-    <div class="sidebar-menu-container"> 
+    <div class="dropdown" id="languages-links-parent">
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-map"></i> Español</button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="/python.html" id="language-link-en">English</a></li></ul>
+</div>
+<div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+<li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
+  <a href="./index.es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./before-start.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Read first</span></span></a>
+  <a href="./before-start.es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">Lecturas previas</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./r-pkgs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">R Packages</span></span></a>
+  <a href="./r-pkgs.es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">Paquetes de R</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./other-ext.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Other tools and extensions</span></span></a>
+  <a href="./other-ext.es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">Otras herramientas o extensiones</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./courses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Further reading</span></span></a>
+  <a href="./courses.es.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">Lecturas adicionales</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./python.es.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">🐍 Opciones para Python</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <span class="sidebar-item-text sidebar-link text-start">
+ <span class="menu-text">Apéndices</span></span>
+  </li>
     </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+<li><a href="#llm" id="toc-llm" class="nav-link active" data-scroll-target="#llm"><span class="header-section-number">5.1</span> LLM</a></li>
+  <li><a href="#herramientas-equivalentes-de-r-y-python" id="toc-herramientas-equivalentes-de-r-y-python" class="nav-link" data-scroll-target="#herramientas-equivalentes-de-r-y-python"><span class="header-section-number">5.2</span> Herramientas equivalentes de R y Python</a></li>
+  <li><a href="#awesome-llm-apps-repo" id="toc-awesome-llm-apps-repo" class="nav-link" data-scroll-target="#awesome-llm-apps-repo"><span class="header-section-number">5.3</span> Awesome LLM apps repo</a></li>
+  <li><a href="#cursos-gratuitos" id="toc-cursos-gratuitos" class="nav-link" data-scroll-target="#cursos-gratuitos"><span class="header-section-number">5.4</span> Cursos gratuitos</a></li>
+  </ul></nav>
+</div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><span id="sec-before-start" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Read first</span></span></h1>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title"><span id="sec-python" class="quarto-section-identifier"><span class="chapter-number">5</span>  <span class="chapter-title">🐍 Opciones para Python</span></span></h1>
 </div>
 
 
@@ -170,21 +170,31 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
+</header><p>Soy un programador y usuario de R, y cuando di una presentación sobre <a href="https://nerdear.la/es/speakers/luis-d-verde-arregoitia/">Positron y Ciencia de datos multilenguaje</a> admití públicamente que no sé casi nada sobre Python. Sin embargo, recibí retroalimentación sobre este guía solicitando que al menos mencione algunos recursos para herramientas de LLM en Python.</p>
+<p>No hace falta abir un debate general sobre los dos lenguajes, pero es relevante incluir este artículo del blog <em>DAC.digital</em> titulado <a href="https://dac.digital/which-is-better-for-ai-python-or-r/">¿Cuál es mejor para AI? Python o R?</a>. El artículo es de 2022, pero menciona los pros y contras de cada lenguaje, enfocado en el contexto de la inteligencia artificial.</p>
+<p>Como un lenguaje ampliamente utilizado para el aprendizaje automático y la producción, naturalmente hay una gran cantidad de interfaces LLM y otras herramientas relevantes para Python. A mi parecer hay mucho más equipos trabajando en herramientas de AI para Python y muchos recursos empresariales invertidos en su desarrollo.</p>
+<p>Encontré estas guías y artículos recientes que agrupan herramientas de AI y recursos para Python, y esta es lo que puedo sugerir:</p>
+<section id="llm" class="level2" data-number="5.1"><h2 data-number="5.1" class="anchored" data-anchor-id="llm">
+<span class="header-section-number">5.1</span> <a href="https://llm.datasette.io/en/stable/">LLM</a>
+</h2>
+<p>Este es un conjunto de herramientas de LLM y una herramienta de línea de comandos en Python desarrollada por Simon Willison (y muchos otros contribuyentes). LLM es una herramienta muy bien documentada y Simon Willison es muy conocido por su conocimiento general sobre LLMs.</p>
+<p><a href="https://machinelearningmastery.com/10-must-know-python-libraries-for-llms-in-2025/">10 Must-Know Python Libraries for LLMs in 2025</a></p>
+<p>Este artículo de Machine Learning Mastery (publicado el 25 de marzo de 2025) incluye 10 liberías y frameworks para NLP, asistencia con código, modelado de texto, y embedding de palabras. Estos incluyen: Transformers por Hugging Face, LangChain, SpaCy, TextBlob, Gensim, y otros.</p>
+</section><section id="herramientas-equivalentes-de-r-y-python" class="level2" data-number="5.2"><h2 data-number="5.2" class="anchored" data-anchor-id="herramientas-equivalentes-de-r-y-python">
+<span class="header-section-number">5.2</span> Herramientas equivalentes de R y Python</h2>
+<p>Es relevante mencionar que los equipos de Posit (y algunos desarrolladores asociados) están adoptando el espítiru multilingüe desde que cambió de nombre RStudio. Algunas herramientas importantes se han desarrollado paralelamente en ambos lenguajes.</p>
+<p>El equivalente en Python de ellmer -&gt; <a href="https://posit-dev.github.io/chatlas/">chatlass</a></p>
+<p><a href="./r-pkgs.es.html#mall">mall</a> también es multilenguaje, y en Python es una extensión para Polars que interactúa con Ollama utilizando el paquete oficial de <a href="https://github.com/ollama/ollama-python">Ollama</a> para Python.</p>
+</section><section id="awesome-llm-apps-repo" class="level2" data-number="5.3"><h2 data-number="5.3" class="anchored" data-anchor-id="awesome-llm-apps-repo">
+<span class="header-section-number">5.3</span> <a href="https://github.com/Shubhamsaboo/awesome-llm-apps">Awesome LLM apps repo</a>
+</h2>
+<p>Este repositorio de GitHub es una colección de aplicaciones de LLM construidas con RAG y modelos de inteligencia artificial, todas escritas en Python, compiladas por Shubham Saboo. Esta gran colección de ejemplos (por ejemplo, aplicaciones de LLM para chatear con un repositorio, chatear con Gmail, agentes de RAG locales, etc.) puede ser instalada y ejecutada localmente.</p>
+</section><section id="cursos-gratuitos" class="level2" data-number="5.4"><h2 data-number="5.4" class="anchored" data-anchor-id="cursos-gratuitos">
+<span class="header-section-number">5.4</span> Cursos gratuitos</h2>
+<p>Este curso gratuito de Harvard disponible en edX: <a href="https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python">Introduction to Artificial Intelligence with Python</a> tiene un plan de estudio interesante para primero construir una buena base teórica mientras se aprende sobre aplicaciones prácticas de herramientas de AI en Python.</p>
 
 
-<p>Here are some interesting and worthwhile reads to explore before getting hands-on with any of the tools listed on this site.</p>
-<hr>
-<p>In my opinion, anyone using LLM-based assistants for coding should read this perspective published in Methods in Ecology and Evolution: <a href="https://doi.org/10.1111/2041-210X.14325">Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution</a>, led by Natalie Cooper, and part of a special issue on the use of LLMs in ecology and evolution. These papers summarize the pros and cons of genAI/LLMs in the context of research and teaching, and their conclusions go beyond research and biological sciences.</p>
-<p>Another useful resource is this course <a href="https://thebullshitmachines.com/index.html">The Bullshit Machines</a> put together Carl T. Bergstrom and Jevin D. West. A very thoughtful and well-structured set of materials that dig through the smoke and highlight the fact that <strong>just because a machine can write like us it does not mean it can think like us</strong>.</p>
-<p>As an instructor, I am not alone in noticing that lately, a variable proportion of learners are using ChatGPT and similar tools to assist them in and after various R-related workshops. The Carpentries foundation have this interesting <a href="https://carpentries.org/blog/2025/01/teaching-llms-report/">two-part series</a> on teaching LLM-based coding assistants in Carpentries workshops. The results here mention patterns of usage, advantages and disadvantages of actually teaching how to use these assistants, and throughout 2025 there will be ongoing discussion about ethics, security, and how to best teach in light of these new tools.</p>
-<p><br></p>
-<p>With that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.</p>
-
-
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -227,12 +237,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Copiado");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Copiado");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -266,8 +276,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -378,7 +386,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -603,17 +610,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
-</script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Welcome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./courses.es.html" class="pagination-link" aria-label="Lecturas adicionales">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>  <span class="chapter-title">Lecturas adicionales</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./r-pkgs.html" class="pagination-link" aria-label="R Packages">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">R Packages</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -621,4 +623,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+</body>
+</html>

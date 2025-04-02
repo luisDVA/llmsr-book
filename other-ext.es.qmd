@@ -1,0 +1,36 @@
+# Otras herramientas o extensiones {#sec-other-ext}
+
+Aquí hay algunas herramientas o extensiones que no se instalan como paquetes R, o que se usan directamente en el navegador.
+
+
+## [GitHub Copilot](https://github.com/features/copilot)
+
+Copilot es un asistente de programación bien documentado, usado ampliamente desde hace unos años, y bastante versátil. Sirve para autocompletar nuestros códigos de programación o también para responder preguntas y dar sugerencias. Funciona en el sitio de GitHub y dentro de casi todos los IDEs.
+
+Copilot es un servicio de paga aunque recientemente ya tiene una cuenta gratuita que sigo sin probar.
+
+Podemos aprender más viendo esta  [presentación](https://github.com/yabellini/copilotWithR) que dio Yanina Bellini para el grupo de RLadies Roma. 
+
+## [continue](https://www.continue.dev/)
+
+Continue es una extensión para vscode pero que funciona bien en Positron. Tiene soporte para casi todos los modelos que hay y nos da chat, autocompletado de código, y tiene un herramienta para ir aplicando los cambios sugeridos a nuestros archivos. Es fácil mencionar archivos y carpetas para dar contexto y la integración con el editor me gustó mucho.
+
+Es la primera extensión que usé después de esuchar que Julia Silge la mencionara en el podcast [Super Data Science](https://www.superdatascience.com/podcast/817). 
+Me ha funcionado muy bien con Claude y diferentes modelos de groQ, y de hecho usé la extensión y éstos modelos para editar el código de css, html y javascript que usa mi paquete hexsession.
+
+
+## [codeium](https://codeium.com/)
+
+Codeium es otra extensión para vscode que funciona bien en Positron. También nos ayuda a autocompletar código y nos brinda un chat parecido al de Continue. Tiene un plan gratuito y otros planes de paga con acceso a más modelos. El plan gratuito usa el modelo Llama 3.170B.
+
+
+## [R and RStudio Tutor](https://chatgpt.com/g/g-iedyANQtM-r-and-r-studio-tutor)
+
+Yo no sabía pero es posible construir GTPs personalizados encima de modelos de openAI y que éstos vivan en línea en el entorno de chatGPT. R and RStudio tutor,  por Jose A. Fernandez Calvo, es un tutor específicamente diseñado para enseñar y explicar sobre R.
+
+> Mención especial para [RTutor](https://rtutor.ai/), que fue una de las primeras herramientas (~2022) para usar ChatGPT y generar código a partir de lenguaje natural. Se puede usar en línea o localmente instalándolo a tráves de su propio paquete.  
+
+## [Shiny Assistant](https://shiny.posit.co/blog/posts/shiny-assistant/)
+
+También hay que mencionar a Shiny Assistant. Esta herramienta la desarrolló el equipo de Shiny y puede contestar preguntas sobre Shiny o de plano construir y editar aplicaciones. Funciona para R y para Python, y puede usar Shinylive para prescindir de un servidor.
+

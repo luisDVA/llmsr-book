@@ -16,3 +16,18 @@ book:
     - other-ext.qmd
     - courses.qmd
     - python.qmd
+
+babelquarto:
+  icon: "bi bi-map"
+  languagelinks: sidebar
+  languagecodes:
+  - name: es
+    text: "Español"
+  - name: en
+    text: "English"
+  mainlanguage: 'en'
+  languages: ['es']
+title-es: "Herramientas para usar modelos de lenguaje de gran escala (LLM) en R"
+description-es: "IA en R"
+author-es: "Luis D. Verde Arregoitia"
+lang: en

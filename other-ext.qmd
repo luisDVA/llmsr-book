@@ -2,7 +2,7 @@
 
 These include vscode/Positron extensions that are not shipped as R packages, as well as relevant web-based resources.
 
-## [GiHub Copilot](https://github.com/features/copilot)
+## [GitHub Copilot](https://github.com/features/copilot)
 
 GitHub Copilot is a widely-used and well-documented coding assistant for code completions and the possibility of turning natural language prompts into code suggestions. Works on GitHub.com and inside most IDEs. 
 
