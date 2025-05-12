@@ -6,6 +6,12 @@ Los paquetes están resumidos aquí sin ningún orden en particular, pero los ju
 
 ## Interfaces generales
 
+### [axolotr](https://github.com/heurekalabsco/axolotr)
+<img src="images/hex/axolotrlogo.png" align="right" height="108"/>
+
+axolotor por Matthew Hirschey y Pol Castellano Escuder es otro paquete que nos brinda una interfaz generalizada para interactuar con APIs de distintos proveedores de LLMs. El paquete tiene funciones para aprovechar herramientas que son específicas a cada proveedor o modelo. También funciona con modelos locales y con la modalidad de 'thinking' de Claude 3.7 Sonnet. Funciona con una familia de funciones `ask()` y me gustó su logotipo.
+
+
 ### [chatgpt](https://github.com/jcrodriguez1989/chatgpt)
 
 El paquete chatgpt nos permite interactuar con modelos de OpenAI para obtener ayuda mientras programamos. El paquete fue desarrollado por [Juan Cruz Rodriguez](https://jcrodriguez.rbind.io/), entonces seguramente es robusto y bien diseñado, pues he trabajado con Juan en el pasado en mejoras para annotater. Este paquete ha estado disponible por un buen tiempo ya y de hecho antecede a la mayoría de las herramientas LLM existentes para R, lo que demuestra la visión y las ideas novedosas de Juan.

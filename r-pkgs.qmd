@@ -6,6 +6,11 @@ In no particular order, but now grouped into loose groups:
 
 ## General interfaces
 
+### [axolotr](https://github.com/heurekalabsco/axolotr)
+<img src="images/hex/axolotrlogo.png" align="right" height="108"/>
+
+This package by Matthew Hirschey and Pol Castellano Escuder provides a unified interface for interacting with various Language Model APIs. axolotr has some useful functions to take advantage of provider-specific features, local model support, and support for Claude 3.7 Sonnet’s 'thinking' capability. Works through a simple family of `ask()` functions. Cute logo too.
+
 ### [chatgpt](https://github.com/jcrodriguez1989/chatgpt)
 
 The chatgtp package lets us interface with models from OpenAI to get assistance while coding. The package was developed by [Juan Cruz Rodriguez](https://jcrodriguez.rbind.io/) so I know it's robust and well-engineered, having worked with Juan in the past on features for annotater. This package has been around for a while and actually predates most existing LLM tools for R, so more evidence for Juan's foresight and clever ideas.
