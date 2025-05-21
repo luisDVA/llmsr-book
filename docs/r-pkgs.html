@@ -217,10 +217,11 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <a href="#ellmer-and-friends" id="toc-ellmer-and-friends" class="nav-link" data-scroll-target="#ellmer-and-friends"><span class="header-section-number">2.5</span> ellmer and friends</a>
   <ul class="collapse">
 <li><a href="#ellmer" id="toc-ellmer" class="nav-link" data-scroll-target="#ellmer"><span class="header-section-number">2.5.1</span> ellmer</a></li>
-  <li><a href="#hellmer" id="toc-hellmer" class="nav-link" data-scroll-target="#hellmer"><span class="header-section-number">2.5.2</span> hellmer</a></li>
-  <li><a href="#chores" id="toc-chores" class="nav-link" data-scroll-target="#chores"><span class="header-section-number">2.5.3</span> chores</a></li>
-  <li><a href="#ggpal2" id="toc-ggpal2" class="nav-link" data-scroll-target="#ggpal2"><span class="header-section-number">2.5.4</span> ggpal2</a></li>
-  <li><a href="#gander" id="toc-gander" class="nav-link" data-scroll-target="#gander"><span class="header-section-number">2.5.5</span> gander</a></li>
+  <li><a href="#btw" id="toc-btw" class="nav-link" data-scroll-target="#btw"><span class="header-section-number">2.5.2</span> btw</a></li>
+  <li><a href="#hellmer" id="toc-hellmer" class="nav-link" data-scroll-target="#hellmer"><span class="header-section-number">2.5.3</span> hellmer</a></li>
+  <li><a href="#chores" id="toc-chores" class="nav-link" data-scroll-target="#chores"><span class="header-section-number">2.5.4</span> chores</a></li>
+  <li><a href="#ggpal2" id="toc-ggpal2" class="nav-link" data-scroll-target="#ggpal2"><span class="header-section-number">2.5.5</span> ggpal2</a></li>
+  <li><a href="#gander" id="toc-gander" class="nav-link" data-scroll-target="#gander"><span class="header-section-number">2.5.6</span> gander</a></li>
   </ul>
 </li>
   <li>
@@ -376,8 +377,13 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </blockquote>
 <p>ellmer is a new tidyverse-adjacent package by Hadley Wickham and Joe Cheng for interacting in R with various models, either programmatically or interactively. elmer creates R6 chat objects that remember context, and we can interact with models with a console or browser-based chat box, or programmatically within R functions.</p>
 <p>Seems promising, quite flexible, and all the activity in the GitHub repo suggests a very active development process, a solid dev team, and lots of community input.</p>
-</section><section id="hellmer" class="level3" data-number="2.5.2"><h3 data-number="2.5.2" class="anchored" data-anchor-id="hellmer">
-<span class="header-section-number">2.5.2</span> <a href="https://dylanpieper.github.io/hellmer/">hellmer</a>
+</section><section id="btw" class="level3" data-number="2.5.2"><h3 data-number="2.5.2" class="anchored" data-anchor-id="btw">
+<span class="header-section-number">2.5.2</span> <a href="https://posit-dev.github.io/btw/">btw</a>
+</h3>
+<p><img src="images/hex/btwlogo.png" align="right" height="108"></p>
+<p>As per the official documentation, btw helps us describe our computational environment to LLMs. This means we can give ellmer chat objects the ability to examine package documentation, objects in the R environment, and the contents of our working directory. btw is actively developed by Garrick Aden-Buie, Simon Couch, and Joe Cheng, so expect good things from the package. btw can be used interactively to parse objects or docs and have these as text in the clipboard, or as a way to equip LLM chats with this power automatically. Good companion for ellmer.</p>
+</section><section id="hellmer" class="level3" data-number="2.5.3"><h3 data-number="2.5.3" class="anchored" data-anchor-id="hellmer">
+<span class="header-section-number">2.5.3</span> <a href="https://dylanpieper.github.io/hellmer/">hellmer</a>
 </h3>
 <p>To batch process ellmer chats and their outputs, Dylan Pieper created hellmer. The package is loaded with useful features, has progress bars and helpful messages, and plays nicely with ellmer.</p>
 <p>I ran this example with gemini (after setting up the API key) and it worked great:</p>
@@ -410,8 +416,8 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">5</span>]]</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"Acra.</span><span class="sc">\n</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="chores" class="level3" data-number="2.5.3"><h3 data-number="2.5.3" class="anchored" data-anchor-id="chores">
-<span class="header-section-number">2.5.3</span> <a href="https://simonpcouch.github.io/chores/">chores</a>
+</section><section id="chores" class="level3" data-number="2.5.4"><h3 data-number="2.5.4" class="anchored" data-anchor-id="chores">
+<span class="header-section-number">2.5.4</span> <a href="https://simonpcouch.github.io/chores/">chores</a>
 </h3>
 <p><img src="images/hex/choreslogo.png" align="right" height="108"></p>
 <blockquote class="blockquote">
@@ -420,14 +426,14 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p>chores by Simon Couch provides easy to use assistants that can edit, document, or explain code. The package provides an addin that works in both RStudio and Positron. Very cute package logo, and pal seems like a good option for writing boilerplate code and automating some of the more tedious, repetitive tasks. Works with multiple underlying models. Haven’t tried it yet.</p>
 <ul>
 <li>Here’s a <a href="https://bastianolea.rbind.io/blog/pal_asistentes_llm/">tutorial</a> in Spanish for using chores with custom assistants that can have different roles.</li>
-</ul></section><section id="ggpal2" class="level3" data-number="2.5.4"><h3 data-number="2.5.4" class="anchored" data-anchor-id="ggpal2">
-<span class="header-section-number">2.5.4</span> <a href="https://github.com/frankiethull/ggpal2">ggpal2</a>
+</ul></section><section id="ggpal2" class="level3" data-number="2.5.5"><h3 data-number="2.5.5" class="anchored" data-anchor-id="ggpal2">
+<span class="header-section-number">2.5.5</span> <a href="https://github.com/frankiethull/ggpal2">ggpal2</a>
 </h3>
 <p><img src="images/hex/ggpal2.png" align="right" height="108"></p>
 <p>ggpal2 is an extension package for <code>chores</code> developed by Frank Hull. ggpal2 provides an LLM-powered assistant prompt-engineered specifically for working with <code>ggplot2</code>. Like chores and gander, we highlight code or text and through an addin and customizable shortcut: we can swap base R code with ggplot2, create a plot from a comment, or get suggestions for accesibility and readability for existing ggplot2 code.</p>
 <p>A nice example of extending chores and leveraging ellmer through a set of well written prompts.</p>
-</section><section id="gander" class="level3" data-number="2.5.5"><h3 data-number="2.5.5" class="anchored" data-anchor-id="gander">
-<span class="header-section-number">2.5.5</span> <a href="https://github.com/simonpcouch/gander/">gander</a>
+</section><section id="gander" class="level3" data-number="2.5.6"><h3 data-number="2.5.6" class="anchored" data-anchor-id="gander">
+<span class="header-section-number">2.5.6</span> <a href="https://github.com/simonpcouch/gander/">gander</a>
 </h3>
 <p><img src="images/hex/logo.png" align="right" height="108"></p>
 <p>Simon Couch is on a roll, and released the cool gander package in early 2025.</p>

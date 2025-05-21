@@ -221,10 +221,11 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <a href="#ellmer-y-compa%C3%B1ia" id="toc-ellmer-y-compañia" class="nav-link" data-scroll-target="#ellmer-y-compañia"><span class="header-section-number">2.5</span> ellmer y compañia</a>
   <ul class="collapse">
 <li><a href="#ellmer" id="toc-ellmer" class="nav-link" data-scroll-target="#ellmer"><span class="header-section-number">2.5.1</span> ellmer</a></li>
-  <li><a href="#hellmer" id="toc-hellmer" class="nav-link" data-scroll-target="#hellmer"><span class="header-section-number">2.5.2</span> hellmer</a></li>
-  <li><a href="#chores" id="toc-chores" class="nav-link" data-scroll-target="#chores"><span class="header-section-number">2.5.3</span> chores</a></li>
-  <li><a href="#ggpal2" id="toc-ggpal2" class="nav-link" data-scroll-target="#ggpal2"><span class="header-section-number">2.5.4</span> ggpal2</a></li>
-  <li><a href="#gander" id="toc-gander" class="nav-link" data-scroll-target="#gander"><span class="header-section-number">2.5.5</span> gander</a></li>
+  <li><a href="#btw" id="toc-btw" class="nav-link" data-scroll-target="#btw"><span class="header-section-number">2.5.2</span> btw</a></li>
+  <li><a href="#hellmer" id="toc-hellmer" class="nav-link" data-scroll-target="#hellmer"><span class="header-section-number">2.5.3</span> hellmer</a></li>
+  <li><a href="#chores" id="toc-chores" class="nav-link" data-scroll-target="#chores"><span class="header-section-number">2.5.4</span> chores</a></li>
+  <li><a href="#ggpal2" id="toc-ggpal2" class="nav-link" data-scroll-target="#ggpal2"><span class="header-section-number">2.5.5</span> ggpal2</a></li>
+  <li><a href="#gander" id="toc-gander" class="nav-link" data-scroll-target="#gander"><span class="header-section-number">2.5.6</span> gander</a></li>
   </ul>
 </li>
   <li>
@@ -376,8 +377,13 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </blockquote>
 <p>ellmer es un nuevo paquete vinculado al tidyverse y desarrollado por Hadley Wickham y Joe Cheng. El paquete nos ayuda a interactuar en R con modelos locales y con prácticamente todos los proveedores. Podemos interactuar interactivamente a través de un chat en nuestra consola de R o programáticamente al incorporar objetos y métodos de ellmer en nuestras funciones. Las interacciones en ellmer quedan como objetos de chat de clase R6 que se acuerdan del contexto.</p>
 <p>ellmer promete bastante. Hay mucha gente contribuyendo, se está incorporando como base para otros paquetes, y cada que reviso tiene nuevas funcionalidades y mejor documentación.</p>
-</section><section id="hellmer" class="level3" data-number="2.5.2"><h3 data-number="2.5.2" class="anchored" data-anchor-id="hellmer">
-<span class="header-section-number">2.5.2</span> <a href="https://dylanpieper.github.io/hellmer/">hellmer</a>
+</section><section id="btw" class="level3" data-number="2.5.2"><h3 data-number="2.5.2" class="anchored" data-anchor-id="btw">
+<span class="header-section-number">2.5.2</span> <a href="https://posit-dev.github.io/btw/">btw</a>
+</h3>
+<p><img src="images/hex/btwlogo.png" align="right" height="108"></p>
+<p>Como dice su documentación oficial, btw nos ayuda a describirle nuestro entorno de cómputo a un LLM. Ésto significa que le podemos dar a los objetos de chat de ellmer la capacidad de revisar documentación, y de chusmear objetos en el entorno de R y archivos en el directorio de trabajo. btw está en desarrollo constante por parte de Garrick Aden-Buie, Simon Couch, y Joe Cheng, así que podemos esperar que funcione bien. Podemos usar btw interactivamente para procesar objetos y documentación y que éstos pasen al portapapeles como texto, pero también hay funciones para que los objetos de chat de LLM ya tengan esta capacidad automáticamente. Muy buen complemento para ellmer.</p>
+</section><section id="hellmer" class="level3" data-number="2.5.3"><h3 data-number="2.5.3" class="anchored" data-anchor-id="hellmer">
+<span class="header-section-number">2.5.3</span> <a href="https://dylanpieper.github.io/hellmer/">hellmer</a>
 </h3>
 <p>Para trabajar en lotes (<em>batch processing</em>) con los chats de ellmer y sus salidas, Dylan Pieper ideó hellmer. El paquete se lleva bien con ellmer y tiene varias funciones útiles, barritas que muestran el progreso, y nos da mensajes informativos mientras trabaja.</p>
 <p>Para probar el paquete yo corrí este ejemplo con Gemini y funcionó super bien:</p>
@@ -410,8 +416,8 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">5</span>]]</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"Acra.</span><span class="sc">\n</span><span class="st">"</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="chores" class="level3" data-number="2.5.3"><h3 data-number="2.5.3" class="anchored" data-anchor-id="chores">
-<span class="header-section-number">2.5.3</span> <a href="https://simonpcouch.github.io/chores/">chores</a>
+</section><section id="chores" class="level3" data-number="2.5.4"><h3 data-number="2.5.4" class="anchored" data-anchor-id="chores">
+<span class="header-section-number">2.5.4</span> <a href="https://simonpcouch.github.io/chores/">chores</a>
 </h3>
 <p><img src="images/hex/choreslogo.png" align="right" height="108"></p>
 <blockquote class="blockquote">
@@ -420,14 +426,14 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p>chores es otro paquete por Simon Couch que nos brinda asistentes amigables que pueden editar, documentar, o explicar nuestro código. Funciona con addins que pueden correr en RStudio o Positron. Buena opción para automatizar la creación de código repetitivo y no tener que hacer algunas tareas tediosas a mano al programar. Funciona con casi cualquier modelo.</p>
 <ul>
 <li>Aquí encontré un <a href="https://bastianolea.rbind.io/blog/pal_asistentes_llm/">tutorial</a> en español para crear asistentes orientados a diferentes roles.</li>
-</ul></section><section id="ggpal2" class="level3" data-number="2.5.4"><h3 data-number="2.5.4" class="anchored" data-anchor-id="ggpal2">
-<span class="header-section-number">2.5.4</span> <a href="https://github.com/frankiethull/ggpal2">ggpal2</a>
+</ul></section><section id="ggpal2" class="level3" data-number="2.5.5"><h3 data-number="2.5.5" class="anchored" data-anchor-id="ggpal2">
+<span class="header-section-number">2.5.5</span> <a href="https://github.com/frankiethull/ggpal2">ggpal2</a>
 </h3>
 <p><img src="images/hex/ggpal2.png" align="right" height="108"></p>
 <p>ggpal2 es una extensión para <code>chores</code>, desarrollada por Frank Hull. ggpal2 nos aporta asistentes basados en LLM diseñados específicamente para trabajar con <code>ggplot2</code>. Como con chores o gander, solo tenemos que seleccionar algúna sección código o texto que describa lo que queremos hacer y llamar al addin con un atajo de teclado. Algunas de las cosas que podemos hacer es pasar código de R base a ggplot, crear gráficos a partir de comentarios, u obtener sugerencias para mejorar la legibilidad de nuestros gráficos existentes.</p>
 <p>ggpal2 es un buen ejemplo de como se pueden escibir extensiones para chores, principalmente a través un un conjunto de prompts bien diseñados..</p>
-</section><section id="gander" class="level3" data-number="2.5.5"><h3 data-number="2.5.5" class="anchored" data-anchor-id="gander">
-<span class="header-section-number">2.5.5</span> <a href="https://github.com/simonpcouch/gander/">gander</a>
+</section><section id="gander" class="level3" data-number="2.5.6"><h3 data-number="2.5.6" class="anchored" data-anchor-id="gander">
+<span class="header-section-number">2.5.6</span> <a href="https://github.com/simonpcouch/gander/">gander</a>
 </h3>
 <p><img src="images/hex/logo.png" align="right" height="108"></p>
 <p>Otro paquete más desarollado por Simon Couch, que publicó gander a principios de 2025.</p>

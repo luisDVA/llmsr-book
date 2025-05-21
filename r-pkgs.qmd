@@ -139,6 +139,14 @@ ellmer is a new tidyverse-adjacent package by Hadley Wickham and Joe Cheng for i
 
 Seems promising, quite flexible, and all the activity in the GitHub repo suggests a very active development process, a solid dev team, and lots of community input.
 
+
+### [btw](https://posit-dev.github.io/btw/) 
+
+<img src="images/hex/btwlogo.png" align="right" height="108"/>
+
+As per the official documentation, btw helps us describe our computational environment to LLMs. This means we can give ellmer chat objects the ability to examine package documentation, objects in the R environment, and the contents of our working directory. btw is actively developed by Garrick Aden-Buie, Simon Couch, and Joe Cheng, so expect good things from the package. btw can be used interactively to parse objects or docs and have these as text in the clipboard, or as a way to equip LLM chats with this power automatically. Good companion for ellmer. 
+
+
 ### [hellmer](https://dylanpieper.github.io/hellmer/)
 
 To batch process ellmer chats and their outputs, Dylan Pieper created hellmer. The package is loaded with useful features, has progress bars and helpful messages, and plays nicely with ellmer.
