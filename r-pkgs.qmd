@@ -270,7 +270,7 @@ Very nice to see a robust rOpenSci package for this topic. The package is mostly
 
 ### [searcher](https://r-pkg.thecoatlessprofessor.com/searcher/)
 
-<img src="images/hex/searcherlogo.svg" align="right" height="108"/>
+<img src="images/hex/searcherlogo.png" align="right" height="108"/>
 
 
 searcher is package specifically focused on letting us search the web directly from R. Developed by James Balamuta, searcher has functions to perform searches using different search engines, but the package also comes with tools for integration with AI assistants. We can ask questions or send prompts to various models providers, and the functions will launch a web browser ready to answer. For example: `ask_mistral("How to handle missing data in R?")` or `ask_claude("Explain what purrr::map_df does")`.

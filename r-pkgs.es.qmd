@@ -263,7 +263,7 @@ Me gustó mucho ver un paquete de rOpenSci en este campo.
 
 ### [searcher](https://r-pkg.thecoatlessprofessor.com/searcher/)
 
-<img src="images/hex/searcherlogo.svg" align="right" height="108"/>
+<img src="images/hex/searcherlogo.png" align="right" height="108"/>
 
 
 searcher es un paquete enfocado a brindarnos una interfaz de búsqueda directamente dentro de R. Desarrollado por James Balamuta, searcher tiene funciones para hacer búsquedas en distintos buscadores web pero también tiene integración con asistentes de IA, que al hacer búsquedas o preguntas nos abre un navegador listo para contestar. Por ejemplo, con la función `ask_claude()` o `ask_perplexity()`.
