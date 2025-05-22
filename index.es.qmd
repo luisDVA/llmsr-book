@@ -51,6 +51,7 @@ names(logos) <- urlss
 samplelogos <- sample(logos)
 
 hexsession::make_tile(local_images = samplelogos, local_urls = names(samplelogos), dark_mode = F)
+
 ```
 
 Cualquier sugerencia o solicitud es bienvenida, ya sea a traves del codigo fuente de esta guia en ([GitHub](https://github.com/luisdva/llmsr-book/)) o contactactándome por cualquier medio.
