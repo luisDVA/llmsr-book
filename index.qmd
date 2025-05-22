@@ -8,7 +8,7 @@
 For teaching purposes and to help me keep track of what's happening, I've put together this draft listing of relevant LLM+R resources. This was initially a post on my blog from late 2024, but this book format should be easier to navigate. I will update the content periodically when new tools come out and/or when people bring them to my attention.
 
 
-The field is very fast moving so providers, software names, APIs, and  overall funcitons are subject to change. I'll do my best to keep this guide updated and mention key changes and news. 
+The field is very fast moving so providers, software names, APIs, and  overall functions are subject to change. I'll do my best to keep this guide updated and mention key changes and news. 
 
 
 The logos below link to each tool's official site.
@@ -48,7 +48,8 @@ urlss <- c(
 "https://r-pkg.thecoatlessprofessor.com/searcher/",
 "https://tidychatmodels.albert-rapp.de/",
 "https://edubruell.github.io/tidyllm/",
-"https://vitals.tidyverse.org/")
+ "https://vitals.tidyverse.org/"
+)
 
 names(logos) <- urlss
 

@@ -107,7 +107,7 @@ ensure by Simon Couch helps write code for unit tests using the testthat package
 
 ### [vitals](https://vitals.tidyverse.org/)
 
-<img src="images/hex/malllogo.png" align="right" height="108"/>
+<img src="images/hex/vitalslogo.png" align="right" height="108"/>
 
 vitals by Simon Couch provides us with a framework for evaluating LLMs. We provide inputs (prompts or questions) and targets (the actual response that we expect) and then our model or models of choice can give the problems a go and then get scored on their performace. These two posts ([1](https://www.simonpcouch.com/blog/2025-04-01-gemini-2-5-pro/#an-r-eval-dataset), [2](https://www.simonpcouch.com/blog/2025-05-21-gemini-2-5-flash/))include a detailed walkthrough of the evaluation process using vitals. 
 

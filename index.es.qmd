@@ -13,8 +13,10 @@ El campo del uso de inteligencia artificial (IA) en R avanza rápidamente, por l
 Los logotipos de abajo enlazan a los sitios oficiales de cada paquete o herramienta.
 
 ```{r}
-#| warning: false
+#| warning: true  # Add this
 #| echo: false
+#| error: true    # Add this
+#| message: true  # Add this
 
 logos <- fs::dir_ls(here::here("images/hex/"))
 
@@ -54,7 +56,7 @@ hexsession::make_tile(local_images = samplelogos, local_urls = names(samplelogos
 
 ```
 
-Cualquier sugerencia o solicitud es bienvenida, ya sea a traves del codigo fuente de esta guia en ([GitHub](https://github.com/luisdva/llmsr-book/)) o contactactándome por cualquier medio.
+Cualquier sugerencia o solicitud es bienvenida, ya sea a traves del codigo fuente de esta guía en ([GitHub](https://github.com/luisdva/llmsr-book/)) o contactactándome por cualquier medio.
 
 ## Sobre mí
 
