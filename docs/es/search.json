@@ -64,7 +64,7 @@
     "href": "r-pkgs.es.html#ayuda-con-pruebas-unitarias",
     "title": "2  Paquetes de R",
     "section": "2.3 Ayuda con pruebas unitarias",
-    "text": "2.3 Ayuda con pruebas unitarias\n\n2.3.1 ensure\nensure es otro paquete desarrollado por Simon Couch que nos ayuda a escribir código para implementar pruebas unitarias utilizando el paquete testthat. Funciona a través de un addin de RStudio y la documentación menciona que el modelo está ‘enterado’ de la sintaxis de testthat y de la guía de estilo “tidy style guide” para formatear código. Lo pienso probar para avanzar con uno de mis paquetes más recientes que aún tienen una cobertura de pruebas muy pobre.\n\ngroqR y PerplexR (ver arriba) tienen funciones específicas para crear pruebas unitarias.",
+    "text": "2.3 Ayuda con pruebas unitarias\n\n2.3.1 ensure\nensure es otro paquete desarrollado por Simon Couch que nos ayuda a escribir código para implementar pruebas unitarias utilizando el paquete testthat. Funciona a través de un addin de RStudio y la documentación menciona que el modelo está ‘enterado’ de la sintaxis de testthat y de la guía de estilo “tidy style guide” para formatear código. Lo pienso probar para avanzar con uno de mis paquetes más recientes que aún tienen una cobertura de pruebas muy pobre.\n\ngroqR y PerplexR (ver arriba) tienen funciones específicas para crear pruebas unitarias.\n\n\n\n2.3.2 vitals\n\nvitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de difentes modelos. Se le dan inputs (tareas o preguntas) y targets (las respuestas o soluciones que esperamos) y de ahí los modelos que están siendo evaluados contestan los problemas y son evaluados en su desempeño. Aquí hay dos ejemplos (1, 2)de como comparar el desempeño de diferentes modelos para programar en R, todo usando vitals.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paquetes de R</span>"
     ]
@@ -115,6 +115,16 @@
     "title": "2  Paquetes de R",
     "section": "2.8 Transformers",
     "text": "2.8 Transformers\n\n2.8.1 pangoling\n\nBruno Nicenboim, Chris Emmerly, y Giovanni Cassani desarrollaron pangoling, un paquete para estimar que tan predecible es una palabra en un contexto dado usando modelos de tipo transformer (como GPT-2 or BERT). Estas probabilidades al parecer se usan mucho en estudios psicolinguísticos.\nMe gustó mucho ver un paquete de rOpenSci en este campo.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paquetes de R</span>"
+    ]
+  },
+  {
+    "objectID": "r-pkgs.es.html#búsquedas-desde-r",
+    "href": "r-pkgs.es.html#búsquedas-desde-r",
+    "title": "2  Paquetes de R",
+    "section": "2.9 Búsquedas desde R",
+    "text": "2.9 Búsquedas desde R\n\n2.9.1 searcher\n\nsearcher es un paquete enfocado a brindarnos una interfaz de búsqueda directamente dentro de R. Desarrollado por James Balamuta, searcher tiene funciones para hacer búsquedas en distintos buscadores web pero también tiene integración con asistentes de IA, que al hacer búsquedas o preguntas nos abre un navegador listo para contestar. Por ejemplo, con la función ask_claude() o ask_perplexity().",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paquetes de R</span>"
     ]

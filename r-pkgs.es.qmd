@@ -101,6 +101,11 @@ ensure es otro paquete desarrollado por Simon Couch que nos ayuda a escribir có
 
 > groqR y PerplexR (ver arriba) tienen funciones específicas para crear pruebas unitarias.
 
+### [vitals](https://vitals.tidyverse.org/)
+
+<img src="images/hex/malllogo.png" align="right" height="108"/>
+
+vitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de difentes modelos. Se le dan _inputs_ (tareas o preguntas) y _targets_ (las respuestas o soluciones que esperamos) y de ahí los modelos que están siendo evaluados contestan los problemas y son evaluados en su desempeño. Aquí hay dos ejemplos ([1](https://www.simonpcouch.com/blog/2025-04-01-gemini-2-5-pro/#an-r-eval-dataset), [2](https://www.simonpcouch.com/blog/2025-05-21-gemini-2-5-flash/))de como comparar el desempeño de diferentes modelos para programar en R, todo usando vitals. 
 
 ## mlverse
 
@@ -253,3 +258,13 @@ Me gustó mucho el logotipo del paquete y ejemplo en su página de inicio es un 
 Bruno Nicenboim, Chris Emmerly, y Giovanni Cassani desarrollaron pangoling, un paquete para estimar que tan predecible es una palabra en un contexto dado usando modelos de tipo transformer (como GPT-2 or BERT). Estas probabilidades al parecer se usan mucho en estudios psicolinguísticos.
 
 Me gustó mucho ver un paquete de rOpenSci en este campo.
+
+## Búsquedas desde R
+
+### [searcher](https://r-pkg.thecoatlessprofessor.com/searcher/)
+
+<img src="images/hex/searcherlogo.svg" align="right" height="108"/>
+
+
+searcher es un paquete enfocado a brindarnos una interfaz de búsqueda directamente dentro de R. Desarrollado por James Balamuta, searcher tiene funciones para hacer búsquedas en distintos buscadores web pero también tiene integración con asistentes de IA, que al hacer búsquedas o preguntas nos abre un navegador listo para contestar. Por ejemplo, con la función `ask_claude()` o `ask_perplexity()`.
+

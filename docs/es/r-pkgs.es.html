@@ -208,6 +208,7 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <a href="#ayuda-con-pruebas-unitarias" id="toc-ayuda-con-pruebas-unitarias" class="nav-link" data-scroll-target="#ayuda-con-pruebas-unitarias"><span class="header-section-number">2.3</span> Ayuda con pruebas unitarias</a>
   <ul class="collapse">
 <li><a href="#ensure" id="toc-ensure" class="nav-link" data-scroll-target="#ensure"><span class="header-section-number">2.3.1</span> ensure</a></li>
+  <li><a href="#vitals" id="toc-vitals" class="nav-link" data-scroll-target="#vitals"><span class="header-section-number">2.3.2</span> vitals</a></li>
   </ul>
 </li>
   <li>
@@ -245,6 +246,12 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <a href="#transformers" id="toc-transformers" class="nav-link" data-scroll-target="#transformers"><span class="header-section-number">2.8</span> Transformers</a>
   <ul class="collapse">
 <li><a href="#pangoling" id="toc-pangoling" class="nav-link" data-scroll-target="#pangoling"><span class="header-section-number">2.8.1</span> pangoling</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#b%C3%BAsquedas-desde-r" id="toc-búsquedas-desde-r" class="nav-link" data-scroll-target="#búsquedas-desde-r"><span class="header-section-number">2.9</span> Búsquedas desde R</a>
+  <ul class="collapse">
+<li><a href="#searcher" id="toc-searcher" class="nav-link" data-scroll-target="#searcher"><span class="header-section-number">2.9.1</span> searcher</a></li>
   </ul>
 </li>
   </ul></nav>
@@ -350,6 +357,11 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <blockquote class="blockquote">
 <p>groqR y PerplexR (ver arriba) tienen funciones específicas para crear pruebas unitarias.</p>
 </blockquote>
+</section><section id="vitals" class="level3" data-number="2.3.2"><h3 data-number="2.3.2" class="anchored" data-anchor-id="vitals">
+<span class="header-section-number">2.3.2</span> <a href="https://vitals.tidyverse.org/">vitals</a>
+</h3>
+<p><img src="images/hex/malllogo.png" align="right" height="108"></p>
+<p>vitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de difentes modelos. Se le dan <em>inputs</em> (tareas o preguntas) y <em>targets</em> (las respuestas o soluciones que esperamos) y de ahí los modelos que están siendo evaluados contestan los problemas y son evaluados en su desempeño. Aquí hay dos ejemplos (<a href="https://www.simonpcouch.com/blog/2025-04-01-gemini-2-5-pro/#an-r-eval-dataset">1</a>, <a href="https://www.simonpcouch.com/blog/2025-05-21-gemini-2-5-flash/">2</a>)de como comparar el desempeño de diferentes modelos para programar en R, todo usando vitals.</p>
 </section></section><section id="mlverse" class="level2" data-number="2.4"><h2 data-number="2.4" class="anchored" data-anchor-id="mlverse">
 <span class="header-section-number">2.4</span> mlverse</h2>
 <section id="mall" class="level3" data-number="2.4.1"><h3 data-number="2.4.1" class="anchored" data-anchor-id="mall">
@@ -471,6 +483,13 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p><img src="images/hex/pangoling.png" align="right" height="108"></p>
 <p>Bruno Nicenboim, Chris Emmerly, y Giovanni Cassani desarrollaron pangoling, un paquete para estimar que tan predecible es una palabra en un contexto dado usando modelos de tipo transformer (como GPT-2 or BERT). Estas probabilidades al parecer se usan mucho en estudios psicolinguísticos.</p>
 <p>Me gustó mucho ver un paquete de rOpenSci en este campo.</p>
+</section></section><section id="búsquedas-desde-r" class="level2" data-number="2.9"><h2 data-number="2.9" class="anchored" data-anchor-id="búsquedas-desde-r">
+<span class="header-section-number">2.9</span> Búsquedas desde R</h2>
+<section id="searcher" class="level3" data-number="2.9.1"><h3 data-number="2.9.1" class="anchored" data-anchor-id="searcher">
+<span class="header-section-number">2.9.1</span> <a href="https://r-pkg.thecoatlessprofessor.com/searcher/">searcher</a>
+</h3>
+<p><img src="images/hex/searcherlogo.svg" align="right" height="108"></p>
+<p>searcher es un paquete enfocado a brindarnos una interfaz de búsqueda directamente dentro de R. Desarrollado por James Balamuta, searcher tiene funciones para hacer búsquedas en distintos buscadores web pero también tiene integración con asistentes de IA, que al hacer búsquedas o preguntas nos abre un navegador listo para contestar. Por ejemplo, con la función <code>ask_claude()</code> o <code>ask_perplexity()</code>.</p>
 
 
 </section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">

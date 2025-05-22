@@ -42,7 +42,8 @@ urlss <- c(
   "https://tidyverse.github.io/ragnar/",
   "https://jbgruber.github.io/rollama/",
   "https://tidychatmodels.albert-rapp.de/",
-  "https://edubruell.github.io/tidyllm/"
+  "https://edubruell.github.io/tidyllm/",
+  "https://vitals.tidyverse.org/"
 )
 
 names(logos) <- urlss

@@ -103,6 +103,14 @@ ensure by Simon Couch helps write code for unit tests using the testthat package
 
 > groqR and PerplexR (see above) both have specific functions for creating unit tests
 
+## Model evaluation
+
+### [vitals](https://vitals.tidyverse.org/)
+
+<img src="images/hex/malllogo.png" align="right" height="108"/>
+
+vitals by Simon Couch provides us with a framework for evaluating LLMs. We provide inputs (prompts or questions) and targets (the actual response that we expect) and then our model or models of choice can give the problems a go and then get scored on their performace. These two posts ([1](https://www.simonpcouch.com/blog/2025-04-01-gemini-2-5-pro/#an-r-eval-dataset), [2](https://www.simonpcouch.com/blog/2025-05-21-gemini-2-5-flash/))include a detailed walkthrough of the evaluation process using vitals. 
+
 ## mlverse
 
 ### [mall](https://mlverse.github.io/mall/)
@@ -257,3 +265,12 @@ Cool hex logo and the example in the readme features a very cute puppy :3
 pangoling by Bruno Nicenboim, Chris Emmerly, and Giovanni Cassani is an R package for estimating the predictability of words in a given context using transformer models (e.g. GPT-2 or BERT). These word probabilities are often used as predictors in psycholinguistic studies.
 
 Very nice to see a robust rOpenSci package for this topic. The package is mostly a wrapper of the python package transformers to process data.
+
+## Web searches from R
+
+### [searcher](https://r-pkg.thecoatlessprofessor.com/searcher/)
+
+<img src="images/hex/searcherlogo.svg" align="right" height="108"/>
+
+
+searcher is package specifically focused on letting us search the web directly from R. Developed by James Balamuta, searcher has functions to perform searches using different search engines, but the package also comes with tools for integration with AI assistants. We can ask questions or send prompts to various models providers, and the functions will launch a web browser ready to answer. For example: `ask_mistral("How to handle missing data in R?")` or `ask_claude("Explain what purrr::map_df does")`.
