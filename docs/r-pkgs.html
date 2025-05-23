@@ -234,7 +234,8 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <a href="#rag-tools" id="toc-rag-tools" class="nav-link" data-scroll-target="#rag-tools"><span class="header-section-number">2.7</span> RAG tools</a>
   <ul class="collapse">
 <li><a href="#ragnar" id="toc-ragnar" class="nav-link" data-scroll-target="#ragnar"><span class="header-section-number">2.7.1</span> ragnar</a></li>
-  <li><a href="#pkgprompt" id="toc-pkgprompt" class="nav-link" data-scroll-target="#pkgprompt"><span class="header-section-number">2.7.2</span> pkgprompt</a></li>
+  <li><a href="#rdocdump" id="toc-rdocdump" class="nav-link" data-scroll-target="#rdocdump"><span class="header-section-number">2.7.2</span> rdocdump</a></li>
+  <li><a href="#pkgprompt" id="toc-pkgprompt" class="nav-link" data-scroll-target="#pkgprompt"><span class="header-section-number">2.7.3</span> pkgprompt</a></li>
   </ul>
 </li>
   <li>
@@ -470,8 +471,13 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p>As the name implies, ragnar by Tomasz Kalinowski helps implement Retrieval-Augmented Generation (RAG) workflows in R with transparency and efficiency. Uses duckdb by default for efficient work with big data and provides acces to embedings from ollama and openAI models (openAI model suppurt is new and more models likely to come soon). RAG is a way to link generative models with external resources rich in technical details to ultimately enhance the accuracy and reliability of models with real, citable facts.</p>
 <p><strong>ragnar was recently moved into the tidyverse organization on GitHub so I assume big things are coming.</strong></p>
 <p>I liked the example in the readme, showing how the <strong>R for Data Science</strong> book was ingested and queried using the package.</p>
-</section><section id="pkgprompt" class="level3" data-number="2.7.2"><h3 data-number="2.7.2" class="anchored" data-anchor-id="pkgprompt">
-<span class="header-section-number">2.7.2</span> <a href="https://github.com/simonpcouch/pkgprompt">pkgprompt</a>
+</section><section id="rdocdump" class="level3" data-number="2.7.2"><h3 data-number="2.7.2" class="anchored" data-anchor-id="rdocdump">
+<span class="header-section-number">2.7.2</span> <a href="https://www.ekotov.pro/rdocdump/">rdocdump</a>
+</h3>
+<p><img src="images/hex/rdocdumplogo.png" align="right" height="108"></p>
+<p>rdocdump by Egor Kotov helps us dump the source code, documentation and vignettes of an R package into a single plain text file or character string for downstream use in RAG workflows. Works with installed packages or zipped archives (tar.gz), and downloads source code from CRAN if a package is not installed. Similar to pkgprompt.</p>
+</section><section id="pkgprompt" class="level3" data-number="2.7.3"><h3 data-number="2.7.3" class="anchored" data-anchor-id="pkgprompt">
+<span class="header-section-number">2.7.3</span> <a href="https://github.com/simonpcouch/pkgprompt">pkgprompt</a>
 </h3>
 <p>I’m listing pkgprompt by Simon Couch under the RAG heading here because the package is meant to convert R package documentation into plain text that can be ingested by an LLM, as a prompt or as part of a RAG workflow. Can convert all the documentation for a package or just particular topics with a <code>topics</code> argument.</p>
 </section></section><section id="computer-vision" class="level2" data-number="2.8"><h2 data-number="2.8" class="anchored" data-anchor-id="computer-vision">

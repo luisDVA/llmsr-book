@@ -237,6 +237,12 @@ ragnar usa duckdb por defecto entonces el trabajo con datos masivos es eficiente
 
 Me gustó el ejemplo que aparece en el README del paquete, que muestra como ingerir los contenidos de **R for Data Science** para preguntar cosas sobre R y obtener respuestas certeras y con fuentes genuinas y útiles.
 
+### [rdocdump](https://www.ekotov.pro/rdocdump/)
+
+<img src="images/hex/rdocdumplogo.png" align="right" height="108"/>
+
+rdocdump es una librería desarrollada por Egor Kotov  que nos ayuda a convertir todo el código fuente y la documentación de un paquete a texto sencillo y guardarlo todo en un solo archivo. Este archivo sirve para usarlo en aplicaciones de RAG. Funciona con paquetes ya instalados, con archivos comprimidos (tar.gz), o descarga paquetes desde CRAN cuando no están instalados.
+
 ### [pkgprompt](https://github.com/simonpcouch/pkgprompt)
 
 Puse en esta sesión a pkgprompt porque es para convertir la documentación de un paquete de R en texto plano listo para que lo digiera un LLM. Este es otro paquete más escrito por Simon Couch, y puede convertir todo la documentación de una vez o solo algún tema en espefícico a través del argumento `topics`.

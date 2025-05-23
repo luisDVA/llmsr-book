@@ -238,7 +238,8 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <a href="#herramientas-para-rag" id="toc-herramientas-para-rag" class="nav-link" data-scroll-target="#herramientas-para-rag"><span class="header-section-number">2.7</span> Herramientas para RAG</a>
   <ul class="collapse">
 <li><a href="#ragnar" id="toc-ragnar" class="nav-link" data-scroll-target="#ragnar"><span class="header-section-number">2.7.1</span> ragnar</a></li>
-  <li><a href="#pkgprompt" id="toc-pkgprompt" class="nav-link" data-scroll-target="#pkgprompt"><span class="header-section-number">2.7.2</span> pkgprompt</a></li>
+  <li><a href="#rdocdump" id="toc-rdocdump" class="nav-link" data-scroll-target="#rdocdump"><span class="header-section-number">2.7.2</span> rdocdump</a></li>
+  <li><a href="#pkgprompt" id="toc-pkgprompt" class="nav-link" data-scroll-target="#pkgprompt"><span class="header-section-number">2.7.3</span> pkgprompt</a></li>
   </ul>
 </li>
   <li>
@@ -470,8 +471,13 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p>ragnar usa duckdb por defecto entonces el trabajo con datos masivos es eficiente. Podemos conectar modelos locales de Ollama y usar modelos de openAI (vendrán más en el futuro).</p>
 <p><strong>ragnar ahora es parte de la organización de tidyverse en GitHub entonces supongo que se vienen cosas interesantes.</strong></p>
 <p>Me gustó el ejemplo que aparece en el README del paquete, que muestra como ingerir los contenidos de <strong>R for Data Science</strong> para preguntar cosas sobre R y obtener respuestas certeras y con fuentes genuinas y útiles.</p>
-</section><section id="pkgprompt" class="level3" data-number="2.7.2"><h3 data-number="2.7.2" class="anchored" data-anchor-id="pkgprompt">
-<span class="header-section-number">2.7.2</span> <a href="https://github.com/simonpcouch/pkgprompt">pkgprompt</a>
+</section><section id="rdocdump" class="level3" data-number="2.7.2"><h3 data-number="2.7.2" class="anchored" data-anchor-id="rdocdump">
+<span class="header-section-number">2.7.2</span> <a href="https://www.ekotov.pro/rdocdump/">rdocdump</a>
+</h3>
+<p><img src="images/hex/rdocdumplogo.png" align="right" height="108"></p>
+<p>rdocdump es una librería desarrollada por Egor Kotov que nos ayuda a convertir todo el código fuente y la documentación de un paquete a texto sencillo y guardarlo todo en un solo archivo. Este archivo sirve para usarlo en aplicaciones de RAG. Funciona con paquetes ya instalados, con archivos comprimidos (tar.gz), o descarga paquetes desde CRAN cuando no están instalados.</p>
+</section><section id="pkgprompt" class="level3" data-number="2.7.3"><h3 data-number="2.7.3" class="anchored" data-anchor-id="pkgprompt">
+<span class="header-section-number">2.7.3</span> <a href="https://github.com/simonpcouch/pkgprompt">pkgprompt</a>
 </h3>
 <p>Puse en esta sesión a pkgprompt porque es para convertir la documentación de un paquete de R en texto plano listo para que lo digiera un LLM. Este es otro paquete más escrito por Simon Couch, y puede convertir todo la documentación de una vez o solo algún tema en espefícico a través del argumento <code>topics</code>.</p>
 </section></section><section id="visión-por-computadora" class="level2" data-number="2.8"><h2 data-number="2.8" class="anchored" data-anchor-id="visión-por-computadora">
