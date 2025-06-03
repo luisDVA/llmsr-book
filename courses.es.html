@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
-<head>
-<link rel="alternate" hreflang="en" href="https://luisdva.github.io/llmsr-book/courses.html" />
-<link rel="alternate" hreflang="es" href="https://luisdva.github.io/llmsr-book/es/courses.es.html" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.31">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="IA en R">
-<title>4  Lecturas adicionales – Herramientas para usar modelos de lenguaje de gran escala (LLM) en R</title>
+
+
+<title>courses.es</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,164 +21,35 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
-<link href="./python.es.html" rel="next">
-<link href="./other-ext.es.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dc1cea1b009ddbe04a84400c2718fbdc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "Sin resultados",
-    "search-matching-documents-text": "documentos encontrados",
-    "search-copy-link-title": "Copiar el enlace en la búsqueda",
-    "search-hide-matches-text": "Ocultar resultados adicionales",
-    "search-more-match-text": "resultado adicional en este documento",
-    "search-more-matches-text": "resultados adicionales en este documento",
-    "search-clear-button-title": "Borrar",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancelar",
-    "search-submit-button-title": "Enviar",
-    "search-label": "Buscar"
-  }
-}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HER1TDPFHR"></script><script type="text/javascript">
 
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
-</script>
+
+<script src="courses.es_files/libs/clipboard/clipboard.min.js"></script>
+<script src="courses.es_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="courses.es_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="courses.es_files/libs/quarto-html/popper.min.js"></script>
+<script src="courses.es_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="courses.es_files/libs/quarto-html/anchor.min.js"></script>
+<link href="courses.es_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="courses.es_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="courses.es_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="courses.es_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="courses.es_files/libs/bootstrap/bootstrap-bb2031e735fe0d49e77aa8e925511054.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
 </head>
-<body class="nav-sidebar floating quarto-light">
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./courses.es.html"><span class="chapter-number">4</span>  <span class="chapter-title">Lecturas adicionales</span></a></li></ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Herramientas para usar modelos de lenguaje de gran escala (LLM) en R</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://github.com/luisDVA/llmsr-book" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
-  <div class="quarto-reader-toggle-btn">
-  <i class="bi"></i>
-  </div>
-</a>
-</div>
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Buscar"></div>
-        </div>
-        </div>
-    <div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-map"></i> Español</button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://luisdva.github.io/llmsr-book/courses.html" id="language-link-en">English</a></li></ul>
-</div>
-<div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-<li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.es.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introducción</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./before-start.es.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">Lecturas previas</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./r-pkgs.es.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">Paquetes de R</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./other-ext.es.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">Otras herramientas o extensiones</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./courses.es.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">Lecturas adicionales</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./python.es.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">🐍 Opciones para Python</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Apéndices</span></span>
-  </li>
-    </ul>
-</div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Tabla de contenidos</h2>
-   
-  <ul>
-<li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"></a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"></a></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5"></a></li>
-  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6"></a></li>
-  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7"></a></li>
-  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8"></a></li>
-  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9"></a></li>
-  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10"></a></li>
-  <li><a href="#section-11" id="toc-section-11" class="nav-link" data-scroll-target="#section-11"></a></li>
-  </ul></nav>
-</div>
-<!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title"><span id="sec-courses" class="quarto-section-identifier"><span class="chapter-number">4</span>  <span class="chapter-title">Lecturas adicionales</span></span></h1>
-</div>
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header><p>Aquí hay algunos cursos y guías ya para aprender a usar las diferentes herramientas que se mencionan en este sitio. Lo más recientes está al principio, y a partir de ahora, registraré la fecha de cuándo añado elementos a esta lista.</p>
+<section id="sec-courses" class="level1">
+<h1>Lecturas adicionales</h1>
+<p>Aquí hay algunos cursos y guías ya para aprender a usar las diferentes herramientas que se mencionan en este sitio. Lo más recientes está al principio, y a partir de ahora, registraré la fecha de cuándo añado elementos a esta lista.</p>
 <hr>
 <p>Esta <a href="https://posit.co/blog/r-llm-evaluation/">publicación</a> por Sara Altman y Simon Couch en el blog de Posit utilizó <a href="r-pkgs.qmd#vitals">vitals</a> para abordar la pregunta:</p>
 <blockquote class="blockquote">
@@ -187,51 +57,77 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </blockquote>
 <p>Ésta no es la primera comparación de este tipo, pero en esta ocasión se incluyeron modelos más recientes y se consideró el costo, llegando a la conclusión de que, para tareas de R, los modelos o4-mini de OpenAI o Claude Sonnet 4 de Anthropic funcion bastante bien. El modelo o3 de OpenAI tuvo el mejor desempeño en esta evaluación, pero también es <strong>mucho más caro</strong> que o4-mini y que el Sonnet 4. Este tipo de evaluaciones cuantitativas que se enfocan en código de R son excelentes contribuciones al espacio.<br>
 (Añadido el 03/06/2025)</p>
-<section id="section" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section"></h2>
+<section id="section" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section"></h2>
 <p>Esta publicación en el blog oficial del <em>tidyverse</em> vale mucho la pena porque es sobre el <a href="https://www.tidyverse.org/blog/2025/04/learn-tidyverse-ai/#tips-and-good-practices">uso de chaptGPT para escribir código de R</a> en el contexto del proceso de aprendizaje y desde la perspectiva de una instructora muy experimentada. Casi todos los modelos ya generan código que funciona, pero en esta publicación Mine Çetinkaya-Rundel se dio la tarea de revisar el código autogenerado desde la perspectiva de alguien que realmente quiere aprender.</p>
 <p>En resumen: el código generado por el modelo a veces incluye pasos que no se el pidieron, inserta cosas que no hacen falta, mezcla dialectos de R, y comenta demasiado los diferentes pasos. Todo esto no ayuda mucho a quien quiere aprender a través de código generado por IAs. (<strong>agregado 04/04/2025</strong>)</p>
-</section><section id="section-1" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-1"></h2>
-<p>En este <a href="https://posit.co/blog/mall-ai-powered-text-analysis/">tutorial corto</a> en el blog ofical de Posit, Camila Lívio nos muestra como usar <a href="./r-pkgs.es.html#mall">mall</a> para resumir texto proveniente de muchos PDFs complejos. (<strong>agregado 02/04/2025</strong>)</p>
-</section><section id="section-2" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-2"></h2>
+</section>
+<section id="section-1" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-1"></h2>
+<p>En este <a href="https://posit.co/blog/mall-ai-powered-text-analysis/">tutorial corto</a> en el blog ofical de Posit, Camila Lívio nos muestra como usar <a href="r-pkgs.es.qmd#mall">mall</a> para resumir texto proveniente de muchos PDFs complejos. (<strong>agregado 02/04/2025</strong>)</p>
+</section>
+<section id="section-2" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-2"></h2>
 <p>Sharon Machlis en InfoWorld acaba de publicar este resumen: <a href="https://www.infoworld.com/article/3848270/genai-tools-for-r-new-tools-to-make-r-programming-easier.html">GenAI tools for R: New tools to make R programming easier</a>. El contenido coincide en buena parte con todo lo que aparece en esta guía, pero hay muchos ejemplos bien explicados. Vale la pena revisarlo.<br>
 (<strong>agregado 26/03/2025</strong>)</p>
-</section><section id="section-3" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-3"></h2>
+</section>
+<section id="section-3" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-3"></h2>
 <p>No es un tutorial ni un curso, y no está necesariamente relacionado con R, pero me encontré esta <a href="https://github.com/stars/gadenbuie/lists/ai">lista</a> de repositorios de GitHub relacionados con IA, recopilada por Garrick Aden Buie. Conociendo el trabajo de Garrick, seguramente al menos algunas de estas herramientas de IA interesantes se integrarán a paquetes o extensiones de R en un futuro cercano. Vale la pena revisarlo.<br>
 (<strong>agregado 24/03/2025</strong>)</p>
-</section><section id="section-4" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-4"></h2>
+</section>
+<section id="section-4" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-4"></h2>
 <p>Esto va más allá de mis habilidades y nivel de experiencia, pero Javier Orraca-Deatcu publicó recientemente (07/03/2025) “<a href="https://www.javierorracadeatcu.com/posts/2025-03-07-vector-db-and-rags/">Vector DB + RAG Maker</a>”. Este resumen presenta un “sistema de base de datos vectoriales y RAG desarrollado con Python, hecho para usuarios de R, diseñado para generar respuestas de vanguardia desde LLM utilizando la documentación técnica local de R”. Se ve divertido.<br>
 (<strong>agregado 18/03/2025</strong>)</p>
-</section><section id="section-5" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-5"></h2>
-<p>Aquí podemos ver un video de <a href="https://youtu.be/-YiRWFXNDmk?si=TbSp_HZmwjOHF9aL">Simon Couch</a> como invitado en el pódcast R For the Rest of Us. La entrevista abarca muchos temas relevantes de IA en R e incluye muchos detalles sobre el uso de <a href="./r-pkgs.es.html#chores">chores</a> y <a href="./r-pkgs.es.html#gander">gander</a>. (<strong>agregado 10/03/2025</strong>)</p>
-</section><section id="section-6" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-6"></h2>
-<p>Este <a href="https://drmowinckels.io/blog/2025/ollama/">blog</a> de Athanasía Mo Mowinckel describe el proceso de configuración y los desafíos de usar diversas herramientas relevantes, incluyendo <a href="./r-pkgs.es.html#ellmer">ellmer</a>, <a href="./r-pkgs.es.html#chores">chores</a>, <a href="./r-pkgs.es.html#gander">gander</a> y <a href="./r-pkgs.es.html#ensure">ensure</a> con modelos locales de ollama para el desarrollo de paquetes. El texto muestra que las herramientas aún no están 100% listas, pero van en buen camino.<br>
+</section>
+<section id="section-5" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-5"></h2>
+<p>Aquí podemos ver un video de <a href="https://youtu.be/-YiRWFXNDmk?si=TbSp_HZmwjOHF9aL">Simon Couch</a> como invitado en el pódcast R For the Rest of Us. La entrevista abarca muchos temas relevantes de IA en R e incluye muchos detalles sobre el uso de <a href="r-pkgs.es.qmd#chores">chores</a> y <a href="r-pkgs.es.qmd#gander">gander</a>. (<strong>agregado 10/03/2025</strong>)</p>
+</section>
+<section id="section-6" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-6"></h2>
+<p>Este <a href="https://drmowinckels.io/blog/2025/ollama/">blog</a> de Athanasía Mo Mowinckel describe el proceso de configuración y los desafíos de usar diversas herramientas relevantes, incluyendo <a href="r-pkgs.es.qmd#ellmer">ellmer</a>, <a href="r-pkgs.es.qmd#chores">chores</a>, <a href="r-pkgs.es.qmd#gander">gander</a> y <a href="r-pkgs.es.qmd#ensure">ensure</a> con modelos locales de ollama para el desarrollo de paquetes. El texto muestra que las herramientas aún no están 100% listas, pero van en buen camino.<br>
 (<strong>agregado 03/03/2025</strong>)</p>
-</section><section id="section-7" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-7"></h2>
+</section>
+<section id="section-7" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-7"></h2>
 <p>David Keyes de R for the Rest of Us lanzó “<a href="https://rfortherestofus.com/courses/ai">Using AI with R</a>”: un curso gratuito y autogestionado para usar asistentes basados en LLM con R. Cubre varias de las herramientas y paquetes mencionados en este sitio.</p>
-</section><section id="section-8" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-8"></h2>
+</section>
+<section id="section-8" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-8"></h2>
 <p>Albert Rapp también tiene un libro de Quarto en progreso titulado “<a href="https://air.albert-rapp.de/">AI with R</a>”, que junta varias de las publicaciones de su blog para abordar diferentes tareas usando herramientas de IA y sin tener que trabajar en cajitas de chat en el navegador. Este recurso tiene documentación técnica muy bien escrita para usar mall y ellmer.</p>
-</section><section id="section-9" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-9"></h2>
+</section>
+<section id="section-9" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-9"></h2>
 <p>Leonardo Collado Torres dio un curso corto que cubrió muchos de los paquetes y herramientas utilizados aquí, y la grabación está disponible en <a href="https://youtu.be/qWuoVQG5BZw?si=YM7Y2s3xfcEd2Sc6">YouTube</a>. Los materiales del curso también incluyen instrucciones útiles paso a paso para configurar y usar copilot.</p>
-</section><section id="section-10" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-10"></h2>
-<p>Mi excompañero de UQ, Chris Brown, ahora en UTAS, compartió este post reciente sobre <a href="https://www.seascapemodels.org/rstats/2025/02/12/LLMs-for-literature-reviews.html">resumir detalles clave de una sección de métodos</a> para ayudar en revisiones bibliográficas. El ejemplo usa <a href="./r-pkgs.es.html#tidychatmodels">tidychatmodels</a> y en particular me gusta el consejo de Chris: <strong>“También recomendaría verificar los resultados manualmente para que aún aprendas algo tú mismo”</strong>.</p>
+</section>
+<section id="section-10" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-10"></h2>
+<p>Mi excompañero de UQ, Chris Brown, ahora en UTAS, compartió este post reciente sobre <a href="https://www.seascapemodels.org/rstats/2025/02/12/LLMs-for-literature-reviews.html">resumir detalles clave de una sección de métodos</a> para ayudar en revisiones bibliográficas. El ejemplo usa <a href="r-pkgs.es.qmd#tidychatmodels">tidychatmodels</a> y en particular me gusta el consejo de Chris: <strong>“También recomendaría verificar los resultados manualmente para que aún aprendas algo tú mismo”</strong>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Nota
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El post ya tiene una continuación (publicada el 15/03/2025, agregada aquí el 18/03/2025) que usa <a href="./r-pkgs.es.html#ellmer">ellmer</a> para la misma tarea de revisión bibliográfica. Tiene instrucciones detalladas paso a paso y una discusión interesante al final.</p>
+<p>El post ya tiene una continuación (publicada el 15/03/2025, agregada aquí el 18/03/2025) que usa <a href="r-pkgs.es.qmd#ellmer">ellmer</a> para la misma tarea de revisión bibliográfica. Tiene instrucciones detalladas paso a paso y una discusión interesante al final.</p>
 </div>
 </div>
-</section><section id="section-11" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-11"></h2>
-<p>Esta entrada de Nic Crane demuestra cómo podemos usar <a href="./r-pkgs.es.html#ellmer">ellmer</a> y Shiny para construir una aplicación que <a href="https://niccrane.com/posts/socalmediagen2/">crea publicaciones para diferentes plataformas de redes sociales</a>.</p>
+</section>
+<section id="section-11" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-11"></h2>
+<p>Esta entrada de Nic Crane demuestra cómo podemos usar <a href="r-pkgs.es.qmd#ellmer">ellmer</a> y Shiny para construir una aplicación que <a href="https://niccrane.com/posts/socalmediagen2/">crea publicaciones para diferentes plataformas de redes sociales</a>.</p>
+</section>
+</section>
 
-
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -256,12 +152,12 @@ Nota
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copiado");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copiado");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -629,21 +525,10 @@ Nota
       }
     }
   });
-  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
-      <a href="./other-ext.es.html" class="pagination-link" aria-label="Otras herramientas o extensiones">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>  <span class="chapter-title">Otras herramientas o extensiones</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./python.es.html" class="pagination-link" aria-label="🐍 Opciones para Python">
-        <span class="nav-page-text"><span class="chapter-number">5</span>  <span class="chapter-title">🐍 Opciones para Python</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
+  </script>
 </div> <!-- /content -->
 
 
 
 
-</body>
-</html>
+</body></html>
