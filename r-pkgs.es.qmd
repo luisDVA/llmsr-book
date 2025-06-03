@@ -132,6 +132,16 @@ Lo que más me gustó del paquete es que también ayuda a generar infraestructur
 
 chattr también es parte del mlverse. El paquete es un interfaz para modelos locales, para CoPilot, o los modelos de Databricks. El paquete tiene varias opciones para interactuar con modelos dentro de RStudio (y puede tomar de contexto los objetos del entorno y archivos en el directorio de trabajo), incluyendo una aplicación Shiny bastante intuitiva. 
 
+
+## Herramientas para usar el Protocolo de Contexto de Modelo (Model Context Protocol, MCP)
+
+### [acquaint](https://posit-dev.github.io/acquaint/)
+
+<img src="images/hex/acqlogo.png" align="right" height="108"/>
+
+acquaint por Simon Couch, Charlie Gao y Winston Chang (y muchos otros colaboradores) permite que herramientas de MCP como Claude Desktop, Lutra, Glama y Claude Code se conecten directamente a nuestras sesiones de R. MCP es un protocolo abierto desarrollado por Anthropic para conectar modelos de IA a diferentes herramientas y fuentes de datos de manera estandarizada (el sitio web de MCP se refiere al protocolo como el puerto USB-C de las aplicaciones de IA). En esta configuración, los modelos pueden ver nuestros paquetes instalados, el entorno, y la información de la sesión, por lo que generarán código mejor informado. El paquete acquaint usa btw para proporcionar contexto a los modelos. Le veo mucho potencial.
+
+
 ## ellmer y compañia
 
 ### [ellmer](http://ellmer.tidyverse.org/)
@@ -149,6 +159,13 @@ ellmer promete bastante. Hay mucha gente contribuyendo, se está incorporando co
 <img src="images/hex/btwlogo.png" align="right" height="108"/>
 
 Como dice su documentación oficial, btw nos ayuda a describirle nuestro entorno de cómputo a un LLM. Ésto significa que le podemos dar a los objetos de chat de ellmer la capacidad de revisar documentación, y de chusmear objetos en el entorno de R y archivos en el directorio de trabajo. btw está en desarrollo  constante por parte de Garrick Aden-Buie, Simon Couch, y Joe Cheng, así que podemos esperar que funcione bien. Podemos usar btw interactivamente para procesar objetos y documentación y que éstos pasen al portapapeles como texto, pero también hay funciones para que los objetos de chat de LLM ya tengan esta capacidad automáticamente. Muy buen complemento para ellmer. 
+
+
+### [buggy](https://simonpcouch.github.io/buggy/)
+
+<img src="images/hex/buggylogo.png" align="right" height="108"/>
+
+El paquete buggy, desarrollado por Simon P. Couch, usa LLMs para ayudar a los usuarios de R a entender y resolver mensajes de error. Teniendo el paquete configurado y activado correctamente, cada vez que se produce un error, el paquete nos ofrece enlaces que podemos clickear para “explicar” o “solucionar” el problema. Las explicaciones se muestran en la consola, mientras que las soluciones se implementan directamente. buggy como varios otros paquetes relacionados usa btw para proporcionarle contexto al modelo sobre los archivos y funciones relevantes. ¡Muy útil!
 
 ### [hellmer](https://dylanpieper.github.io/hellmer/)
 

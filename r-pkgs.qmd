@@ -135,6 +135,15 @@ The best part of this package (in my opinion) is the infrastructure for package 
 
 chattr is also part of the mlverse. This package interfaces LLMs with R directly inside RStudio. Interaction with the models ideally happens through a Shiny app that runs inside the Viewer pane in RStudio.
 
+## Model Context Protocol (MCP) tools
+
+### [acquaint](https://posit-dev.github.io/acquaint/)
+
+<img src="images/hex/acqlogo.png" align="right" height="108"/>
+
+acquaint by Simon Couch, Charlie Gao, and Winston Chang (plus other contributors) lets MCP-enabled tools like Claude Desktop, Lutra, Glama, and Claude Code connect directly to our R sessions. MCP is an open protocol to connect AI models to different tools and data sources in a standardized way (the MCP website calls the protocol the USB-C port of AI applications). In this setup the models can see our installed packages, environment, and session info so they will generate better-informed code, powered by btw to provide context. Potential game changer.
+
+
 ## ellmer and friends
 
 ### [ellmer](http://ellmer.tidyverse.org/)
@@ -153,6 +162,12 @@ Seems promising, quite flexible, and all the activity in the GitHub repo suggest
 <img src="images/hex/btwlogo.png" align="right" height="108"/>
 
 As per the official documentation, btw helps us describe our computational environment to LLMs. This means we can give ellmer chat objects the ability to examine package documentation, objects in the R environment, and the contents of our working directory. btw is actively developed by Garrick Aden-Buie, Simon Couch, and Joe Cheng, so expect good things from the package. btw can be used interactively to parse objects or docs and have these as text in the clipboard, or as a way to equip LLM chats with this power automatically. Good companion for ellmer. 
+
+### [buggy](https://simonpcouch.github.io/buggy/)
+
+<img src="images/hex/buggylogo.png" align="right" height="108"/>
+
+buggy by Simon P. Couch uses LLMs to help R users understand and address error messages. With the tool properly set up and enabled, whenever we raise an error the package will give us clickable links to “explain” or “fix” the issue. Explanations are shown in the console,  fixes are implemented directly. Also powered by btw to supply context to the model about the files and functions involved. 
 
 
 ### [hellmer](https://dylanpieper.github.io/hellmer/)

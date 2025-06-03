@@ -5,7 +5,7 @@
 <link rel="alternate" hreflang="es" href="https://luisdva.github.io/llmsr-book/es/r-pkgs.es.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.7.31">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="description" content="IA en R">
 <title>2  Paquetes de R – Herramientas para usar modelos de lenguaje de gran escala (LLM) en R</title>
@@ -22,8 +22,9 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -34,7 +35,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -59,10 +60,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
 <link href="./other-ext.es.html" rel="next">
 <link href="./before-start.es.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c3c9c128612583f4c861e09fe0decaf1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dc1cea1b009ddbe04a84400c2718fbdc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -97,7 +98,7 @@ gtag('js', new Date());
 gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </script>
 </head>
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
@@ -224,40 +225,47 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
   </ul>
 </li>
   <li>
-<a href="#ellmer-y-compa%C3%B1ia" id="toc-ellmer-y-compañia" class="nav-link" data-scroll-target="#ellmer-y-compañia"><span class="header-section-number">2.6</span> ellmer y compañia</a>
+<a href="#herramientas-para-usar-el-protocolo-de-contexto-de-modelo-model-context-protocol-mcp" id="toc-herramientas-para-usar-el-protocolo-de-contexto-de-modelo-model-context-protocol-mcp" class="nav-link" data-scroll-target="#herramientas-para-usar-el-protocolo-de-contexto-de-modelo-model-context-protocol-mcp"><span class="header-section-number">2.6</span> Herramientas para usar el Protocolo de Contexto de Modelo (Model Context Protocol, MCP)</a>
   <ul class="collapse">
-<li><a href="#ellmer" id="toc-ellmer" class="nav-link" data-scroll-target="#ellmer"><span class="header-section-number">2.6.1</span> ellmer</a></li>
-  <li><a href="#btw" id="toc-btw" class="nav-link" data-scroll-target="#btw"><span class="header-section-number">2.6.2</span> btw</a></li>
-  <li><a href="#hellmer" id="toc-hellmer" class="nav-link" data-scroll-target="#hellmer"><span class="header-section-number">2.6.3</span> hellmer</a></li>
-  <li><a href="#chores" id="toc-chores" class="nav-link" data-scroll-target="#chores"><span class="header-section-number">2.6.4</span> chores</a></li>
-  <li><a href="#ggpal2" id="toc-ggpal2" class="nav-link" data-scroll-target="#ggpal2"><span class="header-section-number">2.6.5</span> ggpal2</a></li>
-  <li><a href="#gander" id="toc-gander" class="nav-link" data-scroll-target="#gander"><span class="header-section-number">2.6.6</span> gander</a></li>
+<li><a href="#acquaint" id="toc-acquaint" class="nav-link" data-scroll-target="#acquaint"><span class="header-section-number">2.6.1</span> acquaint</a></li>
   </ul>
 </li>
   <li>
-<a href="#herramientas-para-rag" id="toc-herramientas-para-rag" class="nav-link" data-scroll-target="#herramientas-para-rag"><span class="header-section-number">2.7</span> Herramientas para RAG</a>
+<a href="#ellmer-y-compa%C3%B1ia" id="toc-ellmer-y-compañia" class="nav-link" data-scroll-target="#ellmer-y-compañia"><span class="header-section-number">2.7</span> ellmer y compañia</a>
   <ul class="collapse">
-<li><a href="#ragnar" id="toc-ragnar" class="nav-link" data-scroll-target="#ragnar"><span class="header-section-number">2.7.1</span> ragnar</a></li>
-  <li><a href="#rdocdump" id="toc-rdocdump" class="nav-link" data-scroll-target="#rdocdump"><span class="header-section-number">2.7.2</span> rdocdump</a></li>
-  <li><a href="#pkgprompt" id="toc-pkgprompt" class="nav-link" data-scroll-target="#pkgprompt"><span class="header-section-number">2.7.3</span> pkgprompt</a></li>
+<li><a href="#ellmer" id="toc-ellmer" class="nav-link" data-scroll-target="#ellmer"><span class="header-section-number">2.7.1</span> ellmer</a></li>
+  <li><a href="#btw" id="toc-btw" class="nav-link" data-scroll-target="#btw"><span class="header-section-number">2.7.2</span> btw</a></li>
+  <li><a href="#buggy" id="toc-buggy" class="nav-link" data-scroll-target="#buggy"><span class="header-section-number">2.7.3</span> buggy</a></li>
+  <li><a href="#hellmer" id="toc-hellmer" class="nav-link" data-scroll-target="#hellmer"><span class="header-section-number">2.7.4</span> hellmer</a></li>
+  <li><a href="#chores" id="toc-chores" class="nav-link" data-scroll-target="#chores"><span class="header-section-number">2.7.5</span> chores</a></li>
+  <li><a href="#ggpal2" id="toc-ggpal2" class="nav-link" data-scroll-target="#ggpal2"><span class="header-section-number">2.7.6</span> ggpal2</a></li>
+  <li><a href="#gander" id="toc-gander" class="nav-link" data-scroll-target="#gander"><span class="header-section-number">2.7.7</span> gander</a></li>
   </ul>
 </li>
   <li>
-<a href="#visi%C3%B3n-por-computadora" id="toc-visión-por-computadora" class="nav-link" data-scroll-target="#visión-por-computadora"><span class="header-section-number">2.8</span> Visión por computadora</a>
+<a href="#herramientas-para-rag" id="toc-herramientas-para-rag" class="nav-link" data-scroll-target="#herramientas-para-rag"><span class="header-section-number">2.8</span> Herramientas para RAG</a>
   <ul class="collapse">
-<li><a href="#kuzco" id="toc-kuzco" class="nav-link" data-scroll-target="#kuzco"><span class="header-section-number">2.8.1</span> kuzco</a></li>
+<li><a href="#ragnar" id="toc-ragnar" class="nav-link" data-scroll-target="#ragnar"><span class="header-section-number">2.8.1</span> ragnar</a></li>
+  <li><a href="#rdocdump" id="toc-rdocdump" class="nav-link" data-scroll-target="#rdocdump"><span class="header-section-number">2.8.2</span> rdocdump</a></li>
+  <li><a href="#pkgprompt" id="toc-pkgprompt" class="nav-link" data-scroll-target="#pkgprompt"><span class="header-section-number">2.8.3</span> pkgprompt</a></li>
   </ul>
 </li>
   <li>
-<a href="#transformers" id="toc-transformers" class="nav-link" data-scroll-target="#transformers"><span class="header-section-number">2.9</span> Transformers</a>
+<a href="#visi%C3%B3n-por-computadora" id="toc-visión-por-computadora" class="nav-link" data-scroll-target="#visión-por-computadora"><span class="header-section-number">2.9</span> Visión por computadora</a>
   <ul class="collapse">
-<li><a href="#pangoling" id="toc-pangoling" class="nav-link" data-scroll-target="#pangoling"><span class="header-section-number">2.9.1</span> pangoling</a></li>
+<li><a href="#kuzco" id="toc-kuzco" class="nav-link" data-scroll-target="#kuzco"><span class="header-section-number">2.9.1</span> kuzco</a></li>
   </ul>
 </li>
   <li>
-<a href="#b%C3%BAsquedas-desde-r" id="toc-búsquedas-desde-r" class="nav-link" data-scroll-target="#búsquedas-desde-r"><span class="header-section-number">2.10</span> Búsquedas desde R</a>
+<a href="#transformers" id="toc-transformers" class="nav-link" data-scroll-target="#transformers"><span class="header-section-number">2.10</span> Transformers</a>
   <ul class="collapse">
-<li><a href="#searcher" id="toc-searcher" class="nav-link" data-scroll-target="#searcher"><span class="header-section-number">2.10.1</span> searcher</a></li>
+<li><a href="#pangoling" id="toc-pangoling" class="nav-link" data-scroll-target="#pangoling"><span class="header-section-number">2.10.1</span> pangoling</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#b%C3%BAsquedas-desde-r" id="toc-búsquedas-desde-r" class="nav-link" data-scroll-target="#búsquedas-desde-r"><span class="header-section-number">2.11</span> Búsquedas desde R</a>
+  <ul class="collapse">
+<li><a href="#searcher" id="toc-searcher" class="nav-link" data-scroll-target="#searcher"><span class="header-section-number">2.11.1</span> searcher</a></li>
   </ul>
 </li>
   </ul></nav>
@@ -386,10 +394,17 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </h3>
 <p><img src="images/hex/chattrlogo.png" align="right" height="108"></p>
 <p>chattr también es parte del mlverse. El paquete es un interfaz para modelos locales, para CoPilot, o los modelos de Databricks. El paquete tiene varias opciones para interactuar con modelos dentro de RStudio (y puede tomar de contexto los objetos del entorno y archivos en el directorio de trabajo), incluyendo una aplicación Shiny bastante intuitiva.</p>
-</section></section><section id="ellmer-y-compañia" class="level2" data-number="2.6"><h2 data-number="2.6" class="anchored" data-anchor-id="ellmer-y-compañia">
-<span class="header-section-number">2.6</span> ellmer y compañia</h2>
-<section id="ellmer" class="level3" data-number="2.6.1"><h3 data-number="2.6.1" class="anchored" data-anchor-id="ellmer">
-<span class="header-section-number">2.6.1</span> <a href="http://ellmer.tidyverse.org/">ellmer</a>
+</section></section><section id="herramientas-para-usar-el-protocolo-de-contexto-de-modelo-model-context-protocol-mcp" class="level2" data-number="2.6"><h2 data-number="2.6" class="anchored" data-anchor-id="herramientas-para-usar-el-protocolo-de-contexto-de-modelo-model-context-protocol-mcp">
+<span class="header-section-number">2.6</span> Herramientas para usar el Protocolo de Contexto de Modelo (Model Context Protocol, MCP)</h2>
+<section id="acquaint" class="level3" data-number="2.6.1"><h3 data-number="2.6.1" class="anchored" data-anchor-id="acquaint">
+<span class="header-section-number">2.6.1</span> <a href="https://posit-dev.github.io/acquaint/">acquaint</a>
+</h3>
+<p><img src="images/hex/acqlogo.png" align="right" height="108"></p>
+<p>acquaint por Simon Couch, Charlie Gao y Winston Chang (y muchos otros colaboradores) permite que herramientas de MCP como Claude Desktop, Lutra, Glama y Claude Code se conecten directamente a nuestras sesiones de R. MCP es un protocolo abierto desarrollado por Anthropic para conectar modelos de IA a diferentes herramientas y fuentes de datos de manera estandarizada (el sitio web de MCP se refiere al protocolo como el puerto USB-C de las aplicaciones de IA). En esta configuración, los modelos pueden ver nuestros paquetes instalados, el entorno, y la información de la sesión, por lo que generarán código mejor informado. El paquete acquaint usa btw para proporcionar contexto a los modelos. Le veo mucho potencial.</p>
+</section></section><section id="ellmer-y-compañia" class="level2" data-number="2.7"><h2 data-number="2.7" class="anchored" data-anchor-id="ellmer-y-compañia">
+<span class="header-section-number">2.7</span> ellmer y compañia</h2>
+<section id="ellmer" class="level3" data-number="2.7.1"><h3 data-number="2.7.1" class="anchored" data-anchor-id="ellmer">
+<span class="header-section-number">2.7.1</span> <a href="http://ellmer.tidyverse.org/">ellmer</a>
 </h3>
 <p><img src="images/hex/ellmerlogo.png" align="right" height="108"></p>
 <blockquote class="blockquote">
@@ -397,13 +412,18 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </blockquote>
 <p>ellmer es un nuevo paquete vinculado al tidyverse y desarrollado por Hadley Wickham y Joe Cheng. El paquete nos ayuda a interactuar en R con modelos locales y con prácticamente todos los proveedores. Podemos interactuar interactivamente a través de un chat en nuestra consola de R o programáticamente al incorporar objetos y métodos de ellmer en nuestras funciones. Las interacciones en ellmer quedan como objetos de chat de clase R6 que se acuerdan del contexto.</p>
 <p>ellmer promete bastante. Hay mucha gente contribuyendo, se está incorporando como base para otros paquetes, y cada que reviso tiene nuevas funcionalidades y mejor documentación.</p>
-</section><section id="btw" class="level3" data-number="2.6.2"><h3 data-number="2.6.2" class="anchored" data-anchor-id="btw">
-<span class="header-section-number">2.6.2</span> <a href="https://posit-dev.github.io/btw/">btw</a>
+</section><section id="btw" class="level3" data-number="2.7.2"><h3 data-number="2.7.2" class="anchored" data-anchor-id="btw">
+<span class="header-section-number">2.7.2</span> <a href="https://posit-dev.github.io/btw/">btw</a>
 </h3>
 <p><img src="images/hex/btwlogo.png" align="right" height="108"></p>
 <p>Como dice su documentación oficial, btw nos ayuda a describirle nuestro entorno de cómputo a un LLM. Ésto significa que le podemos dar a los objetos de chat de ellmer la capacidad de revisar documentación, y de chusmear objetos en el entorno de R y archivos en el directorio de trabajo. btw está en desarrollo constante por parte de Garrick Aden-Buie, Simon Couch, y Joe Cheng, así que podemos esperar que funcione bien. Podemos usar btw interactivamente para procesar objetos y documentación y que éstos pasen al portapapeles como texto, pero también hay funciones para que los objetos de chat de LLM ya tengan esta capacidad automáticamente. Muy buen complemento para ellmer.</p>
-</section><section id="hellmer" class="level3" data-number="2.6.3"><h3 data-number="2.6.3" class="anchored" data-anchor-id="hellmer">
-<span class="header-section-number">2.6.3</span> <a href="https://dylanpieper.github.io/hellmer/">hellmer</a>
+</section><section id="buggy" class="level3" data-number="2.7.3"><h3 data-number="2.7.3" class="anchored" data-anchor-id="buggy">
+<span class="header-section-number">2.7.3</span> <a href="https://simonpcouch.github.io/buggy/">buggy</a>
+</h3>
+<p><img src="images/hex/buggylogo.png" align="right" height="108"></p>
+<p>El paquete buggy, desarrollado por Simon P. Couch, usa LLMs para ayudar a los usuarios de R a entender y resolver mensajes de error. Teniendo el paquete configurado y activado correctamente, cada vez que se produce un error, el paquete nos ofrece enlaces que podemos clickear para “explicar” o “solucionar” el problema. Las explicaciones se muestran en la consola, mientras que las soluciones se implementan directamente. buggy como varios otros paquetes relacionados usa btw para proporcionarle contexto al modelo sobre los archivos y funciones relevantes. ¡Muy útil!</p>
+</section><section id="hellmer" class="level3" data-number="2.7.4"><h3 data-number="2.7.4" class="anchored" data-anchor-id="hellmer">
+<span class="header-section-number">2.7.4</span> <a href="https://dylanpieper.github.io/hellmer/">hellmer</a>
 </h3>
 <p>Para trabajar en lotes (<em>batch processing</em>) con los chats de ellmer y sus salidas, Dylan Pieper ideó hellmer. El paquete se lleva bien con ellmer y tiene varias funciones útiles, barritas que muestran el progreso, y nos da mensajes informativos mientras trabaja.</p>
 <p>Para probar el paquete yo corrí este ejemplo con Gemini y funcionó super bien:</p>
@@ -436,8 +456,8 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>[[<span class="dv">5</span>]]</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>[<span class="dv">1</span>] <span class="st">"Acra.</span><span class="sc">\n</span><span class="st">"</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="chores" class="level3" data-number="2.6.4"><h3 data-number="2.6.4" class="anchored" data-anchor-id="chores">
-<span class="header-section-number">2.6.4</span> <a href="https://simonpcouch.github.io/chores/">chores</a>
+</section><section id="chores" class="level3" data-number="2.7.5"><h3 data-number="2.7.5" class="anchored" data-anchor-id="chores">
+<span class="header-section-number">2.7.5</span> <a href="https://simonpcouch.github.io/chores/">chores</a>
 </h3>
 <p><img src="images/hex/choreslogo.png" align="right" height="108"></p>
 <blockquote class="blockquote">
@@ -446,14 +466,14 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p>chores es otro paquete por Simon Couch que nos brinda asistentes amigables que pueden editar, documentar, o explicar nuestro código. Funciona con addins que pueden correr en RStudio o Positron. Buena opción para automatizar la creación de código repetitivo y no tener que hacer algunas tareas tediosas a mano al programar. Funciona con casi cualquier modelo.</p>
 <ul>
 <li>Aquí encontré un <a href="https://bastianolea.rbind.io/blog/pal_asistentes_llm/">tutorial</a> en español para crear asistentes orientados a diferentes roles.</li>
-</ul></section><section id="ggpal2" class="level3" data-number="2.6.5"><h3 data-number="2.6.5" class="anchored" data-anchor-id="ggpal2">
-<span class="header-section-number">2.6.5</span> <a href="https://github.com/frankiethull/ggpal2">ggpal2</a>
+</ul></section><section id="ggpal2" class="level3" data-number="2.7.6"><h3 data-number="2.7.6" class="anchored" data-anchor-id="ggpal2">
+<span class="header-section-number">2.7.6</span> <a href="https://github.com/frankiethull/ggpal2">ggpal2</a>
 </h3>
 <p><img src="images/hex/ggpal2.png" align="right" height="108"></p>
 <p>ggpal2 es una extensión para <code>chores</code>, desarrollada por Frank Hull. ggpal2 nos aporta asistentes basados en LLM diseñados específicamente para trabajar con <code>ggplot2</code>. Como con chores o gander, solo tenemos que seleccionar algúna sección código o texto que describa lo que queremos hacer y llamar al addin con un atajo de teclado. Algunas de las cosas que podemos hacer es pasar código de R base a ggplot, crear gráficos a partir de comentarios, u obtener sugerencias para mejorar la legibilidad de nuestros gráficos existentes.</p>
 <p>ggpal2 es un buen ejemplo de como se pueden escibir extensiones para chores, principalmente a través un un conjunto de prompts bien diseñados..</p>
-</section><section id="gander" class="level3" data-number="2.6.6"><h3 data-number="2.6.6" class="anchored" data-anchor-id="gander">
-<span class="header-section-number">2.6.6</span> <a href="https://github.com/simonpcouch/gander/">gander</a>
+</section><section id="gander" class="level3" data-number="2.7.7"><h3 data-number="2.7.7" class="anchored" data-anchor-id="gander">
+<span class="header-section-number">2.7.7</span> <a href="https://github.com/simonpcouch/gander/">gander</a>
 </h3>
 <p><img src="images/hex/logo.png" align="right" height="108"></p>
 <p>Otro paquete más desarollado por Simon Couch, que publicó gander a principios de 2025.</p>
@@ -461,281 +481,287 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p>Una breve animación de cómo se puede usar:</p>
 <figure class="figure"><a href="https://github.com/user-attachments/assets/4aead453-c2f2-446b-8e81-9154fd3baab0"><img src="https://github.com/user-attachments/assets/4aead453-c2f2-446b-8e81-9154fd3baab0" width="600" class="figure-img"></a>
 </figure><p>gander ya tiene una <a href="https://posit.co/blog/introducing-gander/">introducción oficial</a> el blog de Posit (publicado el 17/03/2025).</p>
-</section></section><section id="herramientas-para-rag" class="level2" data-number="2.7"><h2 data-number="2.7" class="anchored" data-anchor-id="herramientas-para-rag">
-<span class="header-section-number">2.7</span> Herramientas para RAG</h2>
-<section id="ragnar" class="level3" data-number="2.7.1"><h3 data-number="2.7.1" class="anchored" data-anchor-id="ragnar">
-<span class="header-section-number">2.7.1</span> <a href="https://tidyverse.github.io/ragnar/">ragnar</a>
+</section></section><section id="herramientas-para-rag" class="level2" data-number="2.8"><h2 data-number="2.8" class="anchored" data-anchor-id="herramientas-para-rag">
+<span class="header-section-number">2.8</span> Herramientas para RAG</h2>
+<section id="ragnar" class="level3" data-number="2.8.1"><h3 data-number="2.8.1" class="anchored" data-anchor-id="ragnar">
+<span class="header-section-number">2.8.1</span> <a href="https://tidyverse.github.io/ragnar/">ragnar</a>
 </h3>
 <p><img src="images/hex/ragnar.png" align="right" height="108"></p>
 <p>ragnar es un paquete desarrolado por Tomasz Kalinowski para implementar <em>generación aumentada por recuperación</em> (RAG: Retrieval-Augmented Generation) en R. Esto no es más que vincular un modelo de lenguaje de gran escala con fuentes externas de información para obtener mejores respuestas.</p>
 <p>ragnar usa duckdb por defecto entonces el trabajo con datos masivos es eficiente. Podemos conectar modelos locales de Ollama y usar modelos de openAI (vendrán más en el futuro).</p>
 <p><strong>ragnar ahora es parte de la organización de tidyverse en GitHub entonces supongo que se vienen cosas interesantes.</strong></p>
 <p>Me gustó el ejemplo que aparece en el README del paquete, que muestra como ingerir los contenidos de <strong>R for Data Science</strong> para preguntar cosas sobre R y obtener respuestas certeras y con fuentes genuinas y útiles.</p>
-</section><section id="rdocdump" class="level3" data-number="2.7.2"><h3 data-number="2.7.2" class="anchored" data-anchor-id="rdocdump">
-<span class="header-section-number">2.7.2</span> <a href="https://www.ekotov.pro/rdocdump/">rdocdump</a>
+</section><section id="rdocdump" class="level3" data-number="2.8.2"><h3 data-number="2.8.2" class="anchored" data-anchor-id="rdocdump">
+<span class="header-section-number">2.8.2</span> <a href="https://www.ekotov.pro/rdocdump/">rdocdump</a>
 </h3>
 <p><img src="images/hex/rdocdumplogo.png" align="right" height="108"></p>
 <p>rdocdump es una librería desarrollada por Egor Kotov que nos ayuda a convertir todo el código fuente y la documentación de un paquete a texto sencillo y guardarlo todo en un solo archivo. Este archivo sirve para usarlo en aplicaciones de RAG. Funciona con paquetes ya instalados, con archivos comprimidos (tar.gz), o descarga paquetes desde CRAN cuando no están instalados.</p>
-</section><section id="pkgprompt" class="level3" data-number="2.7.3"><h3 data-number="2.7.3" class="anchored" data-anchor-id="pkgprompt">
-<span class="header-section-number">2.7.3</span> <a href="https://github.com/simonpcouch/pkgprompt">pkgprompt</a>
+</section><section id="pkgprompt" class="level3" data-number="2.8.3"><h3 data-number="2.8.3" class="anchored" data-anchor-id="pkgprompt">
+<span class="header-section-number">2.8.3</span> <a href="https://github.com/simonpcouch/pkgprompt">pkgprompt</a>
 </h3>
 <p>Puse en esta sesión a pkgprompt porque es para convertir la documentación de un paquete de R en texto plano listo para que lo digiera un LLM. Este es otro paquete más escrito por Simon Couch, y puede convertir todo la documentación de una vez o solo algún tema en espefícico a través del argumento <code>topics</code>.</p>
-</section></section><section id="visión-por-computadora" class="level2" data-number="2.8"><h2 data-number="2.8" class="anchored" data-anchor-id="visión-por-computadora">
-<span class="header-section-number">2.8</span> Visión por computadora</h2>
-<section id="kuzco" class="level3" data-number="2.8.1"><h3 data-number="2.8.1" class="anchored" data-anchor-id="kuzco">
-<span class="header-section-number">2.8.1</span> <a href="https://github.com/frankiethull/kuzco">kuzco</a>
+</section></section><section id="visión-por-computadora" class="level2" data-number="2.9"><h2 data-number="2.9" class="anchored" data-anchor-id="visión-por-computadora">
+<span class="header-section-number">2.9</span> Visión por computadora</h2>
+<section id="kuzco" class="level3" data-number="2.9.1"><h3 data-number="2.9.1" class="anchored" data-anchor-id="kuzco">
+<span class="header-section-number">2.9.1</span> <a href="https://github.com/frankiethull/kuzco">kuzco</a>
 </h3>
 <p><img src="images/hex/kuzco.png" align="right" height="108"></p>
 <p>kuzco es un paquete desarrollado por Frank Hull y Johannes Breuer, que usa ollamar y ellmer para traer un asistente de ‘computer vision’ a nuestra sesión de R. Usa herramientas de LLM en lugar de torch para poder clasificar, reconocer, o extraer texto de una imagen. Los resultados salen en tibbles bien ordenaditas.</p>
 <p>Me gustó mucho el logotipo del paquete y ejemplo en su página de inicio es un cachorrito :3</p>
-</section></section><section id="transformers" class="level2" data-number="2.9"><h2 data-number="2.9" class="anchored" data-anchor-id="transformers">
-<span class="header-section-number">2.9</span> Transformers</h2>
-<section id="pangoling" class="level3" data-number="2.9.1"><h3 data-number="2.9.1" class="anchored" data-anchor-id="pangoling">
-<span class="header-section-number">2.9.1</span> <a href="https://docs.ropensci.org/pangoling/index.html">pangoling</a>
+</section></section><section id="transformers" class="level2" data-number="2.10"><h2 data-number="2.10" class="anchored" data-anchor-id="transformers">
+<span class="header-section-number">2.10</span> Transformers</h2>
+<section id="pangoling" class="level3" data-number="2.10.1"><h3 data-number="2.10.1" class="anchored" data-anchor-id="pangoling">
+<span class="header-section-number">2.10.1</span> <a href="https://docs.ropensci.org/pangoling/index.html">pangoling</a>
 </h3>
 <p><img src="images/hex/pangoling.png" align="right" height="108"></p>
 <p>Bruno Nicenboim, Chris Emmerly, y Giovanni Cassani desarrollaron pangoling, un paquete para estimar que tan predecible es una palabra en un contexto dado usando modelos de tipo transformer (como GPT-2 or BERT). Estas probabilidades al parecer se usan mucho en estudios psicolinguísticos.</p>
 <p>Me gustó mucho ver un paquete de rOpenSci en este campo.</p>
-</section></section><section id="búsquedas-desde-r" class="level2" data-number="2.10"><h2 data-number="2.10" class="anchored" data-anchor-id="búsquedas-desde-r">
-<span class="header-section-number">2.10</span> Búsquedas desde R</h2>
-<section id="searcher" class="level3" data-number="2.10.1"><h3 data-number="2.10.1" class="anchored" data-anchor-id="searcher">
-<span class="header-section-number">2.10.1</span> <a href="https://r-pkg.thecoatlessprofessor.com/searcher/">searcher</a>
+</section></section><section id="búsquedas-desde-r" class="level2" data-number="2.11"><h2 data-number="2.11" class="anchored" data-anchor-id="búsquedas-desde-r">
+<span class="header-section-number">2.11</span> Búsquedas desde R</h2>
+<section id="searcher" class="level3" data-number="2.11.1"><h3 data-number="2.11.1" class="anchored" data-anchor-id="searcher">
+<span class="header-section-number">2.11.1</span> <a href="https://r-pkg.thecoatlessprofessor.com/searcher/">searcher</a>
 </h3>
 <p><img src="images/hex/searcherlogo.png" align="right" height="108"></p>
 <p>searcher es un paquete enfocado a brindarnos una interfaz de búsqueda directamente dentro de R. Desarrollado por James Balamuta, searcher tiene funciones para hacer búsquedas en distintos buscadores web pero también tiene integración con asistentes de IA, que al hacer búsquedas o preguntas nos abre un navegador listo para contestar. Por ejemplo, con la función <code>ask_claude()</code> o <code>ask_perplexity()</code>.</p>
 
 
 </section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copiado");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copiado");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
         }
       }
+      return false;
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
         }
-        return container.innerHTML
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -743,185 +769,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
       <a href="./before-start.es.html" class="pagination-link" aria-label="Lecturas previas">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>  <span class="chapter-title">Lecturas previas</span></span>
       </a>          

@@ -4,6 +4,15 @@ Aquí hay algunos cursos y guías ya para aprender a usar las diferentes herrami
 
 ------------------------------------------------------------------------
 
+
+Esta [publicación](https://posit.co/blog/r-llm-evaluation/) por Sara Altman y Simon Couch en el blog de Posit utilizó [vitals](r-pkgs.qmd#vitals) para abordar la pregunta:
+
+> ¿Qué modelo de inteligencia artificial escribe el mejor código de R?
+
+Ésta no es la primera comparación de este tipo, pero en esta ocasión se incluyeron modelos más recientes y se consideró el costo, llegando a la conclusión de que, para tareas de R, los modelos o4-mini de OpenAI o Claude Sonnet 4 de Anthropic funcion bastante bien. El modelo o3 de OpenAI tuvo el mejor desempeño en esta evaluación, pero también es **mucho más caro** que o4-mini y que el Sonnet 4. Este tipo de evaluaciones cuantitativas que se enfocan en código de R son excelentes contribuciones al espacio.  
+(Añadido el 03/06/2025)  
+
+
 Esta publicación en el blog oficial del *tidyverse* vale mucho la pena porque es sobre el [uso de chaptGPT para escribir código de R](https://www.tidyverse.org/blog/2025/04/learn-tidyverse-ai/#tips-and-good-practices) en el contexto del proceso de aprendizaje y desde la perspectiva de una instructora muy experimentada. Casi todos los modelos ya generan código que funciona, pero en esta publicación Mine Çetinkaya-Rundel se dio la tarea de revisar el código autogenerado desde la perspectiva de alguien que realmente quiere aprender.
 
 En resumen: el código generado por el modelo a veces incluye pasos que no se el pidieron, inserta cosas que no hacen falta, mezcla dialectos de R, y comenta demasiado los diferentes pasos. Todo esto no ayuda mucho a quien quiere aprender a través de código generado por IAs. (**agregado 04/04/2025**)
