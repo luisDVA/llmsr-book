@@ -27,6 +27,7 @@ urlss <- c(
 "https://posit-dev.github.io/acquaint/",
 "https://github.com/heurekalabsco/axolotr",
 "https://posit-dev.github.io/btw/",
+"https://simonpcouch.github.io/buggy/",
 "https://mlverse.github.io/chattr/",
 "https://simonpcouch.github.io/chores/",
 "https://www.continue.dev/",
