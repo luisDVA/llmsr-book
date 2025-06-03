@@ -22,6 +22,7 @@ logos <- fs::dir_ls(here::here("images/hex/"))
 
 urlss <- c(
   "https://codeium.com/",
+  "https://posit-dev.github.io/acquaint/",
   "https://github.com/heurekalabsco/axolotr",
   "https://posit-dev.github.io/btw/",
   "https://mlverse.github.io/chattr/",
