@@ -4,6 +4,13 @@ Here are some courses and guides for actually using the LLM tools listed here. N
 
 ------------------------------------------------------------------------
 
+
+#### [Harnessing LLMs for Data Analysis](https://www.youtube.com/watch?v=owDd1CJ17uQ)
+
+This ~30 minute demo by Joe Cheng from Posit is a really smooth and easy to follow introduction to calling LLMs via http APIs using code (R or Python). Focuses on ellmer and chatlass. I liked the advice given early on about starting out with the best performing models rather than open-weights local models, and to be very careful about the data we allow these model providers to see. Joe also explained the easiest way to add knowledge to a chat object via the system prompt. A must watch. 
+
+## {.unnumbered}
+
 This [post](https://posit.co/blog/r-llm-evaluation/) by Sara Altman and Simon Couch on the Posit Blog used [vitals](r-pkgs.qmd#vitals) to tackle the question: 
 
 > Which AI model writes the best R code? 

@@ -4,25 +4,39 @@ Aquí hay algunos materiales interesantes y batante útiles para revisar primero
 
 ---
 
-En una publicación de blog sobre _["vibe coding"](https://simonwillison.net/2025/Mar/19/vibe-coding/)_, Simon Willison mencionó que (traducido del inglés):
+En una publicación de sobre _["vibe coding"](https://simonwillison.net/2025/Mar/19/vibe-coding/)_, Simon Willison mencionó en su blog que (traducido del inglés):
 
 > "Creo que todos merecen la capacidad de automatizar tareas tediosas en sus vidas al usar computadoras."
 
 Estoy de acuerdo con esta afirmación, pero deberíamos considerar las consecuencias en el aprendizaje, los temas éticos y legales, los sesgos y el contexto antes de incursionar en las herramientas basadas en LLM.
 
+## {.unnumbered}
+
 
 Creo que cualquiera que use herramientas de LLM para programa debería leer esta perspectiva publicada en Methods in Ecology and Evolution: [Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution](https://doi.org/10.1111/2041-210X.14325), dirigida por Natalie Cooper, y parte de un número especial sobre el uso de LLMs en ecología y evolución. Estos trabajos resumen las ventajas y desventajas de IA/LLM en el contexto de la investigación y la enseñanza, y sus conclusiones van más allá de la investigación y de las ciencias biológicas.
+
+
+## {.unnumbered}
+
+Andrew Heiss compartió estos materiales de clase titulados [AI, LLMs, BS, and vibe coding](https://datavizs25.classes.andrewheiss.com/resource/ai-bs.html#vibe-coding-and-learning) (publicado en junio de 2025). Este material incluye secciones muy bien fundamentadas sobre cómo las herramientas de IA para programar pueden perjudicar el proceso de aprendizaje (entendemos menos y obviamos bases teóricas), y que además al trabajar con código producido por LLMs sin revisarlo (i.e. vibe coding) podemos introducir ineficiencias y vulnerabilidades de ciberseguridad. Recomiendo no saltarse esta lectura.
+
+
+## {.unnumbered}
 
 Otro recurso útil es este curso: [The Bullshit Machines](https://thebullshitmachines.com/index.html
 ) por Carl T. Bergstrom y Jevin D. West. Un conjunto de materiales bien estructurados que hacen buenas reflexiones y destacan el hecho de que **solo porque una máquina puede escribir como nosotros, no significa que pueda pensar como nosotros**.
 
 
+## {.unnumbered}
+
 Como instructor, no soy el único en notar que últimamente una proporción variable pero creciente de estudiantes están utilizando ChatGPT y herramientas similares para ayudarlos durante y después de distintos talleres relacionados a R. La fundación The Carpentries tiene una [serie de dos partes](https://carpentries.org/blog/2025/01/teaching-llms-report/) sobre si incluir o no el uso de LLM en talleres de The Carpentries. Los resultados aquí mencionan patrones de uso, ventajas y desventajas de enseñar a usar asistentes de LLM, y durante 2025 va a seguir la discusión sobre la ética, la seguridad y la mejor manera de enseñar en el contexto de todas las nuevas herramientas.
 
-</br>
 
+## {.unnumbered}
 
 Este [artículo de PNAS](https://www.pnas.org/doi/10.1073/pnas.2416228122) de Bai et al. (disponible en [Knowledge de UChicago](https://knowledge.uchicago.edu/record/14602)) también es muy relevante. Con dos medidas que provienen de la investigación en psicolgía diseñadas para medir sesgos implícitos, los autores encontraron que los LLM aún tienen sesgos estereotipados que reflejan los sesgos de la sociedad. Como un ejemplo simple de los resultados: los modelos generalmente elegían nombres codificados como femenino (Julia) para discutir bodas y nombres codificados como masculino (Ben) para discutir gestión.
+
+## {.unnumbered}
 
 Esta guía se centra en escribir código utilizando LLM, entonces esta publicación de Simon Willison titulada "[Here’s how I use LLMs to help me write code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)" (publicada el 11/30/2025;  agregada aquí el 18/03/2025) realmente explica y desenreda el proceso de hacer que los LLM escriban código decente sin frustraciones. Los temas importantes en la publicación incluyen el contexto y las fechas de corte de entrenamiento. 
 

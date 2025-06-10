@@ -24,7 +24,57 @@
     "href": "before-start.html",
     "title": "1  Read first",
     "section": "",
-    "text": "Here are some interesting and worthwhile reads to explore before getting hands-on with any of the tools listed on this site.\n\nIn a blog post about vibe coding, Simon Willison mentioned that:\n\n“I believe everyone deserves the ability to automate tedious tasks in their lives with computers.”\n\nI agree with this statement, but we should consider learning outcomes, ethics, biases, and context before getting into LLM tools.\nIn my opinion, anyone using LLM-based assistants for coding should read this perspective published in Methods in Ecology and Evolution: Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution, led by Natalie Cooper, and part of a special issue on the use of LLMs in ecology and evolution. These papers summarize the pros and cons of genAI/LLMs in the context of research and teaching, and their conclusions go beyond research and biological sciences.\nAnother useful resource is this course: The Bullshit Machines put together Carl T. Bergstrom and Jevin D. West. A very thoughtful and well-structured set of materials that cuts through the smoke and highlights the fact that just because a machine can write like us it does not mean it can think like us.\nAs an instructor, I am not alone in noticing that lately, a variable proportion of learners are using ChatGPT and similar tools to assist them in and after various R-related workshops. The Carpentries foundation have this interesting two-part series on teaching LLM-based coding assistants in Carpentries workshops. The results here mention patterns of usage, advantages and disadvantages of actually teaching how to use these assistants, and throughout 2025 there will be ongoing discussion about ethics, security, and how to best teach in light of these new tools.\n\nThis PNAS paper by Bai et al. (available at UChicago Knowledge) is also very relevant. With two measures that come from psychological research and are meant to measure implicit bias, the authors found that LMMs still have pervasive stereotype biases mirroring those in society. As a simple example of the results: models generally picked woman-coded names (Julia) to discuss weddings and male-coded names (Ben) to discuss management.\nBecause this guide in general is focused on writing code using LLMs, this post by Simon Willison titled “Here’s how I use LLMs to help me write code” (published 11/30/2025; added here 18/03/2025) really distills the process of getting LLMs to write decent code without frustration. Important topics in the post include context and training cut-off dates.\n\nWith that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.",
+    "text": "Here are some interesting and worthwhile reads to explore before getting hands-on with any of the tools listed on this site.\nIn a blog post about vibe coding, Simon Willison mentioned that:\nI agree with this statement, but we should consider learning outcomes, ethics, biases, and context before getting into LLM tools.\nIn my opinion, anyone using LLM-based assistants for coding should read this perspective published in Methods in Ecology and Evolution: Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution, led by Natalie Cooper, and part of a special issue on the use of LLMs in ecology and evolution. These papers summarize the pros and cons of genAI/LLMs in the context of research and teaching, and their conclusions go beyond research and biological sciences.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Read first</span>"
+    ]
+  },
+  {
+    "objectID": "before-start.html#section-1",
+    "href": "before-start.html#section-1",
+    "title": "1  Read first",
+    "section": "",
+    "text": "These lecture notes by Andrew Heiss titled AI, LLMs, BS, and vibe coding (published June 2025) now include thoughtful sections about how LLM-tools can be detrimental for those learning to code (decreased understanding, overlooked fundamentals) and also how ‘vibe-coding’ can introduce inefficiencies and security vulnerabilities. Highly recommended read.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Read first</span>"
+    ]
+  },
+  {
+    "objectID": "before-start.html#section-2",
+    "href": "before-start.html#section-2",
+    "title": "1  Read first",
+    "section": "",
+    "text": "Another useful resource is this course: The Bullshit Machines put together Carl T. Bergstrom and Jevin D. West. A very thoughtful and well-structured set of materials that cuts through the smoke and highlights the fact that just because a machine can write like us it does not mean it can think like us.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Read first</span>"
+    ]
+  },
+  {
+    "objectID": "before-start.html#section-3",
+    "href": "before-start.html#section-3",
+    "title": "1  Read first",
+    "section": "",
+    "text": "As an instructor, I am not alone in noticing that lately, a variable proportion of learners are using ChatGPT and similar tools to assist them in and after various R-related workshops. The Carpentries foundation have this interesting two-part series on teaching LLM-based coding assistants in Carpentries workshops. The results here mention patterns of usage, advantages and disadvantages of actually teaching how to use these assistants, and throughout 2025 there will be ongoing discussion about ethics, security, and how to best teach in light of these new tools.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Read first</span>"
+    ]
+  },
+  {
+    "objectID": "before-start.html#section-4",
+    "href": "before-start.html#section-4",
+    "title": "1  Read first",
+    "section": "",
+    "text": "This PNAS paper by Bai et al. (available at UChicago Knowledge) is also very relevant. With two measures that come from psychological research and are meant to measure implicit bias, the authors found that LMMs still have pervasive stereotype biases mirroring those in society. As a simple example of the results: models generally picked woman-coded names (Julia) to discuss weddings and male-coded names (Ben) to discuss management.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Read first</span>"
+    ]
+  },
+  {
+    "objectID": "before-start.html#section-5",
+    "href": "before-start.html#section-5",
+    "title": "1  Read first",
+    "section": "",
+    "text": "Because this guide in general is focused on writing code using LLMs, this post by Simon Willison titled “Here’s how I use LLMs to help me write code” (published 11/30/2025; added here 18/03/2025) really distills the process of getting LLMs to write decent code without frustration. Important topics in the post include context and training cut-off dates.\n\nWith that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Read first</span>"
     ]
@@ -194,7 +244,17 @@
     "href": "courses.html",
     "title": "4  Further reading",
     "section": "",
-    "text": "Here are some courses and guides for actually using the LLM tools listed here. Newest entries at the top, and going forward I will record the date in which I added them.\nThis post by Sara Altman and Simon Couch on the Posit Blog used vitals to tackle the question:\nThis is not the first such comparison but this one included newer models and considered cost, concluding that for R coding tasks, OpenAI’s o4-mini or Anthropic’s Claude Sonnet 4 will perform quite well. OpenAI’s o3 performed the best on this evaluation, but is also ten times more expensive than o4-mini and around three times more expensive than Sonnet 4. These kinds of quantitative evaluations focused on R code are great contributions to this space.\n(added 03/06/2025)\nThis post on the official tidyverse blog is well worth reading because it’s about Learning the tidyverse with the help of AI tools in the context of the learning process and from the perspective of an experienced instructor. Almost all models nowadays generate working code, but in this post, Mine Çetinkaya-Rundel reviewed the machine-generated code from the perspective of someone who wants to learn.\nIn summary: code generated by the model sometimes includes unsolicited steps, unnecessary elements, an unhelpful mix of R dialects, and too many code comments. All of this is not very helpful someone who wants to learn to code.\n(added 04/04/2025)",
+    "text": "4.0.0.1 Harnessing LLMs for Data Analysis\nHere are some courses and guides for actually using the LLM tools listed here. Newest entries at the top, and going forward I will record the date in which I added them.\nThis ~30 minute demo by Joe Cheng from Posit is a really smooth and easy to follow introduction to calling LLMs via http APIs using code (R or Python). Focuses on ellmer and chatlass. I liked the advice given early on about starting out with the best performing models rather than open-weights local models, and to be very careful about the data we allow these model providers to see. Joe also explained the easiest way to add knowledge to a chat object via the system prompt. A must watch.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
+    ]
+  },
+  {
+    "objectID": "courses.html#section",
+    "href": "courses.html#section",
+    "title": "4  Further reading",
+    "section": "",
+    "text": "This post by Sara Altman and Simon Couch on the Posit Blog used vitals to tackle the question:\n\nWhich AI model writes the best R code?\n\nThis is not the first such comparison but this one included newer models and considered cost, concluding that for R coding tasks, OpenAI’s o4-mini or Anthropic’s Claude Sonnet 4 will perform quite well. OpenAI’s o3 performed the best on this evaluation, but is also ten times more expensive than o4-mini and around three times more expensive than Sonnet 4. These kinds of quantitative evaluations focused on R code are great contributions to this space.\n(added 03/06/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -204,7 +264,7 @@
     "href": "courses.html#section-1",
     "title": "4  Further reading",
     "section": "",
-    "text": "This short tutorial in the officail Posit blog by Camila Lívio demonstrates how to use mall for text analysis and summarization for context extracted from long and complicated PDF files. (added 02/04/2025)",
+    "text": "This post on the official tidyverse blog is well worth reading because it’s about Learning the tidyverse with the help of AI tools in the context of the learning process and from the perspective of an experienced instructor. Almost all models nowadays generate working code, but in this post, Mine Çetinkaya-Rundel reviewed the machine-generated code from the perspective of someone who wants to learn.\nIn summary: code generated by the model sometimes includes unsolicited steps, unnecessary elements, an unhelpful mix of R dialects, and too many code comments. All of this is not very helpful someone who wants to learn to code.\n(added 04/04/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -214,7 +274,7 @@
     "href": "courses.html#section-2",
     "title": "4  Further reading",
     "section": "",
-    "text": "Sharon Machlis at InfoWorld just published a post titled: GenAI tools for R: New tools to make R programming easier. The content overlaps with this guide but there are lots of well-explained examples. Worth checking out.\n(added 26/03/2025)",
+    "text": "This short tutorial in the officail Posit blog by Camila Lívio demonstrates how to use mall for text analysis and summarization for context extracted from long and complicated PDF files. (added 02/04/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -224,7 +284,7 @@
     "href": "courses.html#section-3",
     "title": "4  Further reading",
     "section": "",
-    "text": "Not a tutorial or course and not necessarily R-related, but I came across this public list of AI-related GitHub repositories compiled by Garrick Aden Buie. If you are familiar with Garrick’s work, then you know that at least some of this cool AI stuff will make it onto R packages or extensions in the near future. Worth checking out. (added 24/03/2025)",
+    "text": "Sharon Machlis at InfoWorld just published a post titled: GenAI tools for R: New tools to make R programming easier. The content overlaps with this guide but there are lots of well-explained examples. Worth checking out.\n(added 26/03/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -234,7 +294,7 @@
     "href": "courses.html#section-4",
     "title": "4  Further reading",
     "section": "",
-    "text": "This is way beyond my skillset and experience level, but Javier Orraca-Deatcu recently (07/03/2025) posted “Vector DB + RAG Maker”. The post introduces a “limited vector database and RAG system developed with Python, made for R users, designed to generate bleeding-edge responses from challenging LLM prompts using your local R technical documentation”. Looks fun and promising.\n(added 18/03/2025)",
+    "text": "Not a tutorial or course and not necessarily R-related, but I came across this public list of AI-related GitHub repositories compiled by Garrick Aden Buie. If you are familiar with Garrick’s work, then you know that at least some of this cool AI stuff will make it onto R packages or extensions in the near future. Worth checking out. (added 24/03/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -244,7 +304,7 @@
     "href": "courses.html#section-5",
     "title": "4  Further reading",
     "section": "",
-    "text": "Here’s a long-form video of Simon Couch as a guest on the R For the Rest of Us podcast. The interview goes through a lot of relevant AI in R topics, an includes lots of detail on using chores and gander. (added 10/03/2025)",
+    "text": "This is way beyond my skillset and experience level, but Javier Orraca-Deatcu recently (07/03/2025) posted “Vector DB + RAG Maker”. The post introduces a “limited vector database and RAG system developed with Python, made for R users, designed to generate bleeding-edge responses from challenging LLM prompts using your local R technical documentation”. Looks fun and promising.\n(added 18/03/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -254,7 +314,7 @@
     "href": "courses.html#section-6",
     "title": "4  Further reading",
     "section": "",
-    "text": "This long-form post by Athanasia Mo Mowinckel goes through the setup process and various adventures for using various relevant tools including ellmer chores, gander and ensure with local ollama models for package development. The text shows that the tooling is not quite there yet, but on its way.\n(added 03/03/2025)",
+    "text": "Here’s a long-form video of Simon Couch as a guest on the R For the Rest of Us podcast. The interview goes through a lot of relevant AI in R topics, an includes lots of detail on using chores and gander. (added 10/03/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -264,7 +324,7 @@
     "href": "courses.html#section-7",
     "title": "4  Further reading",
     "section": "",
-    "text": "David Keyes at R for the Rest of Us recently launched “Using AI with R”: a free, self-paced short course for using LLM-based assistants with R. Covers many of the tools and packages mentioned on this site.",
+    "text": "This long-form post by Athanasia Mo Mowinckel goes through the setup process and various adventures for using various relevant tools including ellmer chores, gander and ensure with local ollama models for package development. The text shows that the tooling is not quite there yet, but on its way.\n(added 03/03/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -274,7 +334,7 @@
     "href": "courses.html#section-8",
     "title": "4  Further reading",
     "section": "",
-    "text": "Albert Rapp also has an in progress Quarto book “AI with R”, built from his existing blog posts for addressing different tasks using AI tool and not having to work in browser-based chat boxes. This resource includes some very well-written documentation for using mall and ellmer.",
+    "text": "David Keyes at R for the Rest of Us recently launched “Using AI with R”: a free, self-paced short course for using LLM-based assistants with R. Covers many of the tools and packages mentioned on this site.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -284,7 +344,7 @@
     "href": "courses.html#section-9",
     "title": "4  Further reading",
     "section": "",
-    "text": "Leonardo Collado Torres gave a short course that covered many of the packages and tools used here, and the recording is available on YouTube. The course materials also include useful step-by-step instructions for setting up and using copilot.",
+    "text": "Albert Rapp also has an in progress Quarto book “AI with R”, built from his existing blog posts for addressing different tasks using AI tool and not having to work in browser-based chat boxes. This resource includes some very well-written documentation for using mall and ellmer.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -294,7 +354,7 @@
     "href": "courses.html#section-10",
     "title": "4  Further reading",
     "section": "",
-    "text": "My fellow UQ alum Chris Brown, now at UTAS, shared this recent entry about summarizing key details from a methods section to assist in literature reviews. The example uses tidychatmodels and I particularly like Chris’ advice: “I’d also recommend you manually check results so that you still learn something yourself”.\n\n\n\n\n\n\nNote\n\n\n\nThis post now has a follow-up entry (published 15/03/2025, added here 18/03/2025) which uses ellmer for the same task of literature review. Very detailed step-by-step instruction and a thoughtful discussion at the end.",
+    "text": "Leonardo Collado Torres gave a short course that covered many of the packages and tools used here, and the recording is available on YouTube. The course materials also include useful step-by-step instructions for setting up and using copilot.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
     ]
@@ -302,6 +362,16 @@
   {
     "objectID": "courses.html#section-11",
     "href": "courses.html#section-11",
+    "title": "4  Further reading",
+    "section": "",
+    "text": "My fellow UQ alum Chris Brown, now at UTAS, shared this recent entry about summarizing key details from a methods section to assist in literature reviews. The example uses tidychatmodels and I particularly like Chris’ advice: “I’d also recommend you manually check results so that you still learn something yourself”.\n\n\n\n\n\n\nNote\n\n\n\nThis post now has a follow-up entry (published 15/03/2025, added here 18/03/2025) which uses ellmer for the same task of literature review. Very detailed step-by-step instruction and a thoughtful discussion at the end.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Further reading</span>"
+    ]
+  },
+  {
+    "objectID": "courses.html#section-12",
+    "href": "courses.html#section-12",
     "title": "4  Further reading",
     "section": "",
     "text": "This post by Nic Crane demonstrates how we can use ellmer and Shiny to build an app that creates posts for different social media platforms.",

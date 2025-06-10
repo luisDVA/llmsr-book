@@ -4,6 +4,11 @@ Aquí hay algunos cursos y guías ya para aprender a usar las diferentes herrami
 
 ------------------------------------------------------------------------
 
+#### [Harnessing LLMs for Data Analysis](https://www.youtube.com/watch?v=owDd1CJ17uQ)
+
+Este video de ~30 minutos (en inglés) incluye una demostración muy clara que dio Joe Cheng de posit sobre cómo llamar modelos a través de APIs y mediante código (R o Python). El enfoque de la demostración es en herramientas de posit como ellmer y chatlass. Me gustaron algunos de los consejos para personas que vienen iniciando con estas herramientas de IA. Por ejemplo, al principio usar los modelos con mejor desempeño pero siempre pendientes de la privacidad de los datos que estemos compartiendo. También se muestra como darle conocimiento extra a los modelos a través del 'system prompt' en el cual configuramos nuestros modelos. Video altamente recomendado.
+
+## {.unnumbered}
 
 Esta [publicación](https://posit.co/blog/r-llm-evaluation/) por Sara Altman y Simon Couch en el blog de Posit utilizó [vitals](r-pkgs.qmd#vitals) para abordar la pregunta:
 

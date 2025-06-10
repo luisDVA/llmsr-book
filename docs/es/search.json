@@ -24,7 +24,57 @@
     "href": "before-start.es.html",
     "title": "1  Lecturas previas",
     "section": "",
-    "text": "Aquí hay algunos materiales interesantes y batante útiles para revisar primero antes de empezar a usar cualquier una de las herramientas que se mencioan en esta guía.\n\nEn una publicación de blog sobre “vibe coding”, Simon Willison mencionó que (traducido del inglés):\n\n“Creo que todos merecen la capacidad de automatizar tareas tediosas en sus vidas al usar computadoras.”\n\nEstoy de acuerdo con esta afirmación, pero deberíamos considerar las consecuencias en el aprendizaje, los temas éticos y legales, los sesgos y el contexto antes de incursionar en las herramientas basadas en LLM.\nCreo que cualquiera que use herramientas de LLM para programa debería leer esta perspectiva publicada en Methods in Ecology and Evolution: Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution, dirigida por Natalie Cooper, y parte de un número especial sobre el uso de LLMs en ecología y evolución. Estos trabajos resumen las ventajas y desventajas de IA/LLM en el contexto de la investigación y la enseñanza, y sus conclusiones van más allá de la investigación y de las ciencias biológicas.\nOtro recurso útil es este curso: The Bullshit Machines por Carl T. Bergstrom y Jevin D. West. Un conjunto de materiales bien estructurados que hacen buenas reflexiones y destacan el hecho de que solo porque una máquina puede escribir como nosotros, no significa que pueda pensar como nosotros.\nComo instructor, no soy el único en notar que últimamente una proporción variable pero creciente de estudiantes están utilizando ChatGPT y herramientas similares para ayudarlos durante y después de distintos talleres relacionados a R. La fundación The Carpentries tiene una serie de dos partes sobre si incluir o no el uso de LLM en talleres de The Carpentries. Los resultados aquí mencionan patrones de uso, ventajas y desventajas de enseñar a usar asistentes de LLM, y durante 2025 va a seguir la discusión sobre la ética, la seguridad y la mejor manera de enseñar en el contexto de todas las nuevas herramientas.\n\nEste artículo de PNAS de Bai et al. (disponible en Knowledge de UChicago) también es muy relevante. Con dos medidas que provienen de la investigación en psicolgía diseñadas para medir sesgos implícitos, los autores encontraron que los LLM aún tienen sesgos estereotipados que reflejan los sesgos de la sociedad. Como un ejemplo simple de los resultados: los modelos generalmente elegían nombres codificados como femenino (Julia) para discutir bodas y nombres codificados como masculino (Ben) para discutir gestión.\nEsta guía se centra en escribir código utilizando LLM, entonces esta publicación de Simon Willison titulada “Here’s how I use LLMs to help me write code” (publicada el 11/30/2025; agregada aquí el 18/03/2025) realmente explica y desenreda el proceso de hacer que los LLM escriban código decente sin frustraciones. Los temas importantes en la publicación incluyen el contexto y las fechas de corte de entrenamiento.\n\nTeniendo en cuenta todos estos antecedentes: Las siguientes secciones de esta guía se dividen en paquetes R, extensiones adicionales que funcionan en nuestros IDEs sin compartirse e instalarse como paquetes, y una lista de cursos y tutoriales para utilizar estas herramientas.",
+    "text": "Aquí hay algunos materiales interesantes y batante útiles para revisar primero antes de empezar a usar cualquier una de las herramientas que se mencioan en esta guía.\nEn una publicación de sobre “vibe coding”, Simon Willison mencionó en su blog que (traducido del inglés):\nEstoy de acuerdo con esta afirmación, pero deberíamos considerar las consecuencias en el aprendizaje, los temas éticos y legales, los sesgos y el contexto antes de incursionar en las herramientas basadas en LLM.\nCreo que cualquiera que use herramientas de LLM para programa debería leer esta perspectiva publicada en Methods in Ecology and Evolution: Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution, dirigida por Natalie Cooper, y parte de un número especial sobre el uso de LLMs en ecología y evolución. Estos trabajos resumen las ventajas y desventajas de IA/LLM en el contexto de la investigación y la enseñanza, y sus conclusiones van más allá de la investigación y de las ciencias biológicas.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Lecturas previas</span>"
+    ]
+  },
+  {
+    "objectID": "before-start.es.html#section-1",
+    "href": "before-start.es.html#section-1",
+    "title": "1  Lecturas previas",
+    "section": "",
+    "text": "Andrew Heiss compartió estos materiales de clase titulados AI, LLMs, BS, and vibe coding (publicado en junio de 2025). Este material incluye secciones muy bien fundamentadas sobre cómo las herramientas de IA para programar pueden perjudicar el proceso de aprendizaje (entendemos menos y obviamos bases teóricas), y que además al trabajar con código producido por LLMs sin revisarlo (i.e. vibe coding) podemos introducir ineficiencias y vulnerabilidades de ciberseguridad. Recomiendo no saltarse esta lectura.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Lecturas previas</span>"
+    ]
+  },
+  {
+    "objectID": "before-start.es.html#section-2",
+    "href": "before-start.es.html#section-2",
+    "title": "1  Lecturas previas",
+    "section": "",
+    "text": "Otro recurso útil es este curso: The Bullshit Machines por Carl T. Bergstrom y Jevin D. West. Un conjunto de materiales bien estructurados que hacen buenas reflexiones y destacan el hecho de que solo porque una máquina puede escribir como nosotros, no significa que pueda pensar como nosotros.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Lecturas previas</span>"
+    ]
+  },
+  {
+    "objectID": "before-start.es.html#section-3",
+    "href": "before-start.es.html#section-3",
+    "title": "1  Lecturas previas",
+    "section": "",
+    "text": "Como instructor, no soy el único en notar que últimamente una proporción variable pero creciente de estudiantes están utilizando ChatGPT y herramientas similares para ayudarlos durante y después de distintos talleres relacionados a R. La fundación The Carpentries tiene una serie de dos partes sobre si incluir o no el uso de LLM en talleres de The Carpentries. Los resultados aquí mencionan patrones de uso, ventajas y desventajas de enseñar a usar asistentes de LLM, y durante 2025 va a seguir la discusión sobre la ética, la seguridad y la mejor manera de enseñar en el contexto de todas las nuevas herramientas.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Lecturas previas</span>"
+    ]
+  },
+  {
+    "objectID": "before-start.es.html#section-4",
+    "href": "before-start.es.html#section-4",
+    "title": "1  Lecturas previas",
+    "section": "",
+    "text": "Este artículo de PNAS de Bai et al. (disponible en Knowledge de UChicago) también es muy relevante. Con dos medidas que provienen de la investigación en psicolgía diseñadas para medir sesgos implícitos, los autores encontraron que los LLM aún tienen sesgos estereotipados que reflejan los sesgos de la sociedad. Como un ejemplo simple de los resultados: los modelos generalmente elegían nombres codificados como femenino (Julia) para discutir bodas y nombres codificados como masculino (Ben) para discutir gestión.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Lecturas previas</span>"
+    ]
+  },
+  {
+    "objectID": "before-start.es.html#section-5",
+    "href": "before-start.es.html#section-5",
+    "title": "1  Lecturas previas",
+    "section": "",
+    "text": "Esta guía se centra en escribir código utilizando LLM, entonces esta publicación de Simon Willison titulada “Here’s how I use LLMs to help me write code” (publicada el 11/30/2025; agregada aquí el 18/03/2025) realmente explica y desenreda el proceso de hacer que los LLM escriban código decente sin frustraciones. Los temas importantes en la publicación incluyen el contexto y las fechas de corte de entrenamiento.\n\nTeniendo en cuenta todos estos antecedentes: Las siguientes secciones de esta guía se dividen en paquetes R, extensiones adicionales que funcionan en nuestros IDEs sin compartirse e instalarse como paquetes, y una lista de cursos y tutoriales para utilizar estas herramientas.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Lecturas previas</span>"
     ]
@@ -204,7 +254,17 @@
     "href": "courses.es.html",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "Aquí hay algunos cursos y guías ya para aprender a usar las diferentes herramientas que se mencionan en este sitio. Lo más recientes está al principio, y a partir de ahora, registraré la fecha de cuándo añado elementos a esta lista.\nEsta publicación por Sara Altman y Simon Couch en el blog de Posit utilizó vitals para abordar la pregunta:\nÉsta no es la primera comparación de este tipo, pero en esta ocasión se incluyeron modelos más recientes y se consideró el costo, llegando a la conclusión de que, para tareas de R, los modelos o4-mini de OpenAI o Claude Sonnet 4 de Anthropic funcion bastante bien. El modelo o3 de OpenAI tuvo el mejor desempeño en esta evaluación, pero también es mucho más caro que o4-mini y que el Sonnet 4. Este tipo de evaluaciones cuantitativas que se enfocan en código de R son excelentes contribuciones al espacio.\n(Añadido el 03/06/2025)\nEsta publicación en el blog oficial del tidyverse vale mucho la pena porque es sobre el uso de chaptGPT para escribir código de R en el contexto del proceso de aprendizaje y desde la perspectiva de una instructora muy experimentada. Casi todos los modelos ya generan código que funciona, pero en esta publicación Mine Çetinkaya-Rundel se dio la tarea de revisar el código autogenerado desde la perspectiva de alguien que realmente quiere aprender.\nEn resumen: el código generado por el modelo a veces incluye pasos que no se el pidieron, inserta cosas que no hacen falta, mezcla dialectos de R, y comenta demasiado los diferentes pasos. Todo esto no ayuda mucho a quien quiere aprender a través de código generado por IAs. (agregado 04/04/2025)",
+    "text": "4.0.0.1 Harnessing LLMs for Data Analysis\nAquí hay algunos cursos y guías ya para aprender a usar las diferentes herramientas que se mencionan en este sitio. Lo más recientes está al principio, y a partir de ahora, registraré la fecha de cuándo añado elementos a esta lista.\nEste video de ~30 minutos (en inglés) incluye una demostración muy clara que dio Joe Cheng de posit sobre cómo llamar modelos a través de APIs y mediante código (R o Python). El enfoque de la demostración es en herramientas de posit como ellmer y chatlass. Me gustaron algunos de los consejos para personas que vienen iniciando con estas herramientas de IA. Por ejemplo, al principio usar los modelos con mejor desempeño pero siempre pendientes de la privacidad de los datos que estemos compartiendo. También se muestra como darle conocimiento extra a los modelos a través del ‘system prompt’ en el cual configuramos nuestros modelos. Video altamente recomendado.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
+    ]
+  },
+  {
+    "objectID": "courses.es.html#section",
+    "href": "courses.es.html#section",
+    "title": "4  Lecturas adicionales",
+    "section": "",
+    "text": "Esta publicación por Sara Altman y Simon Couch en el blog de Posit utilizó vitals para abordar la pregunta:\n\n¿Qué modelo de inteligencia artificial escribe el mejor código de R?\n\nÉsta no es la primera comparación de este tipo, pero en esta ocasión se incluyeron modelos más recientes y se consideró el costo, llegando a la conclusión de que, para tareas de R, los modelos o4-mini de OpenAI o Claude Sonnet 4 de Anthropic funcion bastante bien. El modelo o3 de OpenAI tuvo el mejor desempeño en esta evaluación, pero también es mucho más caro que o4-mini y que el Sonnet 4. Este tipo de evaluaciones cuantitativas que se enfocan en código de R son excelentes contribuciones al espacio.\n(Añadido el 03/06/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -214,7 +274,7 @@
     "href": "courses.es.html#section-1",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "En este tutorial corto en el blog ofical de Posit, Camila Lívio nos muestra como usar mall para resumir texto proveniente de muchos PDFs complejos. (agregado 02/04/2025)",
+    "text": "Esta publicación en el blog oficial del tidyverse vale mucho la pena porque es sobre el uso de chaptGPT para escribir código de R en el contexto del proceso de aprendizaje y desde la perspectiva de una instructora muy experimentada. Casi todos los modelos ya generan código que funciona, pero en esta publicación Mine Çetinkaya-Rundel se dio la tarea de revisar el código autogenerado desde la perspectiva de alguien que realmente quiere aprender.\nEn resumen: el código generado por el modelo a veces incluye pasos que no se el pidieron, inserta cosas que no hacen falta, mezcla dialectos de R, y comenta demasiado los diferentes pasos. Todo esto no ayuda mucho a quien quiere aprender a través de código generado por IAs. (agregado 04/04/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -224,7 +284,7 @@
     "href": "courses.es.html#section-2",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "Sharon Machlis en InfoWorld acaba de publicar este resumen: GenAI tools for R: New tools to make R programming easier. El contenido coincide en buena parte con todo lo que aparece en esta guía, pero hay muchos ejemplos bien explicados. Vale la pena revisarlo.\n(agregado 26/03/2025)",
+    "text": "En este tutorial corto en el blog ofical de Posit, Camila Lívio nos muestra como usar mall para resumir texto proveniente de muchos PDFs complejos. (agregado 02/04/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -234,7 +294,7 @@
     "href": "courses.es.html#section-3",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "No es un tutorial ni un curso, y no está necesariamente relacionado con R, pero me encontré esta lista de repositorios de GitHub relacionados con IA, recopilada por Garrick Aden Buie. Conociendo el trabajo de Garrick, seguramente al menos algunas de estas herramientas de IA interesantes se integrarán a paquetes o extensiones de R en un futuro cercano. Vale la pena revisarlo.\n(agregado 24/03/2025)",
+    "text": "Sharon Machlis en InfoWorld acaba de publicar este resumen: GenAI tools for R: New tools to make R programming easier. El contenido coincide en buena parte con todo lo que aparece en esta guía, pero hay muchos ejemplos bien explicados. Vale la pena revisarlo.\n(agregado 26/03/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -244,7 +304,7 @@
     "href": "courses.es.html#section-4",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "Esto va más allá de mis habilidades y nivel de experiencia, pero Javier Orraca-Deatcu publicó recientemente (07/03/2025) “Vector DB + RAG Maker”. Este resumen presenta un “sistema de base de datos vectoriales y RAG desarrollado con Python, hecho para usuarios de R, diseñado para generar respuestas de vanguardia desde LLM utilizando la documentación técnica local de R”. Se ve divertido.\n(agregado 18/03/2025)",
+    "text": "No es un tutorial ni un curso, y no está necesariamente relacionado con R, pero me encontré esta lista de repositorios de GitHub relacionados con IA, recopilada por Garrick Aden Buie. Conociendo el trabajo de Garrick, seguramente al menos algunas de estas herramientas de IA interesantes se integrarán a paquetes o extensiones de R en un futuro cercano. Vale la pena revisarlo.\n(agregado 24/03/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -254,7 +314,7 @@
     "href": "courses.es.html#section-5",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "Aquí podemos ver un video de Simon Couch como invitado en el pódcast R For the Rest of Us. La entrevista abarca muchos temas relevantes de IA en R e incluye muchos detalles sobre el uso de chores y gander. (agregado 10/03/2025)",
+    "text": "Esto va más allá de mis habilidades y nivel de experiencia, pero Javier Orraca-Deatcu publicó recientemente (07/03/2025) “Vector DB + RAG Maker”. Este resumen presenta un “sistema de base de datos vectoriales y RAG desarrollado con Python, hecho para usuarios de R, diseñado para generar respuestas de vanguardia desde LLM utilizando la documentación técnica local de R”. Se ve divertido.\n(agregado 18/03/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -264,7 +324,7 @@
     "href": "courses.es.html#section-6",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "Este blog de Athanasía Mo Mowinckel describe el proceso de configuración y los desafíos de usar diversas herramientas relevantes, incluyendo ellmer, chores, gander y ensure con modelos locales de ollama para el desarrollo de paquetes. El texto muestra que las herramientas aún no están 100% listas, pero van en buen camino.\n(agregado 03/03/2025)",
+    "text": "Aquí podemos ver un video de Simon Couch como invitado en el pódcast R For the Rest of Us. La entrevista abarca muchos temas relevantes de IA en R e incluye muchos detalles sobre el uso de chores y gander. (agregado 10/03/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -274,7 +334,7 @@
     "href": "courses.es.html#section-7",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "David Keyes de R for the Rest of Us lanzó “Using AI with R”: un curso gratuito y autogestionado para usar asistentes basados en LLM con R. Cubre varias de las herramientas y paquetes mencionados en este sitio.",
+    "text": "Este blog de Athanasía Mo Mowinckel describe el proceso de configuración y los desafíos de usar diversas herramientas relevantes, incluyendo ellmer, chores, gander y ensure con modelos locales de ollama para el desarrollo de paquetes. El texto muestra que las herramientas aún no están 100% listas, pero van en buen camino.\n(agregado 03/03/2025)",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -284,7 +344,7 @@
     "href": "courses.es.html#section-8",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "Albert Rapp también tiene un libro de Quarto en progreso titulado “AI with R”, que junta varias de las publicaciones de su blog para abordar diferentes tareas usando herramientas de IA y sin tener que trabajar en cajitas de chat en el navegador. Este recurso tiene documentación técnica muy bien escrita para usar mall y ellmer.",
+    "text": "David Keyes de R for the Rest of Us lanzó “Using AI with R”: un curso gratuito y autogestionado para usar asistentes basados en LLM con R. Cubre varias de las herramientas y paquetes mencionados en este sitio.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -294,7 +354,7 @@
     "href": "courses.es.html#section-9",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "Leonardo Collado Torres dio un curso corto que cubrió muchos de los paquetes y herramientas utilizados aquí, y la grabación está disponible en YouTube. Los materiales del curso también incluyen instrucciones útiles paso a paso para configurar y usar copilot.",
+    "text": "Albert Rapp también tiene un libro de Quarto en progreso titulado “AI with R”, que junta varias de las publicaciones de su blog para abordar diferentes tareas usando herramientas de IA y sin tener que trabajar en cajitas de chat en el navegador. Este recurso tiene documentación técnica muy bien escrita para usar mall y ellmer.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -304,7 +364,7 @@
     "href": "courses.es.html#section-10",
     "title": "4  Lecturas adicionales",
     "section": "",
-    "text": "Mi excompañero de UQ, Chris Brown, ahora en UTAS, compartió este post reciente sobre resumir detalles clave de una sección de métodos para ayudar en revisiones bibliográficas. El ejemplo usa tidychatmodels y en particular me gusta el consejo de Chris: “También recomendaría verificar los resultados manualmente para que aún aprendas algo tú mismo”.\n\n\n\n\n\n\nNota\n\n\n\nEl post ya tiene una continuación (publicada el 15/03/2025, agregada aquí el 18/03/2025) que usa ellmer para la misma tarea de revisión bibliográfica. Tiene instrucciones detalladas paso a paso y una discusión interesante al final.",
+    "text": "Leonardo Collado Torres dio un curso corto que cubrió muchos de los paquetes y herramientas utilizados aquí, y la grabación está disponible en YouTube. Los materiales del curso también incluyen instrucciones útiles paso a paso para configurar y usar copilot.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
     ]
@@ -312,6 +372,16 @@
   {
     "objectID": "courses.es.html#section-11",
     "href": "courses.es.html#section-11",
+    "title": "4  Lecturas adicionales",
+    "section": "",
+    "text": "Mi excompañero de UQ, Chris Brown, ahora en UTAS, compartió este post reciente sobre resumir detalles clave de una sección de métodos para ayudar en revisiones bibliográficas. El ejemplo usa tidychatmodels y en particular me gusta el consejo de Chris: “También recomendaría verificar los resultados manualmente para que aún aprendas algo tú mismo”.\n\n\n\n\n\n\nNota\n\n\n\nEl post ya tiene una continuación (publicada el 15/03/2025, agregada aquí el 18/03/2025) que usa ellmer para la misma tarea de revisión bibliográfica. Tiene instrucciones detalladas paso a paso y una discusión interesante al final.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Lecturas adicionales</span>"
+    ]
+  },
+  {
+    "objectID": "courses.es.html#section-12",
+    "href": "courses.es.html#section-12",
     "title": "4  Lecturas adicionales",
     "section": "",
     "text": "Esta entrada de Nic Crane demuestra cómo podemos usar ellmer y Shiny para construir una aplicación que crea publicaciones para diferentes plataformas de redes sociales.",
