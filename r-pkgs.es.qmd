@@ -114,6 +114,19 @@ ensure es otro paquete desarrollado por Simon Couch que nos ayuda a escribir có
 
 vitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de difentes modelos. Se le dan _inputs_ (tareas o preguntas) y _targets_ (las respuestas o soluciones que esperamos) y de ahí los modelos que están siendo evaluados contestan los problemas y son evaluados en su desempeño. Aquí hay dos ejemplos ([1](https://www.simonpcouch.com/blog/2025-04-01-gemini-2-5-pro/#an-r-eval-dataset), [2](https://www.simonpcouch.com/blog/2025-05-21-gemini-2-5-flash/))de como comparar el desempeño de diferentes modelos para programar en R, todo usando vitals. 
 
+## Creación de agentes de IA modulares
+
+### [LLMagentR](https://knowusuboaky.github.io/LLMAgentR/)
+<img src="images/hex/LLMagentRlogo.png" align="right" height="108"/>
+
+Los agentes de LLM son aplicaciones que pueden abordar tareas relativamente complejas dividiéndolas en 'subtareas' que pueden resolverse usando diferentes herramientas y un flujo de operaciones que finalmente conduce a la respuesta deseada.
+
+LLMagentR de Kwadwo Daddy Nyame Owusu Boakye trae a R un marco de ejecución de grafos de estado. Este marco está inspirado en las arquitecturas LangGraph y LangChain y se utiliza para definir flujos de trabajo como grafos dirigidos donde los nodos representan funciones y las aristas definen cómo se ejecutan éstas. Se ejecutan en orden y este sistema  permite a los desarrolladores construir flujos de trabajo con una gestión más estructurada de los pasos intermedios (estados) y con un flujo de ejecución controlado.
+
+LLMagentR utiliza funciones de `chatLLM` para construir agentes para: generación de código, consultas SQL, limpieza de datos, investigación web, pronósticos temporales, visualización de datos y más.
+
+El paquete tiene muchas dependencias, así que tengan paciencia en la instalación. Probé los agentes de limpieza de datos con buenos resultados, aunque estos flujos de trabajo iterativos consumen muchos tokens y las  cuentas gratuitas de la mayoría de los proveedores pueden no ser suficientes. ¡Una gran adición en general al espacio de LLM + R!
+
 ## mlverse
 
 ### [mall](https://mlverse.github.io/mall/)
@@ -123,6 +136,7 @@ vitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de 
 mall es parte del ecosistema de paquetes de ciencia de datos y Aprendizaje Automático de código abierto mlverse. En lugar de un enfoque basado en chats, mall aplica LLMs fila por fila en las columnas de un data frame. Incluye métodos para integrados para traducir, resumir, extraer y analizar el sentimiento de cadenas de texto.
 
 mall utiliza Ollama y se implementa tanto en R como en Python. Es probable que lo utilice para analizar los comentarios que recopilé sobre paquetes cargados, lo que presenté en mi charla en posit::conf(2024).
+
 ### [lang](https://mlverse.github.io/lang/)
 
 <img src="images/hex/mlverse.png" align="right" height="108"/>

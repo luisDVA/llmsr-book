@@ -120,6 +120,7 @@ vitals by Simon Couch provides us with a framework for evaluating LLMs. We provi
 ## Language Model Agents
 
 ### [LLMagentR](https://knowusuboaky.github.io/LLMAgentR/)
+<img src="images/hex/LLMagentRlogo.png" align="right" height="108"/>
 
 LLM agents are applications that can tackle relatively complex tasks by breaking them into 'sub-tasks' that can be addressed using tools and a flow of operations that leads to our desired response.    
 
