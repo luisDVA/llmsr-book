@@ -6,6 +6,11 @@ In no particular order, but now grouped into loose groups:
 
 ## General interfaces
 
+### [chatLLM](https://knowusuboaky.github.io/chatLLM/)
+<img src="images/hex/chatLLMlogo.png" align="right" height="108"/>
+
+chatLLM by Kwadwo Daddy Nyame Owusu Boakye is another useful option for when we want a consistent interface to models from essentially all providers (Anthropic, OpenAI, DeepSeek, Groq, DashScope, and GitHub Models). chatLLM provides a single and uniform API across all models and lets us specify the roles that the LLMs will be given (system prompts, users, assistants). Works nicely on its own but more importantly, the pacakge integrates with [LLMagentR](r-pkgs.qmd#LLMagentR) to build Language Model Agents. On CRAN now. 
+
 ### [axolotr](https://github.com/heurekalabsco/axolotr)
 <img src="images/hex/axolotrlogo.png" align="right" height="108"/>
 
@@ -110,6 +115,20 @@ ensure by Simon Couch helps write code for unit tests using the testthat package
 <img src="images/hex/vitalslogo.png" align="right" height="108"/>
 
 vitals by Simon Couch provides us with a framework for evaluating LLMs. We provide inputs (prompts or questions) and targets (the actual response that we expect) and then our model or models of choice can give the problems a go and then get scored on their performace. These two posts ([1](https://www.simonpcouch.com/blog/2025-04-01-gemini-2-5-pro/#an-r-eval-dataset), [2](https://www.simonpcouch.com/blog/2025-05-21-gemini-2-5-flash/))include a detailed walkthrough of the evaluation process using vitals. 
+
+
+## Language Model Agents
+
+### [LLMagentR](https://knowusuboaky.github.io/LLMAgentR/)
+
+LLM agents are applications that can tackle relatively complex tasks by breaking them into 'sub-tasks' that can be addressed using tools and a flow of operations that leads to our desired response.    
+
+LLMagentR by Kwadwo Daddy Nyame Owusu Boakye brings a 
+state graph execution framework to R. This framework is inspired by the LangGraph and LangChain architectures and is used to define workflows as directed graphs where nodes represent functions and edges define how these are executed. These run in order and the framework lets developers build workflows with a more structured management of the intermediate steps (states) and a controlled execution flow. 
+
+LLMagentR uses function from chatLLM to build agents for code generation, SQL queries, data cleaning, web research, forecasting, data visualization, and more. 
+
+The package has a lot of dependencies so be patient during installation. I tried out the data cleaning and the interpretation agents with good results, although these iterative workflows are very token-hungry and the free tiers for most providers may not be enough. Great overall addition to the LLM + R space!
 
 ## mlverse
 

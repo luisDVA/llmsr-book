@@ -6,6 +6,11 @@ Los paquetes están resumidos aquí sin ningún orden en particular, pero los ju
 
 ## Interfaces generales
 
+### [chatLLM](https://knowusuboaky.github.io/chatLLM/)
+<img src="images/hex/chatLLMlogo.png" align="right" height="108"/>
+
+Desarrolado por Kwadwo Daddy Nyame Owusu Boakye, chatLLM es otra opción útil para cuando necesitamos una interfaz consistente para modelos de prácticamente todos los proveedores (Anthropic, OpenAI, DeepSeek, Groq, DashScope y GitHub Models). chatLLM nos bridna una API única y uniforme para todos los modelos y nos permite especificar los roles que se les darán a los LLM (prompts del sistema, usuario, asistente). Funciona bien por sí solo, pero también se integra con LLMagentR para construir [LLMagentR](r-pkgs.qmd#LLMagentR). Ya está disponible en CRAN.
+
 ### [axolotr](https://github.com/heurekalabsco/axolotr)
 <img src="images/hex/axolotrlogo.png" align="right" height="108"/>
 
