@@ -154,7 +154,7 @@
     "href": "r-pkgs.es.html#herramientas-para-usar-el-protocolo-de-contexto-de-modelo-model-context-protocol-mcp",
     "title": "2  Paquetes de R",
     "section": "2.7 Herramientas para usar el Protocolo de Contexto de Modelo (Model Context Protocol, MCP)",
-    "text": "2.7 Herramientas para usar el Protocolo de Contexto de Modelo (Model Context Protocol, MCP)\n\n2.7.1 acquaint\n\nacquaint por Simon Couch, Charlie Gao y Winston Chang (y muchos otros colaboradores) permite que herramientas de MCP como Claude Desktop, Lutra, Glama y Claude Code se conecten directamente a nuestras sesiones de R. MCP es un protocolo abierto desarrollado por Anthropic para conectar modelos de IA a diferentes herramientas y fuentes de datos de manera estandarizada (el sitio web de MCP se refiere al protocolo como el puerto USB-C de las aplicaciones de IA). En esta configuración, los modelos pueden ver nuestros paquetes instalados, el entorno, y la información de la sesión, por lo que generarán código mejor informado. El paquete acquaint usa btw para proporcionar contexto a los modelos. Le veo mucho potencial.",
+    "text": "2.7 Herramientas para usar el Protocolo de Contexto de Modelo (Model Context Protocol, MCP)\n\n2.7.1 acquaint\n\nacquaint por Simon Couch, Charlie Gao y Winston Chang (y muchos otros colaboradores) permite que herramientas de MCP como Claude Desktop, Lutra, Glama y Claude Code se conecten directamente a nuestras sesiones de R. MCP es un protocolo abierto desarrollado por Anthropic para conectar modelos de IA a diferentes herramientas y fuentes de datos de manera estandarizada (el sitio web de MCP se refiere al protocolo como el puerto USB-C de las aplicaciones de IA). En esta configuración, los modelos pueden ver nuestros paquetes instalados, el entorno, y la información de la sesión, por lo que generarán código mejor informado. El paquete acquaint usa btw para proporcionar contexto a los modelos. Le veo mucho potencial.\n\n\n2.7.2 mcpr\n\nmcpr, desarrollado por John Coene de Opifex es una implementación en R del Protocolo de Contexto de Modelo (MCP), que permite que las aplicaciones escritas en R interactúen con LLMs a través de una interfaz estándar JSON-RPC 2.0. Podemos construir herramientas personalizadas y, en última instancia, integrarlas con Cursor, Claude Code y VS Code Agent Mode. Más importante aún, las herramientas de MCPR construidas con el paquete se pueden convertir en herramientas de ellmer y registrarse en una sesión de chat de ellmer. Aunque el MCP en general es un tema difícil para aprender, mcpr es una enorme contribución a R y una adición revolucionaria a este espacio.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paquetes de R</span>"
     ]
@@ -190,11 +190,21 @@
     ]
   },
   {
+    "objectID": "r-pkgs.es.html#generación-de-imágenes",
+    "href": "r-pkgs.es.html#generación-de-imágenes",
+    "title": "2  Paquetes de R",
+    "section": "2.11 Generación de imágenes",
+    "text": "2.11 Generación de imágenes\n\n2.11.1 diffuseR\n\ndiffuseR de Troy Hernandez es una implementación en R de modelos de difusión para generar y manipularimágenes usando torch, sin depender en ninguna librería o instalación de Python. Está inspirado en la librería diffusers para Python que desarrolló Hugging Face. Actualmente implementa Stable Diffusion 2.1 y Stable Diffusion XL (SDXL), y puede crear imágenes a partir de texto o modificar imágenes existentes basándose en indicaciones de texto. Una advertencia rápida: el paquete requiere una instalación de torch, suficiente memoria para cargar los archivos del modelo y de preferencia una GPU para las partes pesadas del proceso. Se ven bastante bien los ejemplos de imágenes generadas que están en el Reamde del paquete.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paquetes de R</span>"
+    ]
+  },
+  {
     "objectID": "r-pkgs.es.html#transformers",
     "href": "r-pkgs.es.html#transformers",
     "title": "2  Paquetes de R",
-    "section": "2.11 Transformers",
-    "text": "2.11 Transformers\n\n2.11.1 pangoling\n\nBruno Nicenboim, Chris Emmerly, y Giovanni Cassani desarrollaron pangoling, un paquete para estimar que tan predecible es una palabra en un contexto dado usando modelos de tipo transformer (como GPT-2 or BERT). Estas probabilidades al parecer se usan mucho en estudios psicolinguísticos.\nMe gustó mucho ver un paquete de rOpenSci en este campo.",
+    "section": "2.12 Transformers",
+    "text": "2.12 Transformers\n\n2.12.1 pangoling\n\nBruno Nicenboim, Chris Emmerly, y Giovanni Cassani desarrollaron pangoling, un paquete para estimar que tan predecible es una palabra en un contexto dado usando modelos de tipo transformer (como GPT-2 or BERT). Estas probabilidades al parecer se usan mucho en estudios psicolinguísticos.\nMe gustó mucho ver un paquete de rOpenSci en este campo.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paquetes de R</span>"
     ]
@@ -203,8 +213,8 @@
     "objectID": "r-pkgs.es.html#búsquedas-desde-r",
     "href": "r-pkgs.es.html#búsquedas-desde-r",
     "title": "2  Paquetes de R",
-    "section": "2.12 Búsquedas desde R",
-    "text": "2.12 Búsquedas desde R\n\n2.12.1 searcher\n\nsearcher es un paquete enfocado a brindarnos una interfaz de búsqueda directamente dentro de R. Desarrollado por James Balamuta, searcher tiene funciones para hacer búsquedas en distintos buscadores web pero también tiene integración con asistentes de IA, que al hacer búsquedas o preguntas nos abre un navegador listo para contestar. Por ejemplo, con la función ask_claude() o ask_perplexity().",
+    "section": "2.13 Búsquedas desde R",
+    "text": "2.13 Búsquedas desde R\n\n2.13.1 searcher\n\nsearcher es un paquete enfocado a brindarnos una interfaz de búsqueda directamente dentro de R. Desarrollado por James Balamuta, searcher tiene funciones para hacer búsquedas en distintos buscadores web pero también tiene integración con asistentes de IA, que al hacer búsquedas o preguntas nos abre un navegador listo para contestar. Por ejemplo, con la función ask_claude() o ask_perplexity().",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Paquetes de R</span>"
     ]

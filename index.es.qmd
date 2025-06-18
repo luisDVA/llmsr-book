@@ -1,8 +1,20 @@
+---
+css: indstyle.scss
+---
+
 # Introducción {#sec-index .unnumbered}
 
 ![Los Simpson (Fox)](images/llmscvr.jpg)
 
 👋 ¡Hola! En esta guía pueden encontrar una lista de recursos útiles y recientes sobre el uso de modelos de lenguaje de gran tamaño (LLM por sus siglas en inglés), con un enfoque en R.
+
+:::: {.dancing-shadow-box}
+::: {.box-content}
+### Últimas actualizaciones:
+- Implementación de Model Context Protocol con `mcpr`
+- Generación y manipulación de imágenes con modelos de difusión a través de `diffuseR`
+:::
+::::
 
 Con fines docentes y para ayudarme a estar al tanto de lo más nuevo, convertí una publicación en mi blog de finales de 2024 en este formato de libro que creo que es más fácil de navegar. Voy a estar actualizando el contenido periódicamente: cuando salgan nuevas herramientas y/o conforme me vaya enterando de ellas.
 
@@ -32,6 +44,7 @@ urlss <- c(
   "https://simonpcouch.github.io/chores/",
   "https://www.continue.dev/",
   "https://github.com/features/copilot",
+  "https://github.com/cornball-ai/diffuseR",
   "http://elmer.tidyverse.org/",
   "https://jhk0530.github.io/gemini.R/",
   "https://github.com/frankiethull/ggpal2",
@@ -41,6 +54,7 @@ urlss <- c(
   "https://github.com/frankiethull/kuzco",
   "https://github.com/simonpcouch/gander/",
   "https://mlverse.github.io/mall/",
+  "https://mcpr.opifex.org/",
   "https://mlverse.github.io/lang/",
   "https://hauselin.github.io/ollama-r/",
   "https://docs.ropensci.org/pangoling/",

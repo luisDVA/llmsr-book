@@ -160,6 +160,11 @@ chattr también es parte del mlverse. El paquete es un interfaz para modelos loc
 
 acquaint por Simon Couch, Charlie Gao y Winston Chang (y muchos otros colaboradores) permite que herramientas de MCP como Claude Desktop, Lutra, Glama y Claude Code se conecten directamente a nuestras sesiones de R. MCP es un protocolo abierto desarrollado por Anthropic para conectar modelos de IA a diferentes herramientas y fuentes de datos de manera estandarizada (el sitio web de MCP se refiere al protocolo como el puerto USB-C de las aplicaciones de IA). En esta configuración, los modelos pueden ver nuestros paquetes instalados, el entorno, y la información de la sesión, por lo que generarán código mejor informado. El paquete acquaint usa btw para proporcionar contexto a los modelos. Le veo mucho potencial.
 
+### [mcpr](https://mcpr.opifex.org/)
+
+<img src="images/hex/mcprlogo.png" align="right" height="108"/>
+
+mcpr, desarrollado por John Coene de Opifex es una implementación en R del Protocolo de Contexto de Modelo (MCP), que permite que las aplicaciones escritas en R interactúen con LLMs a través de una interfaz estándar JSON-RPC 2.0. Podemos construir herramientas personalizadas y, en última instancia, integrarlas con Cursor, Claude Code y VS Code Agent Mode. Más importante aún, las herramientas de MCPR construidas con el paquete se pueden convertir en herramientas de ellmer y registrarse en una sesión de chat de ellmer. Aunque el MCP en general es un tema difícil para aprender, mcpr es una enorme contribución a R y una adición revolucionaria a este espacio.
 
 ## ellmer y compañia
 
@@ -292,6 +297,15 @@ Puse en esta sesión a pkgprompt porque es para convertir la documentación de u
 kuzco es un paquete desarrollado por Frank Hull y Johannes Breuer, que usa  ollamar y ellmer para traer un asistente de 'computer vision' a nuestra sesión de R. Usa herramientas de LLM en lugar de torch para poder clasificar, reconocer, o  extraer texto de una imagen. Los resultados salen en tibbles bien ordenaditas.
 
 Me gustó mucho el logotipo del paquete y ejemplo en su página de inicio es un cachorrito :3
+
+## Generación de imágenes
+
+### [diffuseR](https://github.com/cornball-ai/diffuseR)
+
+<img src="images/hex/diffuseRlogo.png" align="right" height="108"/>
+
+diffuseR de Troy Hernandez es una implementación en R de modelos de difusión para  generar y manipularimágenes usando torch, sin depender en ninguna librería o instalación de Python. Está inspirado en la librería diffusers para Python que desarrolló Hugging Face. Actualmente implementa Stable Diffusion 2.1 y Stable Diffusion XL (SDXL), y puede crear imágenes a partir de texto o modificar imágenes existentes basándose en indicaciones de texto. Una advertencia rápida: el paquete requiere una instalación de torch, suficiente memoria para cargar los archivos del modelo y de preferencia una GPU para las partes pesadas del proceso. Se ven bastante bien los ejemplos de imágenes generadas que están en el Reamde del paquete.
+
 
 ## Transformers
 

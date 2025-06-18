@@ -231,6 +231,7 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <a href="#model-context-protocol-mcp-tools" id="toc-model-context-protocol-mcp-tools" class="nav-link" data-scroll-target="#model-context-protocol-mcp-tools"><span class="header-section-number">2.7</span> Model Context Protocol (MCP) tools</a>
   <ul class="collapse">
 <li><a href="#acquaint" id="toc-acquaint" class="nav-link" data-scroll-target="#acquaint"><span class="header-section-number">2.7.1</span> acquaint</a></li>
+  <li><a href="#mcpr" id="toc-mcpr" class="nav-link" data-scroll-target="#mcpr"><span class="header-section-number">2.7.2</span> mcpr</a></li>
   </ul>
 </li>
   <li>
@@ -260,15 +261,21 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
   </ul>
 </li>
   <li>
-<a href="#transformer-model-applications" id="toc-transformer-model-applications" class="nav-link" data-scroll-target="#transformer-model-applications"><span class="header-section-number">2.11</span> Transformer model applications</a>
+<a href="#image-generation" id="toc-image-generation" class="nav-link" data-scroll-target="#image-generation"><span class="header-section-number">2.11</span> Image generation</a>
   <ul class="collapse">
-<li><a href="#pangoling" id="toc-pangoling" class="nav-link" data-scroll-target="#pangoling"><span class="header-section-number">2.11.1</span> pangoling</a></li>
+<li><a href="#diffuser" id="toc-diffuser" class="nav-link" data-scroll-target="#diffuser"><span class="header-section-number">2.11.1</span> diffuseR</a></li>
   </ul>
 </li>
   <li>
-<a href="#web-searches-from-r" id="toc-web-searches-from-r" class="nav-link" data-scroll-target="#web-searches-from-r"><span class="header-section-number">2.12</span> Web searches from R</a>
+<a href="#transformer-model-applications" id="toc-transformer-model-applications" class="nav-link" data-scroll-target="#transformer-model-applications"><span class="header-section-number">2.12</span> Transformer model applications</a>
   <ul class="collapse">
-<li><a href="#searcher" id="toc-searcher" class="nav-link" data-scroll-target="#searcher"><span class="header-section-number">2.12.1</span> searcher</a></li>
+<li><a href="#pangoling" id="toc-pangoling" class="nav-link" data-scroll-target="#pangoling"><span class="header-section-number">2.12.1</span> pangoling</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#web-searches-from-r" id="toc-web-searches-from-r" class="nav-link" data-scroll-target="#web-searches-from-r"><span class="header-section-number">2.13</span> Web searches from R</a>
+  <ul class="collapse">
+<li><a href="#searcher" id="toc-searcher" class="nav-link" data-scroll-target="#searcher"><span class="header-section-number">2.13.1</span> searcher</a></li>
   </ul>
 </li>
   </ul></nav>
@@ -423,6 +430,11 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </h3>
 <p><img src="images/hex/acqlogo.png" align="right" height="108"></p>
 <p>acquaint by Simon Couch, Charlie Gao, and Winston Chang (plus other contributors) lets MCP-enabled tools like Claude Desktop, Lutra, Glama, and Claude Code connect directly to our R sessions. MCP is an open protocol to connect AI models to different tools and data sources in a standardized way (the MCP website calls the protocol the USB-C port of AI applications). In this setup the models can see our installed packages, environment, and session info so they will generate better-informed code, powered by btw to provide context. Potential game changer.</p>
+</section><section id="mcpr" class="level3" data-number="2.7.2"><h3 data-number="2.7.2" class="anchored" data-anchor-id="mcpr">
+<span class="header-section-number">2.7.2</span> <a href="https://mcpr.opifex.org/">mcpr</a>
+</h3>
+<p><img src="images/hex/mcprlogo.png" align="right" height="108"></p>
+<p>mcpr by John Coene from Opifex is an R implementation of the Model Context Protocol (MCP), letting applications written in R to interact with LLMs through a standard JSON-RPC 2.0 interface. We can build custom tools, and ultimately integrate them with Cursor, Claude Code, and VS Code Agent Mode. More importantly, MCPR tools build with the package can be converted to ellmer tools and registered with an ellmer chat session. Although MCP in general may have a steep learning curve mcpr is a huge contribution to R and a game-changing addition to this space.</p>
 </section></section><section id="ellmer-and-friends" class="level2" data-number="2.8"><h2 data-number="2.8" class="anchored" data-anchor-id="ellmer-and-friends">
 <span class="header-section-number">2.8</span> ellmer and friends</h2>
 <section id="ellmer" class="level3" data-number="2.8.1"><h3 data-number="2.8.1" class="anchored" data-anchor-id="ellmer">
@@ -530,18 +542,25 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p><img src="images/hex/kuzco.png" align="right" height="108"></p>
 <p>kuzco by Frank Hull &amp; Johannes Breuer leverages ollamar and ellmer to provide a computer vision assistant right inside R, using LLMs as an alternative to torch for tasks including image classification, recognition, sentiment, and text extraction. The output provided comes in very nice and usable tibbles.</p>
 <p>Cool hex logo and the example in the readme features a very cute puppy :3</p>
-</section></section><section id="transformer-model-applications" class="level2" data-number="2.11"><h2 data-number="2.11" class="anchored" data-anchor-id="transformer-model-applications">
-<span class="header-section-number">2.11</span> Transformer model applications</h2>
-<section id="pangoling" class="level3" data-number="2.11.1"><h3 data-number="2.11.1" class="anchored" data-anchor-id="pangoling">
-<span class="header-section-number">2.11.1</span> <a href="https://docs.ropensci.org/pangoling/index.html">pangoling</a>
+</section></section><section id="image-generation" class="level2" data-number="2.11"><h2 data-number="2.11" class="anchored" data-anchor-id="image-generation">
+<span class="header-section-number">2.11</span> Image generation</h2>
+<section id="diffuser" class="level3" data-number="2.11.1"><h3 data-number="2.11.1" class="anchored" data-anchor-id="diffuser">
+<span class="header-section-number">2.11.1</span> <a href="https://github.com/cornball-ai/diffuseR">diffuseR</a>
+</h3>
+<p><img src="images/hex/diffuseRlogo.png" align="right" height="108"></p>
+<p>diffuseR by Troy Hernandez is an R implementation of diffusion models for image generation and manipulation using torch without any Python dependencies. Inspired by the <code>diffusers</code> Python library from Hugging Face. Currently supports Stable Diffusion 2.1 and Stable Diffusion XL (SDXL), and can create images from text descriptions or modify existing images based on text prompts. Quick warning here: the package needs an installation of torch, sufficient memory for loading model files, and preferably a GPU for the computationally intensive parts of the process. Very cool-looking example outputs in the package’s Readme page.</p>
+</section></section><section id="transformer-model-applications" class="level2" data-number="2.12"><h2 data-number="2.12" class="anchored" data-anchor-id="transformer-model-applications">
+<span class="header-section-number">2.12</span> Transformer model applications</h2>
+<section id="pangoling" class="level3" data-number="2.12.1"><h3 data-number="2.12.1" class="anchored" data-anchor-id="pangoling">
+<span class="header-section-number">2.12.1</span> <a href="https://docs.ropensci.org/pangoling/index.html">pangoling</a>
 </h3>
 <p><img src="images/hex/pangoling.png" align="right" height="108"></p>
 <p>pangoling by Bruno Nicenboim, Chris Emmerly, and Giovanni Cassani is an R package for estimating the predictability of words in a given context using transformer models (e.g. GPT-2 or BERT). These word probabilities are often used as predictors in psycholinguistic studies.</p>
 <p>Very nice to see a robust rOpenSci package for this topic. The package is mostly a wrapper of the python package transformers to process data.</p>
-</section></section><section id="web-searches-from-r" class="level2" data-number="2.12"><h2 data-number="2.12" class="anchored" data-anchor-id="web-searches-from-r">
-<span class="header-section-number">2.12</span> Web searches from R</h2>
-<section id="searcher" class="level3" data-number="2.12.1"><h3 data-number="2.12.1" class="anchored" data-anchor-id="searcher">
-<span class="header-section-number">2.12.1</span> <a href="https://r-pkg.thecoatlessprofessor.com/searcher/">searcher</a>
+</section></section><section id="web-searches-from-r" class="level2" data-number="2.13"><h2 data-number="2.13" class="anchored" data-anchor-id="web-searches-from-r">
+<span class="header-section-number">2.13</span> Web searches from R</h2>
+<section id="searcher" class="level3" data-number="2.13.1"><h3 data-number="2.13.1" class="anchored" data-anchor-id="searcher">
+<span class="header-section-number">2.13.1</span> <a href="https://r-pkg.thecoatlessprofessor.com/searcher/">searcher</a>
 </h3>
 <p><img src="images/hex/searcherlogo.png" align="right" height="108"></p>
 <p>searcher is package specifically focused on letting us search the web directly from R. Developed by James Balamuta, searcher has functions to perform searches using different search engines, but the package also comes with tools for integration with AI assistants. We can ask questions or send prompts to various models providers, and the functions will launch a web browser ready to answer. For example: <code>ask_mistral("How to handle missing data in R?")</code> or <code>ask_claude("Explain what purrr::map_df does")</code>.</p>

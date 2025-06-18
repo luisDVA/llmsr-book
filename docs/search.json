@@ -154,7 +154,7 @@
     "href": "r-pkgs.html#model-context-protocol-mcp-tools",
     "title": "2  R Packages",
     "section": "2.7 Model Context Protocol (MCP) tools",
-    "text": "2.7 Model Context Protocol (MCP) tools\n\n2.7.1 acquaint\n\nacquaint by Simon Couch, Charlie Gao, and Winston Chang (plus other contributors) lets MCP-enabled tools like Claude Desktop, Lutra, Glama, and Claude Code connect directly to our R sessions. MCP is an open protocol to connect AI models to different tools and data sources in a standardized way (the MCP website calls the protocol the USB-C port of AI applications). In this setup the models can see our installed packages, environment, and session info so they will generate better-informed code, powered by btw to provide context. Potential game changer.",
+    "text": "2.7 Model Context Protocol (MCP) tools\n\n2.7.1 acquaint\n\nacquaint by Simon Couch, Charlie Gao, and Winston Chang (plus other contributors) lets MCP-enabled tools like Claude Desktop, Lutra, Glama, and Claude Code connect directly to our R sessions. MCP is an open protocol to connect AI models to different tools and data sources in a standardized way (the MCP website calls the protocol the USB-C port of AI applications). In this setup the models can see our installed packages, environment, and session info so they will generate better-informed code, powered by btw to provide context. Potential game changer.\n\n\n2.7.2 mcpr\n\nmcpr by John Coene from Opifex is an R implementation of the Model Context Protocol (MCP), letting applications written in R to interact with LLMs through a standard JSON-RPC 2.0 interface. We can build custom tools, and ultimately integrate them with Cursor, Claude Code, and VS Code Agent Mode. More importantly, MCPR tools build with the package can be converted to ellmer tools and registered with an ellmer chat session. Although MCP in general may have a steep learning curve mcpr is a huge contribution to R and a game-changing addition to this space.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
     ]
@@ -190,11 +190,21 @@
     ]
   },
   {
+    "objectID": "r-pkgs.html#image-generation",
+    "href": "r-pkgs.html#image-generation",
+    "title": "2  R Packages",
+    "section": "2.11 Image generation",
+    "text": "2.11 Image generation\n\n2.11.1 diffuseR\n\ndiffuseR by Troy Hernandez is an R implementation of diffusion models for image generation and manipulation using torch without any Python dependencies. Inspired by the diffusers Python library from Hugging Face. Currently supports Stable Diffusion 2.1 and Stable Diffusion XL (SDXL), and can create images from text descriptions or modify existing images based on text prompts. Quick warning here: the package needs an installation of torch, sufficient memory for loading model files, and preferably a GPU for the computationally intensive parts of the process. Very cool-looking example outputs in the package’s Readme page.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
+    ]
+  },
+  {
     "objectID": "r-pkgs.html#transformer-model-applications",
     "href": "r-pkgs.html#transformer-model-applications",
     "title": "2  R Packages",
-    "section": "2.11 Transformer model applications",
-    "text": "2.11 Transformer model applications\n\n2.11.1 pangoling\n\npangoling by Bruno Nicenboim, Chris Emmerly, and Giovanni Cassani is an R package for estimating the predictability of words in a given context using transformer models (e.g. GPT-2 or BERT). These word probabilities are often used as predictors in psycholinguistic studies.\nVery nice to see a robust rOpenSci package for this topic. The package is mostly a wrapper of the python package transformers to process data.",
+    "section": "2.12 Transformer model applications",
+    "text": "2.12 Transformer model applications\n\n2.12.1 pangoling\n\npangoling by Bruno Nicenboim, Chris Emmerly, and Giovanni Cassani is an R package for estimating the predictability of words in a given context using transformer models (e.g. GPT-2 or BERT). These word probabilities are often used as predictors in psycholinguistic studies.\nVery nice to see a robust rOpenSci package for this topic. The package is mostly a wrapper of the python package transformers to process data.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
     ]
@@ -203,8 +213,8 @@
     "objectID": "r-pkgs.html#web-searches-from-r",
     "href": "r-pkgs.html#web-searches-from-r",
     "title": "2  R Packages",
-    "section": "2.12 Web searches from R",
-    "text": "2.12 Web searches from R\n\n2.12.1 searcher\n\nsearcher is package specifically focused on letting us search the web directly from R. Developed by James Balamuta, searcher has functions to perform searches using different search engines, but the package also comes with tools for integration with AI assistants. We can ask questions or send prompts to various models providers, and the functions will launch a web browser ready to answer. For example: ask_mistral(\"How to handle missing data in R?\") or ask_claude(\"Explain what purrr::map_df does\").",
+    "section": "2.13 Web searches from R",
+    "text": "2.13 Web searches from R\n\n2.13.1 searcher\n\nsearcher is package specifically focused on letting us search the web directly from R. Developed by James Balamuta, searcher has functions to perform searches using different search engines, but the package also comes with tools for integration with AI assistants. We can ask questions or send prompts to various models providers, and the functions will launch a web browser ready to answer. For example: ask_mistral(\"How to handle missing data in R?\") or ask_claude(\"Explain what purrr::map_df does\").",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>R Packages</span>"
     ]

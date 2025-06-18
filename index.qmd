@@ -1,9 +1,20 @@
+---
+css: indstyle.scss
+---
+
 # Welcome {#sec-index .unnumbered}
 
 ![Screencaps from The Simpsons (Fox)](images/llmscvr.jpg)
 
 👋 Hello! This is an ongoing roundup of useful developments in the LLM/genAI space, with a specific focus on R.
 
+:::: {.dancing-shadow-box}
+::: {.box-content}
+### Latest updates:
+- Model Context Protocol with `mcpr`
+- Image generation and manipulation with `diffuseR`
+:::
+::::
 
 For teaching purposes and to help me keep track of what's happening, I've put together this draft listing of relevant LLM+R resources. This was initially a post on my blog from late 2024, but this book format should be easier to navigate. I will update the content periodically when new tools come out and/or when people bring them to my attention.
 
@@ -34,6 +45,7 @@ urlss <- c(
 "https://simonpcouch.github.io/chores/",
 "https://www.continue.dev/",
 "https://github.com/features/copilot",
+"https://github.com/cornball-ai/diffuseR",
 "http://elmer.tidyverse.org/",
 "https://jhk0530.github.io/gemini.R/",
 "https://github.com/frankiethull/ggpal2",
@@ -43,6 +55,7 @@ urlss <- c(
 "https://github.com/frankiethull/kuzco",
 "https://github.com/simonpcouch/gander/",
 "https://mlverse.github.io/mall/",
+"https://mcpr.opifex.org/",
 "https://mlverse.github.io/lang/",
 "https://hauselin.github.io/ollama-r/",
 "https://docs.ropensci.org/pangoling/",
