@@ -6,7 +6,7 @@ book:
   title: "Large Language Model tools for R"
   reader-mode: true
   author: "Luis D. Verde Arregoitia"
-  date: "February 13 2025"
+  date: last-modified
   repo-url: https://github.com/luisDVA/llmsr-book
   google-analytics: G-HER1TDPFHR
   chapters:
@@ -16,6 +16,9 @@ book:
     - other-ext.qmd
     - courses.qmd
     - python.qmd
+format:
+  html:
+    theme: [default, indstyle.scss]
 
 babelquarto:
   icon: "bi bi-map"

@@ -1,7 +1,3 @@
----
-css: indstyle.scss
----
-
 # Welcome {#sec-index .unnumbered}
 
 ![Screencaps from The Simpsons (Fox)](images/llmscvr.jpg)

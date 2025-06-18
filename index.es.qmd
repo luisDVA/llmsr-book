@@ -1,7 +1,3 @@
----
-css: indstyle.scss
----
-
 # Introducción {#sec-index .unnumbered}
 
 ![Los Simpson (Fox)](images/llmscvr.jpg)
