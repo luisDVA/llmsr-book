@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Large Language Model tools for R",
     "section": "",
-    "text": "Welcome\n👋 Hello! This is an ongoing roundup of useful developments in the LLM/genAI space, with a specific focus on R.\nFor teaching purposes and to help me keep track of what’s happening, I’ve put together this draft listing of relevant LLM+R resources. This was initially a post on my blog from late 2024, but this book format should be easier to navigate. I will update the content periodically when new tools come out and/or when people bring them to my attention.\nThe field is very fast moving so providers, software names, APIs, and overall functions are subject to change. I’ll do my best to keep this guide updated and mention key changes and news.\nThe logos below link to each tool’s official site.\ncreated with hexsession\nFeel free to send feedback or to edit this content via pull requests.",
+    "text": "Welcome\n👋 Hello! This is an ongoing roundup of useful developments in the LLM/genAI space, with a specific focus on R.\nFor teaching purposes and to help me keep track of what’s happening, I’ve put together this draft listing of relevant LLM+R resources. This was initially a post on my blog from late 2024, but this book format should be easier to navigate. I will update the content periodically when new tools come out and/or when people bring them to my attention.\nThe field is very fast moving so providers, software names, APIs, and overall functions are subject to change. I’ll do my best to keep this guide updated and mention key changes and news.\nThe logos below link to each tool’s official site.\nFeel free to send feedback or to edit this content via pull requests.",
     "crumbs": [
       "Welcome"
     ]
