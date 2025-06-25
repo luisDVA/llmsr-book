@@ -33,10 +33,17 @@ El campo del uso de inteligencia artificial (IA) en R avanza rápidamente, por l
 
 > Hay varios términos en este campo que seguramente no están bien traducidos en esta guía. 
 
-Los logotipos de abajo enlazan a los sitios oficiales de cada paquete o herramienta.
+Cualquier sugerencia o solicitud es bienvenida, ya sea a traves del codigo fuente de esta guía en ([GitHub](https://github.com/luisdva/llmsr-book/)) o contactactándome por cualquier medio.
+
+## Sobre mí
+
+Soy macroecólogo, mastozóologo, y trabajo en ciencia de datos de biodiversidad. Visita mi [página personal](https://liomys.mx) para más contenido y detalles.
+
+Los logotipos de abajo enlazan a los sitios oficiales de cada paquete o herramienta. Si no se visualizan bien aquí, consultar la versión en inglés de esta página de inicio.
 
 ```{r hex-grid}
 #| echo: false
+#| output: asis
 
 logos <- fs::dir_ls(here::here("images/hex/"))
 
@@ -89,9 +96,5 @@ hexsession::make_tile(local_images = samplelogos,local_urls = names(samplelogos)
 ```
 
 
-Cualquier sugerencia o solicitud es bienvenida, ya sea a traves del codigo fuente de esta guía en ([GitHub](https://github.com/luisdva/llmsr-book/)) o contactactándome por cualquier medio.
 
-## Sobre mí
-
-Soy macroecólogo, mastozóologo, y trabajo en ciencia de datos de biodiversidad. Visita mi [página personal](https://liomys.mx) para más contenido y detalles.
 
