@@ -20,6 +20,7 @@ format:
   html:
     theme: [default, indstyle.scss]
 
+
 babelquarto:
   icon: "bi bi-map"
   languagelinks: sidebar

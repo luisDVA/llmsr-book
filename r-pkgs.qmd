@@ -32,6 +32,11 @@ groqR was brought to my attention by it's own developer and I asked for a brief 
 
 > "groqR is your AI-powered R coding companion, 10x faster than conventional LLMs, with most models available free of charge. It executes functions on copied text: simply call the `rewriter()` function after copying text to retrieve results directly in your R Console and clipboard. By combining Groq's speed with shortcut-based access to `groqR` functions, users achieve the fastest, most efficient coding environment in the R ecosystem. Powered by the current leading model [Qwen QwQ 32B](https://groq.com/a-guide-to-reasoning-with-qwen-qwq-32b/), GroqR ensures cutting-edge performance"
 
+### [PacketLLM](https://github.com/AntoniCzolgowski/PacketLLM)
+
+PacketLLM by Antoni Czolgowski brings interactive chats with OpenAI models (e.g. GPT-4o and GPT-4.1) to the RStudio viewer pane via a Shiny App. Useful for habitual users of ChatGPT in the browser, to cut down on context switching. The package is now on CRAN.
+
+
 ### [gptstudio](https://michelnivard.github.io/gptstudio/)
 
 <img src="images/hex/gptstudio.png" align="right" height="108"/>

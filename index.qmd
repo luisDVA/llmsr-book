@@ -2,8 +2,15 @@
 css: indstyle.scss 
 ---
 
-# Welcome {#sec-index .unnumbered}
+<div style="background-color: #eceff4; padding: 1rem; border-radius: .25rem;" role="alert">
+  <span>
+    Esta guía está disponible en español
+    <a href="es/index.es.html" class="btn btn-primary btn-sm" style="margin-left: 10px;">Leer en español</a><br> 
+   <em> Busca el botón de idioma en la barra de navegación en el resto de la guía para cambiar de idioma en otras páginas. </em>
+  </span>
+</div>
 
+# Welcome {#sec-index .unnumbered}
 
 ![Screencaps from The Simpsons (Fox)](images/llmscvr.jpg)
 
@@ -11,9 +18,12 @@ css: indstyle.scss
 
 :::: {.dancing-shadow-box}
 ::: {.box-content}
-### Latest updates:
+### Latest updates (June 2025):
+
+- Chat with OpenAI models inside RStudio with `PacketLLM`  
 - Model Context Protocol with `mcpr`
 - Image generation and manipulation with `diffuseR`
+
 :::
 ::::
 
@@ -25,7 +35,58 @@ The field is very fast moving so providers, software names, APIs, and  overall f
 
 The logos below link to each tool's official site.
 
-<!-- INSERT HEX GRID HERE -->
+```{r hex-grid}
+#| echo: false
+
+
+logos <- fs::dir_ls(here::here("images/hex/"))
+
+urlss <- c(
+"https://codeium.com/",
+"https://knowusuboaky.github.io/LLMAgentR/",
+"https://posit-dev.github.io/acquaint/",
+"https://github.com/heurekalabsco/axolotr",
+"https://posit-dev.github.io/btw/",
+"https://simonpcouch.github.io/buggy/",
+"https://knowusuboaky.github.io/chatLLM/",
+"https://mlverse.github.io/chattr/",
+"https://simonpcouch.github.io/chores/",
+"https://www.continue.dev/",
+"https://github.com/features/copilot",
+"https://github.com/cornball-ai/diffuseR",
+"http://elmer.tidyverse.org/",
+"https://jhk0530.github.io/gemini.R/",
+"https://github.com/frankiethull/ggpal2",
+"https://michelnivard.github.io/gptstudio/",
+"https://gabrielkaiserqfin.github.io/groqR",
+"https://dylanpieper.github.io/hellmer/",
+"https://github.com/frankiethull/kuzco",
+"https://github.com/simonpcouch/gander/",
+"https://mlverse.github.io/mall/",
+"https://mcpr.opifex.org/",
+"https://mlverse.github.io/lang/",
+"https://hauselin.github.io/ollama-r/",
+"https://docs.ropensci.org/pangoling/",
+"https://github.com/GabrielKaiserQFin/PerplexR/",
+"https://tidyverse.github.io/ragnar/",
+"https://www.ekotov.pro/rdocdump/",
+"https://jbgruber.github.io/rollama/",
+"https://r-pkg.thecoatlessprofessor.com/searcher/",
+"https://tidychatmodels.albert-rapp.de/",
+"https://edubruell.github.io/tidyllm/",
+ "https://vitals.tidyverse.org/"
+)
+
+names(logos) <- urlss
+
+# shuffle logos vector
+samplelogos <- sample(logos)
+
+
+hexsession::make_tile(local_images = samplelogos,local_urls = names(samplelogos),
+ dark_mode = FALSE) 
+
+```
 
 Feel free to send feedback or to edit this content via pull requests.
 

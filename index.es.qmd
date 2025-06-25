@@ -2,6 +2,14 @@
 css: indstyle.scss 
 ---
 
+<div style="background-color: #eceff4; padding: 1rem; border-radius: .25rem;" role="alert">
+  <span>
+    This guide is available in English 
+    <a href="../index.html" class="btn btn-primary btn-sm" style="margin-left: 10px;">Read in English</a><br> 
+   </em> Look for the language button in the navbar throughout the guide to toggle languages on other pages.</em> 
+  </span>
+</div>
+
 # Introducción {#sec-index .unnumbered}
 
 ![Los Simpson (Fox)](images/llmscvr.jpg)
@@ -10,9 +18,12 @@ css: indstyle.scss
 
 :::: {.dancing-shadow-box}
 ::: {.box-content}
-### Últimas actualizaciones:
+### Últimas actualizaciones (junio 2025):
+
+- Chat con modelos de OpenAI con `Packet LLM`  
 - Implementación de Model Context Protocol con `mcpr`
 - Generación y manipulación de imágenes con modelos de difusión a través de `diffuseR`
+
 :::
 ::::
 
@@ -24,7 +35,59 @@ El campo del uso de inteligencia artificial (IA) en R avanza rápidamente, por l
 
 Los logotipos de abajo enlazan a los sitios oficiales de cada paquete o herramienta.
 
-<!-- INSERT HEX GRID HERE -->
+```{r hex-grid}
+#| echo: false
+
+logos <- fs::dir_ls(here::here("images/hex/"))
+
+urlss <- c(
+"https://codeium.com/",
+"https://knowusuboaky.github.io/LLMAgentR/",
+"https://posit-dev.github.io/acquaint/",
+"https://github.com/heurekalabsco/axolotr",
+"https://posit-dev.github.io/btw/",
+"https://simonpcouch.github.io/buggy/",
+"https://knowusuboaky.github.io/chatLLM/",
+"https://mlverse.github.io/chattr/",
+"https://simonpcouch.github.io/chores/",
+"https://www.continue.dev/",
+"https://github.com/features/copilot",
+"https://github.com/cornball-ai/diffuseR",
+"http://elmer.tidyverse.org/",
+"https://jhk0530.github.io/gemini.R/",
+"https://github.com/frankiethull/ggpal2",
+"https://michelnivard.github.io/gptstudio/",
+"https://gabrielkaiserqfin.github.io/groqR",
+"https://dylanpieper.github.io/hellmer/",
+"https://github.com/frankiethull/kuzco",
+"https://github.com/simonpcouch/gander/",
+"https://mlverse.github.io/mall/",
+"https://mcpr.opifex.org/",
+"https://mlverse.github.io/lang/",
+"https://hauselin.github.io/ollama-r/",
+"https://docs.ropensci.org/pangoling/",
+"https://github.com/GabrielKaiserQFin/PerplexR/",
+"https://tidyverse.github.io/ragnar/",
+"https://www.ekotov.pro/rdocdump/",
+"https://jbgruber.github.io/rollama/",
+"https://r-pkg.thecoatlessprofessor.com/searcher/",
+"https://tidychatmodels.albert-rapp.de/",
+"https://edubruell.github.io/tidyllm/",
+ "https://vitals.tidyverse.org/"
+)
+
+names(logos) <- urlss
+
+# shuffle logos vector
+samplelogos <- sample(logos)
+
+
+hexsession::make_tile(local_images = samplelogos,local_urls = names(samplelogos),
+ dark_mode = FALSE) 
+
+
+```
+
 
 Cualquier sugerencia o solicitud es bienvenida, ya sea a traves del codigo fuente de esta guía en ([GitHub](https://github.com/luisdva/llmsr-book/)) o contactactándome por cualquier medio.
 

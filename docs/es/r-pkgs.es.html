@@ -191,12 +191,13 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
   <li><a href="#axolotr" id="toc-axolotr" class="nav-link" data-scroll-target="#axolotr"><span class="header-section-number">2.1.2</span> axolotr</a></li>
   <li><a href="#chatgpt" id="toc-chatgpt" class="nav-link" data-scroll-target="#chatgpt"><span class="header-section-number">2.1.3</span> chatgpt</a></li>
   <li><a href="#groqr" id="toc-groqr" class="nav-link" data-scroll-target="#groqr"><span class="header-section-number">2.1.4</span> groqR</a></li>
-  <li><a href="#gptstudio" id="toc-gptstudio" class="nav-link" data-scroll-target="#gptstudio"><span class="header-section-number">2.1.5</span> gptstudio</a></li>
-  <li><a href="#llmr" id="toc-llmr" class="nav-link" data-scroll-target="#llmr"><span class="header-section-number">2.1.6</span> llmR</a></li>
-  <li><a href="#tidychatmodels" id="toc-tidychatmodels" class="nav-link" data-scroll-target="#tidychatmodels"><span class="header-section-number">2.1.7</span> tidychatmodels</a></li>
-  <li><a href="#tidyllm" id="toc-tidyllm" class="nav-link" data-scroll-target="#tidyllm"><span class="header-section-number">2.1.8</span> tidyllm</a></li>
-  <li><a href="#gemini.r" id="toc-gemini.r" class="nav-link" data-scroll-target="#gemini.r"><span class="header-section-number">2.1.9</span> gemini.R</a></li>
-  <li><a href="#perplexr" id="toc-perplexr" class="nav-link" data-scroll-target="#perplexr"><span class="header-section-number">2.1.10</span> PerplexR</a></li>
+  <li><a href="#packetllm" id="toc-packetllm" class="nav-link" data-scroll-target="#packetllm"><span class="header-section-number">2.1.5</span> PacketLLM</a></li>
+  <li><a href="#gptstudio" id="toc-gptstudio" class="nav-link" data-scroll-target="#gptstudio"><span class="header-section-number">2.1.6</span> gptstudio</a></li>
+  <li><a href="#llmr" id="toc-llmr" class="nav-link" data-scroll-target="#llmr"><span class="header-section-number">2.1.7</span> llmR</a></li>
+  <li><a href="#tidychatmodels" id="toc-tidychatmodels" class="nav-link" data-scroll-target="#tidychatmodels"><span class="header-section-number">2.1.8</span> tidychatmodels</a></li>
+  <li><a href="#tidyllm" id="toc-tidyllm" class="nav-link" data-scroll-target="#tidyllm"><span class="header-section-number">2.1.9</span> tidyllm</a></li>
+  <li><a href="#gemini.r" id="toc-gemini.r" class="nav-link" data-scroll-target="#gemini.r"><span class="header-section-number">2.1.10</span> gemini.R</a></li>
+  <li><a href="#perplexr" id="toc-perplexr" class="nav-link" data-scroll-target="#perplexr"><span class="header-section-number">2.1.11</span> PerplexR</a></li>
   </ul>
 </li>
   <li>
@@ -329,37 +330,41 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <blockquote class="blockquote">
 <p>“groqR es tu compañero de programación en R impulsado por IA, 10 veces más rápido que los LLM convencionales, con la mayoría de los modelos disponibles de forma gratuita. Ejecuta funciones en selecciones de texto: simplemente llama a la función <code>rewriter()</code> después de copiar texto para obtener resultados directamente en tu Consola R y portapapeles. Al combinar la velocidad de Groq con el acceso basado en atajos a las funciones de <code>groqR</code>, los usuarios logran el entorno de codificación más rápido y eficiente en el ecosistema R. Impulsado por el modelo líder actual <a href="https://groq.com/a-guide-to-reasoning-with-qwen-qwq-32b/">Qwen QwQ 32B</a>, GroqR garantiza un rendimiento de vanguardia”</p>
 </blockquote>
-</section><section id="gptstudio" class="level3" data-number="2.1.5"><h3 data-number="2.1.5" class="anchored" data-anchor-id="gptstudio">
-<span class="header-section-number">2.1.5</span> <a href="https://michelnivard.github.io/gptstudio/">gptstudio</a>
+</section><section id="packetllm" class="level3" data-number="2.1.5"><h3 data-number="2.1.5" class="anchored" data-anchor-id="packetllm">
+<span class="header-section-number">2.1.5</span> <a href="https://github.com/AntoniCzolgowski/PacketLLM">PacketLLM</a>
+</h3>
+<p>PacketLLM, desarrollado por Antoni Czolgowski nos trae chats interactivos con modelos de OpenAI (p. ej., GPT-4o y GPT-4.1) al panel de ‘Viewer’ de RStudio a través de una aplicación de Shiny que corre en este contexto. Muy útil para usuarios habituales de ChatGPT en el navegador, para reducir el cambio de contexto (context switching). El paquete ya está en CRAN.</p>
+</section><section id="gptstudio" class="level3" data-number="2.1.6"><h3 data-number="2.1.6" class="anchored" data-anchor-id="gptstudio">
+<span class="header-section-number">2.1.6</span> <a href="https://michelnivard.github.io/gptstudio/">gptstudio</a>
 </h3>
 <p><img src="images/hex/gptstudio.png" align="right" height="108"></p>
 <p>gptstudio de Michel Nivard, James Wade y Samuel Calderon es otra buena opción para acceder a LLMs localmente o desde varios proveedores (OpenAI, HuggingFace, Google, Anthropic, Perplexity, Azure y Cohere) directamente dentro de RStudio.</p>
 <p>gptstudio funciona principalmente a través de una aplicación Shiny que se ejecuta en el panel de visualización y proporciona una ventana de chat y opciones para editar código en el editor. Tuve algunos problemas para hacer funcionar la aplicación en Linux, pero los desarrolladores parecen estar al <a href="https://github.com/MichelNivard/gptstudio/issues/179">pendiente</a>.</p>
 <p>Me gustaron las advertencias que incluyen los autores en el README sobre la privacidad, seguridad y en general sobre no compartir datos sensibles con los proveedores de modelos.</p>
-</section><section id="llmr" class="level3" data-number="2.1.6"><h3 data-number="2.1.6" class="anchored" data-anchor-id="llmr">
-<span class="header-section-number">2.1.6</span> <a href="https://github.com/bakaburg1/llmR">llmR</a>
+</section><section id="llmr" class="level3" data-number="2.1.7"><h3 data-number="2.1.7" class="anchored" data-anchor-id="llmr">
+<span class="header-section-number">2.1.7</span> <a href="https://github.com/bakaburg1/llmR">llmR</a>
 </h3>
 <p>llmr de Angelo D’Ambrosio proporciona una API unificada para interactuar con varios LLMs y proveedores a través de funciones con gramática y sintaxis consistentes. Permite cambiar fácilmente entre modelos.</p>
 <ul>
 <li>Un paquete similar llamado <a href="https://cran.r-project.org/package=LLMR">LLMR</a> apareció recientemente en CRAN, pero no pude encontrar mucha información al respecto.</li>
-</ul></section><section id="tidychatmodels" class="level3" data-number="2.1.7"><h3 data-number="2.1.7" class="anchored" data-anchor-id="tidychatmodels">
-<span class="header-section-number">2.1.7</span> <a href="https://tidychatmodels.albert-rapp.de/">tidychatmodels</a>
+</ul></section><section id="tidychatmodels" class="level3" data-number="2.1.8"><h3 data-number="2.1.8" class="anchored" data-anchor-id="tidychatmodels">
+<span class="header-section-number">2.1.8</span> <a href="https://tidychatmodels.albert-rapp.de/">tidychatmodels</a>
 </h3>
 <p><img src="images/hex/tidychatmodels.png" align="right" height="108"></p>
 <p>Una interfaz amigable con el estilo “pipe” para muchos proveedores de chatbots. Desarrollado por Albert Rapp, tidychatmodels sigue la naturaleza modular de tidymodels y usa httr2 para comunicarse con diferentes modelos. Buena documentación, ejemplos y un video tutorial claro en YouTube.</p>
-</section><section id="tidyllm" class="level3" data-number="2.1.8"><h3 data-number="2.1.8" class="anchored" data-anchor-id="tidyllm">
-<span class="header-section-number">2.1.8</span> <a href="https://edubruell.github.io/tidyllm/">tidyllm</a>
+</section><section id="tidyllm" class="level3" data-number="2.1.9"><h3 data-number="2.1.9" class="anchored" data-anchor-id="tidyllm">
+<span class="header-section-number">2.1.9</span> <a href="https://edubruell.github.io/tidyllm/">tidyllm</a>
 </h3>
 <p><img src="images/hex/tidyllm.png" align="right" height="108"></p>
 <p>tidyllm de Eduard Brüll proporciona acceso amigable con el estilo “pipe” a múltiples APIs de LLM de una manera legible y amigable. Podemos pasar imágenes, documentos, videos y figuras que están el panel de gráficos a las funciones del paquete, y el paquete tiene una documentación muy completa. Se ve similar a ellmer, y tiene potencial para trabajo interactivo y para procesamiento por lotes.</p>
-</section><section id="gemini.r" class="level3" data-number="2.1.9"><h3 data-number="2.1.9" class="anchored" data-anchor-id="gemini.r">
-<span class="header-section-number">2.1.9</span> <a href="https://jhk0530.github.io/gemini.R/">gemini.R</a>
+</section><section id="gemini.r" class="level3" data-number="2.1.10"><h3 data-number="2.1.10" class="anchored" data-anchor-id="gemini.r">
+<span class="header-section-number">2.1.10</span> <a href="https://jhk0530.github.io/gemini.R/">gemini.R</a>
 </h3>
 <p><img src="images/hex/gemini.png" align="right" height="108"></p>
 <p>El paquete gemini.R de Jinhwan Kim conecta R con el modelo Gemini de Google a través de la API de Gemini. Con una clave API válida, la función <code>gemini()</code> admite indicaciones de texto, y la función <code>gemini_image()</code> puede trabajar con imágenes.</p>
 <p>El paquete también tiene un addin de RStudio para crear documentación en Roxygen, y lo probé hace poco con el modelo Gemini Flash 2 para extraer información de un documento escaneado y funcionó bien.</p>
-</section><section id="perplexr" class="level3" data-number="2.1.10"><h3 data-number="2.1.10" class="anchored" data-anchor-id="perplexr">
-<span class="header-section-number">2.1.10</span> <a href="https://github.com/GabrielKaiserQFin/PerplexR/">PerplexR</a>
+</section><section id="perplexr" class="level3" data-number="2.1.11"><h3 data-number="2.1.11" class="anchored" data-anchor-id="perplexr">
+<span class="header-section-number">2.1.11</span> <a href="https://github.com/GabrielKaiserQFin/PerplexR/">PerplexR</a>
 </h3>
 <p><img src="images/hex/perplexrlogo.png" align="right" height="108"></p>
 <p>PerplexR de <a href="https://gabrielkaiserqfin.github.io/">Gabriel Kaiser</a> proporciona una interfaz al estilo de groqR pero para los modelos sonar de Perplexity. Hace falta tener un plan de pago para generar la clave de API necesaria, así que todavía no lo he probado. El paquete funciona con un addin de RStudio y, al igual que groqR, incluye funciones útiles para reescribir código o crear pruebas unitarias.</p>
