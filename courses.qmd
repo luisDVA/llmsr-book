@@ -22,7 +22,7 @@ On June 30th, 2025 I joined the monthly meetup organized by R-Ladies Gaborone (B
 
 <div>
 ```{=html}
-<iframe class="slide-deck" src="../ld-RLadies-slides/slidesLV.html"></iframe>
+<iframe class="slide-deck" src="/ld-RLadies-slides/slidesLV.html"></iframe>
 ```
 </div>
 
