@@ -4,8 +4,33 @@ Here are some courses and guides for actually using the LLM tools listed here. N
 
 ------------------------------------------------------------------------
 
+## {.unnumbered}
+ 
+### R-Ladies Gaborone Meetup talk {.unnumbered}
 
-#### [Harnessing LLMs for Data Analysis](https://www.youtube.com/watch?v=owDd1CJ17uQ)
+On June 30th, 2025 I joined the monthly meetup organized by R-Ladies Gaborone (Botswana) with a talk about the contents in this book/guide. Thanks for the invitation and to everyone that joined!   Recording and slides below:
+
+[Watch on Youtube](https://youtu.be/0WsF4XcIhYI?si=bh6aBJilhJSFgI5A)
+
+<style>
+.slide-deck {
+    border: 3px solid #dee2e6;
+    width: 100%;
+    height: 475px;
+}
+</style>
+
+<div>
+```{=html}
+<iframe class="slide-deck" src="../ld-RLadies-slides/slidesLV.html"></iframe>
+```
+</div>
+
+[View slides in full screen](/ld-RLadies-slides/slidesLV.html)
+
+## {.unnumbered}
+
+[Harnessing LLMs for Data Analysis](https://www.youtube.com/watch?v=owDd1CJ17uQ)
 
 This ~30 minute demo by Joe Cheng from Posit is a really smooth and easy to follow introduction to calling LLMs via http APIs using code (R or Python). Focuses on ellmer and chatlass. I liked the advice given early on about starting out with the best performing models rather than open-weights local models, and to be very careful about the data we allow these model providers to see. Joe also explained the easiest way to add knowledge to a chat object via the system prompt. A must watch. 
 

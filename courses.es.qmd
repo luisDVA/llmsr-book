@@ -4,7 +4,34 @@ Aquí hay algunos cursos y guías ya para aprender a usar las diferentes herrami
 
 ------------------------------------------------------------------------
 
-#### [Harnessing LLMs for Data Analysis](https://www.youtube.com/watch?v=owDd1CJ17uQ)
+## {.unnumbered}
+ 
+### Charla para R-Ladies Gaborone {.unnumbered}
+
+El 30 de junio de 2025 participé en el encuentro mensual de R-Ladies Gaborone (Botsuana) con una charla (en inglés) sobre los materiales de esta guía. ¡Muchas gracias por la invitación y a quienes se conectaron ese día!  
+Aquí estan la grabación y mis diapositivas.  
+
+[Ver en Youtube](https://youtu.be/0WsF4XcIhYI?si=bh6aBJilhJSFgI5A)
+
+<style>
+.slide-deck {
+    border: 3px solid #dee2e6;
+    width: 100%;
+    height: 475px;
+}
+</style>
+
+<div>
+```{=html}
+<iframe class="slide-deck" src="../ld-RLadies-slides/slidesLV.html"></iframe>
+```
+</div>
+
+[Diapositivas en pantalla completa](/ld-RLadies-slides/slidesLV.html)
+
+## {.unnumbered}
+
+[Harnessing LLMs for Data Analysis](https://www.youtube.com/watch?v=owDd1CJ17uQ)
 
 Este video de ~30 minutos (en inglés) incluye una demostración muy clara que dio Joe Cheng de posit sobre cómo llamar modelos a través de APIs y mediante código (R o Python). El enfoque de la demostración es en herramientas de posit como ellmer y chatlass. Me gustaron algunos de los consejos para personas que vienen iniciando con estas herramientas de IA. Por ejemplo, al principio usar los modelos con mejor desempeño pero siempre pendientes de la privacidad de los datos que estemos compartiendo. También se muestra como darle conocimiento extra a los modelos a través del 'system prompt' en el cual configuramos nuestros modelos. Video altamente recomendado.
 

@@ -19,7 +19,7 @@ css: indstyle.scss
 :::: {.dancing-shadow-box}
 ::: {.box-content}
 ### Latest updates (June 2025):
-
+- Talk about this guide for R-Ladies Gaborone  
 - Chat with OpenAI models inside RStudio with `PacketLLM`  
 - Model Context Protocol with `mcpr`
 - Image generation and manipulation with `diffuseR`

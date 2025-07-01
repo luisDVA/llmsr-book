@@ -20,6 +20,7 @@ css: indstyle.scss
 ::: {.box-content}
 ### Últimas actualizaciones (junio 2025):
 
+- Charla sobre esta guía para encuentro de R-Ladies Gaborone  
 - Chat con modelos de OpenAI con `Packet LLM`  
 - Implementación de Model Context Protocol con `mcpr`
 - Generación y manipulación de imágenes con modelos de difusión a través de `diffuseR`
