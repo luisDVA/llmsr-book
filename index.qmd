@@ -18,11 +18,8 @@ css: indstyle.scss
 
 :::: {.dancing-shadow-box}
 ::: {.box-content}
-### Latest updates (June 2025):
-- Talk about this guide for R-Ladies Gaborone  
-- Chat with OpenAI models inside RStudio with `PacketLLM`  
-- Model Context Protocol with `mcpr`
-- Image generation and manipulation with `diffuseR`
+### Latest updates (July 2025):
+- Explain statistical model outputs with `statlingua`
 
 :::
 ::::
@@ -72,6 +69,7 @@ urlss <- c(
 "https://www.ekotov.pro/rdocdump/",
 "https://jbgruber.github.io/rollama/",
 "https://r-pkg.thecoatlessprofessor.com/searcher/",
+"https://bgreenwell.github.io/statlingua/",
 "https://tidychatmodels.albert-rapp.de/",
 "https://edubruell.github.io/tidyllm/",
  "https://vitals.tidyverse.org/"

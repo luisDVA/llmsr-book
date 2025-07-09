@@ -270,6 +270,14 @@ Una breve animación de cómo se puede usar:
 
 gander ya tiene una [introducción oficial](https://posit.co/blog/introducing-gander/) el blog de Posit (publicado el 17/03/2025).
 
+
+### [statlingua](https://bgreenwell.github.io/statlingua/)
+
+<img src="images/hex/statlingualogo.png" align="right" height="108"/>
+
+
+statlingua, desarrollado por Brandon M. Greenwell, es otro paquete interesante que aprovecha ellmer y que es básicamente una herramienta de _prompt engineering_ para explicar resultados estadísticos en lenguage sencillo utilizando LLMs y contexto sobre nuestros análisis. Funciona para la mayoría de los objetos de modelo  estadístico (por ejemplo, `lm()`, `glm()`, `lmer()`, `gam()`, `survreg()`, `rpart()`) y el paquete está diseñado para ser extensible a otros tipos de modelo. El código se ve robusto y el paquete está muy bien documentado.
+
 ## Herramientas para RAG
 
 ### [ragnar](https://tidyverse.github.io/ragnar/)

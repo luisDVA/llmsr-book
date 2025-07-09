@@ -275,6 +275,14 @@ This feels similar to using the continue extension in Positron but more oriented
 
 gander now has an [official introduction](https://posit.co/blog/introducing-gander/) on the Posit Blog (published 17/03/2025).
 
+
+### [statlingua](https://bgreenwell.github.io/statlingua/)
+
+<img src="images/hex/statlingualogo.png" align="right" height="108"/>
+
+statlingua by Brandon M. Greenwell is another cool package that leverages ellmer and is essentially a prompt engineering toolkit to explain statistical outputs in plain language using LLMs and context about our analyses. Supports most model objects (e.g., `lm()`, `glm()`,`lmer()`,`gam()`,`survreg()`,`rpart()`) and the package is designed to be extensible to other model objects. The code looks robust and the package is very well documented.
+
+
 ## RAG tools
 
 ### [ragnar](https://tidyverse.github.io/ragnar/)
