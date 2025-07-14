@@ -162,17 +162,29 @@ chattr is also part of the mlverse. This package interfaces LLMs with R directly
 
 ## Model Context Protocol (MCP) tools
 
-### [acquaint](https://posit-dev.github.io/acquaint/)
+### [mcptools](https://posit-dev.github.io/mcptools/)
 
-<img src="images/hex/acqlogo.png" align="right" height="108"/>
+<img src="images/hex/mcptoolslogo.png" align="right" height="108"/>
 
-acquaint by Simon Couch, Charlie Gao, and Winston Chang (plus other contributors) lets MCP-enabled tools like Claude Desktop, Lutra, Glama, and Claude Code connect directly to our R sessions. MCP is an open protocol to connect AI models to different tools and data sources in a standardized way (the MCP website calls the protocol the USB-C port of AI applications). In this setup the models can see our installed packages, environment, and session info so they will generate better-informed code, powered by btw to provide context. Potential game changer.
+> mcptools used to be called acquaint
+
+mcptools by Simon Couch, Charlie Gao, and Winston Chang (plus other contributors) lets MCP-enabled tools like Claude Desktop, Lutra, Glama, and Claude Code connect directly to our R sessions. MCP is an open protocol to connect AI models to different tools and data sources in a standardized way (the MCP website calls the protocol the USB-C port of AI applications). In this setup the models can see our installed packages, environment, and session info so they will generate better-informed code, powered by btw to provide context. Potential game changer.
 
 ### [mcpr](https://mcpr.opifex.org/)
 
 <img src="images/hex/mcprlogo.png" align="right" height="108"/>
 
 mcpr by John Coene from Opifex is an R implementation of the Model Context Protocol (MCP), letting applications written in R to interact with LLMs through a standard JSON-RPC 2.0 interface. We can build custom tools, and ultimately integrate them with Cursor, Claude Code, and VS Code Agent Mode. More importantly, MCPR tools build with the package can be converted to ellmer tools and registered with an ellmer chat session. Although MCP in general may have a steep learning curve mcpr is a huge contribution to R and a game-changing addition to this space. 
+
+## [ClaudeR](https://github.com/IMNMV/ClaudeR)
+
+<img src="images/hex/ClaudeRlogo.jpeg" align="right" height="108"/>
+
+ClaudeR by Nykko Vitali provides an MCP integration so that Claude Desktop can execute code interactively in an active RStudio instance. Very nice example of MCP, with a safe bidirectional connection between Claude and RStudio that lets us work alongside the LLM or direct it to do tasks autonomously, and we can see the results in real time. 
+
+This [video](https://youtu.be/KSKcuxRSZDY?si=4c0R5rHnD84yWLv_) includes a nice and short demonstration of Claude (3.7 Sonnet) running through a set of instructions to do data analysis and visualization autonomously inside the running RStudio instance. 
+
+Thanks to MCP this package should also work with Cursor, or other services that allow for MCP servers and can run RStudio.
 
 ## ellmer and friends
 

@@ -144,10 +144,11 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#github-copilot" id="toc-github-copilot" class="nav-link active" data-scroll-target="#github-copilot"><span class="header-section-number">3.1</span> GitHub Copilot</a></li>
-  <li><a href="#continue" id="toc-continue" class="nav-link" data-scroll-target="#continue"><span class="header-section-number">3.2</span> continue</a></li>
-  <li><a href="#codeium" id="toc-codeium" class="nav-link" data-scroll-target="#codeium"><span class="header-section-number">3.3</span> codeium</a></li>
-  <li><a href="#r-and-rstudio-tutor" id="toc-r-and-rstudio-tutor" class="nav-link" data-scroll-target="#r-and-rstudio-tutor"><span class="header-section-number">3.4</span> R and RStudio Tutor</a></li>
+<li><a href="#positron-assistant" id="toc-positron-assistant" class="nav-link active" data-scroll-target="#positron-assistant"><span class="header-section-number">3.1</span> Positron Assistant</a></li>
+  <li><a href="#github-copilot" id="toc-github-copilot" class="nav-link" data-scroll-target="#github-copilot"><span class="header-section-number">3.2</span> GitHub Copilot</a></li>
+  <li><a href="#continue" id="toc-continue" class="nav-link" data-scroll-target="#continue"><span class="header-section-number">3.3</span> continue</a></li>
+  <li><a href="#codeium" id="toc-codeium" class="nav-link" data-scroll-target="#codeium"><span class="header-section-number">3.4</span> codeium</a></li>
+  <li><a href="#r-and-rstudio-tutor" id="toc-r-and-rstudio-tutor" class="nav-link" data-scroll-target="#r-and-rstudio-tutor"><span class="header-section-number">3.5</span> R and RStudio Tutor</a></li>
   </ul></nav>
 </div>
 <!-- main -->
@@ -167,23 +168,27 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 
 
 </header><p>These include vscode/Positron extensions that are not shipped as R packages, as well as relevant web-based resources.</p>
-<section id="github-copilot" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="github-copilot">
-<span class="header-section-number">3.1</span> <a href="https://github.com/features/copilot">GitHub Copilot</a>
+<section id="positron-assistant" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="positron-assistant">
+<span class="header-section-number">3.1</span> <a href="https://positron.posit.co/assistant">Positron Assistant</a>
+</h2>
+<p>Positron Assistant is currently a preview/experimental AI client for integrating LLM-based chat and autocomplete within Positron. Available with version &gt;= 2025.07.0-204. At present the assistant supports Anthropic for chat, and GitHub Copilot for code completions. Seems similar to Continue but with a much tighter integration with the IDE.</p>
+</section><section id="github-copilot" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="github-copilot">
+<span class="header-section-number">3.2</span> <a href="https://github.com/features/copilot">GitHub Copilot</a>
 </h2>
 <p>GitHub Copilot is a widely-used and well-documented coding assistant for code completions and the possibility of turning natural language prompts into code suggestions. Works on GitHub.com and inside most IDEs.</p>
 <p>Subscription-based, although as of a a few weeks-ago there is a free tier available. I have not tried it yet.</p>
 <p>This recent <a href="https://github.com/yabellini/copilotWithR">talk</a> by Yanina Bellini for RLadies Rome provides a good overview, and Yani’s slides also mention important considerations about the AI skill threat.</p>
-</section><section id="continue" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="continue">
-<span class="header-section-number">3.2</span> <a href="https://www.continue.dev/">continue</a>
+</section><section id="continue" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="continue">
+<span class="header-section-number">3.3</span> <a href="https://www.continue.dev/">continue</a>
 </h2>
 <p>A vscode extension that works nicely in Positron. Supports multiple models for chat and code completion. Easy to provide local files and folders for context and nice integration with the source editor.</p>
 <p>Tried it out after Julia Silge mentioned it in the <a href="https://www.superdatascience.com/podcast/817">Super Data Science</a> podcast. Works nicely, and I used it in Positron with Anthropic’s Claude 3.5 Sonnet model to write and edit the repetitive css, html, and javascript code that powers the hexsession package. Also helped me with some of the nested for loops that play a big role in forgts.</p>
-</section><section id="codeium" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="codeium">
-<span class="header-section-number">3.3</span> <a href="https://codeium.com/">codeium</a>
+</section><section id="codeium" class="level2" data-number="3.4"><h2 data-number="3.4" class="anchored" data-anchor-id="codeium">
+<span class="header-section-number">3.4</span> <a href="https://codeium.com/">codeium</a>
 </h2>
 <p>Another cool VScode extension that works well in Positron. Provides autocomplete and chat. Free for individuals. The base model uses Llama 3.1 70B, but paid tiers can choose other models. I’ve tried this out in Positron with good results for code refactoring, at least when playing around with small scripts.</p>
-</section><section id="r-and-rstudio-tutor" class="level2" data-number="3.4"><h2 data-number="3.4" class="anchored" data-anchor-id="r-and-rstudio-tutor">
-<span class="header-section-number">3.4</span> <a href="https://chatgpt.com/g/g-iedyANQtM-r-and-r-studio-tutor">R and RStudio Tutor</a>
+</section><section id="r-and-rstudio-tutor" class="level2" data-number="3.5"><h2 data-number="3.5" class="anchored" data-anchor-id="r-and-rstudio-tutor">
+<span class="header-section-number">3.5</span> <a href="https://chatgpt.com/g/g-iedyANQtM-r-and-r-studio-tutor">R and RStudio Tutor</a>
 </h2>
 <p>This is a custom GTP by Jose A. Fernandez Calvo, built on Open AI’s framework for custom tutors that have predefined roles and custom knowledge bases. Answers R-related questions and has a system role for being supportive when explaining solutions.</p>
 <hr>

@@ -160,17 +160,30 @@ chattr también es parte del mlverse. El paquete es un interfaz para modelos loc
 
 ## Herramientas para usar el Protocolo de Contexto de Modelo (Model Context Protocol, MCP)
 
-### [acquaint](https://posit-dev.github.io/acquaint/)
+### [mcptools](https://posit-dev.github.io/mcptools/)
 
-<img src="images/hex/acqlogo.png" align="right" height="108"/>
+<img src="images/hex/mcptoolslogo.png" align="right" height="108"/>
 
-acquaint por Simon Couch, Charlie Gao y Winston Chang (y muchos otros colaboradores) permite que herramientas de MCP como Claude Desktop, Lutra, Glama y Claude Code se conecten directamente a nuestras sesiones de R. MCP es un protocolo abierto desarrollado por Anthropic para conectar modelos de IA a diferentes herramientas y fuentes de datos de manera estandarizada (el sitio web de MCP se refiere al protocolo como el puerto USB-C de las aplicaciones de IA). En esta configuración, los modelos pueden ver nuestros paquetes instalados, el entorno, y la información de la sesión, por lo que generarán código mejor informado. El paquete acquaint usa btw para proporcionar contexto a los modelos. Le veo mucho potencial.
+> mcptools antes se llamaba acquaint
+
+mcptools por Simon Couch, Charlie Gao y Winston Chang (y muchos otros colaboradores) permite que herramientas de MCP como Claude Desktop, Lutra, Glama y Claude Code se conecten directamente a nuestras sesiones de R. MCP es un protocolo abierto desarrollado por Anthropic para conectar modelos de IA a diferentes herramientas y fuentes de datos de manera estandarizada (el sitio web de MCP se refiere al protocolo como el puerto USB-C de las aplicaciones de IA). En esta configuración, los modelos pueden ver nuestros paquetes instalados, el entorno, y la información de la sesión, por lo que generarán código mejor informado. El paquete acquaint usa btw para proporcionar contexto a los modelos. Le veo mucho potencial.
 
 ### [mcpr](https://mcpr.opifex.org/)
 
 <img src="images/hex/mcprlogo.png" align="right" height="108"/>
 
 mcpr, desarrollado por John Coene de Opifex es una implementación en R del Protocolo de Contexto de Modelo (MCP), que permite que las aplicaciones escritas en R interactúen con LLMs a través de una interfaz estándar JSON-RPC 2.0. Podemos construir herramientas personalizadas y, en última instancia, integrarlas con Cursor, Claude Code y VS Code Agent Mode. Más importante aún, las herramientas de MCPR construidas con el paquete se pueden convertir en herramientas de ellmer y registrarse en una sesión de chat de ellmer. Aunque el MCP en general es un tema difícil para aprender, mcpr es una enorme contribución a R y una adición revolucionaria a este espacio.
+
+
+## [ClaudeR](https://github.com/IMNMV/ClaudeR)
+
+<img src="images/hex/ClaudeRlogo.jpeg" align="right" height="108"/>
+
+ClaudeR de Nykko Vitali proporciona una integración MCP para que Claude Desktop pueda ejecutar código de forma interactiva en una instancia activa de RStudio. Este paquete es un ejemplo muy bueno de MCP, creando una conexión bidireccional segura (no borra archivos, no ejecuta comandos de sistema, etc.) entre Claude y RStudio que nos permite trabajar junto con el LLM o dirigirlo para que realice tareas de forma autónoma, y podemos ver los resultados en tiempo real.
+
+Este  [video](https://youtu.be/KSKcuxRSZDY?si=4c0R5rHnD84yWLv_) muestra como Claude (3.7 Sonnet) ejecuta un conjunto de instrucciones para realizar análisis y visualización de datos de forma autónoma dentro de la instancia de RStudio en ejecución.
+
+Gracias al protocolo MCP, este paquete también debería funcionar con Cursor u otros servicios que permitan servidores MCP y puedan ejecutar RStudio.
 
 ## ellmer y compañia
 

@@ -149,11 +149,12 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-<li><a href="#github-copilot" id="toc-github-copilot" class="nav-link active" data-scroll-target="#github-copilot"><span class="header-section-number">3.1</span> GitHub Copilot</a></li>
-  <li><a href="#continue" id="toc-continue" class="nav-link" data-scroll-target="#continue"><span class="header-section-number">3.2</span> continue</a></li>
-  <li><a href="#codeium" id="toc-codeium" class="nav-link" data-scroll-target="#codeium"><span class="header-section-number">3.3</span> codeium</a></li>
-  <li><a href="#r-and-rstudio-tutor" id="toc-r-and-rstudio-tutor" class="nav-link" data-scroll-target="#r-and-rstudio-tutor"><span class="header-section-number">3.4</span> R and RStudio Tutor</a></li>
-  <li><a href="#shiny-assistant" id="toc-shiny-assistant" class="nav-link" data-scroll-target="#shiny-assistant"><span class="header-section-number">3.5</span> Shiny Assistant</a></li>
+<li><a href="#positron-assistant" id="toc-positron-assistant" class="nav-link active" data-scroll-target="#positron-assistant"><span class="header-section-number">3.1</span> Positron Assistant</a></li>
+  <li><a href="#github-copilot" id="toc-github-copilot" class="nav-link" data-scroll-target="#github-copilot"><span class="header-section-number">3.2</span> GitHub Copilot</a></li>
+  <li><a href="#continue" id="toc-continue" class="nav-link" data-scroll-target="#continue"><span class="header-section-number">3.3</span> continue</a></li>
+  <li><a href="#codeium" id="toc-codeium" class="nav-link" data-scroll-target="#codeium"><span class="header-section-number">3.4</span> codeium</a></li>
+  <li><a href="#r-and-rstudio-tutor" id="toc-r-and-rstudio-tutor" class="nav-link" data-scroll-target="#r-and-rstudio-tutor"><span class="header-section-number">3.5</span> R and RStudio Tutor</a></li>
+  <li><a href="#shiny-assistant" id="toc-shiny-assistant" class="nav-link" data-scroll-target="#shiny-assistant"><span class="header-section-number">3.6</span> Shiny Assistant</a></li>
   </ul></nav>
 </div>
 <!-- main -->
@@ -173,30 +174,34 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 
 
 </header><p>Aquí hay algunas herramientas o extensiones que no se instalan como paquetes R, o que se usan directamente en el navegador.</p>
-<section id="github-copilot" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="github-copilot">
-<span class="header-section-number">3.1</span> <a href="https://github.com/features/copilot">GitHub Copilot</a>
+<section id="positron-assistant" class="level2" data-number="3.1"><h2 data-number="3.1" class="anchored" data-anchor-id="positron-assistant">
+<span class="header-section-number">3.1</span> <a href="https://positron.posit.co/assistant">Positron Assistant</a>
+</h2>
+<p>Este Asistente de Positron es un cliente de inteligencia artificial experimental para integrar chat y autocompletado basados en LLM dentro de Positron. Está disponible con la versión &gt;=2025.07.0-204. Actualmente, el asistente usa Anthropic para el chat y GitHub Copilot para completar código. Se me hizo muy simlar Continue, pero con una integración mucho más estrecha con el IDE.</p>
+</section><section id="github-copilot" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="github-copilot">
+<span class="header-section-number">3.2</span> <a href="https://github.com/features/copilot">GitHub Copilot</a>
 </h2>
 <p>Copilot es un asistente de programación bien documentado, usado ampliamente desde hace unos años, y bastante versátil. Sirve para autocompletar nuestros códigos de programación o también para responder preguntas y dar sugerencias. Funciona en el sitio de GitHub y dentro de casi todos los IDEs.</p>
 <p>Copilot es un servicio de paga aunque recientemente ya tiene una cuenta gratuita que sigo sin probar.</p>
 <p>Podemos aprender más viendo esta <a href="https://github.com/yabellini/copilotWithR">presentación</a> que dio Yanina Bellini para el grupo de RLadies Roma.</p>
-</section><section id="continue" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="continue">
-<span class="header-section-number">3.2</span> <a href="https://www.continue.dev/">continue</a>
+</section><section id="continue" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="continue">
+<span class="header-section-number">3.3</span> <a href="https://www.continue.dev/">continue</a>
 </h2>
 <p>Continue es una extensión para vscode pero que funciona bien en Positron. Tiene soporte para casi todos los modelos que hay y nos da chat, autocompletado de código, y tiene un herramienta para ir aplicando los cambios sugeridos a nuestros archivos. Es fácil mencionar archivos y carpetas para dar contexto y la integración con el editor me gustó mucho.</p>
 <p>Es la primera extensión que usé después de esuchar que Julia Silge la mencionara en el podcast <a href="https://www.superdatascience.com/podcast/817">Super Data Science</a>. Me ha funcionado muy bien con Claude y diferentes modelos de groQ, y de hecho usé la extensión y éstos modelos para editar el código de css, html y javascript que usa mi paquete hexsession.</p>
-</section><section id="codeium" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="codeium">
-<span class="header-section-number">3.3</span> <a href="https://codeium.com/">codeium</a>
+</section><section id="codeium" class="level2" data-number="3.4"><h2 data-number="3.4" class="anchored" data-anchor-id="codeium">
+<span class="header-section-number">3.4</span> <a href="https://codeium.com/">codeium</a>
 </h2>
 <p>Codeium es otra extensión para vscode que funciona bien en Positron. También nos ayuda a autocompletar código y nos brinda un chat parecido al de Continue. Tiene un plan gratuito y otros planes de paga con acceso a más modelos. El plan gratuito usa el modelo Llama 3.170B.</p>
-</section><section id="r-and-rstudio-tutor" class="level2" data-number="3.4"><h2 data-number="3.4" class="anchored" data-anchor-id="r-and-rstudio-tutor">
-<span class="header-section-number">3.4</span> <a href="https://chatgpt.com/g/g-iedyANQtM-r-and-r-studio-tutor">R and RStudio Tutor</a>
+</section><section id="r-and-rstudio-tutor" class="level2" data-number="3.5"><h2 data-number="3.5" class="anchored" data-anchor-id="r-and-rstudio-tutor">
+<span class="header-section-number">3.5</span> <a href="https://chatgpt.com/g/g-iedyANQtM-r-and-r-studio-tutor">R and RStudio Tutor</a>
 </h2>
 <p>Yo no sabía pero es posible construir GTPs personalizados encima de modelos de openAI y que éstos vivan en línea en el entorno de chatGPT. R and RStudio tutor, por Jose A. Fernandez Calvo, es un tutor específicamente diseñado para enseñar y explicar sobre R.</p>
 <blockquote class="blockquote">
 <p>Mención especial para <a href="https://rtutor.ai/">RTutor</a>, que fue una de las primeras herramientas (~2022) para usar ChatGPT y generar código a partir de lenguaje natural. Se puede usar en línea o localmente instalándolo a tráves de su propio paquete.</p>
 </blockquote>
-</section><section id="shiny-assistant" class="level2" data-number="3.5"><h2 data-number="3.5" class="anchored" data-anchor-id="shiny-assistant">
-<span class="header-section-number">3.5</span> <a href="https://shiny.posit.co/blog/posts/shiny-assistant/">Shiny Assistant</a>
+</section><section id="shiny-assistant" class="level2" data-number="3.6"><h2 data-number="3.6" class="anchored" data-anchor-id="shiny-assistant">
+<span class="header-section-number">3.6</span> <a href="https://shiny.posit.co/blog/posts/shiny-assistant/">Shiny Assistant</a>
 </h2>
 <p>También hay que mencionar a Shiny Assistant. Esta herramienta la desarrolló el equipo de Shiny y puede contestar preguntas sobre Shiny o de plano construir y editar aplicaciones. Funciona para R y para Python, y puede usar Shinylive para prescindir de un servidor.</p>
 

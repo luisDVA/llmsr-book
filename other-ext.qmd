@@ -2,6 +2,11 @@
 
 These include vscode/Positron extensions that are not shipped as R packages, as well as relevant web-based resources.
 
+
+## [Positron Assistant](https://positron.posit.co/assistant)
+
+Positron Assistant is currently a preview/experimental AI client for integrating LLM-based chat and autocomplete within Positron. Available with version >= 2025.07.0-204. At present the assistant supports Anthropic for chat, and GitHub Copilot for code completions. Seems similar to Continue but with a much tighter integration with the IDE. 
+
 ## [GitHub Copilot](https://github.com/features/copilot)
 
 GitHub Copilot is a widely-used and well-documented coding assistant for code completions and the possibility of turning natural language prompts into code suggestions. Works on GitHub.com and inside most IDEs. 

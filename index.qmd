@@ -19,6 +19,9 @@ css: indstyle.scss
 :::: {.dancing-shadow-box}
 ::: {.box-content}
 ### Latest updates (July 2025):
+- Positron Assistant  
+- acquaint renamed to mcptools  
+- ClaudeR - an R MCP Integration for Claude  
 - Explain statistical model outputs with `statlingua`
 
 :::
@@ -39,9 +42,9 @@ The logos below link to each tool's official site.
 logos <- fs::dir_ls(here::here("images/hex/"))
 
 urlss <- c(
+"https://github.com/IMNMV/ClaudeR",
 "https://codeium.com/",
 "https://knowusuboaky.github.io/LLMAgentR/",
-"https://posit-dev.github.io/acquaint/",
 "https://github.com/heurekalabsco/axolotr",
 "https://posit-dev.github.io/btw/",
 "https://simonpcouch.github.io/buggy/",
@@ -62,6 +65,7 @@ urlss <- c(
 "https://mlverse.github.io/mall/",
 "https://mcpr.opifex.org/",
 "https://mlverse.github.io/lang/",
+"https://posit-dev.github.io/mcptools/",
 "https://hauselin.github.io/ollama-r/",
 "https://docs.ropensci.org/pangoling/",
 "https://github.com/GabrielKaiserQFin/PerplexR/",
