@@ -19,11 +19,9 @@ css: indstyle.scss
 :::: {.dancing-shadow-box}
 ::: {.box-content}
 ### Latest updates (July 2025):
-- Positron Assistant  
-- acquaint renamed to mcptools  
-- ClaudeR - an R MCP Integration for Claude  
-- Explain statistical model outputs with `statlingua`
-
+- create LLM agents with mini007
+- wizrd, a general LLM interface
+- RALLY: chat with local models in your session
 :::
 ::::
 
@@ -65,6 +63,7 @@ urlss <- c(
 "https://mlverse.github.io/mall/",
 "https://mcpr.opifex.org/",
 "https://posit-dev.github.io/mcptools/",
+"https://github.com/feddelegrand7/mini007",
 "https://mlverse.github.io/lang/",
 "https://hauselin.github.io/ollama-r/",
 "https://docs.ropensci.org/pangoling/",

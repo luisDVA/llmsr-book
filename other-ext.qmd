@@ -32,6 +32,9 @@ Another cool VScode extension that works well in Positron. Provides autocomplete
 
 This is a custom GTP by Jose A. Fernandez Calvo, built on Open AI's framework for custom tutors that have predefined roles and custom knowledge bases. Answers R-related questions and has a system role for being supportive when explaining solutions.
 
+## [RALLY](https://github.com/CodyCarmichaelMPH/RALLY)
+
+RALLY is a programming assistant for R developed by Cody Carmichael. This packages lets us work with local Ollama models running in an interactive Shiny App or as a console-based chat interface. Nice wrapper with well-thought out prompts to work locally and offline. 
 
 --- 
 

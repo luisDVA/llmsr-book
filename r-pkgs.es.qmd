@@ -6,6 +6,27 @@ Los paquetes están resumidos aquí sin ningún orden en particular, pero los ju
 
 ## Interfaces generales
 
+### [wizrd](https://lawremi.github.io/wizrd/)
+
+
+Desarrollado por Michael Lawrence, wizrd es una adición reciente (julio 2025) al conjunto de paquetes que nos sirven como interfaz general para trabajar con LLMs en R. El paquete está diseñado para programar funciones que integran LLMs con entradas y salidas utilizando una gramática intuitiva. 
+
+Me gustó particularmente el ejemplo que aparece en los manuales de cómo se configuran los agentes y luego se extienden para poder parametrizar los argumentos:
+
+```{r}
+#| eval: false
+
+agent <- openai_agent("gpt-4o-mini", temperature = 0) |>
+    instruct("Answer questions about this dataset:", mtcars)
+
+parameterized_agent <- agent |>
+    prompt_as("Analyze the relationship between {var1} and {var2}.")
+parameterized_agent |> chat(list(var1 = "mpg", var2 = "wt"))
+
+```
+
+wizrd también incluye herramientas para MCP y RAG, lo cual es bastante impresionante.  
+
 ### [chatLLM](https://knowusuboaky.github.io/chatLLM/)
 <img src="images/hex/chatLLMlogo.png" align="right" height="108"/>
 
@@ -122,7 +143,15 @@ vitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de 
 
 ## Creación de agentes de IA modulares
 
+### [mini007](https://github.com/feddelegrand7/mini007)
+
+<img src="images/hex/mini007.png" align="right" height="108"/>
+
+
+Mohamed El Fodil Ihaddaden publicó mini007 en julio de 2025. El paquete nos brinda herramientas y un entrono para crear agentes de LLM utilizando clases de tipo R6 y ellmer. Podemos crear múltiples agentes y asignarle a cada uno una tarea diferente. Éstos luego colaboran bajo la supervisión de un gerente o 'Lead Agent' para completar tareas como encontrar información sobre un tema, resumir, traducir y mucho más. Me parecenen muy buenas noticias ver más herramientas que se basan en ellmer para este tipo de trabajo. 
+
 ### [LLMAgentR](https://knowusuboaky.github.io/LLMAgentR/)
+
 <img src="images/hex/LLMagentRlogo.png" align="right" height="108"/>
 
 Los agentes de LLM son aplicaciones que pueden abordar tareas relativamente complejas dividiéndolas en 'subtareas' que pueden resolverse usando diferentes herramientas y un flujo de operaciones que finalmente conduce a la respuesta deseada.

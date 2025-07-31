@@ -18,12 +18,11 @@ css: indstyle.scss
 
 :::: {.dancing-shadow-box}
 ::: {.box-content}
-### Últimas actualizaciones (junio 2025):
+### Últimas actualizaciones (julio 2025):
 
-- Charla sobre esta guía para encuentro de R-Ladies Gaborone  
-- Chat con modelos de OpenAI con `Packet LLM`  
-- Implementación de Model Context Protocol con `mcpr`
-- Generación y manipulación de imágenes con modelos de difusión a través de `diffuseR`
+- Crear agentes de LLM con mini007
+- wizrd, una interfaz general para LLM
+- RALLY: interactúa con modelos locales en tu sesión
 
 :::
 ::::

@@ -22,7 +22,6 @@ htmltools::tagList(
   htmltools::tags$script(src = params$js_file_path)
 )
 ```
-
 ```{=html}
 <div class="main">
   <div class="container" id="imageContainer">
@@ -40,39 +39,42 @@ body {
 }
 
 .main {
-  position: relative;
-  display: flex;
   --s: 100px;  /* size */
   --m: 2px;    /* margin */
   --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+  width: 100%; /* Ensure it takes available width */
+  box-sizing: border-box;
 }
 
 .container {
   font-size: 0; /*disable white space between inline block element */
-  max-width: 100%; /* Ensure container doesn't overflow */
+  max-width: 100%; /* Ensure container doesn't overflow horizontally */
+  box-sizing: border-box;
+  text-align: center; /* Center the hexagons horizontally within the container */
+  display: block; /* Ensure it takes block layout */
+  white-space: normal; /* Allow wrapping */
 }
 
 .container div {
   width: var(--s);
   margin: var(--m);
   height: calc(var(--s)*1.1547); 
-  display: inline-block;
+  display: inline-block; /* Allows them to sit side-by-side */
   font-size: initial;
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
   background: var(--tile-bg);
   margin-bottom: calc(var(--m) - var(--s)*0.2885); 
   overflow: hidden;
   transition: all 0.3s ease;
+  vertical-align: top; /* Crucial for correct stacking */
 }
 
 .container::before {
   content: "";
   width: calc(var(--s)/2 + var(--m));
-  float: left;
-  height: 120%;
-  shape-outside: repeating-linear-gradient(     
-                   #0000 0 calc(var(--f) - 3px),      
-                   #000  0 var(--f));
+  /* Removed: float: left; shape-outside: ...; */
+  /* If stagger is lost, we might need to re-introduce shape-outside */
+  /* Or find an alternative way to create the stagger */
 }
 
 .container div img {
@@ -101,7 +103,7 @@ body {
 
 .attribution {
   position: absolute;
-  bottom: -44px;
+  bottom: -44px; /* Adjust as needed */
   right: 40px;
   font-size: 0.8em;
   color: var(--text-color);
@@ -134,6 +136,64 @@ body {
     --s: 80px;  /* Smaller for mobile devices, but still visible */
   }
 }
-</style>
 
+/* --- Targeting reveal.js specific output containers --- */
+
+/*
+ * This is the crucial part. We're targeting BOTH the output display container
+ * AND the hexsession-container within it.
+ * The goal is to ensure that neither imposes a restrictive height that clips the content.
+ */
+
+/* Targeting the output cell that contains our hex grid */
+.cell-output-display {
+  height: auto !important; /* Allow content to dictate height */
+  max-height: none !important; /* Remove any hard limit */
+  overflow-y: visible !important; /* Ensure content is visible */
+  display: block !important; /* Ensure it acts as a block element */
+}
+
+/* Targeting our hex grid container when it's inside the output cell */
+.cell-output-display .hexsession-container {
+  height: auto; /* Let content determine height */
+  max-height: none; /* Remove any internal max-height if present */
+  overflow-y: visible; /* Ensure content is visible */
+  display: block; /* Use block layout to allow natural flow and height expansion */
+  text-align: center; /* Center the hexagons */
+  width: 100%; /* Ensure it takes available width */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Making these rules more specific for reveal.js to ensure overrides */
+.quarto-output-revealjs .cell-output-display {
+  height: auto !important;
+  max-height: none !important;
+  overflow-y: visible !important;
+  display: block !important;
+}
+
+.quarto-output-revealjs .cell-output-display .hexsession-container {
+  height: auto !important;
+  max-height: none !important;
+  overflow-y: visible !important;
+  display: block !important; /* Crucial to allow height to expand */
+  text-align: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Ensure the container itself also behaves well */
+.cell-output-display .container {
+  display: block; /* Ensure it takes block layout */
+  text-align: center; /* Center the inline-block divs */
+  white-space: normal; /* Allow wrapping */
+}
+
+/* Ensure the hexagons themselves have correct vertical alignment */
+.cell-output-display .container div {
+  vertical-align: top;
+}
+</style>
 ```

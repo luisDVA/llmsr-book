@@ -6,6 +6,26 @@ In no particular order, but now grouped into loose groups:
 
 ## General interfaces
 
+### [wizrd](https://lawremi.github.io/wizrd/)
+
+Developed by Michael Lawrence, wizrd is a recent addition to the set of packages that let us interface with LLMs in R. The package is designed to let us actually use program functions that integrate LLMs with inputs and outputs using an intuitive grammar. 
+
+I particularly liked the example from the package documentation of how agents are set up and then extended to take parametrized inputs like so:
+
+```{r}
+#| eval: false
+
+agent <- openai_agent("gpt-4o-mini", temperature = 0) |>
+    instruct("Answer questions about this dataset:", mtcars)
+
+parameterized_agent <- agent |>
+    prompt_as("Analyze the relationship between {var1} and {var2}.")
+parameterized_agent |> chat(list(var1 = "mpg", var2 = "wt"))
+
+```
+
+wizrd also includes MCP and RAG tooling which is quite impressive. 
+
 ### [chatLLM](https://knowusuboaky.github.io/chatLLM/)
 <img src="images/hex/chatLLMlogo.png" align="right" height="108"/>
 
@@ -123,6 +143,14 @@ vitals by Simon Couch provides us with a framework for evaluating LLMs. We provi
 
 
 ## Language Model Agents
+
+### [mini007](https://github.com/feddelegrand7/mini007)
+
+<img src="images/hex/mini007.png" align="right" height="108"/>
+
+Mohamed El Fodil Ihaddaden recently (July 2025) shared mini007, a framework for creating LLM agents using R6 classes and ellmer. We can create multiple agent and assign each one a different task, these will then collaborate together under the supervision of a 'Lead Agent' to complete tasks such as finding information on a topic, summarizing, translating, and much more. Good to see more tools building on ellmer and using object classes for this kind of work.
+
+
 
 ### [LLMAgentR](https://knowusuboaky.github.io/LLMAgentR/)
 <img src="images/hex/LLMagentRlogo.png" align="right" height="108"/>
