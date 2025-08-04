@@ -150,7 +150,12 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <li><a href="#r-ladies-gaborone-meetup-talk" id="toc-r-ladies-gaborone-meetup-talk" class="nav-link" data-scroll-target="#r-ladies-gaborone-meetup-talk">R-Ladies Gaborone Meetup talk</a></li>
   </ul>
 </li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
+  <li>
+<a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a>
+  <ul class="collapse">
+<li><a href="#tunis-r-users-group-meetup-talk" id="toc-tunis-r-users-group-meetup-talk" class="nav-link" data-scroll-target="#tunis-r-users-group-meetup-talk">Tunis R Users Group Meetup talk</a></li>
+  </ul>
+</li>
   <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
   <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"></a></li>
   <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"></a></li>
@@ -164,6 +169,7 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
   <li><a href="#section-12" id="toc-section-12" class="nav-link" data-scroll-target="#section-12"></a></li>
   <li><a href="#section-13" id="toc-section-13" class="nav-link" data-scroll-target="#section-13"></a></li>
   <li><a href="#section-14" id="toc-section-14" class="nav-link" data-scroll-target="#section-14"></a></li>
+  <li><a href="#section-15" id="toc-section-15" class="nav-link" data-scroll-target="#section-15"></a></li>
   </ul></nav>
 </div>
 <!-- main -->
@@ -200,41 +206,55 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </div>
 <p><a href="./ld-RLadies-slides/slidesLV.html">View slides in full screen</a></p>
 </section></section><section id="section-1" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-1"></h2>
+<section id="tunis-r-users-group-meetup-talk" class="level3 unnumbered"><h3 class="unnumbered anchored" data-anchor-id="tunis-r-users-group-meetup-talk">Tunis R Users Group Meetup talk</h3>
+<p>On July 31st, 2025 I presented with a talk about the contents in this book/guide. Thanks for the invitation and to everyone that joined! Slides below:</p>
+<style>
+.slide-deck {
+    border: 3px solid #dee2e6;
+    width: 100%;
+    height: 475px;
+}
+</style>
+<div>
+<iframe class="slide-deck" src="./ld-TunisRUG-slides/slidesLV.html"></iframe>
+</div>
+<p><a href="./ld-TunisRUG-slides/slidesLV.html">View slides in full screen</a></p>
+</section></section><section id="section-2" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-2"></h2>
 <p><a href="https://www.youtube.com/watch?v=owDd1CJ17uQ">Harnessing LLMs for Data Analysis</a></p>
 <p>This ~30 minute demo by Joe Cheng from Posit is a really smooth and easy to follow introduction to calling LLMs via http APIs using code (R or Python). Focuses on ellmer and chatlass. I liked the advice given early on about starting out with the best performing models rather than open-weights local models, and to be very careful about the data we allow these model providers to see. Joe also explained the easiest way to add knowledge to a chat object via the system prompt. A must watch.</p>
-</section><section id="section-2" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-2"></h2>
+</section><section id="section-3" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-3"></h2>
 <p>This <a href="https://posit.co/blog/r-llm-evaluation/">post</a> by Sara Altman and Simon Couch on the Posit Blog used <a href="./r-pkgs.html#vitals">vitals</a> to tackle the question:</p>
 <blockquote class="blockquote">
 <p>Which AI model writes the best R code?</p>
 </blockquote>
 <p>This is not the first such comparison but this one included newer models and considered cost, concluding that for R coding tasks, OpenAI’s o4-mini or Anthropic’s Claude Sonnet 4 will perform quite well. OpenAI’s o3 performed the best on this evaluation, <strong>but is also ten times more expensive than o4-mini and around three times more expensive than Sonnet 4</strong>. These kinds of quantitative evaluations focused on R code are great contributions to this space.<br>
 (<strong>added 03/06/2025</strong>)</p>
-</section><section id="section-3" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-3"></h2>
+</section><section id="section-4" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-4"></h2>
 <p>This post on the official tidyverse blog is well worth reading because it’s about <a href="https://www.tidyverse.org/blog/2025/04/learn-tidyverse-ai/#tips-and-good-practices">Learning the tidyverse with the help of AI tools</a> in the context of the learning process and from the perspective of an experienced instructor. Almost all models nowadays generate working code, but in this post, Mine Çetinkaya-Rundel reviewed the machine-generated code from the perspective of someone who wants to learn.</p>
 <p>In summary: code generated by the model sometimes includes unsolicited steps, unnecessary elements, an unhelpful mix of R dialects, and too many code comments. All of this is not very helpful someone who wants to learn to code.<br>
 (<strong>added 04/04/2025</strong>)</p>
-</section><section id="section-4" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-4"></h2>
-<p>This short <a href="https://posit.co/blog/mall-ai-powered-text-analysis/">tutorial</a> in the officail Posit blog by Camila Lívio demonstrates how to use <a href="./r-pkgs.html#mall">mall</a> for text analysis and summarization for context extracted from long and complicated PDF files. (<strong>added 02/04/2025</strong>)</p>
 </section><section id="section-5" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-5"></h2>
+<p>This short <a href="https://posit.co/blog/mall-ai-powered-text-analysis/">tutorial</a> in the officail Posit blog by Camila Lívio demonstrates how to use <a href="./r-pkgs.html#mall">mall</a> for text analysis and summarization for context extracted from long and complicated PDF files. (<strong>added 02/04/2025</strong>)</p>
+</section><section id="section-6" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-6"></h2>
 <p>Sharon Machlis at InfoWorld just published a post titled: <a href="https://www.infoworld.com/article/3848270/genai-tools-for-r-new-tools-to-make-r-programming-easier.html">GenAI tools for R: New tools to make R programming easier</a>. The content overlaps with this guide but there are lots of well-explained examples. Worth checking out.<br>
 (<strong>added 26/03/2025</strong>)</p>
-</section><section id="section-6" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-6"></h2>
-<p>Not a tutorial or course and not necessarily R-related, but I came across this public <a href="https://github.com/stars/gadenbuie/lists/ai">list</a> of AI-related GitHub repositories compiled by Garrick Aden Buie. If you are familiar with Garrick’s work, then you know that at least some of this cool AI stuff will make it onto R packages or extensions in the near future. Worth checking out. (<strong>added 24/03/2025</strong>)</p>
 </section><section id="section-7" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-7"></h2>
+<p>Not a tutorial or course and not necessarily R-related, but I came across this public <a href="https://github.com/stars/gadenbuie/lists/ai">list</a> of AI-related GitHub repositories compiled by Garrick Aden Buie. If you are familiar with Garrick’s work, then you know that at least some of this cool AI stuff will make it onto R packages or extensions in the near future. Worth checking out. (<strong>added 24/03/2025</strong>)</p>
+</section><section id="section-8" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-8"></h2>
 <p>This is way beyond my skillset and experience level, but Javier Orraca-Deatcu recently (07/03/2025) posted “<a href="https://www.javierorracadeatcu.com/posts/2025-03-07-vector-db-and-rags/">Vector DB + RAG Maker</a>”. The post introduces a “limited vector database and RAG system developed with Python, made for R users, designed to generate bleeding-edge responses from challenging LLM prompts using your local R technical documentation”. Looks fun and promising.<br>
 (<strong>added 18/03/2025</strong>)</p>
-</section><section id="section-8" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-8"></h2>
-<p>Here’s a long-form <a href="https://youtu.be/-YiRWFXNDmk?si=TbSp_HZmwjOHF9aL">video</a> of Simon Couch as a guest on the R For the Rest of Us podcast. The interview goes through a lot of relevant AI in R topics, an includes lots of detail on using <a href="./r-pkgs.html#chores">chores</a> and <a href="./r-pkgs.html#gander">gander</a>. (<strong>added 10/03/2025</strong>)</p>
 </section><section id="section-9" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-9"></h2>
+<p>Here’s a long-form <a href="https://youtu.be/-YiRWFXNDmk?si=TbSp_HZmwjOHF9aL">video</a> of Simon Couch as a guest on the R For the Rest of Us podcast. The interview goes through a lot of relevant AI in R topics, an includes lots of detail on using <a href="./r-pkgs.html#chores">chores</a> and <a href="./r-pkgs.html#gander">gander</a>. (<strong>added 10/03/2025</strong>)</p>
+</section><section id="section-10" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-10"></h2>
 <p>This <a href="https://drmowinckels.io/blog/2025/ollama/">long-form post</a> by Athanasia Mo Mowinckel goes through the setup process and various adventures for using various relevant tools including <a href="./r-pkgs.html#ellmer">ellmer</a> <a href="./r-pkgs.html#chores">chores</a>, <a href="./r-pkgs.html#gander">gander</a> and <a href="./r-pkgs.html#ensure">ensure</a> with local ollama models for package development. The text shows that the tooling is not quite there yet, but on its way.<br>
 (<strong>added 03/03/2025</strong>)</p>
-</section><section id="section-10" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-10"></h2>
-<p>David Keyes at R for the Rest of Us recently launched “<a href="https://rfortherestofus.com/courses/ai">Using AI with R</a>”: a free, self-paced short course for using LLM-based assistants with R. Covers many of the tools and packages mentioned on this site.</p>
 </section><section id="section-11" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-11"></h2>
-<p>Albert Rapp also has an in progress Quarto book “<a href="https://air.albert-rapp.de/">AI with R</a>”, built from his existing blog posts for addressing different tasks using AI tool and not having to work in browser-based chat boxes. This resource includes some very well-written documentation for using mall and ellmer.</p>
+<p>David Keyes at R for the Rest of Us recently launched “<a href="https://rfortherestofus.com/courses/ai">Using AI with R</a>”: a free, self-paced short course for using LLM-based assistants with R. Covers many of the tools and packages mentioned on this site.</p>
 </section><section id="section-12" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-12"></h2>
-<p>Leonardo Collado Torres gave a short course that covered many of the packages and tools used here, and the recording is available on <a href="https://youtu.be/qWuoVQG5BZw?si=YM7Y2s3xfcEd2Sc6">YouTube</a>. The course materials also include useful step-by-step instructions for setting up and using copilot.</p>
+<p>Albert Rapp also has an in progress Quarto book “<a href="https://air.albert-rapp.de/">AI with R</a>”, built from his existing blog posts for addressing different tasks using AI tool and not having to work in browser-based chat boxes. This resource includes some very well-written documentation for using mall and ellmer.</p>
 </section><section id="section-13" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-13"></h2>
+<p>Leonardo Collado Torres gave a short course that covered many of the packages and tools used here, and the recording is available on <a href="https://youtu.be/qWuoVQG5BZw?si=YM7Y2s3xfcEd2Sc6">YouTube</a>. The course materials also include useful step-by-step instructions for setting up and using copilot.</p>
+</section><section id="section-14" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-14"></h2>
 <p>My fellow UQ alum Chris Brown, now at UTAS, shared this recent entry about <a href="https://www.seascapemodels.org/rstats/2025/02/12/LLMs-for-literature-reviews.html">summarizing key details from a methods section</a> to assist in literature reviews. The example uses <a href="./r-pkgs.html#tidychatmodels">tidychatmodels</a> and I particularly like Chris’ advice: <strong>“I’d also recommend you manually check results so that you still learn something yourself”</strong>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -249,7 +269,7 @@ Note
 <p>This post now has a follow-up entry (published 15/03/2025, added here 18/03/2025) which uses <a href="./r-pkgs.html#ellmer">ellmer</a> for the same task of literature review. Very detailed step-by-step instruction and a thoughtful discussion at the end.</p>
 </div>
 </div>
-</section><section id="section-14" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-14"></h2>
+</section><section id="section-15" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-15"></h2>
 <p>This post by Nic Crane demonstrates how we can use <a href="./r-pkgs.html#ellmer">ellmer</a> and Shiny to build an app that <a href="https://niccrane.com/posts/socalmediagen2/">creates posts for different social media platforms</a>.</p>
 
 

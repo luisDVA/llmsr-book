@@ -1,0 +1,247 @@
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic:wght@400..700&display=swap');
+
+/*-- scss:defaults --*/
+
+// colors
+$teal-light1: #fcfcfc;
+$teal-light2: #745775;
+$teal:        #75A9D9;
+$teal-dark1:  #4c074d;
+$teal-dark2:  #76043d;
+$orange:      #9ac6c5;
+$orange-light:#a5e6ba;
+$orange-dark: #76043d;
+$grey: #D3D3D3;
+
+// Background of the presentation
+$backgroundColor: $teal-light1;
+
+// Primary/body text
+$mainFont: 'Special Gothic', 'Nunito', sans-serif;
+$mainFontSize: 36px;
+
+// Vertical spacing between blocks of text
+$blockMargin: 0.3em;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'TikTok Sans', serif;
+$headingColor: $teal;
+$headingLineHeight: 1em;
+$headingLetterSpacing: 2px;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$headingFontWeight: bold;
+
+$heading1Size: 2.5em;
+$heading2Size: 1.8em;
+$heading3Size: 1.5em;
+$heading4Size: 1.0em;
+
+$codeFont: 'Fira Mono', monospace;
+$code-block-font-size: 0.8em;
+
+// Links and actions
+$linkColor: $orange-dark;
+$linkColorHover: darken( $linkColor, 20% );
+
+section.has-dark-background a, section.has-dark-background a:hover {
+    color: #bfe4fe !important;
+}
+
+// Text selection
+$selectionBackgroundColor: $teal;
+$selectionColor: #fff;
+
+// Contrast
+$min-contrast-ratio:   7;
+
+// Start using css here //
+
+// Font classes
+
+.warning {
+  color: #990000;
+}
+
+.reveal a:not([role="tab"]) {
+  text-decoration: underline !important;
+}
+
+
+
+
+.reveal h2 {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.subtitle {
+  font-size: $heading3Size;
+  font-weight: bold;
+  margin-top: 0.5em;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.reveal .slide h1, 
+.reveal .slide h2 {
+  margin-top: 0.25em; 
+  margin-bottom: 0.5em; 
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.quarto-title-author-name {
+  font-size: $heading3Size;
+  color: $grey;
+  padding-top: 3em;
+}
+
+.reveal div.sourceCode {
+  margin-bottom: 15px !important;
+}
+
+// Table
+
+.reveal table {
+  margin-left: 0!important;
+}
+
+// Footer
+
+.reveal .footer {
+  font-size: 0.8em;
+  color: $orange-dark;
+}
+
+// Containers
+
+.reveal .slide .v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  flex-direction: column;
+}
+
+// Alignment
+
+.center {
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+// Background color sections
+
+.section {
+  &:is(.slide-background) {
+  background: $teal-dark1;
+  }
+}
+
+.demo {
+  &:is(.slide-background) {
+  background: $teal-dark2;
+  }
+}
+
+.exercise {
+  &:is(.slide-background) {
+  background: $teal-dark1;
+  }
+}
+
+// Fontawesome
+
+.fab, .fa-brands {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400;
+  color: $teal;
+  line-height: 1.5;
+}
+
+.fas, .fa-solid {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: $teal;
+  line-height: 1.2;
+}
+
+// Slide iframes
+
+.slides {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+// Class for larger paragraph font size on specific slides
+.large-font-slide {
+  p {
+    font-size: 1.5em; // Adjust this value as needed
+    line-height: 1.8; // Optional: improve readability
+  }
+}
+
+.smaller-font {
+    font-size: 0.8em; // Adjust this value as needed
+}
+
+.reveal h1.compact-title,
+.reveal h2.compact-title {
+  margin-top: 0em !important; // Ajusta según la reducción de espacio que desees
+  margin-bottom: 0em !important;
+}
+
+// center text vertically
+.vertical-center {
+  margin: auto;
+  position: absolute;
+  top: 30%;
+  -ms-transform: translateY(-30%);
+  transform: translateY(-30%);
+}
+
+// pink background 
+.cajarosa {
+  border: 1px solid #333;
+  background-color: #F8C8DC;
+}
+
+// add color to text background
+.orange {
+  color: $orange;
+}
+
+// Extra space below text
+.space {              
+    margin-bottom: 1em;
+}
+
+
+.retro-console-window {
+  /* Dark Background */
+  background-color: #1a1a1a; /* Very dark gray, almost black */
+  color: #00ff00; /* Bright, vibrant green for text */
+
+  /* Retro Borders */
+  border: 2px solid #808080; /* Medium gray solid border */
+  box-shadow: 
+    4px 4px 0px 0px #404040, /* Darker gray for depth */
+    8px 8px 0px 0px #2a2a2a; /* Even darker gray for more pronounced retro "lift" */
+  
+  /* Monospaced Font (1990s look) */
+  font-family: 'Lekton', monospace;
+  font-size: 0.95em; /* Slightly smaller for that compact terminal feel */
+  line-height: 1.4; /* Good readability */
+
+  /* Padding and Basic Layout */
+  padding: 15px;
+  overflow: auto; /* Ensures scroll if content overflows */
+  resize: both; /* Optional: allows users to resize the window */
+  min-width: 300px;
+  min-height: 200px;
+}

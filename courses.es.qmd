@@ -29,6 +29,35 @@ Aquí estan la grabación y mis diapositivas.
 
 [Diapositivas en pantalla completa](/ld-RLadies-slides/slidesLV.html)
 
+
+
+## {.unnumbered}
+ 
+### Taller corto  para 'Tunis R Users Group'{.unnumbered}
+
+
+El 31 de julio de 2025 nos juntamos con el grupo de usuaries de R de Túnez para hablar sobre los temas que aparecen en esta guía. M! ¡Muchas gracias por la invitación y a quienes se sumaron!  
+
+Aquí estan mis diapositivas. 
+
+<style>
+.slide-deck {
+    border: 3px solid #dee2e6;
+    width: 100%;
+    height: 475px;
+}
+</style>
+
+<div>
+```{=html}
+<iframe class="slide-deck" src="/ld-TunisRUG-slides/slidesLV.html"></iframe>
+```
+</div>
+
+
+[View slides in full screen](/ld-TunisRUG-slides/slidesLV.html)
+
+
 ## {.unnumbered}
 
 [Harnessing LLMs for Data Analysis](https://www.youtube.com/watch?v=owDd1CJ17uQ)
