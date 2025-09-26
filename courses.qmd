@@ -17,6 +17,9 @@ This is a great [read](https://cosimameyer.com/post/are-ai-models-hallucinating-
 
 This [post](https://www.howardbaik.com/posts/deep-dive-into-ellmer-part3/) by Howard Baik is the latest in a three part series explaining how ellmer works in a practical and accessible description. All three posts are worth catching up on.  
 
+### Programming with LLMs Workshop Materials  {.unnumbered}
+
+Here is the [official page](https://posit-conf-2025.github.io/llm/) with all the code, slides, and materials for the full-day LLM workshop taught during posit::conf 2025 in Atlanta by Garrick Aden-Buie and Joe Cheng. The material includes examples for both R and Python, focused on ellmer and chatlass.  
  
 ### R-Ladies Gaborone Meetup talk {.unnumbered}
 
