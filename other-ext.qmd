@@ -7,6 +7,14 @@ These include vscode/Positron extensions that are not shipped as R packages, as 
 
 Positron Assistant is currently a preview/experimental AI client for integrating LLM-based chat and autocomplete within Positron. Available with version >= 2025.07.0-204. At present the assistant supports Anthropic for chat, and GitHub Copilot for code completions. Seems similar to Continue but with a much tighter integration with the IDE. 
 
+## [Databot](https://positron.posit.co/databot.html)
+
+Databot is an experimental AI assistant for the Positron IDE, designed specifically for exploratory data analysis. Databot needs Positron Assistant enabled to function and thus uses the same LLM provider (Anthropic). Databot can help us explore a dataset and see if there are any issues with the data, any interesting relationships or patterns, and ultimately what questions we could ask and answer. The user is kept in the loop and the exploration is done incrementally, with the assistant suggesting a few options at each step. The team from posit demonstrated Databot during posit::conf 2025 and the whole process looked smooth and useful. 
+
+## [Cursor best practices for R prompt file](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/r-cursorrules-prompt-file-best-practices/.cursorrules)
+
+This `.cursorrules` file put together by Ihaddaden Mohamed El Fodil (author of mini007) contains custom rules that Cursor will follow when generating code, and this rules file contains a detailed ruleset optimized for R. Install with the vscode-cursor-rules extension or manually. 
+
 ## [GitHub Copilot](https://github.com/features/copilot)
 
 GitHub Copilot is a widely-used and well-documented coding assistant for code completions and the possibility of turning natural language prompts into code suggestions. Works on GitHub.com and inside most IDEs. 
@@ -38,7 +46,7 @@ RALLY is a programming assistant for R developed by Cody Carmichael. This packag
 
 --- 
 
-Special mention here for [Shiny Assistant](https://shiny.posit.co/blog/posts/shiny-assistant/), a stand-alone AI tool from the Shiny team that can answer questions about Shiny and aldo build apps. Shiny assistant works with both R and python, and the tool takes advantage of Shinylive to optionally forego the need for a server running R or python.
+Special mention here for [Shiny Assistant](https://shiny.posit.co/blog/posts/shiny-assistant/), a stand-alone AI tool from the Shiny team that can answer questions about Shiny and also build apps. Shiny assistant works with both R and python, and the tool takes advantage of Shinylive to optionally forego the need for a server running R or python.
 
 
 Another special mention for [RTutor](https://rtutor.ai/), an early days (~2022) implementation of using ChatGPT to generate R code using natural language. Can be used on the web or locally after installing the RTutor R package.  

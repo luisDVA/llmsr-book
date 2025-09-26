@@ -4,7 +4,19 @@ Here are some courses and guides for actually using the LLM tools listed here. N
 
 ------------------------------------------------------------------------
 
+
+
 ## {.unnumbered}
+
+
+### Are AI Models Hallucinating—Or Just Confabulating? {.unnumbered}
+
+This is a great [read](https://cosimameyer.com/post/are-ai-models-hallucinating-or-just-confabulating/) by Cosima Meyer, breaking down the terminology and nomenclature of _hallucinations_ and whether or not we should be referring to what LLMs do as confabulation instead. Brief but very interesting. Thanks to Simisani Ndaba for bringing this to my attention.
+ 
+### ellmer deep dive (3 part series) {.unnumbered}
+
+This [post](https://www.howardbaik.com/posts/deep-dive-into-ellmer-part3/) by Howard Baik is the latest in a three part series explaining how ellmer works in a practical and accessible description. All three posts are worth catching up on.  
+
  
 ### R-Ladies Gaborone Meetup talk {.unnumbered}
 

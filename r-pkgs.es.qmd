@@ -76,6 +76,11 @@ llmr de Angelo D'Ambrosio proporciona una API unificada para interactuar con var
 
 - Un paquete similar llamado [LLMR](https://cran.r-project.org/package=LLMR) apareció recientemente en CRAN, pero no pude encontrar mucha información al respecto.
 
+### [LLMR](https://asanaei.github.io/LLMR)
+<img src="images/hex/LLMR-logo.png" align="right" height="108"/>
+
+LLMR (diferente de llmR por la sensibilidad a mayúsculas/minúsculas) por Ali Sanaei es otra opción que podemos usar para interactuar con modelos de lenguaje de múltiples proveedores. Ya había mencionado el paquete en esta guía, pero antes no había mucha documentación. Ahora, LLMR cuenta con manuales muy útiles, incluyendo una viñeta sobre cómo construir pipelines para obtener salidas estructuradas a través de _schemas_.
+
 ### [tidychatmodels](https://tidychatmodels.albert-rapp.de/)
 
 <img src="images/hex/tidychatmodels.png" align="right" height="108"/>
@@ -104,6 +109,24 @@ PerplexR de [Gabriel Kaiser](https://gabrielkaiserqfin.github.io/) proporciona u
 También le pedí a Gabriel un texto breve sobre el paquete (traducido del inglés):
 
 > "El objetivo de perplexR es ofrecer a los usuarios de R una interfaz intuitiva para aprovechar las capacidades de la API de Perplexity con suscripción Profesional. Al utilizar las funciones del paquete, los usuarios pueden mejorar su productividad en programación al incorporar Modelos de Lenguaje de Gran Escala. Además, perplexR incluye addins de RStudio, lo que permite una integración interactiva y eficaz con Perplexity."
+
+### [air](https://github.com/soumyaray/air)
+
+air, creado por Soumya Ray, es un asistente de inteligencia artificial para programación en R. Tiene el mismo nombre pero no tiene nada que ver con el formateador de código y el servidor de lenguaje _air_. El paquete utiliza modelos de OpenAI y tiene funciones que podemos usar en nuestras sesiones de R para preguntar cómo realizar tareas de programación en R (por ejemplo, `howto('extract the second element in a list')`) o para definir y explicar conceptos o bloques de código. Funciona a través de prompts predefinidos relacionados con la programación en R.
+
+
+### [promptr](https://github.com/joeornstein/promptr)
+<img src="images/hex/promptrlogo.png" align="right" height="108"/>
+
+promptr, creado por Joe Ornstein, está específicamente diseñado para formatear y enviar prompts para un LLM y devolver las respuestas de la API de OpenAI en formato tabular. promptr también puede ayudarnos a formatear conjuntos de prompts de entrada e instrucciones para tareas de clasificación por lotes.
+
+Aquí hay un ejemplo de `complete_prompt` con la frase que siempre uso en talleres sobre Modelos de Lenguaje de Gran Escala.
+
+```{r}
+# un solo token
+promptr::complete_prompt("Después de tomar agua la perrita se fue a su cama a alimentar a sus")
+```
+
 
 ## Modelos locales: herramientas y ayudantes basados en Ollama
 
@@ -142,6 +165,14 @@ ensure es otro paquete desarrollado por Simon Couch que nos ayuda a escribir có
 vitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de difentes modelos. Se le dan _inputs_ (tareas o preguntas) y _targets_ (las respuestas o soluciones que esperamos) y de ahí los modelos que están siendo evaluados contestan los problemas y son evaluados en su desempeño. Aquí hay dos ejemplos ([1](https://www.simonpcouch.com/blog/2025-04-01-gemini-2-5-pro/#an-r-eval-dataset), [2](https://www.simonpcouch.com/blog/2025-05-21-gemini-2-5-flash/))de como comparar el desempeño de diferentes modelos para programar en R, todo usando vitals. 
 
 ## Creación de agentes de IA modulares
+
+###[MyOwnRobs](https://myownrobs.github.io/myownrobs/)
+<img src="images/hex/myownrobslogo.png" align="right" height="108"/>
+
+MyOwnRobs por Juan Cruz Rodriguez es lo más cercano que he visto a  Cursor pero para RStudio. El paquete se ejecuta como una aplicación de Shiny dentro del IDE y me impresionó mucho cómo el asistente es reconoce contexto en el entorno global y en las carpetaas y puede armar flujos de trabajo de múltiples pasos que incluyen operaciones con archivos.
+
+Para probarlo le pedí al asistente que leyera algunos archivos .R 
+en mi proyecto y creara nuevas versiones de ellos, traduciendo el código de R base a data.table y además ir traduciendo los comentarios del código entre inglés y español, y la salida fue exactamente lo que pedí. ¡Espero ver a más personas probar MyOwnRobs!
 
 ### [mini007](https://github.com/feddelegrand7/mini007)
 
@@ -204,7 +235,7 @@ mcptools por Simon Couch, Charlie Gao y Winston Chang (y muchos otros colaborado
 mcpr, desarrollado por John Coene de Opifex es una implementación en R del Protocolo de Contexto de Modelo (MCP), que permite que las aplicaciones escritas en R interactúen con LLMs a través de una interfaz estándar JSON-RPC 2.0. Podemos construir herramientas personalizadas y, en última instancia, integrarlas con Cursor, Claude Code y VS Code Agent Mode. Más importante aún, las herramientas de MCPR construidas con el paquete se pueden convertir en herramientas de ellmer y registrarse en una sesión de chat de ellmer. Aunque el MCP en general es un tema difícil para aprender, mcpr es una enorme contribución a R y una adición revolucionaria a este espacio.
 
 
-## [ClaudeR](https://github.com/IMNMV/ClaudeR)
+### [ClaudeR](https://github.com/IMNMV/ClaudeR)
 
 <img src="images/hex/ClaudeRlogo.jpeg" align="right" height="108"/>
 
@@ -226,7 +257,19 @@ ellmer es un nuevo paquete vinculado al tidyverse y desarrollado por Hadley Wick
 
 ellmer promete bastante. Hay mucha gente contribuyendo, se está incorporando como base para otros paquetes, y cada que reviso tiene nuevas funcionalidades y mejor documentación.
 
+### [kbretrieveR](https://github.com/MDRCNY/kbretrieveR)
+<img src="images/hex/kbretrieveR-hex.png" align="right" height="108"/>
+
+kbretrieveR por Lazaro Alvarez es un paquete para descargar fragmentos relevantes de una base de conocimiento (Knowledge Base) de AWS Bedrock, que nos permite proporcionarle información contextual privada a los modelos. kbretrieveR combina este contexto en el prompt que le enviamos a nuestro cliente de chat preferido (ej., `ellmer::chat_aws_bedrock()`). El paquete está en desarrollo pero parece super prometedor, y tuve la suerte de juntarme con Lazaro en posit::conf y hablar sobre algunas ideas muy interesantes que tiene sobre estos temas. Noten el perrito del logo :)
+
+
+### [contextR](https://github.com/lazasaurus-ai/contextR)
+<img src="images/hex/contextR-hex.png" align="right" height="108"/>
+
+contextR por Lazaro Alvarez es un paquete liviano y de pocas dependencias para implementar 'memoria conversacional' en R. Esto es similar y está basado en el módulo de memoria de LangChain para mantener un estado persistente entre llamadas. El buffer de memoria también se puede reutilizar para acumular el contexto. Este paquete tiene mucho potencial y además le doy 10/10 al logotipo.
+
 ### [btw](https://posit-dev.github.io/btw/) 
+
 
 <img src="images/hex/btwlogo.png" align="right" height="108"/>
 
@@ -320,6 +363,17 @@ gander ya tiene una [introducción oficial](https://posit.co/blog/introducing-ga
 
 statlingua, desarrollado por Brandon M. Greenwell, es otro paquete interesante que aprovecha ellmer y que es básicamente una herramienta de _prompt engineering_ para explicar resultados estadísticos en lenguage sencillo utilizando LLMs y contexto sobre nuestros análisis. Funciona para la mayoría de los objetos de modelo  estadístico (por ejemplo, `lm()`, `glm()`, `lmer()`, `gam()`, `survreg()`, `rpart()`) y el paquete está diseñado para ser extensible a otros tipos de modelo. El código se ve robusto y el paquete está muy bien documentado.
 
+## Integraciones para Shiny
+
+### [shinychat](https://posit-dev.github.io/shinychat/r/index.html)
+
+shinychat, del equipo de Shiny en Posit, nos ofrece componentes de interfaz de usuario (UI) fáciles de usar para agregar chats impulsados por Modelos de Lenguaje de Gran Escala (LLM) a nuestras aplicaciones de Shiny. Funciona para R y Python y sirve con muchísimos proveedores de modelos. shinychat usa ellmer y las respuestas del modelo fluyen directamente al chat en tiempo real.
+
+### [querychat](https://posit-dev.github.io/querychat/r/index.html)
+
+querychat también fue desarrollado por el equipo de Shiny en Posit, y este paquete nos proporciona un componente de chat listo para usar en aplicaciones Shiny que utiliza LLMs para consultar data frames mediante lenguaje natural. Lo más destacado de querychat es que el modelo seleccionado no tiene acceso a los datos más allá de los nombres de variables y de su estructura general. Más bien, querychat hace que los modelos construyan consultas SQL (que podemos ver si lo deseamos), que luego se ejecutan en nuestro sistema y así obtenemos nuestros resultados deseados. El paquete se demostró extensamente en posit::conf 2025 y también parece muy prometedor.
+
+
 ## Herramientas para RAG
 
 ### [ragnar](https://tidyverse.github.io/ragnar/)
@@ -364,6 +418,25 @@ diffuseR de Troy Hernandez es una implementación en R de modelos de difusión p
 
 
 ## Transformers
+
+
+### [text](https://r-text.org/)
+<img src="images/hex/textlogo.png" align="right" height="108"/>
+
+El paquete text por Oscar Kjell, Salvatore Giorgi y Andrew Schwartz utiliza modelos basados en _transformers_ para analizar lenguaje natural. text nos da acceso a modelos de Hugging Face para transformar texto en embeddings de palabras y usarlos en otras tareas, incluyendo RAG. Una herramienta excelente para trabajos de NLP que también puede ayudar a los usuarios de LLM en general a entender mejor los embeddings de palabras.
+
+text, junto con talk y topics (ver abajo), forma parte de el _R Language Analysis Suite_, un conjunto de tres paquetes relacionados desarrollados para trabajar con lenguaje natural.
+
+
+### [talk](https://www.r-talk.org/)
+<img src="images/hex/talklogo.png" align="right" height="108"/>
+
+El paquete talk por Oscar Kjell, Adithya Ganesan, Rajath Rao y Akshay Raghavan es similar a text, pero permite transcribir audio a texto y generar embeddings a partir de grabaciones de voz. Utiliza transformers de Hugging Face instalando los paquetes de Python relevantes en un entorno de conda.
+
+### [topics](https://www.r-topics.org/)
+<img src="images/hex/topicslogo.png" align="right" height="108"/>
+
+topics por Leon Ackermann, Zhuojun Gu y Oscar Kjell implementa  Análisis Diferencial de Lenguaje (Differential Language Analysis). Este paquete no es estrictamente una herramienta basada en LLM, pero podemos usar topics para visualizar patrones de lenguaje y además se vincula con los principios de text y talk. Requiere Java y por ende rJava (ay no).
 
 ### [pangoling](https://docs.ropensci.org/pangoling/index.html)
 

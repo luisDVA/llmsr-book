@@ -1,5 +1,6 @@
 ---
 css: indstyle.scss 
+toc: false
 ---
 
 <div style="background-color: #eceff4; padding: 1rem; border-radius: .25rem;" role="alert">
@@ -18,10 +19,26 @@ css: indstyle.scss
 
 :::: {.dancing-shadow-box}
 ::: {.box-content}
-### Latest updates (July 2025):
-- create LLM agents with mini007
-- wizrd, a general LLM interface
-- RALLY: chat with local models in your session
+### Latest updates (September 2025):
+
+#### R packages
+- `contextR`, conversational memory for LLM workflows
+- `kbretrieveR` for working with AWS Knowledge Bases
+- The R Language Analysis Suite (text,talk & topics)
+- `LLMR`, a general interface
+- `myownrobs`, AI coding agent for RStudio
+- `air`, an AI coding helper
+- Format and complete few-shot prompts with `promptr`
+- LLM-powered chatting in Shiny with `shinychat` and `querychat` 
+
+#### Other tools and extensions  
+- Databot, an EDA assistant for Positron
+- R instructions for Cursor Users
+
+#### Helpful reads
+- ellmer deep dive - Howard Baik
+- On hallucinations - Cosima Meyer
+- LLM workshop materials from posit::conf 2025
 :::
 ::::
 
@@ -42,6 +59,7 @@ logos <- fs::dir_ls(here::here("images/hex/"))
 urlss <- c(
 "https://github.com/IMNMV/ClaudeR",
 "https://codeium.com/",
+"https://asanaei.github.io/LLMR",
 "https://knowusuboaky.github.io/LLMAgentR/",
 "https://github.com/heurekalabsco/axolotr",
 "https://posit-dev.github.io/btw/",
@@ -49,6 +67,7 @@ urlss <- c(
 "https://knowusuboaky.github.io/chatLLM/",
 "https://mlverse.github.io/chattr/",
 "https://simonpcouch.github.io/chores/",
+"https://github.com/lazasaurus-ai/contextR",
 "https://www.continue.dev/",
 "https://github.com/features/copilot",
 "https://github.com/cornball-ai/diffuseR",
@@ -58,9 +77,11 @@ urlss <- c(
 "https://michelnivard.github.io/gptstudio/",
 "https://gabrielkaiserqfin.github.io/groqR",
 "https://dylanpieper.github.io/hellmer/",
+"https://github.com/MDRCNY/kbretrieveR",
 "https://github.com/frankiethull/kuzco",
 "https://github.com/simonpcouch/gander/",
 "https://mlverse.github.io/mall/",
+"https://myownrobs.github.io/myownrobs/",
 "https://mcpr.opifex.org/",
 "https://posit-dev.github.io/mcptools/",
 "https://github.com/feddelegrand7/mini007",
@@ -68,14 +89,18 @@ urlss <- c(
 "https://hauselin.github.io/ollama-r/",
 "https://docs.ropensci.org/pangoling/",
 "https://github.com/GabrielKaiserQFin/PerplexR/",
+"https://github.com/joeornstein/promptr",
 "https://tidyverse.github.io/ragnar/",
 "https://www.ekotov.pro/rdocdump/",
 "https://jbgruber.github.io/rollama/",
 "https://r-pkg.thecoatlessprofessor.com/searcher/",
 "https://bgreenwell.github.io/statlingua/",
+"https://www.r-talk.org/",
+"https://r-text.org/",
 "https://tidychatmodels.albert-rapp.de/",
 "https://edubruell.github.io/tidyllm/",
- "https://vitals.tidyverse.org/"
+"https://www.r-topics.org/",
+"https://vitals.tidyverse.org/"
 )
 
 names(logos) <- urlss

@@ -6,6 +6,14 @@ Aquí hay algunas herramientas o extensiones que no se instalan como paquetes R,
 
 Este Asistente de Positron es un cliente de inteligencia artificial experimental para integrar chat y autocompletado basados en LLM dentro de Positron. Está disponible con la versión >=2025.07.0-204. Actualmente, el asistente usa Anthropic para el chat y GitHub Copilot para completar código. Se me hizo muy simlar Continue, pero con una integración mucho más estrecha con el IDE.
 
+## [Databot](https://positron.posit.co/databot.html)
+
+Databot es un asistente de inteligencia artificial experimental para el entorno de desarrollo Positron, diseñado específicamente para el análisis exploratorio de datos (EDA por sus siglas en inglés). Databot requiere que el Asistente de Positron esté activado para funcionar, por lo que utiliza el mismo proveedor de modelos que por ahora es únicamente Anthropic. Databot puede ayudarnos a explorar un conjunto de datos y detectar posibles problemas, relaciones o patrones interesantes, así como identificar preguntas que podríamos formular y responder. El usuario se mantiene informado en todo momento y la exploración se realiza de forma incremental, con sugerencias del asistente en cada paso. El equipo de Posit demostró Databot durante posit::conf 2025, y el proceso me pareció fluido y útil.
+
+## [Reglas sobre R para Cursor](https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/r-cursorrules-prompt-file-best-practices/.cursorrules)
+
+Este archivo `.cursorrules`, elaborado por Ihaddaden Mohamed El Fodil (autor de mini007), contiene reglas personalizadas que Cursor va a ir siguiendo mientras genera código de R. Este archivo de reglas incluye un conjunto detallado de reglas y bunas prácticas, optimizado para R. Para instalarlo, se puede usar la extensión vscode-cursor-rules o cargar de forma manual.
+
 ## [GitHub Copilot](https://github.com/features/copilot)
 
 Copilot es un asistente de programación bien documentado, usado ampliamente desde hace unos años, y bastante versátil. Sirve para autocompletar nuestros códigos de programación o también para responder preguntas y dar sugerencias. Funciona en el sitio de GitHub y dentro de casi todos los IDEs.

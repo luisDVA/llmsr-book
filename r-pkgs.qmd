@@ -71,7 +71,11 @@ I liked the clear and visible warnings and disclaimers in the README about priva
 
 llmr by Angelo D'Ambrosio provides a unified API to interact with various LLMs and providers through functions with consistent grammar and syntax. Provides easy switching between models, plus logging. Seems similar to elmer. Will try it soon.
 
--   A similar package called [LLMR](https://cran.r-project.org/package=LLMR) recently appeared on CRAN but I could not find much materials about it.
+### [LLMR](https://asanaei.github.io/LLMR)
+<img src="images/hex/LLMR-logo.png" align="right" height="108"/>
+
+LLMR (different to llmR because of case-sensitivity) by Ali Sanaei is another option we can use to interface with LLMs from multiple providers. I had mentioned the package before on this page but at the time there was no documentation. Now LLMR has some very nice vignettes, including one on how to build pipelines for nice structured output by providing schemas.  
+
 
 ### [tidychatmodels](https://tidychatmodels.albert-rapp.de/)
 
@@ -104,6 +108,25 @@ PerplexR by [Gabriel Kaiser](https://gabrielkaiserqfin.github.io/) provides an i
 I also asked Gabriel for a brief summary of the package:
 
 > "The objective of `perplexR` is to offer R users an intuitive interface for leveraging the capabilities of the Perplexity API [Pro subscription](https://docs.perplexity.ai/guides/getting-started). Utilizing the supplied functions, users can enhance their programming productivity by incorporating Large Language Models. Furthermore, `perplexR` includes RStudio add-ins, enabling seamless interactive integration of Perplexity prompts."
+
+### [air](https://github.com/soumyaray/air)
+
+Not to be confused with the R formatter and language server, air by 
+Soumya Ray is an AI helper for R coding. The package uses OpenAI models and has functions which we can use in our R sessions to ask how to do coding tasks in R (e.g. `howto('extract the second element in a list')` or to define and explain concepts or blocks or code. Works through saved prompts related to R programming.
+
+### [promptr](https://github.com/joeornstein/promptr)
+<img src="images/hex/promptrlogo.png" align="right" height="108"/>
+
+promptr by Joe Ornstein is specifically designed to format and submit LLM prompts and get the resulting model ouputs from the OpenAI API in a tabular format. promptr can also help us format sets of input prompts and instructions for batch classification tasks.
+
+
+Here's an example of `complete_prompt` with the sentence I use whenever I teach or demonstrate LLMs.
+
+```{r}
+# with just one token to return
+promptr::complete_prompt("After drinking some water, the dog went to bed feed her")
+```
+
 
 ## Ollama-based tools, wrappers and helpers
 
@@ -143,6 +166,13 @@ vitals by Simon Couch provides us with a framework for evaluating LLMs. We provi
 
 
 ## Language Model Agents
+
+###[MyOwnRobs](https://myownrobs.github.io/myownrobs/)
+<img src="images/hex/myownrobslogo.png" align="right" height="108"/>
+
+MyOwnRobs by Juan Cruz Rodriguez is the closest I've seen to a Cursor-style coding agent for RStudio. The package runs as a Shiny App in the viewer pane and I was very impressed with how the assistant is context-aware and can figure out multi-step workflows that include file operations. 
+
+I tried it out and asked the assistant to read some .R files in my project and create new versions of them, translating base code to data.table and also translating the code comments between English-Spanish and the output was exactly what I asked for. I hope to see more people try out MyOwnRobs!
 
 ### [mini007](https://github.com/feddelegrand7/mini007)
 
@@ -204,7 +234,7 @@ mcptools by Simon Couch, Charlie Gao, and Winston Chang (plus other contributors
 
 mcpr by John Coene from Opifex is an R implementation of the Model Context Protocol (MCP), letting applications written in R to interact with LLMs through a standard JSON-RPC 2.0 interface. We can build custom tools, and ultimately integrate them with Cursor, Claude Code, and VS Code Agent Mode. More importantly, MCPR tools build with the package can be converted to ellmer tools and registered with an ellmer chat session. Although MCP in general may have a steep learning curve mcpr is a huge contribution to R and a game-changing addition to this space. 
 
-## [ClaudeR](https://github.com/IMNMV/ClaudeR)
+### [ClaudeR](https://github.com/IMNMV/ClaudeR)
 
 <img src="images/hex/ClaudeRlogo.jpeg" align="right" height="108"/>
 
@@ -225,6 +255,17 @@ Thanks to MCP this package should also work with Cursor, or other services that 
 ellmer is a new tidyverse-adjacent package by Hadley Wickham and Joe Cheng for interacting in R with various models, either programmatically or interactively. elmer creates R6 chat objects that remember context, and we can interact with models with a console or browser-based chat box, or programmatically within R functions.
 
 Seems promising, quite flexible, and all the activity in the GitHub repo suggests a very active development process, a solid dev team, and lots of community input.
+
+
+### [kbretrieveR](https://github.com/MDRCNY/kbretrieveR)
+<img src="images/hex/kbretrieveR-hex.png" align="right" height="108"/>
+
+kbretrieveR by Lazaro Alvarez is a package for retrieving relevant chunks from an AWS Bedrock Knowledge Base, which are a way to provide propietary or private contextual information to foundation models. kbretrieveR then merges this context into the prompt passed to our preferred chat client (e.g., `ellmer::chat_aws_bedrock()`). The package is work in progress but it seems super promising, and I was fortunate to meet up with Lazaro at posit::conf and chat about some very cool ideas he has for this topic. 
+
+### [contextR](https://github.com/lazasaurus-ai/contextR)
+<img src="images/hex/contextR-hex.png" align="right" height="108"/>
+
+contextR by Lazaro Alvarez is a lightweight approach to implement conversational memory for R. Similar to LangChain's memory module for maintaining a persisting state between calls. The memory buffer can also be reused to carry over the accumulation of context. High potential for this package and the logo is 10/10.
 
 
 ### [btw](https://posit-dev.github.io/btw/) 
@@ -322,6 +363,16 @@ gander now has an [official introduction](https://posit.co/blog/introducing-gand
 
 statlingua by Brandon M. Greenwell is another cool package that leverages ellmer and is essentially a prompt engineering toolkit to explain statistical outputs in plain language using LLMs and context about our analyses. Supports most model objects (e.g., `lm()`, `glm()`,`lmer()`,`gam()`,`survreg()`,`rpart()`) and the package is designed to be extensible to other model objects. The code looks robust and the package is very well documented.
 
+## Shiny integrations
+
+### [shinychat](https://posit-dev.github.io/shinychat/r/index.html)
+
+shinychat from the posit Shiny team provides easy-to-use UI components to add LLM-powered chats to our Shiny apps. Works for R and Python and supports multiple model providers. shinychat uses ellmer and the model responses stream smoothly into the chat.
+
+
+### [querychat](https://posit-dev.github.io/querychat/r/index.html)
+
+querychat is also developed by the Shiny team at posit, and this package gives us a drop-in chat component for Shiny apps that uses LLMs to query data frames using natural language. The coolest thing about querychat is that the chosen model is not given access to the data beyond variable names and overall structure. Instead, querychat has the models build SQL queries (which we can see if we want), which then run on our system and then we get our desired outputs. This was demoed extensively at posit::conf 2025 and also looks very promising.
 
 ## RAG tools
 
@@ -366,6 +417,25 @@ diffuseR by Troy Hernandez is an R implementation of diffusion models for image 
 
 
 ## Transformer model applications
+
+
+### [text](https://r-text.org/)
+<img src="images/hex/textlogo.png" align="right" height="108"/>
+
+text by Oscar Kjell, Salvatore Giorgi, and Andrew Schwartz uses transformed-based models to analyze natural language. The text package gives us access to models from Hugging Face so we can transform text to word embeddings and use them in other tasks, including RAG. A great tool for NLP work that can also help LLM users in general understand word embeddings better.
+
+text, along with talk and topics (see below) is part of the _R Language Analysis Suite_, a set of three related packages developed for working with transformers and natural langauge. 
+
+
+### [talk](https://www.r-talk.org/)
+<img src="images/hex/talklogo.png" align="right" height="108"/>
+
+talk by Oscar Kjell, Adithya Ganesan, Rajath Rao, and Akshay Raghavan is similar to text, but it can transcribe audio to text and also create embeddings from voice recordings. Uses Hugging Face transformers by installing relevant Python packages in a conda environment.
+
+### [topics](https://www.r-topics.org/)
+<img src="images/hex/topicslogo.png" align="right" height="108"/>
+
+topics by Leon Ackermann, Zhuojun Gu, and Oscar Kjell implements Differential Language Analysis. This is not necessarily an LLM-based tool but we can use topics to visualize language patterns. Needs java.
 
 ### [pangoling](https://docs.ropensci.org/pangoling/index.html)
 

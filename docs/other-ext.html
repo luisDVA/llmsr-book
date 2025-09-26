@@ -145,11 +145,13 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
    
   <ul>
 <li><a href="#positron-assistant" id="toc-positron-assistant" class="nav-link active" data-scroll-target="#positron-assistant"><span class="header-section-number">3.1</span> Positron Assistant</a></li>
-  <li><a href="#github-copilot" id="toc-github-copilot" class="nav-link" data-scroll-target="#github-copilot"><span class="header-section-number">3.2</span> GitHub Copilot</a></li>
-  <li><a href="#continue" id="toc-continue" class="nav-link" data-scroll-target="#continue"><span class="header-section-number">3.3</span> continue</a></li>
-  <li><a href="#codeium" id="toc-codeium" class="nav-link" data-scroll-target="#codeium"><span class="header-section-number">3.4</span> codeium</a></li>
-  <li><a href="#r-and-rstudio-tutor" id="toc-r-and-rstudio-tutor" class="nav-link" data-scroll-target="#r-and-rstudio-tutor"><span class="header-section-number">3.5</span> R and RStudio Tutor</a></li>
-  <li><a href="#rally" id="toc-rally" class="nav-link" data-scroll-target="#rally"><span class="header-section-number">3.6</span> RALLY</a></li>
+  <li><a href="#databot" id="toc-databot" class="nav-link" data-scroll-target="#databot"><span class="header-section-number">3.2</span> Databot</a></li>
+  <li><a href="#cursor-best-practices-for-r-prompt-file" id="toc-cursor-best-practices-for-r-prompt-file" class="nav-link" data-scroll-target="#cursor-best-practices-for-r-prompt-file"><span class="header-section-number">3.3</span> Cursor best practices for R prompt file</a></li>
+  <li><a href="#github-copilot" id="toc-github-copilot" class="nav-link" data-scroll-target="#github-copilot"><span class="header-section-number">3.4</span> GitHub Copilot</a></li>
+  <li><a href="#continue" id="toc-continue" class="nav-link" data-scroll-target="#continue"><span class="header-section-number">3.5</span> continue</a></li>
+  <li><a href="#codeium" id="toc-codeium" class="nav-link" data-scroll-target="#codeium"><span class="header-section-number">3.6</span> codeium</a></li>
+  <li><a href="#r-and-rstudio-tutor" id="toc-r-and-rstudio-tutor" class="nav-link" data-scroll-target="#r-and-rstudio-tutor"><span class="header-section-number">3.7</span> R and RStudio Tutor</a></li>
+  <li><a href="#rally" id="toc-rally" class="nav-link" data-scroll-target="#rally"><span class="header-section-number">3.8</span> RALLY</a></li>
   </ul></nav>
 </div>
 <!-- main -->
@@ -173,31 +175,39 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <span class="header-section-number">3.1</span> <a href="https://positron.posit.co/assistant">Positron Assistant</a>
 </h2>
 <p>Positron Assistant is currently a preview/experimental AI client for integrating LLM-based chat and autocomplete within Positron. Available with version &gt;= 2025.07.0-204. At present the assistant supports Anthropic for chat, and GitHub Copilot for code completions. Seems similar to Continue but with a much tighter integration with the IDE.</p>
-</section><section id="github-copilot" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="github-copilot">
-<span class="header-section-number">3.2</span> <a href="https://github.com/features/copilot">GitHub Copilot</a>
+</section><section id="databot" class="level2" data-number="3.2"><h2 data-number="3.2" class="anchored" data-anchor-id="databot">
+<span class="header-section-number">3.2</span> <a href="https://positron.posit.co/databot.html">Databot</a>
+</h2>
+<p>Databot is an experimental AI assistant for the Positron IDE, designed specifically for exploratory data analysis. Databot needs Positron Assistant enabled to function and thus uses the same LLM provider (Anthropic). Databot can help us explore a dataset and see if there are any issues with the data, any interesting relationships or patterns, and ultimately what questions we could ask and answer. The user is kept in the loop and the exploration is done incrementally, with the assistant suggesting a few options at each step. The team from posit demonstrated Databot during posit::conf 2025 and the whole process looked smooth and useful.</p>
+</section><section id="cursor-best-practices-for-r-prompt-file" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="cursor-best-practices-for-r-prompt-file">
+<span class="header-section-number">3.3</span> <a href="https://github.com/PatrickJS/awesome-cursorrules/blob/main/rules/r-cursorrules-prompt-file-best-practices/.cursorrules">Cursor best practices for R prompt file</a>
+</h2>
+<p>This <code>.cursorrules</code> file put together by Ihaddaden Mohamed El Fodil (author of mini007) contains custom rules that Cursor will follow when generating code, and this rules file contains a detailed ruleset optimized for R. Install with the vscode-cursor-rules extension or manually.</p>
+</section><section id="github-copilot" class="level2" data-number="3.4"><h2 data-number="3.4" class="anchored" data-anchor-id="github-copilot">
+<span class="header-section-number">3.4</span> <a href="https://github.com/features/copilot">GitHub Copilot</a>
 </h2>
 <p>GitHub Copilot is a widely-used and well-documented coding assistant for code completions and the possibility of turning natural language prompts into code suggestions. Works on GitHub.com and inside most IDEs.</p>
 <p>Subscription-based, although as of a a few weeks-ago there is a free tier available. I have not tried it yet.</p>
 <p>This recent <a href="https://github.com/yabellini/copilotWithR">talk</a> by Yanina Bellini for RLadies Rome provides a good overview, and Yani’s slides also mention important considerations about the AI skill threat.</p>
-</section><section id="continue" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="continue">
-<span class="header-section-number">3.3</span> <a href="https://www.continue.dev/">continue</a>
+</section><section id="continue" class="level2" data-number="3.5"><h2 data-number="3.5" class="anchored" data-anchor-id="continue">
+<span class="header-section-number">3.5</span> <a href="https://www.continue.dev/">continue</a>
 </h2>
 <p>A vscode extension that works nicely in Positron. Supports multiple models for chat and code completion. Easy to provide local files and folders for context and nice integration with the source editor.</p>
 <p>Tried it out after Julia Silge mentioned it in the <a href="https://www.superdatascience.com/podcast/817">Super Data Science</a> podcast. Works nicely, and I used it in Positron with Anthropic’s Claude 3.5 Sonnet model to write and edit the repetitive css, html, and javascript code that powers the hexsession package. Also helped me with some of the nested for loops that play a big role in forgts.</p>
-</section><section id="codeium" class="level2" data-number="3.4"><h2 data-number="3.4" class="anchored" data-anchor-id="codeium">
-<span class="header-section-number">3.4</span> <a href="https://codeium.com/">codeium</a>
+</section><section id="codeium" class="level2" data-number="3.6"><h2 data-number="3.6" class="anchored" data-anchor-id="codeium">
+<span class="header-section-number">3.6</span> <a href="https://codeium.com/">codeium</a>
 </h2>
 <p>Another cool VScode extension that works well in Positron. Provides autocomplete and chat. Free for individuals. The base model uses Llama 3.1 70B, but paid tiers can choose other models. I’ve tried this out in Positron with good results for code refactoring, at least when playing around with small scripts.</p>
-</section><section id="r-and-rstudio-tutor" class="level2" data-number="3.5"><h2 data-number="3.5" class="anchored" data-anchor-id="r-and-rstudio-tutor">
-<span class="header-section-number">3.5</span> <a href="https://chatgpt.com/g/g-iedyANQtM-r-and-r-studio-tutor">R and RStudio Tutor</a>
+</section><section id="r-and-rstudio-tutor" class="level2" data-number="3.7"><h2 data-number="3.7" class="anchored" data-anchor-id="r-and-rstudio-tutor">
+<span class="header-section-number">3.7</span> <a href="https://chatgpt.com/g/g-iedyANQtM-r-and-r-studio-tutor">R and RStudio Tutor</a>
 </h2>
 <p>This is a custom GTP by Jose A. Fernandez Calvo, built on Open AI’s framework for custom tutors that have predefined roles and custom knowledge bases. Answers R-related questions and has a system role for being supportive when explaining solutions.</p>
-</section><section id="rally" class="level2" data-number="3.6"><h2 data-number="3.6" class="anchored" data-anchor-id="rally">
-<span class="header-section-number">3.6</span> <a href="https://github.com/CodyCarmichaelMPH/RALLY">RALLY</a>
+</section><section id="rally" class="level2" data-number="3.8"><h2 data-number="3.8" class="anchored" data-anchor-id="rally">
+<span class="header-section-number">3.8</span> <a href="https://github.com/CodyCarmichaelMPH/RALLY">RALLY</a>
 </h2>
 <p>RALLY is a programming assistant for R developed by Cody Carmichael. This packages lets us work with local Ollama models running in an interactive Shiny App or as a console-based chat interface. Nice wrapper with well-thought out prompts to work locally and offline.</p>
 <hr>
-<p>Special mention here for <a href="https://shiny.posit.co/blog/posts/shiny-assistant/">Shiny Assistant</a>, a stand-alone AI tool from the Shiny team that can answer questions about Shiny and aldo build apps. Shiny assistant works with both R and python, and the tool takes advantage of Shinylive to optionally forego the need for a server running R or python.</p>
+<p>Special mention here for <a href="https://shiny.posit.co/blog/posts/shiny-assistant/">Shiny Assistant</a>, a stand-alone AI tool from the Shiny team that can answer questions about Shiny and also build apps. Shiny assistant works with both R and python, and the tool takes advantage of Shinylive to optionally forego the need for a server running R or python.</p>
 <p>Another special mention for <a href="https://rtutor.ai/">RTutor</a>, an early days (~2022) implementation of using ChatGPT to generate R code using natural language. Can be used on the web or locally after installing the RTutor R package.</p>
 
 

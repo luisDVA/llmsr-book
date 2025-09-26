@@ -5,7 +5,21 @@ Aquí hay algunos cursos y guías ya para aprender a usar las diferentes herrami
 ------------------------------------------------------------------------
 
 ## {.unnumbered}
+
+
+### ¿Los modelos de IA alucinan—o simplemente confabulan? {.unnumbered}
+
+Este es un [artículo](https://cosimameyer.com/post/are-ai-models-hallucinating-or-just-confabulating/) excelente escrito por Cosima Meyer que desglosa la terminología y nomenclatura de las alucinaciones en IA, y si deberíamos referirnos a lo que hacen los Modelos de Lenguaje de Gran Escala (LLM) como "confabulación" en lugar de "alucinaciones". Breve pero muy interesante. Gracias a Simisani Ndaba por compartirme esto.
  
+ 
+### Cómo funciona ellmer (serie de 3 partes) {.unnumbered}
+
+Este [post](https://www.howardbaik.com/posts/deep-dive-into-ellmer-part3/) de Howard Baik es el más reciente de una serie de tres publicaciones que explican cómo funciona ellmer con una descripción práctica y accesible. Recomiendo leer las tres partes.
+
+### Materiales del taller de programación con LLM {.unnumbered}
+
+Aquí está la [página oficial](https://posit-conf-2025.github.io/llm/) con todo el código, las diapositivas y los materiales del taller de un día sobre LLM impartido durante posit::conf 2025 en Atlanta por Garrick Aden-Buie y Joe Cheng. Los materiales incluyen ejemplos para R y Python, enfocados en ellmer y chatlass. 
+
 ### Charla para R-Ladies Gaborone {.unnumbered}
 
 El 30 de junio de 2025 participé en el encuentro mensual de R-Ladies Gaborone (Botsuana) con una charla (en inglés) sobre los materiales de esta guía. ¡Muchas gracias por la invitación y a quienes se conectaron ese día!  
