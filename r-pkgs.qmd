@@ -167,7 +167,7 @@ vitals by Simon Couch provides us with a framework for evaluating LLMs. We provi
 
 ## Language Model Agents
 
-###[MyOwnRobs](https://myownrobs.github.io/myownrobs/)
+### [MyOwnRobs](https://myownrobs.github.io/myownrobs/)
 <img src="images/hex/myownrobslogo.png" align="right" height="108"/>
 
 MyOwnRobs by Juan Cruz Rodriguez is the closest I've seen to a Cursor-style coding agent for RStudio. The package runs as a Shiny App in the viewer pane and I was very impressed with how the assistant is context-aware and can figure out multi-step workflows that include file operations. 

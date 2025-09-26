@@ -221,8 +221,9 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
   <li>
 <a href="#language-model-agents" id="toc-language-model-agents" class="nav-link" data-scroll-target="#language-model-agents"><span class="header-section-number">2.5</span> Language Model Agents</a>
   <ul class="collapse">
-<li><a href="#mini007" id="toc-mini007" class="nav-link" data-scroll-target="#mini007"><span class="header-section-number">2.5.1</span> mini007</a></li>
-  <li><a href="#llmagentr" id="toc-llmagentr" class="nav-link" data-scroll-target="#llmagentr"><span class="header-section-number">2.5.2</span> LLMAgentR</a></li>
+<li><a href="#myownrobs" id="toc-myownrobs" class="nav-link" data-scroll-target="#myownrobs"><span class="header-section-number">2.5.1</span> MyOwnRobs</a></li>
+  <li><a href="#mini007" id="toc-mini007" class="nav-link" data-scroll-target="#mini007"><span class="header-section-number">2.5.2</span> mini007</a></li>
+  <li><a href="#llmagentr" id="toc-llmagentr" class="nav-link" data-scroll-target="#llmagentr"><span class="header-section-number">2.5.3</span> LLMAgentR</a></li>
   </ul>
 </li>
   <li>
@@ -459,16 +460,19 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p>vitals by Simon Couch provides us with a framework for evaluating LLMs. We provide inputs (prompts or questions) and targets (the actual response that we expect) and then our model or models of choice can give the problems a go and then get scored on their performace. These two posts (<a href="https://www.simonpcouch.com/blog/2025-04-01-gemini-2-5-pro/#an-r-eval-dataset">1</a>, <a href="https://www.simonpcouch.com/blog/2025-05-21-gemini-2-5-flash/">2</a>)include a detailed walkthrough of the evaluation process using vitals.</p>
 </section></section><section id="language-model-agents" class="level2" data-number="2.5"><h2 data-number="2.5" class="anchored" data-anchor-id="language-model-agents">
 <span class="header-section-number">2.5</span> Language Model Agents</h2>
-<p>###<a href="https://myownrobs.github.io/myownrobs/">MyOwnRobs</a> <img src="images/hex/myownrobslogo.png" align="right" height="108"></p>
+<section id="myownrobs" class="level3" data-number="2.5.1"><h3 data-number="2.5.1" class="anchored" data-anchor-id="myownrobs">
+<span class="header-section-number">2.5.1</span> <a href="https://myownrobs.github.io/myownrobs/">MyOwnRobs</a>
+</h3>
+<p><img src="images/hex/myownrobslogo.png" align="right" height="108"></p>
 <p>MyOwnRobs by Juan Cruz Rodriguez is the closest I’ve seen to a Cursor-style coding agent for RStudio. The package runs as a Shiny App in the viewer pane and I was very impressed with how the assistant is context-aware and can figure out multi-step workflows that include file operations.</p>
 <p>I tried it out and asked the assistant to read some .R files in my project and create new versions of them, translating base code to data.table and also translating the code comments between English-Spanish and the output was exactly what I asked for. I hope to see more people try out MyOwnRobs!</p>
-<section id="mini007" class="level3" data-number="2.5.1"><h3 data-number="2.5.1" class="anchored" data-anchor-id="mini007">
-<span class="header-section-number">2.5.1</span> <a href="https://github.com/feddelegrand7/mini007">mini007</a>
+</section><section id="mini007" class="level3" data-number="2.5.2"><h3 data-number="2.5.2" class="anchored" data-anchor-id="mini007">
+<span class="header-section-number">2.5.2</span> <a href="https://github.com/feddelegrand7/mini007">mini007</a>
 </h3>
 <p><img src="images/hex/mini007.png" align="right" height="108"></p>
 <p>Mohamed El Fodil Ihaddaden recently (July 2025) shared mini007, a framework for creating LLM agents using R6 classes and ellmer. We can create multiple agent and assign each one a different task, these will then collaborate together under the supervision of a ‘Lead Agent’ to complete tasks such as finding information on a topic, summarizing, translating, and much more. Good to see more tools building on ellmer and using object classes for this kind of work.</p>
-</section><section id="llmagentr" class="level3" data-number="2.5.2"><h3 data-number="2.5.2" class="anchored" data-anchor-id="llmagentr">
-<span class="header-section-number">2.5.2</span> <a href="https://knowusuboaky.github.io/LLMAgentR/">LLMAgentR</a>
+</section><section id="llmagentr" class="level3" data-number="2.5.3"><h3 data-number="2.5.3" class="anchored" data-anchor-id="llmagentr">
+<span class="header-section-number">2.5.3</span> <a href="https://knowusuboaky.github.io/LLMAgentR/">LLMAgentR</a>
 </h3>
 <p><img src="images/hex/LLMagentRlogo.png" align="right" height="108"></p>
 <p>LLM agents are applications that can tackle relatively complex tasks by breaking them into ‘sub-tasks’ that can be addressed using tools and a flow of operations that leads to our desired response.</p>
