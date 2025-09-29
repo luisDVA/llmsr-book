@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<link rel="alternate" hreflang="en" href="https://luisdva.github.io/llmsr-book/before-start.html" />
-<link rel="alternate" hreflang="es" href="https://luisdva.github.io/llmsr-book/es/before-start.es.html" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.31">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>1  Read first – Large Language Model tools for R</title>
+
+
+<title>1&nbsp; Read first – Large Language Model tools for R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,12 +21,26 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <link href="./r-pkgs.html" rel="next">
 <link href="./index.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-ffeb6820bcda9de399ad90016fbeb350.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
@@ -54,30 +68,43 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HER1TDPFHR"></script><script type="text/javascript">
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-HER1TDPFHR"></script>
+
+<script type="text/javascript">
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </script>
+
+
 </head>
+
 <body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./before-start.html"><span class="chapter-number">1</span>  <span class="chapter-title">Read first</span></a></li></ol></nav><a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./before-start.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Read first</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
-  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Large Language Model tools for R</a> 
         <div class="sidebar-tools-main">
@@ -95,12 +122,9 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
         <div id="quarto-search" class="" title="Search"></div>
         </div>
         </div>
-    <div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-map"></i> English</button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://luisdva.github.io/llmsr-book/es/before-start.es.html" id="language-link-es">Español</a></li></ul>
-</div>
-<div class="sidebar-menu-container"> 
+    <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-<li class="sidebar-item">
+        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
@@ -109,52 +133,58 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./before-start.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>  <span class="chapter-title">Read first</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Read first</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./r-pkgs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>  <span class="chapter-title">R Packages</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">R Packages</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./other-ext.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>  <span class="chapter-title">Other tools and extensions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Other tools and extensions</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./courses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>  <span class="chapter-title">Further reading</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Further reading</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>  <span class="chapter-title">🐍 What about Python?</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">🐍 What about Python?</span></span></a>
   </div>
 </li>
     </ul>
-</div>
-</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
   <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
   <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
   <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"></a></li>
   <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"></a></li>
   <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5"></a></li>
-  </ul></nav>
-</div>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title"><span id="sec-before-start" class="quarto-section-identifier"><span class="chapter-number">1</span>  <span class="chapter-title">Read first</span></span></h1>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-before-start" class="quarto-section-identifier"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Read first</span></span></h1>
 </div>
 
 
@@ -168,30 +198,47 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
   
 
 
-</header><p>Here are some interesting and worthwhile reads to explore before getting hands-on with any of the tools listed on this site.</p>
+</header>
+
+
+<p>Here are some interesting and worthwhile reads to explore before getting hands-on with any of the tools listed on this site.</p>
 <hr>
 <p>In a blog post about <em><a href="https://simonwillison.net/2025/Mar/19/vibe-coding/">vibe coding</a></em>, Simon Willison mentioned that:</p>
 <blockquote class="blockquote">
 <p>“I believe everyone deserves the ability to automate tedious tasks in their lives with computers.”</p>
 </blockquote>
 <p>I agree with this statement, but we should consider learning outcomes, ethics, biases, and context before getting into LLM tools.</p>
-<section id="section" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section"></h2>
+<section id="section" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section"></h2>
 <p>In my opinion, anyone using LLM-based assistants for coding should read this perspective published in Methods in Ecology and Evolution: <a href="https://doi.org/10.1111/2041-210X.14325">Harnessing large language models for coding, teaching and inclusion to empower research in ecology and evolution</a>, led by Natalie Cooper, and part of a special issue on the use of LLMs in ecology and evolution. These papers summarize the pros and cons of genAI/LLMs in the context of research and teaching, and their conclusions go beyond research and biological sciences.</p>
-</section><section id="section-1" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-1"></h2>
+</section>
+<section id="section-1" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-1"></h2>
 <p>These lecture notes by Andrew Heiss titled <a href="https://datavizs25.classes.andrewheiss.com/resource/ai-bs.html#vibe-coding-and-learning">AI, LLMs, BS, and vibe coding</a> (published June 2025) now include thoughtful sections about how LLM-tools can be detrimental for those learning to code (decreased understanding, overlooked fundamentals) and also how ‘vibe-coding’ can introduce inefficiencies and security vulnerabilities. Highly recommended read.</p>
-</section><section id="section-2" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-2"></h2>
+</section>
+<section id="section-2" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-2"></h2>
 <p>Another useful resource is this course: <a href="https://thebullshitmachines.com/index.html">The Bullshit Machines</a> put together Carl T. Bergstrom and Jevin D. West. A very thoughtful and well-structured set of materials that cuts through the smoke and highlights the fact that <strong>just because a machine can write like us it does not mean it can think like us</strong>.</p>
-</section><section id="section-3" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-3"></h2>
+</section>
+<section id="section-3" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-3"></h2>
 <p>As an instructor, I am not alone in noticing that lately, a variable proportion of learners are using ChatGPT and similar tools to assist them in and after various R-related workshops. The Carpentries foundation have this interesting <a href="https://carpentries.org/blog/2025/01/teaching-llms-report/">two-part series</a> on teaching LLM-based coding assistants in Carpentries workshops. The results here mention patterns of usage, advantages and disadvantages of actually teaching how to use these assistants, and throughout 2025 there will be ongoing discussion about ethics, security, and how to best teach in light of these new tools.</p>
-</section><section id="section-4" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-4"></h2>
-<p>This <a href="https://www.pnas.org/doi/10.1073/pnas.2416228122">PNAS paper</a> by Bai et al. (available at <a href="https://knowledge.uchicago.edu/record/14602">UChicago Knowledge</a>) is also very relevant. With two measures that come from psychological research and are meant to measure implicit bias, the authors found that LMMs still have pervasive stereotype biases mirroring those in society. As a simple example of the results: models generally picked woman-coded names (Julia) to discuss weddings and male-coded names (Ben) to discuss management.</p>
-</section><section id="section-5" class="level2 unnumbered"><h2 class="unnumbered anchored" data-anchor-id="section-5"></h2>
+</section>
+<section id="section-4" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-4"></h2>
+<p>This <a href="https://www.pnas.org/doi/10.1073/pnas.2416228122">PNAS paper</a> by Bai et al.&nbsp;(available at <a href="https://knowledge.uchicago.edu/record/14602">UChicago Knowledge</a>) is also very relevant. With two measures that come from psychological research and are meant to measure implicit bias, the authors found that LMMs still have pervasive stereotype biases mirroring those in society. As a simple example of the results: models generally picked woman-coded names (Julia) to discuss weddings and male-coded names (Ben) to discuss management.</p>
+</section>
+<section id="section-5" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="section-5"></h2>
 <p>Because this guide in general is focused on writing code using LLMs, this post by Simon Willison titled “<a href="https://simonwillison.net/2025/Mar/11/using-llms-for-code/">Here’s how I use LLMs to help me write code</a>” (published 11/30/2025; added here 18/03/2025) really distills the process of getting LLMs to write decent code without frustration. Important topics in the post include context and training cut-off dates.</p>
 <hr>
 <p>With that out the way: the next sections on this site are split into R packages, additional extensions that work in our IDEs without shipping and installing as an R package, and a list of courses and tutorials for actually using these tools.</p>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -589,14 +636,16 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
       }
     }
   });
-  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
       <a href="./index.html" class="pagination-link" aria-label="Welcome">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./r-pkgs.html" class="pagination-link" aria-label="R Packages">
-        <span class="nav-page-text"><span class="chapter-number">2</span>  <span class="chapter-title">R Packages</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">R Packages</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -605,5 +654,4 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 
 
 
-</body>
-</html>
+</body></html>
