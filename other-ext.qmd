@@ -7,6 +7,12 @@ These include vscode/Positron extensions that are not shipped as R packages, as 
 
 Positron Assistant is currently a preview/experimental AI client for integrating LLM-based chat and autocomplete within Positron. Available with version >= 2025.07.0-204. At present the assistant supports Anthropic for chat, and GitHub Copilot for code completions. Seems similar to Continue but with a much tighter integration with the IDE. 
 
+## [Roo Code](https://docs.roocode.com/)
+
+Roo Code is another option for running more advanced coding agents in our IDE. We can install Roo Code as an extension in Code OSS forks including Positron, and I've heard some R users have had good experiences with this tool. 
+
+Like other agent tools, Roo Code has different modes for different tasks (ask, code, debug, orchestrate) and each one is highly customizable and designed for coding. I installed the extension in Positron and it looks promising for package development tasks, although like similar tools we need to be aware of the high token use. 
+
 ## [Databot](https://positron.posit.co/databot.html)
 
 Databot is an experimental AI assistant for the Positron IDE, designed specifically for exploratory data analysis. Databot needs Positron Assistant enabled to function and thus uses the same LLM provider (Anthropic). Databot can help us explore a dataset and see if there are any issues with the data, any interesting relationships or patterns, and ultimately what questions we could ask and answer. The user is kept in the loop and the exploration is done incrementally, with the assistant suggesting a few options at each step. The team from posit demonstrated Databot during posit::conf 2025 and the whole process looked smooth and useful. 

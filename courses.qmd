@@ -8,6 +8,14 @@ Here are some courses and guides for actually using the LLM tools listed here. N
 
 ## {.unnumbered}
 
+### AI assistants for Scientific Coding {.unnumbered}
+
+[AI assistants for Scientific Coding](https://www.seascapemodels.org/AI-assistants-for-scientific-coding/) is a great new online guide by Chris Brown at UTAS. This resource is an easy to follow Quarto book with everything we need to get started with LLM-based tools for scientific computing and analyses in the context of environmental studies. Great structure, useful diagrams, and all the implementations are based on tools for R. A must-read and somewhat of a companion guide to this site, which only lists tools without explaining how to use them.
+
+### Generative AI for Data Visualisation {.unnumbered}
+
+This recent (Oct. 2025) [blog post](https://nrennie.rbind.io/blog/gen-ai-data-viz/) by data visualization expert Nicola Rennie summarizes how recent models available in the free tiers from 
+OpenAI, Anthropic, Copilot, and Google Gemini fared when prompted to create visualizations of Tidy Tuesday datasets. Good to see critiques of the outputs by someone with lots of experience. I liked the takeaway that asking questions is the first part of the data visualisation design process, a step which the LLMs tools tend to overlook.
 
 ### Are AI Models Hallucinating—Or Just Confabulating? {.unnumbered}
 

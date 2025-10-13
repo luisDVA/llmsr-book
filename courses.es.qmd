@@ -6,6 +6,13 @@ Aquí hay algunos cursos y guías ya para aprender a usar las diferentes herrami
 
 ## {.unnumbered}
 
+### AI assistants for Scientific Coding {.unnumbered}
+
+[AI assistants for Scientific Coding](https://www.seascapemodels.org/AI-assistants-for-scientific-coding/) es una excelente guía en línea creada por Chris Brown de la Universidad de Tasmania. Este recurso es un libro de Quarto fácil de seguir que tiene todo lo necesario para comenzar a usar herramientas basadas en LLM en la computación y análisis científico dentro del contexto de los estudios ambientales. Este material tiene una estructura clara, diagramas útiles y todas las implementaciones se basan en herramientas para R. Una lectura obligatoria y que sirve como una guía complementaria a este sitio, que solo enumera herramientas sin explicar cómo utilizarlas.
+
+### Generative AI for Data Visualisation {.unnumbered}
+
+Esta [publicación](https://nrennie.rbind.io/blog/gen-ai-data-viz/) reciente (octubre de 2025) en el blog de la experta en visualización de datos Nicola Rennie resume cómo los modelos más recientes disponibles en versiones gratuitas de OpenAI, Anthropic, Copilot y Google Gemini se desempeñaron para crear visualizaciones de datos de Tidy Tuesday. Está bueno ver críticas de los resultados hechas por alguien con mucha experiencia. Me gustó la conclusión de que preguntar cosas sobre para qué o quién es la figura es la primera parte del proceso de diseño de visualización de datos, un paso que las herramientas de LLM suelen pasar por alto.
 
 ### ¿Los modelos de IA alucinan—o simplemente confabulan? {.unnumbered}
 

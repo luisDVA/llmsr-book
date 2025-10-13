@@ -19,26 +19,19 @@ toc: false
 
 :::: {.dancing-shadow-box}
 ::: {.box-content}
-### Latest updates (September 2025):
+### Latest updates (October 2025):
 
 #### R packages
-- `contextR`, conversational memory for LLM workflows
-- `kbretrieveR` for working with AWS Knowledge Bases
-- The R Language Analysis Suite (text,talk & topics)
-- `LLMR`, a general interface
-- `myownrobs`, AI coding agent for RStudio
-- `air`, an AI coding helper
-- Format and complete few-shot prompts with `promptr`
-- LLM-powered chatting in Shiny with `shinychat` and `querychat` 
+- CRAN badges!  
+- `FakeDataR` for creating realistic but synthetic datasets that we can share with LLMs.
 
 #### Other tools and extensions  
-- Databot, an EDA assistant for Positron
-- R instructions for Cursor Users
+- `Roo Code` coding agent for Code OSS forks (including Positron)
 
 #### Helpful reads
-- ellmer deep dive - Howard Baik
-- On hallucinations - Cosima Meyer
-- LLM workshop materials from posit::conf 2025
+- New online book: 'AI assistants for Scientific Coding' 
+- Evaluating LLM data visualizations
+
 :::
 ::::
 
@@ -71,7 +64,8 @@ urlss <- c(
 "https://www.continue.dev/",
 "https://github.com/features/copilot",
 "https://github.com/cornball-ai/diffuseR",
-"http://elmer.tidyverse.org/",
+"http://ellmer.tidyverse.org/",
+"https://zobaer09.github.io/FakeDataR/",
 "https://jhk0530.github.io/gemini.R/",
 "https://github.com/frankiethull/ggpal2",
 "https://michelnivard.github.io/gptstudio/",

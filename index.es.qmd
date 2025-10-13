@@ -19,26 +19,18 @@ css: indstyle.scss
 :::: {.dancing-shadow-box}
 ::: {.box-content}
 
-### Últimas actualizaciones (Septiembre 2025):
+### Últimas actualizaciones (Octubre 2025):
 
-#### Paquetes  
-- `contextR`, memoria conversacional para flujos de trabajo con LLMs  
-- `kbretrieveR` para trabajar con bases de conocimiento de AWS  
--  _The R Language Analysis Suite_ (text, talk y topics)  
-- `LLMR`, una interfaz general  
-- `myownrobs`, como Cursor pero para RStudio  
-- `air`, un ayudante de codigó en la consola  
-- formatear y completar prompts con `promptr`  
-- Chats en Shiny con `shinychat` y `querychat`  
+#### Paquetes 
+- Estados de CRAN  
+- `FakeDataR` para crear conjuntos de datos sintéticos realistas que podemos compartir con LLMs.  
 
-#### Otras herramientas y extensiones  
-- Databot, un asistente de EDA para Positron  
-- Instrucciones de R para usuarios de Cursor  
+#### Otras herramientas y extensiones
+- `Roo Code` agente de codificación para IDEs basados en Code OSS (incluido Positron)  
 
-#### Lecturas útiles  
-- Análisis detallado de ellmer - Howard Baik  
-- Sobre alucinaciones - Cosima Meyer  
-- Materiales del taller de LLM de posit::conf 2025
+#### Lecturas útiles
+- Nuevo libro en línea: 'Asistentes de IA para la Codificación Científica'  
+- Evaluación de visualizaciones de datos por LLMs  
 
 :::
 ::::

@@ -6,6 +6,12 @@ Aquí hay algunas herramientas o extensiones que no se instalan como paquetes R,
 
 Este Asistente de Positron es un cliente de inteligencia artificial experimental para integrar chat y autocompletado basados en LLM dentro de Positron. Está disponible con la versión >=2025.07.0-204. Actualmente, el asistente usa Anthropic para el chat y GitHub Copilot para completar código. Se me hizo muy simlar Continue, pero con una integración mucho más estrecha con el IDE.
 
+## [Roo Code](https://docs.roocode.com/)
+
+Roo Code es otra opción para ejecutar agentes de programación avanzados en nuestro IDE. Podemos instalar Roo Code como una extensión en IDEs derivados de Code OSS, incluyendo Positron. He escuchado que algunos usuarios de R han tenido muy buenas experiencias con esta herramienta.
+
+Al igual que otras herramientas de agentes, Roo Code tiene diferentes modos para distintas tareas (preguntar, programar, depurar, orquestar), y cada uno es altamente personalizable y enfocado en escribir/editar código. Instalé la extensión en Positron y creo que me va a sevir para temas de desarrollo de paquetes, aunque, así con otrasherramientas similares, debemos ser conscientes del alto consumo de tokens.
+
 ## [Databot](https://positron.posit.co/databot.html)
 
 Databot es un asistente de inteligencia artificial experimental para el entorno de desarrollo Positron, diseñado específicamente para el análisis exploratorio de datos (EDA por sus siglas en inglés). Databot requiere que el Asistente de Positron esté activado para funcionar, por lo que utiliza el mismo proveedor de modelos que por ahora es únicamente Anthropic. Databot puede ayudarnos a explorar un conjunto de datos y detectar posibles problemas, relaciones o patrones interesantes, así como identificar preguntas que podríamos formular y responder. El usuario se mantiene informado en todo momento y la exploración se realiza de forma incremental, con sugerencias del asistente en cada paso. El equipo de Posit demostró Databot durante posit::conf 2025, y el proceso me pareció fluido y útil.

@@ -28,6 +28,9 @@ parameterized_agent |> chat(list(var1 = "mpg", var2 = "wt"))
 wizrd también incluye herramientas para MCP y RAG, lo cual es bastante impresionante.  
 
 ### [chatLLM](https://knowusuboaky.github.io/chatLLM/)
+
+<a href="https://cran.r-project.org/package=chatLLM"><img src="https://www.r-pkg.org/badges/version/chatLLM" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/chatLLMlogo.png" align="right" height="108"/>
 
 Desarrolado por Kwadwo Daddy Nyame Owusu Boakye, chatLLM es otra opción útil para cuando necesitamos una interfaz consistente para modelos de prácticamente todos los proveedores (Anthropic, OpenAI, DeepSeek, Groq, DashScope y GitHub Models). chatLLM nos bridna una API única y uniforme para todos los modelos y nos permite especificar los roles que se les darán a los LLM (prompts del sistema, usuario, asistente). Funciona bien por sí solo, pero también se integra con LLMagentR para construir [LLMagentR](r-pkgs.qmd#LLMagentR). Ya está disponible en CRAN.
@@ -40,11 +43,27 @@ axolotor por Matthew Hirschey y Pol Castellano Escuder es otro paquete que nos b
 
 ### [chatgpt](https://github.com/jcrodriguez1989/chatgpt)
 
+<a href="https://cran.r-project.org/package=chatgpt"><img src="https://www.r-pkg.org/badges/version/chatgpt" alt="CRAN status" style="display: inline-block;"></a>
+
 El paquete chatgpt nos permite interactuar con modelos de OpenAI para obtener ayuda mientras programamos. El paquete fue desarrollado por [Juan Cruz Rodriguez](https://jcrodriguez.rbind.io/), entonces seguramente es robusto y bien diseñado, pues he trabajado con Juan en el pasado en mejoras para annotater. Este paquete ha estado disponible por un buen tiempo ya y de hecho antecede a la mayoría de las herramientas LLM existentes para R, lo que demuestra la visión y las ideas novedosas de Juan.
 
 Después de configurar una clave de API, podemos trabajar con addins de RStudio pre-programados para hacer cosas útiles como optimizar, comentar, explicar, seleccionar o probar código (entre otras). Funciona con selecciones o archivos completos y el modelo predeterminado es gpt-4o-mini.
 
+### [FakeDataR](https://zobaer09.github.io/FakeDataR/)
+
+<a href="https://cran.r-project.org/package=FakeDataR"><img src="https://www.r-pkg.org/badges/version/FakeDataR" alt="CRAN status" style="display: inline-block;"></a>
+
+<img src="images/hex/fakedatarlogo.png" align="right" height="108"/>
+
+La privacidad siempre es un tema crítico al usar LLMs y quizás no queramos instalar y ejecutar modelos locales ni compartir nuestros datos con las APIs. Zobaer Ahmed creó FakeDataR como una manera fluida de abordar este problema, y en sus propias palabras:
+
+Editar a mano conjuntos de datos reales para crear ejemplos “falsos” puede ser lento, frágil y riesgoso. FakeDataR funciona completamente en R. FakeDataR genera conjuntos de datos sintéticos que preservan la privacidad directamente a partir de tus datos reales en tu propia máquina. Refleja el _schema_, los tipos, los niveles de factores y la ausencia de valores; produce una copia sintética documentada; y mantiene los datos originales privados. Luego podemos compartir o subir los datos sintéticos a un LLM para prototipar prompts, depurar pipelines o solicitar ayuda, sin exponer información sensible y/o datos originales.
+
+¡Un paquete muy útil para la privacidad!
+
 ### [groqR](https://gabrielkaiserqfin.github.io/groqR)
+
+<a href="https://cran.r-project.org/package=groqR"><img src="https://www.r-pkg.org/badges/version/groqR" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/groqrlogo.png" align="right" height="108"/>
 
@@ -57,10 +76,14 @@ groqR llegó a mi atención gracias a su propio desarrollador, entonces le pedí
 
 ### [PacketLLM](https://github.com/AntoniCzolgowski/PacketLLM)
 
+<a href="https://cran.r-project.org/package=PacketLLM"><img src="https://www.r-pkg.org/badges/version/PacketLLM" alt="CRAN status" style="display: inline-block;"></a>
+
 PacketLLM, desarrollado por Antoni Czolgowski nos trae chats interactivos con modelos de OpenAI (p. ej., GPT-4o y GPT-4.1) al panel de 'Viewer' de RStudio a través de una aplicación de Shiny que corre en este contexto. Muy útil para usuarios habituales de ChatGPT en el navegador, para reducir el cambio de contexto (context switching). El paquete ya está en CRAN.
 
 
 ### [gptstudio](https://michelnivard.github.io/gptstudio/)
+
+<a href="https://cran.r-project.org/package=gptstudio"><img src="https://www.r-pkg.org/badges/version/gptstudio" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/gptstudio.png" align="right" height="108"/>
 
@@ -72,11 +95,15 @@ Me gustaron las advertencias que incluyen los autores en el README sobre la priv
 
 ### [llmR](https://github.com/bakaburg1/llmR)
 
+
 llmr de Angelo D'Ambrosio proporciona una API unificada para interactuar con varios LLMs y proveedores a través de funciones con gramática y sintaxis consistentes. Permite cambiar fácilmente entre modelos. 
 
 - Un paquete similar llamado [LLMR](https://cran.r-project.org/package=LLMR) apareció recientemente en CRAN, pero no pude encontrar mucha información al respecto.
 
 ### [LLMR](https://asanaei.github.io/LLMR)
+
+<a href="https://cran.r-project.org/package=LLMR"><img src="https://www.r-pkg.org/badges/version/LLMR" alt="CRAN status" style="display: inline-block;"></a> 
+
 <img src="images/hex/LLMR-logo.png" align="right" height="108"/>
 
 LLMR (diferente de llmR por la sensibilidad a mayúsculas/minúsculas) por Ali Sanaei es otra opción que podemos usar para interactuar con modelos de lenguaje de múltiples proveedores. Ya había mencionado el paquete en esta guía, pero antes no había mucha documentación. Ahora, LLMR cuenta con manuales muy útiles, incluyendo una viñeta sobre cómo construir pipelines para obtener salidas estructuradas a través de _schemas_.
@@ -89,11 +116,15 @@ Una interfaz amigable con el estilo "pipe" para muchos proveedores de chatbots. 
 
 ### [tidyllm](https://edubruell.github.io/tidyllm/)
 
+<a href="https://cran.r-project.org/package=tidyllm"><img src="https://www.r-pkg.org/badges/version/tidyllm" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/tidyllm.png" align="right" height="108"/>
 
 tidyllm de Eduard Brüll proporciona acceso amigable con el estilo "pipe" a múltiples APIs de LLM de una manera legible y amigable. Podemos pasar imágenes, documentos, videos y figuras que están el panel de gráficos a las funciones del paquete, y el paquete tiene una documentación muy completa. Se ve similar a ellmer, y tiene potencial para trabajo interactivo y para procesamiento por lotes. 
 
 ### [gemini.R](https://jhk0530.github.io/gemini.R/)
+
+<a href="https://cran.r-project.org/package=gemini.R"><img src="https://www.r-pkg.org/badges/version/gemini.R" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/gemini.png" align="right" height="108"/>
 
@@ -102,6 +133,9 @@ El paquete gemini.R de Jinhwan Kim conecta R con el modelo Gemini de Google a tr
 El paquete también tiene un addin de RStudio para crear documentación en Roxygen, y lo probé hace poco con el modelo Gemini Flash 2 para extraer información de un documento escaneado y funcionó bien.
 
 ### [PerplexR](https://github.com/GabrielKaiserQFin/PerplexR/)
+
+<a href="https://cran.r-project.org/package=perplexR"><img src="https://www.r-pkg.org/badges/version/perplexR" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/perplexrlogo.png" align="right" height="108"/>
 
 PerplexR de [Gabriel Kaiser](https://gabrielkaiserqfin.github.io/) proporciona una interfaz al estilo de groqR pero para los modelos sonar de Perplexity. Hace falta tener un plan de pago para generar la clave de API necesaria, así que todavía no lo he probado. El paquete funciona con un addin de RStudio y, al igual que groqR, incluye funciones útiles para reescribir código o crear pruebas unitarias.
@@ -116,6 +150,9 @@ air, creado por Soumya Ray, es un asistente de inteligencia artificial para prog
 
 
 ### [promptr](https://github.com/joeornstein/promptr)
+
+<a href="https://cran.r-project.org/package=promptr"><img src="https://www.r-pkg.org/badges/version/promptr" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/promptrlogo.png" align="right" height="108"/>
 
 promptr, creado por Joe Ornstein, está específicamente diseñado para formatear y enviar prompts para un LLM y devolver las respuestas de la API de OpenAI en formato tabular. promptr también puede ayudarnos a formatear conjuntos de prompts de entrada e instrucciones para tareas de clasificación por lotes.
@@ -132,6 +169,8 @@ promptr::complete_prompt("Después de tomar agua la perrita se fue a su cama a a
 
 ### [ollamar](https://hauselin.github.io/ollama-r/)
 
+<a href="https://cran.r-project.org/package=ollamar"><img src="https://www.r-pkg.org/badges/version/ollamar" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/ollogo.png" align="right" height="108"/>
 
 Desarrollado por Hause Lin y Tawab Safi, ollamar integra R con Ollama, para ejecutar modelos de lenguaje localmente.
@@ -141,6 +180,8 @@ Con ollamar podemos cargar diferentes modelos, interactuar con objetos que almac
 Funciona bien con httr2, lo que es un gran ventaja.
 
 ### [rollama](https://jbgruber.github.io/rollama/)
+
+<a href="https://cran.r-project.org/package=rollama"><img src="https://www.r-pkg.org/badges/version/rollama" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/rollamalogo.png" align="right" height="108"/>
 
@@ -160,6 +201,8 @@ ensure es otro paquete desarrollado por Simon Couch que nos ayuda a escribir có
 
 ### [vitals](https://vitals.tidyverse.org/)
 
+<a href="https://cran.r-project.org/package=vitals"><img src="https://www.r-pkg.org/badges/version/vitals" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/vitalslogo.png" align="right" height="108"/>
 
 vitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de difentes modelos. Se le dan _inputs_ (tareas o preguntas) y _targets_ (las respuestas o soluciones que esperamos) y de ahí los modelos que están siendo evaluados contestan los problemas y son evaluados en su desempeño. Aquí hay dos ejemplos ([1](https://www.simonpcouch.com/blog/2025-04-01-gemini-2-5-pro/#an-r-eval-dataset), [2](https://www.simonpcouch.com/blog/2025-05-21-gemini-2-5-flash/))de como comparar el desempeño de diferentes modelos para programar en R, todo usando vitals. 
@@ -176,12 +219,17 @@ en mi proyecto y creara nuevas versiones de ellos, traduciendo el código de R b
 
 ### [mini007](https://github.com/feddelegrand7/mini007)
 
+<a href="https://cran.r-project.org/package=mini007"><img src="https://www.r-pkg.org/badges/version/mini007" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/mini007.png" align="right" height="108"/>
 
 
 Mohamed El Fodil Ihaddaden publicó mini007 en julio de 2025. El paquete nos brinda herramientas y un entrono para crear agentes de LLM utilizando clases de tipo R6 y ellmer. Podemos crear múltiples agentes y asignarle a cada uno una tarea diferente. Éstos luego colaboran bajo la supervisión de un gerente o 'Lead Agent' para completar tareas como encontrar información sobre un tema, resumir, traducir y mucho más. Me parecenen muy buenas noticias ver más herramientas que se basan en ellmer para este tipo de trabajo. 
 
 ### [LLMAgentR](https://knowusuboaky.github.io/LLMAgentR/)
+
+<a href="https://cran.r-project.org/package=LLMAgentR"><img src="https://www.r-pkg.org/badges/version/LLMAgentR" alt="CRAN status" style="display: inline-block;"></a>
+
 
 <img src="images/hex/LLMagentRlogo.png" align="right" height="108"/>
 
@@ -196,6 +244,8 @@ El paquete tiene muchas dependencias, así que tengan paciencia en la instalaci�
 ## mlverse
 
 ### [mall](https://mlverse.github.io/mall/)
+
+<a href="https://cran.r-project.org/package=mall"><img src="https://www.r-pkg.org/badges/version/mall" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/malllogo.png" align="right" height="108"/>
 
@@ -213,6 +263,8 @@ Lo que más me gustó del paquete es que también ayuda a generar infraestructur
 
 ### [chattr](https://mlverse.github.io/chattr/)
 
+<a href="https://cran.r-project.org/package=chattr"><img src="https://www.r-pkg.org/badges/version/chattr" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/chattrlogo.png" align="right" height="108"/>
 
 chattr también es parte del mlverse. El paquete es un interfaz para modelos locales, para CoPilot, o los modelos de Databricks. El paquete tiene varias opciones para interactuar con modelos dentro de RStudio (y puede tomar de contexto los objetos del entorno y archivos en el directorio de trabajo), incluyendo una aplicación Shiny bastante intuitiva. 
@@ -221,6 +273,8 @@ chattr también es parte del mlverse. El paquete es un interfaz para modelos loc
 ## Herramientas para usar el Protocolo de Contexto de Modelo (Model Context Protocol, MCP)
 
 ### [mcptools](https://posit-dev.github.io/mcptools/)
+
+<a href="https://cran.r-project.org/package=mcptools"><img src="https://www.r-pkg.org/badges/version/mcptools" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/mcptoolslogo.png" align="right" height="108"/>
 
@@ -248,6 +302,8 @@ Gracias al protocolo MCP, este paquete también debería funcionar con Cursor u 
 ## ellmer y compañia
 
 ### [ellmer](http://ellmer.tidyverse.org/)
+
+<a href="https://cran.r-project.org/package=ellmer"><img src="https://www.r-pkg.org/badges/version/ellmer" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/ellmerlogo.png" align="right" height="108"/>
 
@@ -282,48 +338,16 @@ Como dice su documentación oficial, btw nos ayuda a describirle nuestro entorno
 
 El paquete buggy, desarrollado por Simon P. Couch, usa LLMs para ayudar a los usuarios de R a entender y resolver mensajes de error. Teniendo el paquete configurado y activado correctamente, cada vez que se produce un error, el paquete nos ofrece enlaces que podemos clickear para “explicar” o “solucionar” el problema. Las explicaciones se muestran en la consola, mientras que las soluciones se implementan directamente. buggy como varios otros paquetes relacionados usa btw para proporcionarle contexto al modelo sobre los archivos y funciones relevantes. ¡Muy útil!
 
-### [hellmer](https://dylanpieper.github.io/hellmer/)
+### ~~hellmer]~~
+
+> el paquete fue eliminado de CRAN y el repositorio ya no existe. Supongo que el desarrollador tomó esta decisión porque el trabajo de lotes en ellmer mejoró lo suficiente. 
 
 Para trabajar en lotes (_batch processing_) con los chats de ellmer y sus salidas, Dylan Pieper ideó hellmer. El paquete se lleva bien con ellmer y tiene varias funciones útiles, barritas que muestran el progreso, y nos da mensajes informativos mientras trabaja. 
 
-Para probar el paquete yo corrí este ejemplo con Gemini y funcionó super bien:
-
-```{r}
-#| eval: FALSE
-library(hellmer)
-chat <- chat_batch(chat_gemini, system_prompt = "Reply concisely in Spanish")
-
-prompts <- list(
-  "What is factorial 10?",
-  "Name three Metallica Song",
-  "Count to 3.",
-  "Say hello.",
-  "What is the Capital of Ghana?"
-)
-
-result <- chat$batch(prompts)
-result$texts()
-```
-
-Los resultados:
-
-```{r}
-#| eval: false
-
-result$texts()
-[[1]]
-[1] "3,628,800\n"
-[[2]]
-[1] "*   Enter Sandman\n*   Master of Puppets\n*   Nothing Else Matters\n"
-[[3]]
-[1] "Uno, dos, tres.\n"
-[[4]]
-[1] "Hola.\n"
-[[5]]
-[1] "Acra.\n"
-```
 
 ### [chores](https://simonpcouch.github.io/chores/)
+
+<a href="https://cran.r-project.org/package=chores"><img src="https://www.r-pkg.org/badges/version/chores" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/choreslogo.png" align="right" height="108"/>
 
@@ -343,6 +367,8 @@ ggpal2 es un buen ejemplo de como se pueden escibir extensiones para chores, pri
 
 ### [gander](https://github.com/simonpcouch/gander/)
 
+<a href="https://cran.r-project.org/package=gander"><img src="https://www.r-pkg.org/badges/version/gander" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/logo.png" align="right" height="108"/>
 
 Otro paquete más desarollado por Simon Couch, que publicó gander a principios de 2025. 
@@ -358,6 +384,8 @@ gander ya tiene una [introducción oficial](https://posit.co/blog/introducing-ga
 
 ### [statlingua](https://bgreenwell.github.io/statlingua/)
 
+<a href="https://cran.r-project.org/package=statlingua"><img src="https://www.r-pkg.org/badges/version/statlingua" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/statlingualogo.png" align="right" height="108"/>
 
 
@@ -366,6 +394,8 @@ statlingua, desarrollado por Brandon M. Greenwell, es otro paquete interesante q
 ## Integraciones para Shiny
 
 ### [shinychat](https://posit-dev.github.io/shinychat/r/index.html)
+
+<a href="https://cran.r-project.org/package=shinychat"><img src="https://www.r-pkg.org/badges/version/shinychat" alt="CRAN status" style="display: inline-block;"></a> 
 
 shinychat, del equipo de Shiny en Posit, nos ofrece componentes de interfaz de usuario (UI) fáciles de usar para agregar chats impulsados por Modelos de Lenguaje de Gran Escala (LLM) a nuestras aplicaciones de Shiny. Funciona para R y Python y sirve con muchísimos proveedores de modelos. shinychat usa ellmer y las respuestas del modelo fluyen directamente al chat en tiempo real.
 
@@ -378,6 +408,9 @@ querychat también fue desarrollado por el equipo de Shiny en Posit, y este paqu
 
 ### [ragnar](https://tidyverse.github.io/ragnar/)
 
+<a href="https://cran.r-project.org/package=ragnar"><img src="https://www.r-pkg.org/badges/version/ragnar" alt="CRAN status" style="display: inline-block;"></a>
+
+
 <img src="images/hex/ragnar.png" align="right" height="108"/>
 
 ragnar es un paquete desarrolado por Tomasz Kalinowski para implementar _generación aumentada por recuperación_  (RAG: Retrieval-Augmented Generation) en R. Esto no es más que vincular un modelo de lenguaje de gran escala con fuentes externas de información para obtener mejores respuestas.
@@ -389,6 +422,8 @@ ragnar usa duckdb por defecto entonces el trabajo con datos masivos es eficiente
 Me gustó el ejemplo que aparece en el README del paquete, que muestra como ingerir los contenidos de **R for Data Science** para preguntar cosas sobre R y obtener respuestas certeras y con fuentes genuinas y útiles.
 
 ### [rdocdump](https://www.ekotov.pro/rdocdump/)
+
+<a href="https://cran.r-project.org/package=rdocdump"><img src="https://www.r-pkg.org/badges/version/rdocdump" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/rdocdumplogo.png" align="right" height="108"/>
 
@@ -421,6 +456,9 @@ diffuseR de Troy Hernandez es una implementación en R de modelos de difusión p
 
 
 ### [text](https://r-text.org/)
+
+<a href="https://cran.r-project.org/package=text"><img src="https://www.r-pkg.org/badges/version/text" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/textlogo.png" align="right" height="108"/>
 
 El paquete text por Oscar Kjell, Salvatore Giorgi y Andrew Schwartz utiliza modelos basados en _transformers_ para analizar lenguaje natural. text nos da acceso a modelos de Hugging Face para transformar texto en embeddings de palabras y usarlos en otras tareas, incluyendo RAG. Una herramienta excelente para trabajos de NLP que también puede ayudar a los usuarios de LLM en general a entender mejor los embeddings de palabras.
@@ -429,16 +467,22 @@ text, junto con talk y topics (ver abajo), forma parte de el _R Language Analysi
 
 
 ### [talk](https://www.r-talk.org/)
+
 <img src="images/hex/talklogo.png" align="right" height="108"/>
 
 El paquete talk por Oscar Kjell, Adithya Ganesan, Rajath Rao y Akshay Raghavan es similar a text, pero permite transcribir audio a texto y generar embeddings a partir de grabaciones de voz. Utiliza transformers de Hugging Face instalando los paquetes de Python relevantes en un entorno de conda.
 
 ### [topics](https://www.r-topics.org/)
+
+<a href="https://cran.r-project.org/package=topics"><img src="https://www.r-pkg.org/badges/version/topics" alt="CRAN status" style="display: inline-block;"></a>
+
 <img src="images/hex/topicslogo.png" align="right" height="108"/>
 
 topics por Leon Ackermann, Zhuojun Gu y Oscar Kjell implementa  Análisis Diferencial de Lenguaje (Differential Language Analysis). Este paquete no es estrictamente una herramienta basada en LLM, pero podemos usar topics para visualizar patrones de lenguaje y además se vincula con los principios de text y talk. Requiere Java y por ende rJava (ay no).
 
 ### [pangoling](https://docs.ropensci.org/pangoling/index.html)
+
+<a href="https://cran.r-project.org/package=pangoling"><img src="https://www.r-pkg.org/badges/version/pangoling" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/pangoling.png" align="right" height="108"/>
 
@@ -449,6 +493,8 @@ Me gustó mucho ver un paquete de rOpenSci en este campo.
 ## Búsquedas desde R
 
 ### [searcher](https://r-pkg.thecoatlessprofessor.com/searcher/)
+
+<a href="https://cran.r-project.org/package=searcher"><img src="https://www.r-pkg.org/badges/version/searcher" alt="CRAN status" style="display: inline-block;"></a>
 
 <img src="images/hex/searcherlogo.png" align="right" height="108"/>
 
