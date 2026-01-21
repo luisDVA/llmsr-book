@@ -2,6 +2,11 @@
 
 These include vscode/Positron extensions that are not shipped as R packages, as well as relevant web-based resources.
 
+## [Posit Claude Skills](https://github.com/posit-dev/skills)
+
+
+This repository contains a collection of Claude Skills written to enhance workflows within the Posit ecosystem. Skills are just text files, but they extend the capabilities of Anthropic's Claude (Claude Code, Claude.ai, or via API) by providing specialized knowledge and automated assistance for tasks such as R package development (e.g., writing tests, checking CRAN notes), open-source development (e.g., writing release posts), and working with frameworks like Shiny and Quarto. The skills are organized into categories like r-lib, shiny, and quarto to help us generate high-quality code, adhere to best practices, and automate routine documentation and styling tasks.
+
 
 ## [Positron Assistant](https://positron.posit.co/assistant)
 

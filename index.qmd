@@ -19,18 +19,25 @@ toc: false
 
 :::: {.dancing-shadow-box}
 ::: {.box-content}
-### Latest updates (October 2025):
+### Latest updates (January 2026):
 
 #### R packages
-- CRAN badges!  
-- `FakeDataR` for creating realistic but synthetic datasets that we can share with LLMs.
+- **14** new packages! including:
+  - agents that plan and self-correct code (`deputy`, `ralphloop`)
+  - AI assistant in RStudio aware of the R environment (`side`)
+  - more tools for running local models (`localLLM`, `shiny.ollama`)
+  - manage prompts as code using external files (`promptmanageR`)
+  - fetch real-time web data to augment prompts (`webretrieveR`)
+  - cut inference costs by auto-routing tasks to the efficient model (`routerchainR`).
+  - generate documentation directly from your project files (`documentoR`)
+  - translate code comments or text in the IDE (`deepRstudio`)
+  - and more!
 
 #### Other tools and extensions  
-- `Roo Code` coding agent for Code OSS forks (including Positron)
+- Posit Claude Skills
 
-#### Helpful reads
-- New online book: 'AI assistants for Scientific Coding' 
-- Evaluating LLM data visualizations
+#### Interesting reads
+- On the electricity use of LLM tools
 
 :::
 ::::
@@ -57,13 +64,17 @@ urlss <- c(
 "https://github.com/heurekalabsco/axolotr",
 "https://posit-dev.github.io/btw/",
 "https://simonpcouch.github.io/buggy/",
+"https://kumes.github.io/chatAI4R/",
 "https://knowusuboaky.github.io/chatLLM/",
 "https://mlverse.github.io/chattr/",
 "https://simonpcouch.github.io/chores/",
 "https://github.com/lazasaurus-ai/contextR",
 "https://www.continue.dev/",
 "https://github.com/features/copilot",
+"https://github.com/kumeS/deepRstudio",
+"https://jameshwade.github.io/deputy/",
 "https://github.com/cornball-ai/diffuseR",
+"https://github.com/MDRCNY/documentoR",
 "http://ellmer.tidyverse.org/",
 "https://zobaer09.github.io/FakeDataR/",
 "https://jhk0530.github.io/gemini.R/",
@@ -83,8 +94,10 @@ urlss <- c(
 "https://hauselin.github.io/ollama-r/",
 "https://docs.ropensci.org/pangoling/",
 "https://github.com/GabrielKaiserQFin/PerplexR/",
+"https://github.com/lazasaurus-ai/promptmanageR",
 "https://github.com/joeornstein/promptr",
 "https://tidyverse.github.io/ragnar/",
+"https://github.com/lazasaurus-ai/ralphloop",
 "https://www.ekotov.pro/rdocdump/",
 "https://jbgruber.github.io/rollama/",
 "https://r-pkg.thecoatlessprofessor.com/searcher/",
@@ -94,7 +107,8 @@ urlss <- c(
 "https://tidychatmodels.albert-rapp.de/",
 "https://edubruell.github.io/tidyllm/",
 "https://www.r-topics.org/",
-"https://vitals.tidyverse.org/"
+"https://vitals.tidyverse.org/",
+"https://github.com/lazasaurus-ai/webretrieveR"
 )
 
 names(logos) <- urlss

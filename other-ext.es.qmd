@@ -2,6 +2,12 @@
 
 Aquí hay algunas herramientas o extensiones que no se instalan como paquetes R, o que se usan directamente en el navegador.
 
+
+## [Posit Claude Skills](https://github.com/posit-dev/skills)
+
+Este repositorio contiene una colección de Claude Skills escritas para mejorar los flujos de trabajo dentro de paquetes y herramientas desarrolladas por Posit. Las Skills son solo archivos de texto, pero extienden las capacidades de Claude de Anthropic (Claude Code, Claude.ai, o vía API) proporcionando conocimiento especializado y asistencia automatizada para tareas como el desarrollo de paquetes de R (por ejemplo, escribir pruebas, preparar para CRAN), desarrollo de código abierto (por ejemplo, escribir publicaciones de lanzamiento) y trabajar con Shiny y Quarto. Las Skills están organizadas en categorías como r-lib, shiny yQuarto para ayudarnos a generar código de calidad, seguir buenas prácticas y automatizar tareas rutinarias de documentación y estilo.
+
+
 ## [Positron Assistant](https://positron.posit.co/assistant)
 
 Este Asistente de Positron es un cliente de inteligencia artificial experimental para integrar chat y autocompletado basados en LLM dentro de Positron. Está disponible con la versión >=2025.07.0-204. Actualmente, el asistente usa Anthropic para el chat y GitHub Copilot para completar código. Se me hizo muy simlar Continue, pero con una integración mucho más estrecha con el IDE.

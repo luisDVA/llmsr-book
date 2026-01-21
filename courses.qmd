@@ -8,6 +8,10 @@ Here are some courses and guides for actually using the LLM tools listed here. N
 
 ## {.unnumbered}
 
+### Electricity use of AI coding agents {.unnumbered}
+
+This recent [blog post](https://www.simonpcouch.com/blog/2026-01-20-cc-impact/) by Simon Couch presents a thoughtful reflection on the energy use implications of using LLMs. Even though by now we have a better understanding of how much electricity is needed to power our interactions with cloud-hosted models, the data is surprisingly coarse and Simon goes on to explain the huge variation in the scale of interactions with these models. Some people ask a few things here and there, while advanced users use ORDERS of magnitude more tokens and prompts. Interesting read for all users of LLMs.
+
 ### AI assistants for Scientific Coding {.unnumbered}
 
 [AI assistants for Scientific Coding](https://www.seascapemodels.org/AI-assistants-for-scientific-coding/) is a great new online guide by Chris Brown at UTAS. This resource is an easy to follow Quarto book with everything we need to get started with LLM-based tools for scientific computing and analyses in the context of environmental studies. Great structure, useful diagrams, and all the implementations are based on tools for R. A must-read and somewhat of a companion guide to this site, which only lists tools without explaining how to use them.

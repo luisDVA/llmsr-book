@@ -6,6 +6,10 @@ Aquí hay algunos cursos y guías ya para aprender a usar las diferentes herrami
 
 ## {.unnumbered}
 
+### Uso energético de los asistentes AI
+
+En [esta publiación](https://www.simonpcouch.com/blog/2026-01-20-cc-impact/) reciente para su blog, Simon Couch presenta una reflexión profunda sobre el uso de electricidad para emplear LLMs. Aunque ya comprendemos mejor cuánta electricidad se necesita para alimentar nuestras interacciones con modelos alojados en la nube, los datos disponibles son sorprendentemente imprecisos. Simon explica además la enorme variación en la escala de dichas interacciones: algunas personas hacen preguntas ocasionales de vez en cuando, mientras que los usuarios avanzados consumen ÓRDENES de magnitud más tokens y consultas. Lectura interesante para todos los usuarios de LLMs.
+
 ### AI assistants for Scientific Coding {.unnumbered}
 
 [AI assistants for Scientific Coding](https://www.seascapemodels.org/AI-assistants-for-scientific-coding/) es una excelente guía en línea creada por Chris Brown de la Universidad de Tasmania. Este recurso es un libro de Quarto fácil de seguir que tiene todo lo necesario para comenzar a usar herramientas basadas en LLM en la computación y análisis científico dentro del contexto de los estudios ambientales. Este material tiene una estructura clara, diagramas útiles y todas las implementaciones se basan en herramientas para R. Una lectura obligatoria y que sirve como una guía complementaria a este sitio, que solo enumera herramientas sin explicar cómo utilizarlas.

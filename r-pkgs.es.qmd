@@ -6,6 +6,12 @@ Los paquetes están resumidos aquí sin ningún orden en particular, pero los ju
 
 ## Interfaces generales
 
+### [promptmanageR](https://github.com/lazasaurus-ai/promptmanageR)
+
+<img src="images/hex/promptmanageR.png" align="right" height="108"/>
+
+promptmanageR es otra implementación por Lázaro Álvarez, basada en el ‘Prompt Hub’ de Langsmith. El paquete está diseñado para aportar estructura y flexibilidad a la ingeniería de prompts, separando la lógica del código. Con promptmanageR podemos almacenar prompts de sistema y de usuario en archivos JSON externos, inyectar variables dinámicas (por ejemplo, aplicar {{model_x}} a {{dataset_y}}), y renderizar prompts completamente sustituidos al momento de la ejecución. Esto va a servir para tener flujos de trabajo de IA reproducibles y mantenibles. El paquete también puede inspeccionar el texto exacto que se envía al LLM antes de llamarlo. Además, promptmanageR sirve para cargar plantillas de prompts compartidas directamente desde el LangSmith Hub (con una clave API válida), que incluye patrones aprobados por la comunidad. Al igual que todos los paquetes de Lazaro, promptmanageR se integra super bien con ellmer.
+
 ### [wizrd](https://lawremi.github.io/wizrd/)
 
 
@@ -27,6 +33,19 @@ parameterized_agent |> chat(list(var1 = "mpg", var2 = "wt"))
 
 wizrd también incluye herramientas para MCP y RAG, lo cual es bastante impresionante.  
 
+### [chatAI4R](https://kumes.github.io/chatAI4R/)
+<a href="https://cran.r-project.org/package=chatAI4R"><img src="https://www.r-pkg.org/badges/version/chatAI4R" alt="CRAN status" style="display: inline-block;"/></a>
+
+<img src="images/hex/chatAI4R.png" align="right" height="108"/>
+
+El paquete chatAI4R es una interfaz de chat para R. Desarrollado por Satoshi Kume, este paquete funciona con varias API de modelos (OpenAI, Gemini, io.net, Replicate, Dify y DeepL). chat4AIR tiene algunas funciones integradas más allá del simple chat, como construir funciones de R, ejecutar prompts simultáneamente en varios modelos mediante la API de io.net, interpretar resultados estadísticos, y más.
+
+### [documentoR](https://github.com/MDRCNY/documentoR)
+
+<img src="images/hex/documentoR.png" align="right" height="108"/>
+
+documentoR fue desarrollado para automatizar la generación de documentación de proyectos en R aprovechando los LLMs para: resumir archivos, datos, scripts y otros formatos comunes. Con la ruta de un directorio y un objeto de chat de ellmer, podemos procesar cada archivo, producir resúmenes individuales y, opcionalmente, compilarlos en un documentation.md unificado y un archivo README.md conciso derivado de los puntos clave. El paquete puede manejar los tipos de archivos más comunes y excluye cosas como .git o renv por defecto, y admite exclusiones personalizadas a través de un archivo exclude.txt. documentoR también incluye un modo de prueba (dry-run) para previsualizar las salidas sin invocar al LLM, lo cual es bueno para mantenerse al tanto del uso de la API y los tokens. Otro paquete de calidad de Lázaro Álvarez.
+
 ### [chatLLM](https://knowusuboaky.github.io/chatLLM/)
 
 <a href="https://cran.r-project.org/package=chatLLM"><img src="https://www.r-pkg.org/badges/version/chatLLM" alt="CRAN status" style="display: inline-block;"></a>
@@ -40,6 +59,9 @@ Desarrolado por Kwadwo Daddy Nyame Owusu Boakye, chatLLM es otra opción útil p
 
 axolotor por Matthew Hirschey y Pol Castellano Escuder es otro paquete que nos brinda una interfaz generalizada para interactuar con APIs de distintos proveedores de LLMs. El paquete tiene funciones para aprovechar herramientas que son específicas a cada proveedor o modelo. También funciona con modelos locales y con la modalidad de 'thinking' de Claude 3.7 Sonnet. Funciona con una familia de funciones `ask()` y me gustó su logotipo.
 
+### [routerchainR](https://github.com/lazasaurus-ai/routerchainR)
+
+routerchainR de Lázaro Álvarez es una implementación en R del concepto RouterChain de LangChain, construido para distribuir los prompts entrantes al LLM más apropiado según el tipo de contenido o la intención de la consulta (por ejemplo, generar código, chat, prosa). En lugar mandar todos los prompts y contexto a un modelo caro, el paquete utiliza un modelo "router" ligero para clasificar los prompts y distinguir entre código, prosa o consultas breves, y los reenvía automáticamente a un LLM predefinido y optimizado para cada tarea. Así podemos reducir los costos de inferencia y mejorar la calidad de la respuesta, cuando cada prompt es manejado por el modelo más adecuado. Súper útil e integrado estrechamente con el ecosistema ellmer.
 
 ### [chatgpt](https://github.com/jcrodriguez1989/chatgpt)
 
@@ -122,6 +144,14 @@ Una interfaz amigable con el estilo "pipe" para muchos proveedores de chatbots. 
 
 tidyllm de Eduard Brüll proporciona acceso amigable con el estilo "pipe" a múltiples APIs de LLM de una manera legible y amigable. Podemos pasar imágenes, documentos, videos y figuras que están el panel de gráficos a las funciones del paquete, y el paquete tiene una documentación muy completa. Se ve similar a ellmer, y tiene potencial para trabajo interactivo y para procesamiento por lotes. 
 
+### [deepRstudio](https://kumes.github.io/deepRstudio/)
+
+<a href="https://cran.r-project.org/package=deepRstudio"><img src="https://www.r-pkg.org/badges/version/deepRstudio" alt="CRAN status" style="display: inline-block;"/></a>
+
+<img src="images/hex/deepRstudio.png" align="right" height="108"/>
+
+deepRstudio de Staoshi Kume brinda traducción por IA directamente a Rstudio. El diseño está muy interesante, porque está destinado a usuarios de R multilingües o equipos de datos que trabajan en diferentes idiomas. deepRstudio nos permite traducir comentarios de código seleccionados, documentación o cualquier texto al inglés o del inglés a muchos otros idiomas utilizando la API de DeepL. Está bueno poder llamar a las  funciones de traducción a través de addins de RStudio o atajos de teclado, lo que facilita trabajar en varios idiomas sin salir del IDE. Para este tipo de trabajo, la cuenta gratuita en DeepL debería ser suficiente.  
+
 ### [gemini.R](https://jhk0530.github.io/gemini.R/)
 
 <a href="https://cran.r-project.org/package=gemini.R"><img src="https://www.r-pkg.org/badges/version/gemini.R" alt="CRAN status" style="display: inline-block;"></a>
@@ -167,6 +197,18 @@ promptr::complete_prompt("Después de tomar agua la perrita se fue a su cama a a
 
 ## Modelos locales: herramientas y ayudantes basados en Ollama
 
+### [localLLM](https://www.eddieyang.net/software/localllm/)
+
+<a href="https://cran.r-project.org/package=localLLM"><img src="https://www.r-pkg.org/badges/version/localLLM" alt="CRAN status" style="display: inline-block;"/></a>
+
+localLLM de Eddie Yand y Yaosheng Xu nos permite ejecutar LLMs locales en nuestras máquinas desde R, utilizando el backend eficiente llama.cpp. Esto significa que podemos trabajar sin conexión y no necesitamos claves API. localLLM tiene funciones simples como quick_llama() para generar texto listo para usar, y las salidas están diseñadas para ser más reproducibles por defecto, incluso cuando cambiando la temperatura de muestreo. Después de instalar localLLM podemos usar install_localLLM() para obtener automáticamente el llama.cpp precompilado adecuado para nuestra máquina. Muy buena herramienta para ciertos campos científicos, porque toma en cuenta la privacidad y la reproducibilidad. Este paquete puede ser útil para tareas como el análisis de sentimientos o el para resumir datos.
+
+### [shiny.ollama](https://github.com/ineelhere/shiny.ollama)
+
+<a href="https://cran.r-project.org/package=shiny.ollama"><img src="https://www.r-pkg.org/badges/version/shiny.ollama" alt="CRAN status" style="display: inline-block;"/></a>
+
+shiny.ollama de Indraneel Chakraborty usa Shiny para proporcionarnos una interfaz amigable para interactuar sin conexión con LLMs de código abierto como Deepseek-r1, Llama y Qwen a través de Ollama. De esta manera podemos ejecutar modelos locales de forma privada y sin conexión. Este debería ser un desarrollo significativo para reducir la curva de aprendizaje y ayudar a más personas a usar modelos locales con una interfaz de amigable. Las características clave del paquete incluyen selección de modelos, cajita para chat, opción de exportar el historial, y control sobre la temperatura y la ventana de contexto. Necesita Ollama para correr.
+
 ### [ollamar](https://hauselin.github.io/ollama-r/)
 
 <a href="https://cran.r-project.org/package=ollamar"><img src="https://www.r-pkg.org/badges/version/ollamar" alt="CRAN status" style="display: inline-block;"></a>
@@ -207,9 +249,26 @@ ensure es otro paquete desarrollado por Simon Couch que nos ayuda a escribir có
 
 vitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de difentes modelos. Se le dan _inputs_ (tareas o preguntas) y _targets_ (las respuestas o soluciones que esperamos) y de ahí los modelos que están siendo evaluados contestan los problemas y son evaluados en su desempeño. Aquí hay dos ejemplos ([1](https://www.simonpcouch.com/blog/2025-04-01-gemini-2-5-pro/#an-r-eval-dataset), [2](https://www.simonpcouch.com/blog/2025-05-21-gemini-2-5-flash/))de como comparar el desempeño de diferentes modelos para programar en R, todo usando vitals. 
 
-## Creación de agentes de IA modulares
+## Agentes de IA y asistentes
 
-###[MyOwnRobs](https://myownrobs.github.io/myownrobs/)
+### [side](https://simonpcouch.github.io/side/)
+
+side de Simon Couch nos permite usar un asistente de experimental, o "side::kick()", para tareas de ciencia de datos directamente en Rstudio. Ahora que Rstudio tiene un panel de altura completa en el que podemos vizualizar contenido HTML inclyendo aplicaciones de Shiny, podemos ejecutar el asistente en Rstudio de manera similar a las extensiones de IA en Positron y vscode/cursor/etc.
+side está construido sobre ellmer, shinychat y btw. El asistente puede ver nuestro entorno de R, leer y escribir archivos, ejecutar código, ejecutar comandos de sistema, verificar la documentación de R e incluso seguir "habilidades" definidas por el usuario (guías Markdown para flujos de trabajo específicos). Funciona con cualquier modelo compatible con ellmer y mantiene la conversación a través de sesiones. OJO, que side es experimental y posit está desarrollando un asistente oficial para Rstudio que también va a vivir en la barra lateral.
+
+### [ralphloop](https://github.com/lazasaurus-ai/ralphloop)
+<img src="images/hex/ralph-wiggum.png" align="right" height="108"/>
+
+ralphloop se incorporó hace poco al universo de herramientas de R y LLM de Lázaro Álvarez. ralphloop implementa un flujo de trabajo persistente e iterativo para tareas impulsadas por LLM, esencialmente una adaptación en R del "Ralph Wiggum Plugin" para Claude Code de Anthropic, pero construido sobre ellmer. En lugar de trabajar en una ventana de chat, podemos ejecutar loops autónomos en los que un agente ejecuta planes de varios pasos, actualiza archivos y mantiene el estado a través de iteraciones. El bucle sigue indefinidamente hasta que el modelo emite un token de éxito específico y predefinido (por ejemplo, <promise>ALL TESTS PASS</promise>), asegurando que las tareas estén realmente terminadas antes de detenerse.
+
+"Ralph Wiggum coding" (o el Ralph Loop) se refiere a un enfoque de LLM reciente llamado así por la actitud optimista y necedad de Rafa Gorgory (supongo). En la práctica, atrapamos a un LLM en un bucle "while" donde debe criticar y corregir continuamente su propio trabajo hasta que cumpla con una definición rigurosa de "listo".
+
+### [deputy](https://jameshwade.github.io/deputy/)
+<img src="images/hex/deputy.png" align="right" height="108"/>
+
+deputy de James Wade implementa flujos de trabajo agénticos como el Claude Agent SDK (Kit de Desarrollo de Software) de Anthropic, pero en R. De esta manera podemos crear agentes que usan herramientas para realizar tareas complejas de múltiples pasos. deputy está construido sobre ellmer, por lo que es sirve con muchos modelos. Al crear estos agentes, el paquete tiene diferentes juegos de herramientas disponibles, como herramientas para operaciones de archivos, análisis o manipulación de datos y ejecución de código, siempre con control fino sobre los permisos que le damos al modelo de hacer cosas. Esto está más allá de mis habilidades, pero también hay _hooks_ para interceptar y modificar el comportamiento del agente en diferentes puntos y soporte para ir mostrando las salidas en tiempo real. 
+
+### [MyOwnRobs](https://myownrobs.github.io/myownrobs/)
 <img src="images/hex/myownrobslogo.png" align="right" height="108"/>
 
 MyOwnRobs por Juan Cruz Rodriguez es lo más cercano que he visto a  Cursor pero para RStudio. El paquete se ejecuta como una aplicación de Shiny dentro del IDE y me impresionó mucho cómo el asistente es reconoce contexto en el entorno global y en las carpetaas y puede armar flujos de trabajo de múltiples pasos que incluyen operaciones con archivos.
@@ -445,6 +504,10 @@ Me gustó mucho el logotipo del paquete y ejemplo en su página de inicio es un 
 
 ## Generación de imágenes
 
+### [stableDiffusion4R](https://github.com/kumeS/stableDiffusion4R)
+
+stableDiffusion4R de Satoshi Kume conecta R con APIs de Stable Diffusion para tareas de generación y transformación de imágenes. Podemos usar métodos de texto a imagen, escalado de imagen e imagen a imagen con este paquete. Utiliza las API de OpenAI o DreamStudio y el paquete tiene funciones preconstruidas para hacer cosas como generar imágenes usando Stable Diffusion o DALL.E.2, crear prompts específicos a la generación de imágenes, e incluso crear logotipos hexagonales.
+
 ### [diffuseR](https://github.com/cornball-ai/diffuseR)
 
 <img src="images/hex/diffuseRlogo.png" align="right" height="108"/>
@@ -454,6 +517,11 @@ diffuseR de Troy Hernandez es una implementación en R de modelos de difusión p
 
 ## Transformers
 
+### [LLMing](https://github.com/sliplr19/LLMing)
+
+<a href="https://cran.r-project.org/package=LLMing"><img src="https://www.r-pkg.org/badges/version/LLMing" alt="CRAN status" style="display: inline-block;"/></a>
+
+LLMing (lemming) de Lindley Slipetz y Teague Henry es un paquete compacto para el análisis de texto psicológico. Utiliza embeddings BERT y actualmente incluye funciones para la generación de texto y la detección de anomalías textuales. 
 
 ### [text](https://r-text.org/)
 
@@ -491,6 +559,11 @@ Bruno Nicenboim, Chris Emmerly, y Giovanni Cassani desarrollaron pangoling, un p
 Me gustó mucho ver un paquete de rOpenSci en este campo.
 
 ## Búsquedas desde R
+
+### [webretrieveR](https://github.com/lazasaurus-ai/webretrieveR )
+<img src="images/hex/webretrieveR.png" align="right" height="108"/>
+
+webretrieveR de Lázaro Álvarez nos trae una interfaz ligera y optimizada para obtener información de la reddirectamente en R para su uso en flujos de trabajo de LLM. Admite búsquedas en DuckDuckGo (priorizando las respuestas instantáneas cuando están disponibles) y Wikipedia. Devuelve texto limpio y estructurado que podemos usar posteriormente, incluyendo canalizar este nuevo contexto a flujos de trabajo de ellmer. webretrieveR nos permite, en última instancia, enriquecer los prompts con contexto en tiempo real para obtener resultados más precisos y relevantes. Hay planes para agregar búsquedas en Brave, PubMed, arXiv, Bing y CRAN.
 
 ### [searcher](https://r-pkg.thecoatlessprofessor.com/searcher/)
 
