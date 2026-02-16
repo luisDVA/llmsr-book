@@ -63,6 +63,16 @@ axolotor por Matthew Hirschey y Pol Castellano Escuder es otro paquete que nos b
 
 routerchainR de Lázaro Álvarez es una implementación en R del concepto RouterChain de LangChain, construido para distribuir los prompts entrantes al LLM más apropiado según el tipo de contenido o la intención de la consulta (por ejemplo, generar código, chat, prosa). En lugar mandar todos los prompts y contexto a un modelo caro, el paquete utiliza un modelo "router" ligero para clasificar los prompts y distinguir entre código, prosa o consultas breves, y los reenvía automáticamente a un LLM predefinido y optimizado para cada tarea. Así podemos reducir los costos de inferencia y mejorar la calidad de la respuesta, cuando cada prompt es manejado por el modelo más adecuado. Súper útil e integrado estrechamente con el ecosistema ellmer.
 
+### [tidyprompt](https://kennispunttwente.github.io/tidyprompt/)
+
+<a href="https://cran.r-project.org/package=tidyprompt"><img src="https://www.r-pkg.org/badges/version/tidyprompt" alt="CRAN status" style="display: inline-block;"/></a>
+
+tidyprompt por Luka Koning y Tjark Van de Merwe proporciona un marco útil para construir prompts y su lógica asociada. El "tidy" en el nombre está inspirado en la sintaxis de _pipes_ del tidyverse y conceptualmente usa una sintaxis aditiva para los prompts, similar a cómo construimos operaciones de datos complejas con dplyr o figuras con ggplot2. El paquete introduce "prompt wraps" como elementos modulares que se pueden encadenar para transformar prompts simples en más sofisticados, agregando simultáneamente funciones de extracción y validación para las respuestas del LLM. Algunas características clave incluyen la capacidad de forzar ciertos tipos de salidas (enteros, lógicos, JSON, patrones regex), mecanismos de reintento automático cuando las salidas no cumplen con los criterios de validación, modos de razonamiento, llamadas a funciones (permitiendo que los LLMs ejecuten funciones de R como herramientas), generación y evaluación de código, y verificación humana en el proceso.
+
+Como ejemplo rápido, podemos hacer cosas como: `"¿Cuánto es 5+5?" |> answer_as_integer() |> send_prompt()`. 
+
+tidyprompt funciona con cualquier proveedor y es  compatible con objetos de chat de ellmer, definiciones de salida estructurada y herramientas de servidor MCP.
+
 ### [chatgpt](https://github.com/jcrodriguez1989/chatgpt)
 
 <a href="https://cran.r-project.org/package=chatgpt"><img src="https://www.r-pkg.org/badges/version/chatgpt" alt="CRAN status" style="display: inline-block;"></a>
@@ -251,6 +261,18 @@ vitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de 
 
 ## Agentes de IA y asistentes
 
+### [reviewer](https://github.com/simonpcouch/reviewer)
+
+reviewer es otro paquete de Simon Couch, diseñado para brindar revisión de código interactiva impulsada por LLMs y ayudarnos a mejorar la calidad de nuestro código con sugerencias automatizadas para reproducibilidad, legibilidad y resiliencia. La función principal del paquete `review()` analiza scripts de R y abre una aplicación Shiny donde podemos ver y aceptar o rechazar interactivamente las recomendaciones. Estas sugerencias incluyen identificar paquetes redundantes, mejoras de código, y señalar problemas potenciales. reviewer está construido sobre ellmer, por lo que es compatible con múltiples proveedores de modelos. Simon mencionó esto durante un chat de Zoom del Data Science Labs y parece una herramienta muy práctica para desarrolladores que buscan mantener altos estándares de código sin revisión manual por pares. Me gustó ver la retroalimentación real en lugar de solo diffs para código revisado por LLM.
+
+### [predictive](https://github.com/simonpcouch/predictive)
+
+predictive por Simon Couch es un fork de databot por Joe Cheng, que es la versión temprana del asistente oficial de EDA Databot para Positron. predictive se ejecuta como una aplicación Shiny y está diseñado específicamente para modelado predictivo con tidymodels, a través de una interfaz interactiva para guiarnos a través de flujos de trabajo apropiados de aprendizaje automático, asegurando mejores prácticas como división apropiada de datos, remuestreo y evitar contaminación del conjunto de prueba. Después de recorrer la preparación inicial de datos y el análisis exploratorio, predictive colabora para echar a andar flujos de trabajo de modelado y mejorar el rendimiento predictivo a través de muchas iteraciones. La herramienta tiene ejecución de código asíncrona para manejar modelos que tardan mucho en correr y el asistente tiene herramientas especializadas para mantener una "postura" de modelado adecuada durante todo el proceso (por ejemplo, no estar demasiado ansioso por usar los datos de prueba (testing) prematuramente). Otra idea genial de Simon, quien por cierto solía ser parte del equipo de tidymodels.
+
+### [llamaR](https://github.com/cornball-ai/llamaR)
+
+Troy Hernandez es un máquina de paquetes relevantes, habiendo lanzado recientemente un gran conjunto de herramientas LLM para R y escritas en R. llamaR es un agente de codificación de IA construido completamente en R que se ejecuta en la terminal como un CLI, como Claude Code o Gemini CLI. llamar puede conectarse a varios proveedores (Anthropic, OpenAI, Ollama) a través de MCP y viene con herramientas prácticas como acceso a la terminal, operaciones de archivos, integración con Git y ejecución de código de R. También podemos usar "skills", que son archivos de instruccione sen Markdown que funcionan tanto en llamaR como en openclaw. llamaR fue desarrollado con el objetivo de minimizar dependencias, tiene un modo de voz opcional, historial de conversaciones con capacidad de búsqueda y la capacidad de funcionar como servidor y cliente MCP. Ya lo probé y está buenazo.
+
 ### [side](https://simonpcouch.github.io/side/)
 
 side de Simon Couch nos permite usar un asistente de experimental, o "side::kick()", para tareas de ciencia de datos directamente en Rstudio. Ahora que Rstudio tiene un panel de altura completa en el que podemos vizualizar contenido HTML inclyendo aplicaciones de Shiny, podemos ejecutar el asistente en Rstudio de manera similar a las extensiones de IA en Positron y vscode/cursor/etc.
@@ -299,6 +321,15 @@ LLMAgentR de Kwadwo Daddy Nyame Owusu Boakye trae a R un marco de ejecución de 
 LLMAgentR utiliza funciones de `chatLLM` para construir agentes para: generación de código, consultas SQL, limpieza de datos, investigación web, pronósticos temporales, visualización de datos y más.
 
 El paquete tiene muchas dependencias, así que tengan paciencia en la instalación. Probé los agentes de limpieza de datos con buenos resultados, aunque estos flujos de trabajo iterativos consumen muchos tokens y las  cuentas gratuitas de la mayoría de los proveedores pueden no ser suficientes. ¡Una gran adición en general al espacio de LLM + R!
+
+
+### [llmflow](https://github.com/Zaoqu-Liu/llmflow)
+
+<a href="https://cran.r-project.org/package=llmflow"><img src="https://www.r-pkg.org/badges/version/llmflow" alt="CRAN status" style="display: inline-block;"/></a>
+
+llmflow por Zaoqu Liu implementa la arquitectura ReAct (Razonamiento y Acción) para análisis de datos automatizados impulsados por LLMs. En este enfoque, los LLMs pueden resolver tareas analíticas complejas a través de ciclos iterativos de razonamiento, generación de código y ejecución. El paquete incluye funciones como `AutoFlow()` para análisis automatizado de principio a fin, `react_r()` para bucles ReAct multiturno (donde el LLM alterna entre hacer planes y ejecutar código de R), `response_to_r()` para ejecutar de forma segura el código generado por IA en sesiones aisladas, `response_as_json()` para salida estructurada, y `retrieve_docs()` para enriquecimiento RAG de nuestros prompts con documentación sobre funciones de R. llmflow está construido sobre el ecosistema de paquetes ellmer, por lo que funcionará con la mayoría de los proveedores de modelos.
+
+llmflow nos permite hacer cosas como ejecutar `AutoFlow(llm, "Realizar regresión lineal de mpg en hp y wt usando mtcars")` y obtener un análisis completo con código ejecutable, visualizaciones e interpretaciones, todo sin intervención manual.
 
 ## mlverse
 
@@ -523,22 +554,6 @@ diffuseR de Troy Hernandez es una implementación en R de modelos de difusión p
 
 LLMing (lemming) de Lindley Slipetz y Teague Henry es un paquete compacto para el análisis de texto psicológico. Utiliza embeddings BERT y actualmente incluye funciones para la generación de texto y la detección de anomalías textuales. 
 
-### [text](https://r-text.org/)
-
-<a href="https://cran.r-project.org/package=text"><img src="https://www.r-pkg.org/badges/version/text" alt="CRAN status" style="display: inline-block;"></a>
-
-<img src="images/hex/textlogo.png" align="right" height="108"/>
-
-El paquete text por Oscar Kjell, Salvatore Giorgi y Andrew Schwartz utiliza modelos basados en _transformers_ para analizar lenguaje natural. text nos da acceso a modelos de Hugging Face para transformar texto en embeddings de palabras y usarlos en otras tareas, incluyendo RAG. Una herramienta excelente para trabajos de NLP que también puede ayudar a los usuarios de LLM en general a entender mejor los embeddings de palabras.
-
-text, junto con talk y topics (ver abajo), forma parte de el _R Language Analysis Suite_, un conjunto de tres paquetes relacionados desarrollados para trabajar con lenguaje natural.
-
-
-### [talk](https://www.r-talk.org/)
-
-<img src="images/hex/talklogo.png" align="right" height="108"/>
-
-El paquete talk por Oscar Kjell, Adithya Ganesan, Rajath Rao y Akshay Raghavan es similar a text, pero permite transcribir audio a texto y generar embeddings a partir de grabaciones de voz. Utiliza transformers de Hugging Face instalando los paquetes de Python relevantes en un entorno de conda.
 
 ### [topics](https://www.r-topics.org/)
 
@@ -558,6 +573,47 @@ Bruno Nicenboim, Chris Emmerly, y Giovanni Cassani desarrollaron pangoling, un p
 
 Me gustó mucho ver un paquete de rOpenSci en este campo.
 
+### [huggingfaceR](https://github.com/farach/huggingfaceR)
+<img src="images/hex/huggingfacer.png" align="right" height="108"/>
+
+huggingfaceR por Alex Farach, Sam Terfa y Jack Penzer es un paquete orientado a APIs que proporciona acceso nativo en R a los ~500,000 modelos de aprendizaje automático, embeddings y conjuntos de datos en el Hub de Hugging Face sin ninguna dependencia de Python. huggingfaceR nos trae una interfaz compatible con tidyverse para tareas comunes de NLP y ML, incluyendo clasificación de texto (análisis de sentimiento, clasificación zero-shot), embeddings de texto con cálculo de similitud semántica, chats con LLMs de código abierto, y generación de texto. Las salidas están estructuradas como tibbles ordenados que se integran bien con herramientas tidy en general, incluyendo flujos de trabajo de dplyr, tidymodels y tidytext. Con el paquete podemos ejecutar operaciones sofisticadas como búsqueda semántica, agrupación de documentos, extracción de temas o cargar conjuntos de datos de Hugging Face directamente como tibbles. Después de iniciar sesión con una clave API de Hugging Face, podemos buscar y explorar modelos en el Hub de Hugging Face e incluso incorporar embeddings como _features_ en _recetas_ de tidymodels. Esto nos permitirá usar modelos nuevos y útiles en R a través de una sintaxis familiar y compatible con pipes como:
+`reviews |> mutate(sentiment = hf_classify(text))`
+
+## Procesamiento de voz y audio
+
+### [chatterbox](https://github.com/cornball-ai/chatterbox)
+
+chatterbox por Troy Hernandez es una implementación de procesador de texto a voz de Resemble AI, escrita en R para síntesis de voz de alta calidad usando torch y sin dependencias de Python. chatterbox tiene una interfaz sencilla para clonación de voz y síntesis a partir de textos. De esta manera podemos convertir texto a voz usando muestras de audio de referencia. El paquete tiene soporte CUDA para aquellos con GPUs y funciones convenientes como `quick_tts()` para prototipos rápidos. chatterbox solo la cara del stack de cornballAI para convertir texto a voz. Las otras piezas de la maquinaria son:
+
+- tts.api - Interfaz R unificada para múltiples backends de TTS
+- cornfab - Aplicación Shiny para generación de voz
+- chatterbox-tts-api - Contenedor Docker para Chatterbox
+- qwen3-tts-api - Contenedor Docker para Qwen3-TTS
+
+Troy escribió un buen resumen sobre el conjunto de herramientas. Más sobre esto [aquí](https://cornball.ai/posts/text-to-speech-in-r/).
+
+### [whisper](https://github.com/cornball-ai/whisper)
+
+<a href="https://cran.r-project.org/package=whisper"><img src="https://www.r-pkg.org/badges/version/whisper" alt="CRAN status" style="display: inline-block;"/></a>
+
+whisper por Troy Hernandez es una implementación nativa en R del modelo de voz a texto Whisper de OpenAI. La diferencia es que esta implementación está construida completamente con torch, eliminando dependencias de Python. El paquete ofrece una interfaz para convertir audio a texto con modelos de diferentes tamaños (desde el modelo tiny de 151MB hasta la variante large-v3 de 6.2GB). Podemos hacer transcripción multilingüe con optimización específica de idioma y traducción directa al inglés. whisper tiene gestión automática de modelos a través del caché de HuggingFace, selección flexible de dispositivo (CPU/CUDA) y audio de muestra incluido para pruebas rápidas. whisper nos trae reconocimiento automático de voz directamente en R con una simple llamada a `transcribe()`.
+
+### [text](https://www.r-text.org/)
+
+<a href="https://cran.r-project.org/package=text"><img src="https://www.r-pkg.org/badges/version/text" alt="CRAN status" style="display: inline-block;"/></a>
+
+<img src="images/hex/textlogo.png" align="right" height="108"/>
+
+El paquete text por Oscar Kjell, Salvatore Giorgi y Andrew Schwartz utiliza modelos basados en _transformers_ para analizar lenguaje natural. text nos da acceso a modelos de Hugging Face para transformar texto en embeddings de palabras y usarlos en otras tareas, incluyendo RAG. Una herramienta excelente para trabajos de NLP que también puede ayudar a los usuarios de LLM en general a entender mejor los embeddings de palabras.
+
+text, junto con talk y topics (ver abajo), forma parte de el _R Language Analysis Suite_, un conjunto de tres paquetes relacionados desarrollados para trabajar con lenguaje natural.
+
+### [talk](https://www.r-talk.org/)
+
+<img src="images/hex/talklogo.png" align="right" height="108"/>
+
+El paquete talk por Oscar Kjell, Adithya Ganesan, Rajath Rao y Akshay Raghavan es similar a text, pero permite transcribir audio a texto y generar embeddings a partir de grabaciones de voz. Utiliza transformers de Hugging Face instalando los paquetes de Python relevantes en un entorno de conda.
+
 ## Búsquedas desde R
 
 ### [webretrieveR](https://github.com/lazasaurus-ai/webretrieveR )
@@ -573,4 +629,5 @@ webretrieveR de Lázaro Álvarez nos trae una interfaz ligera y optimizada para 
 
 
 searcher es un paquete enfocado a brindarnos una interfaz de búsqueda directamente dentro de R. Desarrollado por James Balamuta, searcher tiene funciones para hacer búsquedas en distintos buscadores web pero también tiene integración con asistentes de IA, que al hacer búsquedas o preguntas nos abre un navegador listo para contestar. Por ejemplo, con la función `ask_claude()` o `ask_perplexity()`.
+
 

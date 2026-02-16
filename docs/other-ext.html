@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<link rel="alternate" hreflang="en" href="https://luisdva.github.io/llmsr-book/other-ext.html" />
-<link rel="alternate" hreflang="es" href="https://luisdva.github.io/llmsr-book/es/other-ext.es.html" />
+<link rel="alternate" hreflang="en" href="https://luisdva.github.io/llmsr-book//other-ext.html" />
+<link rel="alternate" hreflang="es" href="https://luisdva.github.io/llmsr-book//es/other-ext.es.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.7.31">
@@ -96,7 +96,7 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
         </div>
         </div>
     <div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-map"></i> English</button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://luisdva.github.io/llmsr-book/es/other-ext.es.html" id="language-link-es">Español</a></li></ul>
+<button class="btn btn-primary dropdown-toggle babelquarto-languages-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-map"></i> English</button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://luisdva.github.io/llmsr-book//es/other-ext.es.html" id="language-link-es">Español</a></li></ul>
 </div>
 <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
@@ -145,7 +145,12 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
    
   <ul>
 <li><a href="#posit-claude-skills" id="toc-posit-claude-skills" class="nav-link active" data-scroll-target="#posit-claude-skills"><span class="header-section-number">3.1</span> Posit Claude Skills</a></li>
-  <li><a href="#positron-assistant" id="toc-positron-assistant" class="nav-link" data-scroll-target="#positron-assistant"><span class="header-section-number">3.2</span> Positron Assistant</a></li>
+  <li>
+<a href="#positron-assistant" id="toc-positron-assistant" class="nav-link" data-scroll-target="#positron-assistant"><span class="header-section-number">3.2</span> Positron Assistant</a>
+  <ul class="collapse">
+<li><a href="#gemini-cli-companion" id="toc-gemini-cli-companion" class="nav-link" data-scroll-target="#gemini-cli-companion"><span class="header-section-number">3.2.1</span> gemini CLI companion</a></li>
+  </ul>
+</li>
   <li><a href="#roo-code" id="toc-roo-code" class="nav-link" data-scroll-target="#roo-code"><span class="header-section-number">3.3</span> Roo Code</a></li>
   <li><a href="#databot" id="toc-databot" class="nav-link" data-scroll-target="#databot"><span class="header-section-number">3.4</span> Databot</a></li>
   <li><a href="#cursor-best-practices-for-r-prompt-file" id="toc-cursor-best-practices-for-r-prompt-file" class="nav-link" data-scroll-target="#cursor-best-practices-for-r-prompt-file"><span class="header-section-number">3.5</span> Cursor best practices for R prompt file</a></li>
@@ -181,7 +186,11 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <span class="header-section-number">3.2</span> <a href="https://positron.posit.co/assistant">Positron Assistant</a>
 </h2>
 <p>Positron Assistant is currently a preview/experimental AI client for integrating LLM-based chat and autocomplete within Positron. Available with version &gt;= 2025.07.0-204. At present the assistant supports Anthropic for chat, and GitHub Copilot for code completions. Seems similar to Continue but with a much tighter integration with the IDE.</p>
-</section><section id="roo-code" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="roo-code">
+<section id="gemini-cli-companion" class="level3" data-number="3.2.1"><h3 data-number="3.2.1" class="anchored" data-anchor-id="gemini-cli-companion">
+<span class="header-section-number">3.2.1</span> <a href="https://open-vsx.org/extension/Google/gemini-cli-vscode-ide-companion/reviews">gemini CLI companion</a>
+</h3>
+<p>The Gemini CLI is an open source AI assistant from Google that we run in the terminal. After a recent update, we can now run the gemini CLI companion extension in vscode forks including Positron. This means enhanced integration between the CLI too and our IDE. The update brings awareness of our open files and project structure through “Open Editor File Context”, while “Selection Context” allows the CLI tool to access our cursor position and selected text for better context. The code changes suggested by Gemini CLI can now be reviewed and accepted directly in the editor through Native Diffing, and we can also use the Command Palette (Cmd+Shift+P or Ctrl+Shift+P) to interact with the CLI sessions.</p>
+</section></section><section id="roo-code" class="level2" data-number="3.3"><h2 data-number="3.3" class="anchored" data-anchor-id="roo-code">
 <span class="header-section-number">3.3</span> <a href="https://docs.roocode.com/">Roo Code</a>
 </h2>
 <p>Roo Code is another option for running more advanced coding agents in our IDE. We can install Roo Code as an extension in Code OSS forks including Positron, and I’ve heard some R users have had good experiences with this tool.</p>

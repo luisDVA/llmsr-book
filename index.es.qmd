@@ -19,24 +19,21 @@ css: indstyle.scss
 :::: {.dancing-shadow-box}
 ::: {.box-content}
 
-### Últimas actualizaciones (Enero 2026):
+### Últimas actualizaciones (Febrero 2026):
 
 #### Paquetes 
-- ¡14 paquetes nuevos!
-  - agentes que planifican y se autocorrigen (`deputy`, `ralphloop`)
-  - asistente de IA en RStudio (`side`)
-  - más herramientas para ejecutar modelos locales (`localLLM`, `shiny.ollama`)
-  - gestionar prompts como usando archivos externos (`promptmanageR`)
-  - enriquecer prompts con búsquedas en la web (`webretrieveR`)
-  - elegir el modelo más eficiente para cada tarea (`routerchainR`)
-  - generar documentación sobre los archivos en un proyecto (`documentoR`)
-  - traducción de idiomas en el IDE (`deepRstudio`)
+- ¡8 paquetes nuevos!
+  - Revisión interactiva de código con sugerencias automatizadas (`reviewer`)
+  - asistente de modelado predictivo con tidymodels (`predictive`)
+  - agente CLI de IA escrito completamente en R (`llamaR`)
+  - construcción ordenada de prompts con validación (`tidyprompt`)
+  - arquitectura ReAct para análisis de datos automatizado (`llmflow`)
+  - acceso nativo a modelos y datos de Hugging Face (`huggingfaceR`)
+  - transcripción de voz a texto con Whisper en R puro (`whisper`)
+  - síntesis de voz usando torch sin dependencias de Python (`chatterbox`)
   
 #### Otras herramientas y extensiones
-- Skills para Claude de Posit 
-
-#### Lecturas interesantes
-- Sobre el uso de energía de herramientas de IA
+- **Gemini CLI companion** - extensión open-vsx con integración mejorada en el IDE
 
 :::
 ::::

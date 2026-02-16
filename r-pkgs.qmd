@@ -10,7 +10,7 @@ In no particular order, but now grouped into loose groups:
 
 <img src="images/hex/promptmanageR.png" align="right" height="108"/>
 
-promptmanageR is another cool implementation by Lázaro Álvarez, based on Langsmith’s Prompt Hub. This package was designed to bring structure and flexibility to LLM prompt engineering by separating logic from code. With promptmanageR we can store system and user prompts in external JSON files, inject dynamic variables using placeholders (e.g., apply {{model_x}} to {{dataset_y}}), and render fully substituted prompts at runtime. This is great for reproducible and maintainable AI workflows. The package also has interactive preview functionality to inspect the exact text being sent to the LLM before calling it. Additionally, promptmanageR supports pulling shared prompt templates directly from the LangSmith Hub (with a valid API key) which includes community-vetted patterns. Like all of Lazaro’s packages, promptmanageR integrates smoothly with ellmer and friends.
+promptmanageR is another cool implementation by Lázaro Álvarez, based on Langsmith's Prompt Hub. This package was designed to bring structure and flexibility to LLM prompt engineering by separating logic from code. With promptmanageR we can store system and user prompts in external JSON files, inject dynamic variables using placeholders (e.g., apply {{model_x}} to {{dataset_y}}), and render fully substituted prompts at runtime. This is great for reproducible and maintainable AI workflows. The package also has interactive preview functionality to inspect the exact text being sent to the LLM before calling it. Additionally, promptmanageR supports pulling shared prompt templates directly from the LangSmith Hub (with a valid API key) which includes community-vetted patterns. Like all of Lazaro's packages, promptmanageR integrates smoothly with ellmer and friends.
 
 
 ### [wizrd](https://lawremi.github.io/wizrd/)
@@ -62,12 +62,21 @@ chatLLM by Kwadwo Daddy Nyame Owusu Boakye is another useful option for when we 
 
 <img src="images/hex/axolotrlogo.png" align="right" height="108"/>
 
-This package by Matthew Hirschey and Pol Castellano Escuder provides a unified interface for interacting with various Language Model APIs. axolotr has some useful functions to take advantage of provider-specific features, local model support, and support for Claude 3.7 Sonnet’s 'thinking' capability. Works through a simple family of `ask()` functions. Cute logo too.
+This package by Matthew Hirschey and Pol Castellano Escuder provides a unified interface for interacting with various Language Model APIs. axolotr has some useful functions to take advantage of provider-specific features, local model support, and support for Claude 3.7 Sonnet's 'thinking' capability. Works through a simple family of `ask()` functions. Cute logo too.
 
 ### [routerchainR](https://github.com/lazasaurus-ai/routerchainR)
 
-routerchainR by Lázaro Álvarez is an R implementation of LangChain’s RouterChain concept, built to route incoming prompts to the most appropriate LLM based on content type or query intent (e.g., coding, chat, prose). Rather than sending all prompts and context to a fancy (and often expensive) model, the package uses a lightweight, cost-effective "router" model to classify prompts and distinguish between code, prose, or short factual queries and automatically forwards them to predefined destination LLM optimized for each task. This approach helps reduce inference costs and improves response quality, making sure that each prompt is handled by the best-suited model. Super useful and integrated tightly with the ellmer ecosystem.
+routerchainR by Lázaro Álvarez is an R implementation of LangChain's RouterChain concept, built to route incoming prompts to the most appropriate LLM based on content type or query intent (e.g., coding, chat, prose). Rather than sending all prompts and context to a fancy (and often expensive) model, the package uses a lightweight, cost-effective "router" model to classify prompts and distinguish between code, prose, or short factual queries and automatically forwards them to predefined destination LLM optimized for each task. This approach helps reduce inference costs and improves response quality, making sure that each prompt is handled by the best-suited model. Super useful and integrated tightly with the ellmer ecosystem.
 
+### [tidyprompt](https://kennispunttwente.github.io/tidyprompt/)
+
+<a href="https://cran.r-project.org/package=tidyprompt"><img src="https://www.r-pkg.org/badges/version/tidyprompt" alt="CRAN status" style="display: inline-block;"/></a>
+
+tidyprompt by Luka Koning and Tjark Van de Merwe provides a composable framework for constructing prompts and associated logic for LLM interactions. The tidy in the name is inspired by tidyverse pipe syntax and conceptually uses an additive syntax for LLM prompts, similar to how we build complex data operations with dplyr or figures with ggplot2. The package introduces "prompt wraps" as modular building blocks that can chain together to transform simple prompts into more sophisticated ones and simultaneously adding extraction, validation, and feedback functions for LLM responses. Some key features include the ability to enforce certain outputs (integers, booleans, JSON, regex patterns), automatic retry mechanisms when outputs don't meet validation criteria, reasoning modes, function calling (allowing the LLMs to autonomously call R functions as tools), code generation and evaluation, and human-in-the-loop verification.
+
+As a quick example, we can do things like: `"What is 5+5?" |> answer_as_integer() |> send_prompt()`. 
+
+tidyprompt is provider-agnostic and compatible with ellmer chat objects, structured output definitions, and MCP server tools.
 
 ### [chatgpt](https://github.com/jcrodriguez1989/chatgpt)
 
@@ -85,7 +94,7 @@ After setting up an API key, we can work with pre-promted RStudio addins to do u
 
 Privacy is always an issue when using LLMs and we may not want to set up and run local models nor share our data with the model APIs. Zobaer Ahmed created FakeDataR for a smooth way to tacke this problem, and in Zobaer's own words:
 
-Hand-editing real datasets to make “fake” examples can be slow, brittle, and risky. FakeDataR runs entirely in R. FakeDataR generates privacy-preserving synthetic datasets directly from your real data on your own machine. It mirrors schema, types, factor levels, and missingness; produces a documented synthetic copy; and keeps original data private. You can then share or upload the synthetic data to an LLM to prototype prompts, debug pipelines, or request help, without exposing sensitive information and/or original data.
+Hand-editing real datasets to make "fake" examples can be slow, brittle, and risky. FakeDataR runs entirely in R. FakeDataR generates privacy-preserving synthetic datasets directly from your real data on your own machine. It mirrors schema, types, factor levels, and missingness; produces a documented synthetic copy; and keeps original data private. You can then share or upload the synthetic data to an LLM to prototype prompts, debug pipelines, or request help, without exposing sensitive information and/or original data.
 
 A very useful package for privacy!
 
@@ -151,7 +160,7 @@ tidyllm by Eduard Brüll provides pipe-friendly access to multiple LLM APIs in a
 
 <img src="images/hex/deepRstudio.png" align="right" height="108"/>
 
-deepRstudio by Staoshi Kume brings AI-powered translation directly into Rstudio. Very interesting design, meant for multilingual R users or data teams. DeepRstudio lets us translate selected code comments, documentation, or any text to English or from English into  many other languages using the DeepL API. Very nice approach of calling translation functions through RStudio add-ins or keyboard shortcuts, making it easy to work across languages without leaving the IDE. For this kind of work the free tier on DeepL accounts should be generous enough. I’ll likely be using it for translating comments in my teaching materials.
+deepRstudio by Staoshi Kume brings AI-powered translation directly into Rstudio. Very interesting design, meant for multilingual R users or data teams. DeepRstudio lets us translate selected code comments, documentation, or any text to English or from English into  many other languages using the DeepL API. Very nice approach of calling translation functions through RStudio add-ins or keyboard shortcuts, making it easy to work across languages without leaving the IDE. For this kind of work the free tier on DeepL accounts should be generous enough. I'll likely be using it for translating comments in my teaching materials.
 
 ### [gemini.R](https://jhk0530.github.io/gemini.R/)
 
@@ -202,7 +211,7 @@ promptr::complete_prompt("After drinking some water, the dog went to bed feed he
 
 <a href="https://cran.r-project.org/package=localLLM"><img src="https://www.r-pkg.org/badges/version/localLLM" alt="CRAN status" style="display: inline-block;"/></a>
 
-localLLM by Eddie Yand and Yaosheng Xu lets us run local LLMs on our local machines from R, using the efficient `llama.cpp` backend. This means we can work offline and don’t need API keys. LocalLLM has simple functions like `quick_llama()` to generate text out of the box and the outputs are built to be more reproducible results by default, even when sampling with temperature, thanks to deterministic decoding tuned by a user-specified seed. After installing localLLM we can `install_localLLM()` to automatically fetch the appropriate precompiled `llama.cpp` binary for our machine and operating system. Good tool for using in certain scientific fields because it has privacy and reproducibility in mind. This package can be useful for tasks like sentiment analysis or summarizing data .
+localLLM by Eddie Yand and Yaosheng Xu lets us run local LLMs on our local machines from R, using the efficient `llama.cpp` backend. This means we can work offline and don't need API keys. LocalLLM has simple functions like `quick_llama()` to generate text out of the box and the outputs are built to be more reproducible results by default, even when sampling with temperature, thanks to deterministic decoding tuned by a user-specified seed. After installing localLLM we can `install_localLLM()` to automatically fetch the appropriate precompiled `llama.cpp` binary for our machine and operating system. Good tool for using in certain scientific fields because it has privacy and reproducibility in mind. This package can be useful for tasks like sentiment analysis or summarizing data .
 
 ### [shiny.ollama](https://github.com/ineelhere/shiny.ollama)
 
@@ -252,16 +261,29 @@ vitals by Simon Couch provides us with a framework for evaluating LLMs. We provi
 
 ## Language Model Agents and AI assistants
 
+### [reviewer](https://github.com/simonpcouch/reviewer)
+
+reviewer is another package by Simon Couch, meant to provide interactive code review powered by LLMs and designed to help us improve the quality of our code with automated suggestions for reproducibility, readability, and resilience. The package's main function `review()` analyzes R scripts and opens a Shiny app where users can view and interactively accept or reject the AI-generated recommendations. These include identifying redundant packages, suggesting code improvements, and flagging potential issues. Reviewer is built on top of the ellmer framework, so it supports multiple model providers. Simon mentioned this during a Data Science lab zoom chat and it looks like a very practical tool for developers seeking to maintain high coding standards without manual peer review for every script. I like seeing the actual feedback rather than just diffs for LLM-checked code.
+
+### [predictive](https://github.com/simonpcouch/predictive)
+
+predictive by Simon Couch is a fork of databot by Joe Cheng, which is the early version of the official Databot EDA assistant for Positron. Predictive runs as a Shiny app and is tailored specifically for predictive modeling with tidymodels, through an interactive interface to guide us through proper machine learning workflows, ensuring best practices like appropriate data splitting, resampling, and avoiding test set contamination. After walking through the initial data preparation and exploratory data analysis, predictive collaborates to launch modeling workflows and improve predictive performance through iterations. The tools has asynchronous code execution to handle long-running models and the assistant has specialized tooling to maintain proper modeling "stance" throughout the process (e.g. not being too eager to use testing data prematurely). Another cool proof-of-concept by Simon, who by the way used to be an important part of the tidymodels crew.
+
+### [llamaR](https://github.com/cornball-ai/llamaR)
+
+Troy Hernandez is on a roll, having recently released a big stack of LLM tools for R and written in R.
+llamaR is an AI coding agent built entirely in R that runs in the terminal as a CLI, like Claude Code or Gemini CLI.  Llamar can connect to various providers (Anthropic, OpenAI, Ollama) through the Model Context Protocol and it comes with practical tools like shell access, file operations, Git integration, and stateful R execution. We can also use "skills", or portable Markdown-based instruction files that work across both llamaR and openclaw. LlamaR was developed aiming to minimize dependencies, has an optional voice mode, searchable conversation history, and the ability to function as both an MCP server and client. 
+
 ### [ralphloop](https://github.com/lazasaurus-ai/ralphloop)
 <img src="images/hex/ralph-wiggum.png" align="right" height="108"/>
 
 ralphloop is the latest addition to the set of great R&LLMs tools that Lázaro Álvarezan is working on. ralphloop implements a persistent, iterative agentic workflow for LLM-driven tasks, essentially an R port of the "Ralph Wiggum Plugin" for Anthropic's Claude Code but built on top of the ellmer framework. Rather than working in a chat windows, we can run autonomous loops in which an agent executes multi-step plans, updates files, and maintains state across iterations on disk rather. The loop continues indefinitely until the model outputs a specific, pre-defined success token or completion promise (e.g., <promise>ALL TESTS PASS</promise>), ensuring tasks are genuinely finished before stopping.  
 
-"Ralph Wiggum coding" (or the Ralph Loop) refers to a somewhat recent LLM approach named after Ralph Wiggum’s optimistic/stubborn attitude (I guess). In practice, we trap an LLM in a while loop where it must continuously critique and correct its own work until it meets a rigorous definition of "done".
+"Ralph Wiggum coding" (or the Ralph Loop) refers to a somewhat recent LLM approach named after Ralph Wiggum's optimistic/stubborn attitude (I guess). In practice, we trap an LLM in a while loop where it must continuously critique and correct its own work until it meets a rigorous definition of "done".
 
 ### [side](https://simonpcouch.github.io/side/)
 
-side by Simon Couch lets us use an experimental coding assistant, or  “side::kick()” for data science tasks directly inside Rstudio. Now that Rstudio has a sidebar, or a full-height pane in which we can place the outputs from the Viewer such as Shiny apps, we can run the assistant in Rstudio similar to AI extensions in Positron and vscode/cursor/etc. side is built on top of ellmer, shinychat, and btw. The assistant can inspect our R environment, read and write files, execute code, run shell commands, check R documentation, and even follow user-defined “skills” (Markdown guides for specific workflows). Works with any model supported by ellmer and keeps a conversation state across R sessions. Note that side is experimental and posit is developing an official AI assistant meant for Rstudio that will also live in the sidebar.
+side by Simon Couch lets us use an experimental coding assistant, or  "side::kick()" for data science tasks directly inside Rstudio. Now that Rstudio has a sidebar, or a full-height pane in which we can place the outputs from the Viewer such as Shiny apps, we can run the assistant in Rstudio similar to AI extensions in Positron and vscode/cursor/etc. side is built on top of ellmer, shinychat, and btw. The assistant can inspect our R environment, read and write files, execute code, run shell commands, check R documentation, and even follow user-defined "skills" (Markdown guides for specific workflows). Works with any model supported by ellmer and keeps a conversation state across R sessions. Note that side is experimental and posit is developing an official AI assistant meant for Rstudio that will also live in the sidebar.
 
 ### [deputy](https://jameshwade.github.io/deputy/)
 <img src="images/hex/deputy.png" align="right" height="108"/>
@@ -297,6 +319,14 @@ LLMAgentR by Kwadwo Daddy Nyame Owusu Boakye brings a state graph execution fram
 LLMAgentR uses function from chatLLM to build agents for code generation, SQL queries, data cleaning, web research, forecasting, data visualization, and more.
 
 The package has a lot of dependencies so be patient during installation. I tried out the data cleaning and the interpretation agents with good results, although these iterative workflows are very token-hungry and the free tiers for most providers may not be enough. Great overall addition to the LLM + R space!
+
+
+### [llmflow](https://github.com/Zaoqu-Liu/llmflow)
+
+<a href="https://cran.r-project.org/package=llmflow"><img src="https://www.r-pkg.org/badges/version/llmflow" alt="CRAN status" style="display: inline-block;"/></a>
+
+llmflow by Zaoqu Liu implements a ReAct (Reasoning and Acting) architecture framework for  automated data analysis workflows powered by LLMs. In this approach the LLMs can solve complex analytical tasks through iterative cycles of reasoning, code generation, and execution. The package includes functions such as  `AutoFlow()` for complete end-to-end automated analysis, `react_r()` for multi-turn ReAct loops (where the LLM alternates between making plans and executing R code), `response_to_r()` for safely running the AI-generated code in isolated sessions with error recovery and retry mechanisms, `response_as_json()` for structured JSON output, and `retrieve_docs()` for RAG-enrichment of our prompts with R function documentation. Llmflow is built on the ellmer package ecosytem so it will work with most model providers.  
+Llmflow lets us do things like running `AutoFlow(llm, "Perform linear regression of mpg on hp and wt using mtcars")` and get back a complete analysis with executable code, visualizations, and interpretations, all without manual intervention.
 
 ## mlverse
 
@@ -388,7 +418,7 @@ As per the official documentation, btw helps us describe our computational envir
 
 <img src="images/hex/buggylogo.png" align="right" height="108"/>
 
-buggy by Simon P. Couch uses LLMs to help R users understand and address error messages. With the tool properly set up and enabled, whenever we raise an error the package will give us clickable links to “explain” or “fix” the issue. Explanations are shown in the console, fixes are implemented directly. Also powered by btw to supply context to the model about the files and functions involved.
+buggy by Simon P. Couch uses LLMs to help R users understand and address error messages. With the tool properly set up and enabled, whenever we raise an error the package will give us clickable links to "explain" or "fix" the issue. Explanations are shown in the console, fixes are implemented directly. Also powered by btw to supply context to the model about the files and functions involved.
 
 ### ~~hellmer~~
 
@@ -510,21 +540,6 @@ diffuseR by Troy Hernandez is an R implementation of diffusion models for image 
 
 LLMing (lemming) by Lindley Slipetz and Teague Henry is a compact package for psychological text analysis. Uses BERT embeddings and currently includes functions for text generation and text anomaly detection. 
 
-### [text](https://www.r-text.org/)
-
-<a href="https://cran.r-project.org/package=text"><img src="https://www.r-pkg.org/badges/version/text" alt="CRAN status" style="display: inline-block;"/></a>
-
-<img src="images/hex/textlogo.png" align="right" height="108"/>
-
-text by Oscar Kjell, Salvatore Giorgi, and Andrew Schwartz uses transformed-based models to analyze natural language. The text package gives us access to models from Hugging Face so we can transform text to word embeddings and use them in other tasks, including RAG. A great tool for NLP work that can also help LLM users in general understand word embeddings better.
-
-text, along with talk and topics (see below) is part of the *R Language Analysis Suite*, a set of three related packages developed for working with transformers and natural langauge.
-
-### [talk](https://www.r-talk.org/)
-
-<img src="images/hex/talklogo.png" align="right" height="108"/>
-
-talk by Oscar Kjell, Adithya Ganesan, Rajath Rao, and Akshay Raghavan is similar to text, but it can transcribe audio to text and also create embeddings from voice recordings. Uses Hugging Face transformers by installing relevant Python packages in a conda environment.
 
 ### [topics](https://www.r-topics.org/)
 
@@ -544,6 +559,47 @@ pangoling by Bruno Nicenboim, Chris Emmerly, and Giovanni Cassani is an R packag
 
 Very nice to see a robust rOpenSci package for this topic. The package is mostly a wrapper of the python package transformers to process data.
 
+### [huggingfaceR](https://github.com/farach/huggingfaceR)
+<img src="images/hex/huggingfacer.png" align="right" height="108"/>
+
+huggingfaceR by Alex Farach,  Sam Terfa and Jack Penzer is an API-first R package that provides native R access to the ~500,000 machine learning models, embeddings, and datasets on the Hugging Face Hub without any Python dependencies. huggingfaceR brings us a tidyverse-friendly interface for common NLP and ML tasks including text classification (sentiment analysis, zero-shot classification), text embeddings with semantic similarity computation, chatting with open-source LLMs and text generation. The outputs are structurued as tidy tibbles that integrate well with tidy tools in general including dplyr, tidymodels, and tidytext workflows. With the package we can run fancy operations like semantic search, document clustering, topic extraction, or load Hugging Face datasets directly as tibbles. After we authenticate with a Huffing Face API key we can search and explore models on the Hugging Face Hub and even incorporate embeddings as features in tidymodels recipes. This will let us use new and useful transformer models in R through a familiar, pipe-friendly syntax like: 
+`reviews |> mutate(sentiment = hf_classify(text))`
+
+## Speech and audio processing
+
+### [chatterbox](https://github.com/cornball-ai/chatterbox)
+
+chatterbox by Troy Hernandez is an implementation of Resemble AI's text-to-speech engine written in R for high-quality speech synthesis using torch with no Python dependencies. Chatterbox has a straightforward interface for voice cloning and TTS generation. This way we can convert text to speech using reference audio samples. The package has CUDA support for those with GPUs, and convenient functions like `quick_tts()` for quick prototyping. chatterbox is just the tip of the spear in the cornballAI stack for text-to-speech. The other pieces of the machinery are:
+
+- tts.api - Unified R interface for multiple TTS backends
+- cornfab - Shiny app for point-and-click speech generation
+- chatterbox-tts-api - Docker container for Chatterbox
+- qwen3-tts-api - Docker container for Qwen3-TTS
+
+The developer wrote a nice post introducing the toolset. More about this [here](https://cornball.ai/posts/text-to-speech-in-r/).
+
+### [whisper](https://github.com/cornball-ai/whisper)
+
+<a href="https://cran.r-project.org/package=whisper"><img src="https://www.r-pkg.org/badges/version/whisper" alt="CRAN status" style="display: inline-block;"/></a>
+
+whisper by Troy Hernandez is a native R implementation of OpenAI's Whisper speech-to-text model. The difference is that this implementation is built entirely with torch, eliminating Python dependencies. The package offers a clean interface for converting audio to text with models of different sizes (from the 151MB tiny model to the 6.2GB large-v3 variant). We can do multilingual transcription with language-specific optimization, and direct translation to English. whisper has automatic model management through HuggingFace caching, flexible device selection (CPU/CUDA), and bundled sample audio for quick testing. whisper can ultimately bring us automatic speech recognition directly in R with a simple  `transcribe()` call.
+
+### [text](https://www.r-text.org/)
+
+<a href="https://cran.r-project.org/package=text"><img src="https://www.r-pkg.org/badges/version/text" alt="CRAN status" style="display: inline-block;"/></a>
+
+<img src="images/hex/textlogo.png" align="right" height="108"/>
+
+text by Oscar Kjell, Salvatore Giorgi, and Andrew Schwartz uses transformed-based models to analyze natural language. The text package gives us access to models from Hugging Face so we can transform text to word embeddings and use them in other tasks, including RAG. A great tool for NLP work that can also help LLM users in general understand word embeddings better.
+
+text, along with talk and topics (see below) is part of the *R Language Analysis Suite*, a set of three related packages developed for working with transformers and natural langauge.
+
+### [talk](https://www.r-talk.org/)
+
+<img src="images/hex/talklogo.png" align="right" height="108"/>
+
+talk by Oscar Kjell, Adithya Ganesan, Rajath Rao, and Akshay Raghavan is similar to text, but it can transcribe audio to text and also create embeddings from voice recordings. Uses Hugging Face transformers by installing relevant Python packages in a conda environment.
+
 ## Web searches from R
 
 ### [webretrieveR](https://github.com/lazasaurus-ai/webretrieveR )
@@ -558,3 +614,5 @@ webretrieveR by Lázaro Álvarez brings a lightweight and streamlined interface 
 <img src="images/hex/searcherlogo.png" align="right" height="108"/>
 
 searcher is package specifically focused on letting us search the web directly from R. Developed by James Balamuta, searcher has functions to perform searches using different search engines, but the package also comes with tools for integration with AI assistants. We can ask questions or send prompts to various models providers, and the functions will launch a web browser ready to answer. For example: `ask_mistral("How to handle missing data in R?")` or `ask_claude("Explain what purrr::map_df does")`.
+
+

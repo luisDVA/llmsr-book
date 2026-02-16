@@ -19,25 +19,22 @@ toc: false
 
 :::: {.dancing-shadow-box}
 ::: {.box-content}
-### Latest updates (January 2026):
+### Latest updates (February 2026):
 
 #### R packages
-- **14** new packages! including:
-  - agents that plan and self-correct code (`deputy`, `ralphloop`)
-  - AI assistant in RStudio aware of the R environment (`side`)
-  - more tools for running local models (`localLLM`, `shiny.ollama`)
-  - manage prompts as code using external files (`promptmanageR`)
-  - fetch real-time web data to augment prompts (`webretrieveR`)
-  - cut inference costs by auto-routing tasks to the efficient model (`routerchainR`).
-  - generate documentation directly from your project files (`documentoR`)
-  - translate code comments or text in the IDE (`deepRstudio`)
-  - and more!
+- **8** new packages! including:
+  - Interactive code review with automated suggestions (`reviewer`)
+  - predictive modeling assistant built on tidymodels (`predictive`)
+  - AI coding agent CLI written entirely in R (`llamaR`)
+  - composable framework for building prompts with validation (`tidyprompt`)
+  - ReAct architecture for automated data analysis (`llmflow`)
+  - native R access to Hugging Face models and datasets (`huggingfaceR`)
+  - speech-to-text with Whisper in pure R (`whisper`)
+  - text-to-speech using torch without Python dependencies (`chatterbox`)
 
 #### Other tools and extensions  
-- Posit Claude Skills
+- **Gemini CLI companion** - open-vsx extension with enhanced IDE integration
 
-#### Interesting reads
-- On the electricity use of LLM tools
 
 :::
 ::::
@@ -82,6 +79,7 @@ urlss <- c(
 "https://michelnivard.github.io/gptstudio/",
 "https://gabrielkaiserqfin.github.io/groqR",
 "https://dylanpieper.github.io/hellmer/",
+"https://github.com/farach/huggingfaceR",
 "https://github.com/MDRCNY/kbretrieveR",
 "https://github.com/frankiethull/kuzco",
 "https://github.com/simonpcouch/gander/",

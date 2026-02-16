@@ -10,7 +10,11 @@ Este repositorio contiene una colección de Claude Skills escritas para mejorar 
 
 ## [Positron Assistant](https://positron.posit.co/assistant)
 
-Este Asistente de Positron es un cliente de inteligencia artificial experimental para integrar chat y autocompletado basados en LLM dentro de Positron. Está disponible con la versión >=2025.07.0-204. Actualmente, el asistente usa Anthropic para el chat y GitHub Copilot para completar código. Se me hizo muy simlar Continue, pero con una integración mucho más estrecha con el IDE.
+Este Asistente de Positron es un cliente de inteligencia artificial experimental para integrar chat y autocompletado basados en LLM dentro de Positron. Está disponible con la versión >=2025.07.0-204. Actualmente, el asistente usa Anthropic para el chat y GitHub Copilot para completar código. Se me hizo muy similar a Continue, pero con una integración mucho más estrecha con el IDE.
+
+### [gemini CLI companion](https://open-vsx.org/extension/Google/gemini-cli-vscode-ide-companion/reviews)
+
+El CLI de Gemini es un asistente de IA de código abierto de Google que ejecutamos en la terminal. Después de una actualización reciente, ahora podemos ejecutar la extensión gemini CLI companion en forks de vscode incluyendo Positron. Esto significa integración mejorada entre la herramienta CLI y nuestro IDE. La actualización expone los archivos abiertos y la estructura del proyecto a través de "Open Editor File Context", mientras que "Selection Context" permite que la herramienta de CLI acceda a nuestra posición del cursor y texto seleccionado para mejorar el contexto. Los cambios de código sugeridos por Gemini CLI ahora se pueden revisar y aceptar directamente en el editor a través de Native Diffing, y también podemos usar la Paleta de Comandos (Cmd+Shift+P o Ctrl+Shift+P) para interactuar con las sesiones del CLI.
 
 ## [Roo Code](https://docs.roocode.com/)
 
