@@ -20,6 +20,16 @@
     ]
   },
   {
+    "objectID": "index.html#citation",
+    "href": "index.html#citation",
+    "title": "Large Language Model tools for R",
+    "section": "Citation",
+    "text": "Citation\nIf you use this resource, please cite it as:\nVerde Arregoitia, L.D. (2026). Large Language Model tools for R. https://luisdva.github.io/llmsr-book. DOI: 10.5281/zenodo.19260391\nBibTeX:\n@book{verdearregoitia2026llmsr,\n  author  = {Verde Arregoitia, Luis D.},\n  title   = {Large Language Model tools for R},\n  year    = {2026},\n  url     = {https://luisdva.github.io/llmsr-book},\n  doi     = {10.5281/zenodo.19260391}\n}",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
     "objectID": "before-start.html",
     "href": "before-start.html",
     "title": "1  Read first",

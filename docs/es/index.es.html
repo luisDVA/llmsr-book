@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 <script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
 <link href="./before-start.es.html" rel="next">
@@ -62,6 +97,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 </script><link rel="stylesheet" href="indstyle.scss">
+<meta name="citation_title" content="Herramientas para usar modelos de lenguaje de gran escala (LLM) en R">
+<meta name="citation_author" content="Luis D. Verde Arregoitia">
+<meta name="citation_publication_date" content="2026">
+<meta name="citation_cover_date" content="2026">
+<meta name="citation_year" content="2026">
+<meta name="citation_online_date" content="2026-03-27">
+<meta name="citation_fulltext_html_url" content="https://luisdva.github.io/llmsr-book">
+<meta name="citation_doi" content="10.5281/zenodo.19260391">
+<meta name="citation_language" content="es">
 </head>
 <body class="nav-sidebar floating quarto-light">
 
@@ -154,6 +198,7 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
   <ul class="collapse">
 <li><a href="#%C3%BAltimas-actualizaciones-febrero-2026" id="toc-últimas-actualizaciones-febrero-2026" class="nav-link" data-scroll-target="#últimas-actualizaciones-febrero-2026">Últimas actualizaciones (Febrero 2026):</a></li>
   <li><a href="#sobre-m%C3%AD" id="toc-sobre-mí" class="nav-link" data-scroll-target="#sobre-mí">Sobre mí</a></li>
+  <li><a href="#cita" id="toc-cita" class="nav-link" data-scroll-target="#cita">Cita</a></li>
   </ul>
 </li>
   </ul></nav>
@@ -182,7 +227,7 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
     <div>
     <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">16 de febrero de 2026</p>
+      <p class="date">27 de marzo de 2026</p>
     </div>
   </div>
   
@@ -230,6 +275,17 @@ gtag('config', 'G-HER1TDPFHR', { 'anonymize_ip': true});
 <p>Cualquier sugerencia o solicitud es bienvenida, ya sea a traves del codigo fuente de esta guía en (<a href="https://github.com/luisdva/llmsr-book/">GitHub</a>) o contactactándome por cualquier medio.</p>
 <section id="sobre-mí" class="level2"><h2 class="anchored" data-anchor-id="sobre-mí">Sobre mí</h2>
 <p>Soy macroecólogo, mastozóologo, y trabajo en ciencia de datos de biodiversidad. Visita mi <a href="https://liomys.mx">página personal</a> para más contenido y detalles.</p>
+</section><section id="cita" class="level2"><h2 class="anchored" data-anchor-id="cita">Cita</h2>
+<p>Si usas este recurso, por favor cítalo así:</p>
+<p>Verde Arregoitia, L.D. (2026). <em>Herramientas para usar modelos de lenguaje de gran escala (LLM) en R</em>. <a href="https://luisdva.github.io/llmsr-book" class="uri">https://luisdva.github.io/llmsr-book</a>. DOI: <a href="https://doi.org/10.5281/zenodo.19260391">10.5281/zenodo.19260391</a></p>
+<p><strong>BibTeX:</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@book</span>{<span class="ot">verdearregoitia2026llmsr</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>  = {Verde Arregoitia, Luis D.},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>   = {Herramientas para usar modelos de lenguaje de gran escala (LLM) en R},</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>    = {2026},</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">url</span>     = {https://luisdva.github.io/llmsr-book},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">doi</span>     = {10.5281/zenodo.19260391}</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">

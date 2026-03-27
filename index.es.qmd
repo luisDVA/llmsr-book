@@ -1,5 +1,11 @@
 ---
 css: indstyle.scss 
+citation:
+  type: book
+  url: "https://luisdva.github.io/llmsr-book"
+  doi: "10.5281/zenodo.19260391"
+  issued: 2026
+google-scholar: true
 ---
 
 <div style="background-color: #eceff4; padding: 1rem; border-radius: .25rem;" role="alert">
@@ -49,6 +55,24 @@ Cualquier sugerencia o solicitud es bienvenida, ya sea a traves del codigo fuent
 ## Sobre mí
 
 Soy macroecólogo, mastozóologo, y trabajo en ciencia de datos de biodiversidad. Visita mi [página personal](https://liomys.mx) para más contenido y detalles.
+
+## Cita
+
+Si usas este recurso, por favor cítalo así:
+
+Verde Arregoitia, L.D. (2026). *Herramientas para usar modelos de lenguaje de gran escala (LLM) en R*. <https://luisdva.github.io/llmsr-book>. DOI: [10.5281/zenodo.19260391](https://doi.org/10.5281/zenodo.19260391)
+
+**BibTeX:**
+
+```bibtex
+@book{verdearregoitia2026llmsr,
+  author  = {Verde Arregoitia, Luis D.},
+  title   = {Herramientas para usar modelos de lenguaje de gran escala (LLM) en R},
+  year    = {2026},
+  url     = {https://luisdva.github.io/llmsr-book},
+  doi     = {10.5281/zenodo.19260391}
+}
+```
 
 
 

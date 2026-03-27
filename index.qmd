@@ -1,6 +1,12 @@
 ---
 css: indstyle.scss 
 toc: false
+citation:
+  type: book
+  url: "https://luisdva.github.io/llmsr-book"
+  doi: "10.5281/zenodo.19260391"
+  issued: 2026
+google-scholar: true
 ---
 
 <div style="background-color: #eceff4; padding: 1rem; border-radius: .25rem;" role="alert">
@@ -125,4 +131,22 @@ Feel free to send feedback or to edit this content via pull requests.
 ## About me
 
 I am a mammal macroecologist and biodiversity data scientist. Check out my [personal page](https://liomys.mx) for other content and more details.
+
+## Citation
+
+If you use this resource, please cite it as:
+
+Verde Arregoitia, L.D. (2026). *Large Language Model tools for R*. <https://luisdva.github.io/llmsr-book>. DOI: [10.5281/zenodo.19260391](https://doi.org/10.5281/zenodo.19260391)
+
+**BibTeX:**
+
+```bibtex
+@book{verdearregoitia2026llmsr,
+  author  = {Verde Arregoitia, Luis D.},
+  title   = {Large Language Model tools for R},
+  year    = {2026},
+  url     = {https://luisdva.github.io/llmsr-book},
+  doi     = {10.5281/zenodo.19260391}
+}
+```
 

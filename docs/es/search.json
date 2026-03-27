@@ -20,6 +20,16 @@
     ]
   },
   {
+    "objectID": "index.es.html#cita",
+    "href": "index.es.html#cita",
+    "title": "Herramientas para usar modelos de lenguaje de gran escala (LLM) en R",
+    "section": "Cita",
+    "text": "Cita\nSi usas este recurso, por favor cítalo así:\nVerde Arregoitia, L.D. (2026). Herramientas para usar modelos de lenguaje de gran escala (LLM) en R. https://luisdva.github.io/llmsr-book. DOI: 10.5281/zenodo.19260391\nBibTeX:\n@book{verdearregoitia2026llmsr,\n  author  = {Verde Arregoitia, Luis D.},\n  title   = {Herramientas para usar modelos de lenguaje de gran escala (LLM) en R},\n  year    = {2026},\n  url     = {https://luisdva.github.io/llmsr-book},\n  doi     = {10.5281/zenodo.19260391}\n}",
+    "crumbs": [
+      "Introducción"
+    ]
+  },
+  {
     "objectID": "before-start.es.html",
     "href": "before-start.es.html",
     "title": "1  Lecturas previas",
