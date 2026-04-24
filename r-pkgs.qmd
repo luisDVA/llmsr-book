@@ -11,6 +11,7 @@ In no particular order, but now grouped into loose groups:
 aisdk by Yonghe Xia and the crew at YuLab-SMU is a production-grade AI Software Development Kit (SDK) for R that offers a unified interface for interacting with LLMs, abstracting provider-specific details. aisdk looks somewhat like ellmer but it also includes lots of advanced features like structured outputs, AST checks, image generation, tool calling, and multi-agent orchestration. A very complete one-stop shop for working with LLMs in R.
 
 ### [llm.api](https://github.com/cornball-ai/llm.api)
+
 <a href="https://cran.r-project.org/package=llm.api"><img src="https://www.r-pkg.org/badges/version/llm.api" alt="CRAN status" style="display: inline-block;"/></a>
 
 llm.api is part of the _cornyverse_ suit of LLM-based packages by Troy Hernandez. Similar to ellmer, llm.api provides a minimal-dependency LLM chat interface that integrates with various providers like OpenAI, Anthropic, Google, and various local models. It simplifies interactions with LLMs and supports features like conversation history and streaming. Very lightweight and efficient.
@@ -62,6 +63,7 @@ Chat4AIR has some cool built-in functions beyond just chat, like building R func
 
 
 ### [gptr](https://cran.r-project.org/web/packages/gptr/index.html)
+
 <a href="https://cran.r-project.org/package=gptr"><img src="https://www.r-pkg.org/badges/version/gptr" alt="CRAN status" style="display: inline-block;"/></a>
 
 gptr by Wanjun Gu is a lightweight and convenient R interface to the OpenAI ChatGPT API, simplifying interactions for various natural language processing tasks. I hadn't seen this package before, but it's another nice option for basic interaction with OpenAI models directly in the R console.

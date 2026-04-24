@@ -11,7 +11,8 @@ Los paquetes están resumidos aquí sin ningún orden en particular, pero los ju
 aisdk de Yonghe Xia y el equipo de YuLab-SMU es un Kit de Desarrollo de Software de IA (SDK) para R apto para producción que ofrece una interfaz unificada para interactuar con LLMs, abstrae detalles específicos de cada proveedor. aisdk es un poco como ellmer, pero también incluye muchas funciones avanzadas como salidas estructuradas, comprobaciones de AST, generación de imágenes, tool calling y orquestación de múltiples agentes. Un “todo en uno” muy completo para trabajar con LLMs en R.
 
 ### [llm.api](https://github.com/cornball-ai/llm.api)
-<a href="https://cran.r-project.org/package=llm.api"><img src="https://www.r-pkg.org/badges/version/llm.api" alt="CRAN status" style="display: inline-block;"/><\/a>
+
+<a href="https://cran.r-project.org/package=llm.api"><img src="https://www.r-pkg.org/badges/version/llm.api" alt="CRAN status" style="display: inline-block;"/></a>
 
 llm.api es parte del conjunto _cornyverse_ de paquetes asociados a LLM desarrollados por Troy Hernandez. Similar a ellmer, llm.api proporciona una interfaz de chat LLM minimalista y con pocas dependencias, que se integra con varios proveedores como OpenAI, Anthropic, Google y varios modelos locales. Simplifica las interacciones con LLMs y soporta funciones como historial de conversación y streaming. Muy ligero y eficiente.
 
@@ -50,6 +51,7 @@ parameterized_agent |> chat(list(var1 = "mpg", var2 = "wt"))
 wizrd también incluye herramientas para MCP y RAG, lo cual es bastante impresionante.  
 
 ### [chatAI4R](https://kumes.github.io/chatAI4R/)
+
 <a href="https://cran.r-project.org/package=chatAI4R"><img src="https://www.r-pkg.org/badges/version/chatAI4R" alt="CRAN status" style="display: inline-block;"/></a>
 
 <img src="images/hex/chatAI4R.png" align="right" height="108"/>
@@ -58,7 +60,8 @@ El paquete chatAI4R es una interfaz de chat para R. Desarrollado por Satoshi Kum
 
 
 ### [gptr](https://cran.r-project.org/web/packages/gptr/index.html)
-<a href="https://cran.r-project.org/package=gptr"><img src="https://www.r-pkg.org/badges/version/gptr" alt="CRAN status" style="display: inline-block;"/><\/a>
+
+<a href="https://cran.r-project.org/package=gptr"><img src="https://www.r-pkg.org/badges/version/gptr" alt="CRAN status" style="display: inline-block;"/></a>
 
 gptr por Wanjun Gu es una interfaz ligera y conveniente para R y la API de OpenAI, que simplifica las interacciones para diversas tareas de procesamiento de lenguaje natural. No había visto este paquete antes, pero es otra opción más para interactuar directamente con modelos de OpenAI desde la consola de R.
 
@@ -82,7 +85,7 @@ Desarrolado por Kwadwo Daddy Nyame Owusu Boakye, chatLLM es otra opción útil p
 axolotor por Matthew Hirschey y Pol Castellano Escuder es otro paquete que nos brinda una interfaz generalizada para interactuar con APIs de distintos proveedores de LLMs. El paquete tiene funciones para aprovechar herramientas que son específicas a cada proveedor o modelo. También funciona con modelos locales y con la modalidad de 'thinking' de Claude 3.7 Sonnet. Funciona con una familia de funciones `ask()` y me gustó su logotipo.
 
 ### [AIscreenR](https://mikkelvembye.github.io/AIscreenR/)
-<a href="https://cran.r-project.org/package=AIscreenR"><img src="https://www.r-pkg.org/badges/version/AIscreenR" alt="CRAN status" style="display: inline-block;"/><\/a>
+<a href="https://cran.r-project.org/package=AIscreenR"><img src="https://www.r-pkg.org/badges/version/AIscreenR" alt="CRAN status" style="display: inline-block;"/></a>
 
 <img src="images/hex/AIscreenR.png" align="right" height="108"/>
 
@@ -235,7 +238,8 @@ promptr::complete_prompt("Después de tomar agua la perrita se fue a su cama a a
 
 
 ### [llmclean](https://cran.r-project.org/web/packages/llmclean/index.html)
-<a href="https://cran.r-project.org/package=llmclean"><img src="https://www.r-pkg.org/badges/version/llmclean" alt="CRAN status" style="display: inline-block;"/><\/a>
+
+<a href="https://cran.r-project.org/package=llmclean"><img src="https://www.r-pkg.org/badges/version/llmclean" alt="CRAN status" style="display: inline-block;"/></a>
 
 
 llmclean por Sadikul Islam detecta y sugiere correcciones para inconsistencias semánticas en data frames usando LLMs. El paquete tiene funciones para identificar problemas como variantes de abreviaturas, errores de dedo, y valores mal formados. llmclean produce un data frame ordenado que resume los problemas en los datos y sugieres posibles correcciones. El paquete puede trabajar con múltiples proveedores de modelos (con alternativas para trabajar sin conexión) y los métodos de limpieza de datos que usa siguen métodos y discusiones establecidas: "An introduction to data cleaning with R" de de Jonge y van der Loo (2013) y "Robust and efficient fuzzy match for online data cleaning" de Chaudhuri et al. (2003). 
@@ -300,7 +304,7 @@ vitals es un paquete desarrollado por Simon Couch para evaluar el desempeño de 
 ## Agentes de IA y asistentes
 
 ### [ravel](https://msaule.github.io/ravel/index.html)
-<a href="https://cran.r-project.org/package=ravel"><img src="https://www.r-pkg.org/badges/version/ravel" alt="CRAN status" style="display: inline-block;"/><\/a>
+<a href="https://cran.r-project.org/package=ravel"><img src="https://www.r-pkg.org/badges/version/ravel" alt="CRAN status" style="display: inline-block;"/></a>
 
 <img src="images/hex/ravel.png" align="right" height="108"/>
 
@@ -310,7 +314,8 @@ Muy útil en su diseño intencional para trabajar con R en RStudio. Recomiendo e
 
 
 ### [gooseR🦆](https://github.com/blockbtheriault/gooseR)
-<a href="https://cran.r-project.org/package=gooseR"><img src="https://www.r-pkg.org/badges/version/gooseR" alt="CRAN status" style="display: inline-block;"/><\/a>
+
+<a href="https://cran.r-project.org/package=gooseR"><img src="https://www.r-pkg.org/badges/version/gooseR" alt="CRAN status" style="display: inline-block;"/></a>
 
 gooseR por Brandon Theriault está pensado para integrar R con Goose AI, que es un agente de IA open-source, extensible, escrito en Rust, y que funciona con prácticamente todos los proveedores. Goose forma parte de la Agentic AI Foundation (AAIF) en Linux Foundation, que le da validez. Las funciones preconstruidas en gooseR incluyen herramientas para gestión de memoria, mejoras de visualización (tablas y gráficas) y automatización de flujos de trabajo, etc. gooseR permite guardar objetos de R en la memoria de Goose y, en general, gestionar proyectos de ciencia de datos. Parece una herramienta muy flexible y el paquete tiene varias viñetas muy completas.
 
@@ -489,7 +494,7 @@ ellmer es un nuevo paquete vinculado al tidyverse y desarrollado por Hadley Wick
 ellmer promete bastante. Hay mucha gente contribuyendo, se está incorporando como base para otros paquetes, y cada que reviso tiene nuevas funcionalidades y mejor documentación.
 
 ### [quallmer](https://quallmer.github.io/quallmer/)
-<a href="https://cran.r-project.org/package=quallmer"><img src="https://www.r-pkg.org/badges/version/quallmer" alt="CRAN status" style="display: inline-block;"/><\/a>
+<a href="https://cran.r-project.org/package=quallmer"><img src="https://www.r-pkg.org/badges/version/quallmer" alt="CRAN status" style="display: inline-block;"/></a>
 
 <img src="images/hex/quallmer.png" align="right" height="108"/>
 
