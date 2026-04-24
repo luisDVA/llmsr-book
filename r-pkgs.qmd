@@ -6,11 +6,29 @@ In no particular order, but now grouped into loose groups:
 
 ## General interfaces
 
+### [aisdk](https://yulab-smu.top/aisdk/)
+
+aisdk by Yonghe Xia and the crew at YuLab-SMU is a production-grade AI Software Development Kit (SDK) for R that offers a unified interface for interacting with LLMs, abstracting provider-specific details. aisdk looks somewhat like ellmer but it also includes lots of advanced features like structured outputs, AST checks, image generation, tool calling, and multi-agent orchestration. A very complete one-stop shop for working with LLMs in R.
+
+### [llm.api](https://github.com/cornball-ai/llm.api)
+<a href="https://cran.r-project.org/package=llm.api"><img src="https://www.r-pkg.org/badges/version/llm.api" alt="CRAN status" style="display: inline-block;"/></a>
+
+llm.api is part of the _cornyverse_ suit of LLM-based packages by Troy Hernandez. Similar to ellmer, llm.api provides a minimal-dependency LLM chat interface that integrates with various providers like OpenAI, Anthropic, Google, and various local models. It simplifies interactions with LLMs and supports features like conversation history and streaming. Very lightweight and efficient.
+
+
 ### [promptmanageR](https://github.com/lazasaurus-ai/promptmanageR)
 
 <img src="images/hex/promptmanageR.png" align="right" height="108"/>
 
 promptmanageR is another cool implementation by Lázaro Álvarez, based on Langsmith's Prompt Hub. This package was designed to bring structure and flexibility to LLM prompt engineering by separating logic from code. With promptmanageR we can store system and user prompts in external JSON files, inject dynamic variables using placeholders (e.g., apply {{model_x}} to {{dataset_y}}), and render fully substituted prompts at runtime. This is great for reproducible and maintainable AI workflows. The package also has interactive preview functionality to inspect the exact text being sent to the LLM before calling it. Additionally, promptmanageR supports pulling shared prompt templates directly from the LangSmith Hub (with a valid API key) which includes community-vetted patterns. Like all of Lazaro's packages, promptmanageR integrates smoothly with ellmer and friends.
+
+
+### [TheOpenAIR](https://openair-lib.org/)
+
+<img src="images/hex/openAIR.png" align="right" height="108"/>
+
+TheOpenAIR by Ulrich Matter and Jonathan Chassot integrates OpenAI's GPT models into R workflows, offering wrapper functions for ChatGPT with pre-prompted functions for tasks like writing tests, translating code, refactoring, checking for valid R code, or working with different R dialects.
+
 
 
 ### [wizrd](https://lawremi.github.io/wizrd/)
@@ -43,6 +61,13 @@ chatAI4R package is another new chat-based interface for R. Developed by Satoshi
 Chat4AIR has some cool built-in functions beyond just chat, like building R functions, running prompts simultaneously across models via the io.net API, interpreting, statistical outputs, and more. 
 
 
+### [gptr](https://cran.r-project.org/web/packages/gptr/index.html)
+<a href="https://cran.r-project.org/package=gptr"><img src="https://www.r-pkg.org/badges/version/gptr" alt="CRAN status" style="display: inline-block;"/></a>
+
+gptr by Wanjun Gu is a lightweight and convenient R interface to the OpenAI ChatGPT API, simplifying interactions for various natural language processing tasks. I hadn't seen this package before, but it's another nice option for basic interaction with OpenAI models directly in the R console.
+
+
+
 ### [documentoR](https://github.com/MDRCNY/documentoR)
 
 <img src="images/hex/documentoR.png" align="right" height="108"/>
@@ -63,6 +88,15 @@ chatLLM by Kwadwo Daddy Nyame Owusu Boakye is another useful option for when we 
 <img src="images/hex/axolotrlogo.png" align="right" height="108"/>
 
 This package by Matthew Hirschey and Pol Castellano Escuder provides a unified interface for interacting with various Language Model APIs. axolotr has some useful functions to take advantage of provider-specific features, local model support, and support for Claude 3.7 Sonnet's 'thinking' capability. Works through a simple family of `ask()` functions. Cute logo too.
+
+
+### [AIscreenR](https://mikkelvembye.github.io/AIscreenR/)
+<a href="https://cran.r-project.org/package=AIscreenR"><img src="https://www.r-pkg.org/badges/version/AIscreenR" alt="CRAN status" style="display: inline-block;"/></a>
+
+<img src="images/hex/AIscreenR.png" align="right" height="108"/>
+
+AIscreenR by Mikkel H. Vembye and Thomas Olsen has functions to help us screen titles and abstracts when doing systematic literature reviews and once we have a usable RIS file. The package in general aims to enhance screening quality and reduce screening time, rather than replace human screening altogheter, which is a good thing in my opinion. AIscreenR also includes tools for making quality assessment of the screenings.
+
 
 ### [routerchainR](https://github.com/lazasaurus-ai/routerchainR)
 
@@ -205,7 +239,18 @@ Here's an example of `complete_prompt` with the sentence I use whenever I teach 
 promptr::complete_prompt("After drinking some water, the dog went to bed feed her")
 ```
 
-## Ollama-based tools, wrappers and helpers
+### [llmclean](https://cran.r-project.org/web/packages/llmclean/index.html)
+<a href="https://cran.r-project.org/package=llmclean"><img src="https://www.r-pkg.org/badges/version/llmclean" alt="CRAN status" style="display: inline-block;"/></a>
+
+
+llmclean by Sadikul Islam detects and suggests fixes for semantic inconsistencies in data frames using LLMs. The package has functions to  identify issues like abbreviation variants, typos, and malformed values. llmclean produces a tidy dataframe summarizing the issues in the data and possible fixes. The package can work with multiple model providers (with a fallback for working offline) and the data cleaning methods it uses follow established methods and discussions: "An introduction to data cleaning with R" by de Jonge and van der Loo (2013) and "Robust and efficient fuzzy match for online data cleaning" by Chaudhuri et al. (2003). 
+
+The documentation could be more detailed but I tried it with decent results. I like that we can create a tibble with the issues identified and then pass it to the `apply_fixes` function. 
+
+
+
+
+## Local models: tools, wrappers and helpers
 
 ### [localLLM](https://www.eddieyang.net/software/localllm/)
 
@@ -261,6 +306,47 @@ vitals by Simon Couch provides us with a framework for evaluating LLMs. We provi
 
 ## Language Model Agents and AI assistants
 
+
+### [ravel](https://msaule.github.io/ravel/index.html)
+<a href="https://cran.r-project.org/package=ravel"><img src="https://www.r-pkg.org/badges/version/ravel" alt="CRAN status" style="display: inline-block;"/></a>
+
+<img src="images/hex/ravel.png" align="right" height="108"/>
+
+ravel by Markuss Saule joins a select group of packages (side, myownrobs) and tools (Posit Assistant and Lotas IDE) in bringing a multi-provider and context-aware AI assistant to RStudio. The ravel assistant understands R context (code, objects, git changes) to assist with statistical analysis, code refactoring, reporting results, and doing code review. ravel also sees what we do with git to help with version control.The package prioritizes safety with staged changes and a focus on human approval.
+
+Very useful in its intentional design for working with R in RStudio. I recommend running the assistant (runs as a Shiny app) in the recent RStudio sidebar for a full-height panel.
+
+### [gooseR🦆](https://github.com/blockbtheriault/gooseR)
+<a href="https://cran.r-project.org/package=gooseR"><img src="https://www.r-pkg.org/badges/version/gooseR" alt="CRAN status" style="display: inline-block;"/></a>
+
+gooseR by Brandon Theriault is meant for smooth integration between R and Goose AI, which is an open-source, extensible AI agent written in Rust that supports pretty much all providers, and is part of the Agentic AI Foundation (AAIF) at the Linux Foundation. Pre-built functions in gooseR include tools for memory management, visualization enhancements (tables and plots), and workflow automation. gooseR allows for saving R objects to Goose memory and generally managing data science projects. Seems like a very flexible tool and the package has several thorough vignettes.
+
+
+
+### [puppeteeR](https://arnold-kakas.github.io/puppeteeR/)
+
+<img src="images/hex/puppeteeR.png" align="right" height="108"/>
+
+puppeteeR by Arnold Kakas is an R package for agent orchestration. It lets us define multiple LLM agents with different roles, providers, tools, and instructions, then connect them into workflows where each agent can act on shared state, route work conditionally, and hand off to the next step. The package supports sequential pipelines, supervisor-style routing, and custom graph-based workflows with checkpoints and human-in-the-loop review.
+
+As a useful introduction to the motivation behind puppeteeR, the author wrote that  
+> "ellmer makes single LLM calls easy. But real automation tasks are multi-step: classify a document, extract key facts, summarise them, route to a specialist, get human approval, retry on rejection. Wiring this by hand with nested if/else and manual state passing gets messy fast." 
+
+puppeteeR is built on [ellmer](https://ellmer.tidyverse.org/) and inspired by [LangGraph](https://github.com/langchain-ai/langgraph), aiming to bring agent orchestration to R in an idiomatic way.
+
+### [pkgskills](https://pkgskills.api2r.org/index.html)
+
+<img src="images/hex/pkgskills.png" align="right" height="108"/>
+
+skills files for LLM agents and similar tools are all the rage nowadays and pkgskills by Jon Harmon provides curated skills and agent instructions to improve AI coding of R packages. It installs `AGENTS.md` and skill files into a project, giving AI coding agents project-specific context. Includes skills for: creating issues, implementing issues, writing  code, test-driven development, documenting functions, code search, and GitHub CLI usage. Compatible with GitHub Copilot.
+
+### [saber](https://github.com/cornball-ai/saber)
+
+Although most R users don't need to get deep into metaprogramming to get things done, code is hierarchical and can be naturally represented as a tree with leaves and branches that represent symbols and constants. saber by Troy Hernandez analyzes the Abstract Syntax Tree (AST) of R code to understand structural relationships between functions, packages, and projects. It helps us manage agent context by mapping code dependencies and identifying what breaks when changes are made. This [post](https://cornball.ai/posts/tokensvstrees/) by Troy explains the conflict/mismatch that happens when tokenizing code and ultimately losing context when coding with LLM-powered assistants. 
+
+saber helps coding agents work with R code without unnecessary guesswork. Integrates well with Codex and Claude Code.
+
+
 ### [reviewer](https://github.com/simonpcouch/reviewer)
 
 reviewer is another package by Simon Couch, meant to provide interactive code review powered by LLMs and designed to help us improve the quality of our code with automated suggestions for reproducibility, readability, and resilience. The package's main function `review()` analyzes R scripts and opens a Shiny app where users can view and interactively accept or reject the AI-generated recommendations. These include identifying redundant packages, suggesting code improvements, and flagging potential issues. Reviewer is built on top of the ellmer framework, so it supports multiple model providers. Simon mentioned this during a Data Science lab zoom chat and it looks like a very practical tool for developers seeking to maintain high coding standards without manual peer review for every script. I like seeing the actual feedback rather than just diffs for LLM-checked code.
@@ -289,6 +375,13 @@ side by Simon Couch lets us use an experimental coding assistant, or  "side::kic
 <img src="images/hex/deputy.png" align="right" height="108"/>
 
 deputy by James Wade implements agentic workflows like Anthropic's Claude Agent SDK (Software Development Kit), but in R. This way we can create AI agents that use tools to perform complex, multi-step tasks. deputy is built on top of the ellmer framework so it is provider-agnostic and modular. When creating these agents, the package has pre-built tool bundles suchs tools for file operations, data analysis or wrangling, and code execution, always with fine-grained control on permissions. This is beyond my skillset but there are also hooks to intercept and modify agent behavior at different points and support for real-time streaming outputs. Nice!
+
+### [debrief](https://github.com/r-lib/debrief)
+
+<img src="images/hex/debrief.png" align="right" height="108"/>
+
+debrief by  Emil Hvitfeldt and the r-lib team offers text-based summaries and analysis tools for `profvis` profiling output, designed for terminal workflows and AI consumption. It provides views like hotspot analysis, call trees, and source context. debrief can tell us what was slow, or which lines were hot, or if there were callers/callees dominating runtime. This can help use make decisions about the source context and memory behavior to optimize. For advanced users and devs.
+
 
 ### [MyOwnRobs](https://myownrobs.github.io/myownrobs/)
 
@@ -386,6 +479,9 @@ Thanks to MCP this package should also work with Cursor, or other services that 
 
 ## ellmer and friends
 
+
+### [ellmer](http://ellmer.tidyverse.org/)
+
 <a href="https://cran.r-project.org/package=ellmer"><img src="https://www.r-pkg.org/badges/version/ellmer" alt="CRAN status" style="display: inline-block;"/></a>
 
 <img src="images/hex/ellmerlogo.png" align="right" height="108"/>
@@ -395,6 +491,17 @@ Thanks to MCP this package should also work with Cursor, or other services that 
 ellmer is a new tidyverse-adjacent package by Hadley Wickham and Joe Cheng for interacting in R with various models, either programmatically or interactively. elmer creates R6 chat objects that remember context, and we can interact with models with a console or browser-based chat box, or programmatically within R functions.
 
 Seems promising, quite flexible, and all the activity in the GitHub repo suggests a very active development process, a solid dev team, and lots of community input.
+
+
+### [quallmer](https://quallmer.github.io/quallmer/)
+<a href="https://cran.r-project.org/package=quallmer"><img src="https://www.r-pkg.org/badges/version/quallmer" alt="CRAN status" style="display: inline-block;"/></a>
+
+<img src="images/hex/quallmer.png" align="right" height="108"/>
+
+I was on board with quallmer even before reading what the package is about because the authors (Seraphine F. Maerz and Kenneth Benoit) chose one of my favorite animals (Northern Quoll) for the hex logo. 
+
+quallmer is basically a comprehensive toolbox for AI-assisted qualitative coding for large datasets, including text, images, PDFs, and tabular data. The package leverages ellmer and allows researchers to apply custom or built-in codebooks to generate structured, interpretable qualitative codes. The entire workflow is covered, featuring functions to code data (`qlm_code()`), assess inter-rater reliability (`qlm_compare()`), validate AI accuracy against human-coded standards (`qlm_validate()`), replicate findings across different models (`qlm_replicate()`), and generate complete, transparent audit trails (`qlm_trail()`) for trustworthiness and reproducibility of qualitative research.
+
 
 ### [kbretrieveR](https://github.com/MDRCNY/kbretrieveR)
 

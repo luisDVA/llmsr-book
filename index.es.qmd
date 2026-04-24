@@ -25,21 +25,23 @@ google-scholar: true
 :::: {.dancing-shadow-box}
 ::: {.box-content}
 
-### Últimas actualizaciones (Febrero 2026):
+### Últimas actualizaciones (Abril 2026):
 
-#### Paquetes 
-- ¡8 paquetes nuevos!
-  - Revisión interactiva de código con sugerencias automatizadas (`reviewer`)
-  - asistente de modelado predictivo con tidymodels (`predictive`)
-  - agente CLI de IA escrito completamente en R (`llamaR`)
-  - construcción ordenada de prompts con validación (`tidyprompt`)
-  - arquitectura ReAct para análisis de datos automatizado (`llmflow`)
-  - acceso nativo a modelos y datos de Hugging Face (`huggingfaceR`)
-  - transcripción de voz a texto con Whisper en R puro (`whisper`)
-  - síntesis de voz usando torch sin dependencias de Python (`chatterbox`)
-  
-#### Otras herramientas y extensiones
-- **Gemini CLI companion** - extensión open-vsx con integración mejorada en el IDE
+#### 13 paquetes nuevos
+  - Gestión de agentes LLM con checkpoints y revisión humana (`puppeteeR`)
+  - Skills e instrucciones para agentes orientados a desarrollo de paquetes (`pkgskills`)
+  - Análisis código vía AST para gestionar contexto y dependencias (`saber`)
+  - Resúmenes y análisis textuales para salidas de `profvis` (`debrief`)
+  - Limpieza de datos con LLM (`llmclean`)
+  - Interfaz minimalista de chat LLM con integración multi-proveedor y streaming (`llm.api`)
+  - Integración entre R y Goose AI para automatización y proyectos de ciencia de datos (`gooseR🦆`)
+  - Asistencia para revisiones sistemáticas de literatura (`AIscreenR`)
+  - Asistente multi-proveedor y consciente de contexto y git para RStudio (`ravel`)
+  - SDK de desarrollo de software de IA para R con salidas estructuradas, _tool calling_ y orquestación multi-agente (`aisdk`)
+  - Interfaz ligera para la API de ChatGPT desde R (`gptr`)
+  - Wrappers flujos de trabajo de R (tests, traducción, refactorización, validación de R, etc.; `TheOpenAIR`)
+  - Codificación cualitativa asistida por IA (`quallmer`)
+
 
 :::
 ::::
@@ -51,6 +53,88 @@ El campo del uso de inteligencia artificial (IA) en R avanza rápidamente, por l
 > Hay varios términos en este campo que seguramente no están bien traducidos en esta guía. 
 
 Cualquier sugerencia o solicitud es bienvenida, ya sea a traves del codigo fuente de esta guía en ([GitHub](https://github.com/luisdva/llmsr-book/)) o contactactándome por cualquier medio.
+
+
+```{r hex-grid}
+#| echo: false
+
+
+logos <- fs::dir_ls(here::here("images/hex/"))
+
+urlss <- c(
+"https://mikkelvembye.github.io/AIscreenR/",
+"https://github.com/IMNMV/ClaudeR",
+"https://codeium.com/",
+"https://asanaei.github.io/LLMR",
+"https://knowusuboaky.github.io/LLMAgentR/",
+"https://github.com/heurekalabsco/axolotr",
+"https://posit-dev.github.io/btw/",
+"https://simonpcouch.github.io/buggy/",
+"https://kumes.github.io/chatAI4R/",
+"https://knowusuboaky.github.io/chatLLM/",
+"https://mlverse.github.io/chattr/",
+"https://simonpcouch.github.io/chores/",
+"https://github.com/lazasaurus-ai/contextR",
+"https://www.continue.dev/",
+"https://github.com/features/copilot",
+"https://github.com/r-lib/debrief",
+"https://github.com/kumeS/deepRstudio",
+"https://jameshwade.github.io/deputy/",
+"https://github.com/cornball-ai/diffuseR",
+"https://github.com/MDRCNY/documentoR",
+"http://ellmer.tidyverse.org/",
+"https://zobaer09.github.io/FakeDataR/",
+"https://jhk0530.github.io/gemini.R/",
+"https://github.com/frankiethull/ggpal2",
+"https://michelnivard.github.io/gptstudio/",
+"https://gabrielkaiserqfin.github.io/groqR",
+"https://dylanpieper.github.io/hellmer/",
+"https://github.com/farach/huggingfaceR",
+"https://github.com/MDRCNY/kbretrieveR",
+"https://github.com/frankiethull/kuzco",
+"https://github.com/simonpcouch/gander/",
+"https://mlverse.github.io/mall/",
+"https://mcpr.opifex.org/",
+"https://posit-dev.github.io/mcptools/",
+"https://github.com/feddelegrand7/mini007",
+"https://mlverse.github.io/lang/",
+"https://myownrobs.github.io/myownrobs/",
+"https://hauselin.github.io/ollama-r/",
+"https://openair-lib.org/",
+"https://docs.ropensci.org/pangoling/",
+"https://github.com/GabrielKaiserQFin/PerplexR/",
+"https://pkgskills.api2r.org/index.html",
+"https://github.com/lazasaurus-ai/promptmanageR",
+"https://github.com/joeornstein/promptr",
+"https://arnold-kakas.github.io/puppeteeR/",
+"https://quallmer.github.io/quallmer/",
+"https://tidyverse.github.io/ragnar/",
+"https://github.com/lazasaurus-ai/ralphloop",
+"https://msaule.github.io/ravel",
+"https://www.ekotov.pro/rdocdump/",
+"https://jbgruber.github.io/rollama/",
+"https://r-pkg.thecoatlessprofessor.com/searcher/",
+"https://bgreenwell.github.io/statlingua/",
+"https://www.r-talk.org/",
+"https://r-text.org/",
+"https://tidychatmodels.albert-rapp.de/",
+"https://edubruell.github.io/tidyllm/",
+"https://www.r-topics.org/",
+"https://vitals.tidyverse.org/",
+"https://github.com/lazasaurus-ai/webretrieveR"
+)
+
+names(logos) <- urlss
+
+# shuffle logos vector
+samplelogos <- sample(logos)
+
+
+hexsession::make_tile(local_images = samplelogos,local_urls = names(samplelogos),
+ dark_mode = FALSE) 
+
+```
+
 
 ## Sobre mí
 

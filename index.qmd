@@ -25,21 +25,22 @@ google-scholar: true
 
 :::: {.dancing-shadow-box}
 ::: {.box-content}
-### Latest updates (February 2026):
+### Latest updates (April 2026):
 
-#### R packages
-- **8** new packages! including:
-  - Interactive code review with automated suggestions (`reviewer`)
-  - predictive modeling assistant built on tidymodels (`predictive`)
-  - AI coding agent CLI written entirely in R (`llamaR`)
-  - composable framework for building prompts with validation (`tidyprompt`)
-  - ReAct architecture for automated data analysis (`llmflow`)
-  - native R access to Hugging Face models and datasets (`huggingfaceR`)
-  - speech-to-text with Whisper in pure R (`whisper`)
-  - text-to-speech using torch without Python dependencies (`chatterbox`)
-
-#### Other tools and extensions  
-- **Gemini CLI companion** - open-vsx extension with enhanced IDE integration
+#### **13** new packages! 
+- LLM agent orchestration for workflows with checkpoints and human-in-the-loop review (`puppeteeR`)
+- Skills and instruction files for R package–focused AI coding agents (`pkgskills`)
+- AST-based analysis of R code to manage agent context and dependencies (`saber`)
+- Text-based summaries and analysis tools for _profvis_ output in terminal workflows (`debrief`)
+- Detection and suggested fixes messy data frames using LLMs (`llmclean`)
+- A lightweight, minimal-dependency LLM chat interface with multi-provider support and streaming (`llm.api`)
+- Integration with Goose AI for automation and data science project management (`gooseR`🦆)
+- Title/abstract screening support for systematic literature reviews (`AIscreenR`)
+- A context-aware multi-provider assistant for RStudio (including git) with a safety-first, approval-based design (`ravel`)
+- **Production-grade** AI Software Development Kit (SDK) for R with structured outputs, tool calling, and multi-agent orchestration (`aisdk`)
+- A lightweight interface to the OpenAI ChatGPT API in the console (`gptr`)
+- Wrappers for writing tests, translating code, refactoring, validating R code, and more using OpenAI models (`TheOpenAIR`)
+- AI-assisted qualitative coding for large datasets with audit trails, validations, and reproducibility support (`quallmer`)
 
 
 :::
@@ -60,6 +61,7 @@ The logos below link to each tool's official site.
 logos <- fs::dir_ls(here::here("images/hex/"))
 
 urlss <- c(
+"https://mikkelvembye.github.io/AIscreenR/",
 "https://github.com/IMNMV/ClaudeR",
 "https://codeium.com/",
 "https://asanaei.github.io/LLMR",
@@ -74,6 +76,7 @@ urlss <- c(
 "https://github.com/lazasaurus-ai/contextR",
 "https://www.continue.dev/",
 "https://github.com/features/copilot",
+"https://github.com/r-lib/debrief",
 "https://github.com/kumeS/deepRstudio",
 "https://jameshwade.github.io/deputy/",
 "https://github.com/cornball-ai/diffuseR",
@@ -96,12 +99,17 @@ urlss <- c(
 "https://mlverse.github.io/lang/",
 "https://myownrobs.github.io/myownrobs/",
 "https://hauselin.github.io/ollama-r/",
+"https://openair-lib.org/",
 "https://docs.ropensci.org/pangoling/",
 "https://github.com/GabrielKaiserQFin/PerplexR/",
+"https://pkgskills.api2r.org/index.html",
 "https://github.com/lazasaurus-ai/promptmanageR",
 "https://github.com/joeornstein/promptr",
+"https://arnold-kakas.github.io/puppeteeR/",
+"https://quallmer.github.io/quallmer/",
 "https://tidyverse.github.io/ragnar/",
 "https://github.com/lazasaurus-ai/ralphloop",
+"https://msaule.github.io/ravel",
 "https://www.ekotov.pro/rdocdump/",
 "https://jbgruber.github.io/rollama/",
 "https://r-pkg.thecoatlessprofessor.com/searcher/",
